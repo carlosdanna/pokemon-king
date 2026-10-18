@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import type { ReactNode } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { PinToggle } from "@/components/pin-toggle";
 import { Typography } from "@/components/ui/typography";
 import type { AlbumCard, SetInfo, TypeModifier } from "@/lib/album";
 
@@ -51,13 +52,16 @@ export function CardPanel({ card, set }: { card: AlbumCard; set: SetInfo }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <div>
-        <Typography variant="h3" as="h2">
-          {card.name}
-        </Typography>
-        <Typography variant="caption" as="p">
-          {set.name} · #{card.number}
-        </Typography>
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <Typography variant="h3" as="h2">
+            {card.name}
+          </Typography>
+          <Typography variant="caption" as="p">
+            {set.name} · #{card.number}
+          </Typography>
+        </div>
+        <PinToggle id={card.id} name={card.name} className="shrink-0" />
       </div>
 
       <dl>

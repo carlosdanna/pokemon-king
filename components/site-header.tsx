@@ -1,5 +1,7 @@
+import { LogOut } from "lucide-react";
 import Link from "next/link";
 import { Suspense } from "react";
+import { logout } from "@/app/login/actions";
 import { Typography } from "@/components/ui/typography";
 import { SearchBox } from "./search-box";
 
@@ -33,6 +35,19 @@ export function SiteHeader() {
           <SearchBox />
         </Suspense>
       </div>
+      {/* A POST, so no prefetch can log Ash out (D-043). */}
+      <form action={logout}>
+        <button type="submit" className={`${link} flex items-center`}>
+          <LogOut aria-hidden className="size-4 sm:hidden" />
+          <Typography
+            as="span"
+            variant="small"
+            className="sr-only sm:not-sr-only"
+          >
+            Log out
+          </Typography>
+        </button>
+      </form>
     </header>
   );
 }

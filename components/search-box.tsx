@@ -8,6 +8,7 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import { saveSearch } from "@/lib/recent-searches";
 import { DEFAULT_SEARCH, parseSearch, searchHref } from "@/lib/search";
 
 /** Name search; results update as you type (D-038). */
@@ -35,6 +36,7 @@ export function SearchBox() {
       className="w-full max-w-xs"
       onSubmit={(e) => {
         e.preventDefault();
+        saveSearch(draft ?? state.q);
         go(draft ?? state.q);
       }}
     >
@@ -51,7 +53,11 @@ export function SearchBox() {
             setDraft(e.target.value);
             go(e.target.value);
           }}
-          onBlur={() => setDraft(null)}
+          onBlur={() => {
+            // Saved on Enter or blur, not per keystroke (D-044).
+            saveSearch(draft ?? state.q);
+            setDraft(null);
+          }}
         />
       </InputGroup>
     </form>

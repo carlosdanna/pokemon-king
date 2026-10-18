@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
+import { NotOnLogin } from "@/components/not-on-login";
 import { SiteHeader } from "@/components/site-header";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +28,15 @@ export default function RootLayout({ children, modal }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <SiteHeader />
+        {/* usePathname is dynamic on dynamic routes; the fallback keeps the header in their shell. */}
+        <Suspense fallback={<SiteHeader />}>
+          <NotOnLogin>
+            <SiteHeader />
+          </NotOnLogin>
+        </Suspense>
         {children}
         {modal}
+        <Toaster />
       </body>
     </html>
   );

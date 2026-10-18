@@ -1725,6 +1725,170 @@ Committed. Now the transcript, appended and amended in:
 - *Bash*: Find where the transcripts section ends
 - *Bash*: Check the end of the Claude Code sessions section
 
+### 2026-10-18 · M5
+
+#### 17:16 · Carlos
+
+Milestone M5 from docs/implementation-plan.md and requirement F14. Follow CLAUDE.md: log the start time first.
+
+Plan:
+- /login page: one password field, autofocused; Enter submits; server action compares with APP_PASSWORD in constant time; on success set a signed httpOnly, secure, sameSite=lax cookie for 30 days (signed with SESSION_SECRET); generic error otherwise, announced to screen readers.
+- proxy.ts (Next.js 16's renamed middleware) redirects signed-out requests to /login, excluding /login and static assets. Log-out link in the navigation.
+- Favourites: route handler GET/POST/DELETE on a Redis set via @upstash/redis, checking the session itself. Client hook with optimistic updates and a localStorage mirror; when Redis env vars are missing, fall back to localStorage only and say so in the UI once.
+- Pin toggle on tiles (top-left marker) and in the side panel.
+- Homepage: pinned favourites first, then search, recent searches (last 5, localStorage) and set shortcuts.
+- Tell me the steps to add Upstash Redis from the Vercel Marketplace and set the env vars; wait for my confirmation, then test sync between two browsers.
+
+Finish: tick M5 boxes, log end time, commit "feat: login and synced favourites (M5)".
+
+- *Bash*: Read M5 plan, F14, decisions, project layout
+- *Bash*: Read homepage, layout, header, tile, panel
+- *Bash*: Read search box, collection helpers, album index
+- *Bash*: Check proxy docs, tile wrapper, Upstash env names
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M5 · Login and synced favourites (F14)
+
+## Context
+M5 of docs/implementation-plan.md: the public Vercel URL must be behind one shared password (F14, D-009), and Ash's pinned cards must sync across devices via Upstash Redis with a localStorage mirror/fallback (D-008). Homepage becomes a hub: pins, search, recent searches, set shortcuts.
+
+Session start (17:16 CEST) is logged as step 0 once plan mode ends — plan mode blocks writing the worklog now.
+
+## Steps
+
+0. Add worklog row (start 2026-10-18 17:16 CEST, M5). Add decisions D-040… before code (see "Decisions").
+1. `pnpm add @upstash/redis`.
+2. **`lib/session.ts`** (server-only, `node:crypto`):
+   - `checkPassword(input)`: `timingSafeEqual` on SHA-256 digests of input and `APP_PASSWORD` (equal lengths, so constant time); false if env unset.
+   - `signSession()` → `"<expiryMs>.<hmac-sha256 base64url>"` keyed by `SESSION_SECRET`; `verifySession(token)` checks HMAC with `timingSafeEqual` and expiry.
+   - `SESSION_COOKIE`, `SESSION_MAX_AGE = 30 days`.
+   - `lib/session.test.ts`: right/wrong password, tamper, expiry, missing secret.
+3. **`/login`** — `app/login/page.tsx` (server) + `app/login/login-form.tsx` (client, `useActionState`) + `app/login/actions.ts` (`"use server"`: `login` sets cookie httpOnly, secure in prod, sameSite lax, maxAge 30 d, then `redirect("/")`; `logout` deletes cookie, redirects to `/login`). One autofocused password input, Enter submits natively, error "Wrong password" in `role="alert"` region. All text via `<Typography>`.
+4. **`proxy.ts`** (root): matcher excludes `_next/static`, `_next/image`, `favicon.ico`, `card-back/`; `/login` passes; no valid cookie → `/api/*` gets 401, everything else redirects to `/login`; signed-in user on `/login` redirects to `/`.
+5. **Header**: `SiteHeader` gets a "Log out" button in a `<form action={logout}>` (a form POST, not a GET link, so Link prefetch can't log Ash out), styled like the nav links. Hide the whole header on `/login` with a tiny client wrapper using `usePathname` in `app/layout.tsx`. Mount `<Toaster />` (components/ui/sonner.tsx) in the layout.
+6. **`app/api/favourites/route.ts`**: each handler calls `verifySession` on the cookie itself (401 otherwise). Redis from `UPSTASH_REDIS_REST_URL/TOKEN` or the Marketplace's `KV_REST_API_URL/TOKEN`; key `favourites`.
+   - GET → `{ synced: true, ids }` (`smembers`), or `{ synced: false, ids: [] }` when unconfigured.
+   - POST / DELETE body `{ id }`: validate string and `getCard(id) !== null` (trust boundary), `sadd`/`srem`; 503 when unconfigured.
+   - `app/api/cards/route.ts`: GET `?ids=a,b` (cap 100) → `AlbumCard[]` via `getCard`, for the homepage pins (works in fallback mode too; full JSON never ships, D-005).
+7. **`lib/favourites.ts`** (client store, `useSyncExternalStore`, no provider): state = Set of ids from localStorage `favourites`; first subscriber fetches GET → if synced, server set replaces local and is mirrored; if not, keep local and `toast` once ("Favourites are saved on this device only — sync is not set up"), flag in localStorage so it shows once. `toggle(id)`: optimistic update + mirror, POST/DELETE when synced, roll back + error toast on failure. Hook `useFavourite(id)` → `[pinned, toggle]`, `useFavourites()` → ids. Test: optimistic toggle and rollback on failed fetch (mock `fetch`).
+8. **`components/pin-toggle.tsx`**: `Toggle`-style button, `aria-pressed`, label "Pin {name}" , pin icon (lucide `Pin`), visible focus ring; Motion scale tap with reduced-motion fallback.
+   - Tile: `CardTile` wraps its `<Link>` in a `relative` div and puts the toggle as a sibling at top-left (a button can't nest inside a link); unpinned toggle shows on hover/focus, pinned always visible. Greyed tiles keep a visible focus ring.
+   - Panel: toggle next to the card name in `CardPanel`'s heading row (covers overlay, drawer and full page).
+9. **Homepage `app/page.tsx`**: (a) "Pinned" — client `PinnedCards` reads `useFavourites()`, fetches `/api/cards?ids=`, renders `CardTile`s in the binder pocket grid; empty state text. (b) A page-level `SearchBox` (reuse `components/search-box.tsx`). (c) "Recent searches" — client list of last 5 from localStorage `recent-searches`, links to `/search?q=`. Recording: `SearchBox` saves `q` on submit (Enter) and on blur when non-empty (not per keystroke, D-038 updates on each key). (d) Set shortcuts — the 6 sets with most owned cards from `getSetSummaries()`, plus "All sets" link to `/album`. All localStorage access in try/catch.
+10. `.env.example`: note KV_* alternative names. Run `pnpm check`, `pnpm build`, manual run: login wrong/right, redirect when signed out, logout, pin on tile and panel, homepage, fallback toast without Redis env.
+11. Give the user the Upstash Marketplace steps (below), **wait for confirmation**, then `vercel env pull .env.local`, deploy, and test sync between two browsers (Chrome + Firefox / phone): pin in one, refresh the other.
+12. Finish: tick M5 boxes, worklog end time/duration/outcome/hash, transcript section, commit `feat: login and synced favourites (M5)` (with Co-Authored-By), amend with log.
+
+## Upstash steps to hand the user (step 11)
+1. Vercel dashboard → project → Storage → Create Database → Marketplace "Upstash for Redis" → free plan, region near the functions (e.g. Frankfurt) → connect to the project, all environments.
+2. Project → Settings → Environment Variables: add `APP_PASSWORD` and `SESSION_SECRET` (`openssl rand -base64 32`) for Production + Preview; Development too if pulling locally.
+3. Locally: `vercel env pull .env.local` (or copy values), restart `pnpm dev`.
+
+## Decisions to log (docs/decisions.md, before code)
+- D-040 session format: HMAC-SHA256 `expiry.sig` cookie, node:crypto, no auth library; constant-time compare via SHA-256 digests.
+- D-041 favourites API: one shared Redis set `favourites`, `/api/favourites` GET/POST/DELETE with `{id}` validated against known cards; reads KV_* or UPSTASH_* env names; `/api/cards?ids=` for the homepage.
+- D-042 client favourites store via `useSyncExternalStore`, server wins when synced; localStorage only otherwise, one-time toast.
+- D-043 log-out is a form POST server action, not a GET link; header hidden on /login; proxy answers 401 for `/api/*`.
+- D-044 homepage layout and recent-search recording (on submit/blur, last 5, deduped); set shortcuts = top 6 by owned count.
+
+## Skipped
+Redirect-back `?next=` after login (needs open-redirect checks), rate-limiting login attempts, pin reordering.
+~~~~
+
+</details>
+
+#### 17:18 · Claude
+
+The M5 plan (login, proxy and synced favourites) is ready for your review. I couldn't write the worklog start time (17:16 CEST) yet because plan mode blocks edits, so that row is step 0.
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Check worklog, install upstash, read UI helpers
+- *Bash*: Log session start and M5 decisions
+- *Bash*: Check server-only usage in tests
+- *Write*: lib/session.ts
+- *Write*: lib/session.test.ts
+- *Bash*: Read input and button; run session tests
+
+#### 17:20 · Claude
+
+Session signing is done and its 4 tests pass. Next I'm writing the login page, the server actions and proxy.ts.
+
+- *Bash*: Write login page, actions, form and proxy
+- *Bash*: Write favourites and cards route handlers
+- *Bash*: Write client favourites store and its tests
+- *Bash*: Check pocket styles and motion usage
+- *Bash*: Add pin toggle to tiles and side panel
+- *Bash*: Add recent searches, logout button, header gate
+- *Bash*: Build homepage sections and run full checks
+- *Bash*: Fix lint warning, check status, build
+- *Bash*: Wrap header gate in Suspense and rebuild
+- *Bash*: Create local env and look for a browser
+- *Bash*: Start prod server and test signed-out access
+
+#### 17:28 · Claude
+
+Signed-out redirects and the 401s work. Next I'm testing login, pinning and logout in headless Chromium.
+
+- *Bash*: Check for an installed playwright package
+- *Bash*: Find a cached playwright install
+- *Bash*: Install playwright-core in scratchpad
+- *Bash*: Run browser flow: login, pin, homepage, logout
+- *Bash*: Rerun browser flow with fixed selector
+- *Bash*: Debug the login submission
+- *Bash*: Inspect how the build references APP_PASSWORD
+- *Bash*: Check whether env vars are set in the shell
+- *Bash*: Show NODE_ENV value
+- *Bash*: Restart server without NODE_ENV and retry login
+- *Bash*: Start server and retry login
+
+#### 17:31 · Claude
+
+Locally the login still says the password is wrong. I'm restarting the test server properly to see if the env file is loaded.
+
+- *Bash*: Stop the process holding port 3456
+
+#### 17:32 · Carlos
+
+Look at the .env.local file again you created one but I replace it with the actual configuration of the project from vercel
+
+- *Bash*: List env var names without values
+- *Bash*: Test login and two-browser favourites sync
+- *Bash*: Make toggles wait for the first load; add test
+- *Bash*: Rebuild, restart and rerun the sync test
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/e8cd5f58-e812-4dc8-862d-58705ebadf04/scratchpad/phone-home.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/e8cd5f58-e812-4dc8-862d-58705ebadf04/scratchpad/album-pin.png
+- *Bash*: Compact logout on phones, note env names, run checks
+
+#### 17:34 · Claude
+
+All checks pass (56 tests). Now I'm finishing the session: ticking the M5 boxes, logging the end time and committing.
+
+- *Bash*: Stop server, get end time, tick M5 boxes
+- *Bash*: Fill worklog row and commit M5
+
+#### 17:38 · Carlos
+
+[Request interrupted by user for tool use]
+
+#### 17:38 · Carlos
+
+yes
+
+- *Bash*: Fill worklog row and commit M5
+
+#### 17:38 · Claude
+
+Committed. Now I'll add the transcript and amend the commit with the hash.
+
+- *Bash*: Inspect transcript layout and render this session
+
 ## claude.ai conversations
 
 To be added.

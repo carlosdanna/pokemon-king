@@ -141,10 +141,10 @@ Done when: a filtered URL, pasted into a new tab, shows the same results.
 
 ### M5 · Login and favourites (60 min)
 
-- [ ] `/login` page and server action checking `APP_PASSWORD`; signed httpOnly cookie for 30 days; `proxy.ts` redirect; log-out link
-- [ ] Favourites route handler reading and writing a Redis set (Upstash via the Vercel Marketplace), checking the session
-- [ ] Pin toggle on tiles and in the side panel; `localStorage` mirror for instant display; fallback when Redis is not configured
-- [ ] Homepage: pinned favourites first, then search, recent searches and set shortcuts
+- [x] `/login` page and server action checking `APP_PASSWORD`; signed httpOnly cookie for 30 days; `proxy.ts` redirect; log-out link
+- [x] Favourites route handler reading and writing a Redis set (Upstash via the Vercel Marketplace), checking the session
+- [x] Pin toggle on tiles and in the side panel; `localStorage` mirror for instant display; fallback when Redis is not configured
+- [x] Homepage: pinned favourites first, then search, recent searches and set shortcuts
 
 Done when: a pin made on the laptop shows on the phone after a refresh, and signed-out visitors only see the login page.
 
