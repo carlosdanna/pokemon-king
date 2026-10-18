@@ -109,3 +109,19 @@ export function paginate(
   const start = (page - 1) * PAGE_SIZE;
   return { cards: cards.slice(start, start + PAGE_SIZE), page, pageCount };
 }
+
+/**
+ * Pages a turn leads to, or null at the ends. Spreads pair odd (left) with
+ * even (right) pages, so a spread turn moves two pages (D-027).
+ */
+export function turnTargets(page: number, pageCount: number) {
+  const left = page % 2 ? page : page - 1;
+  const inRange = (n: number) => (n >= 1 && n <= pageCount ? n : null);
+  return {
+    left,
+    prev: inRange(page - 1),
+    next: inRange(page + 1),
+    spreadPrev: inRange(left - 2),
+    spreadNext: inRange(left + 2),
+  };
+}

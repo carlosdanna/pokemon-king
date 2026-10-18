@@ -7,6 +7,7 @@ import {
   numberKey,
   paginate,
   PAGE_SIZE,
+  turnTargets,
   type SetCard,
 } from "./album";
 
@@ -112,5 +113,22 @@ describe("paginate", () => {
     expect(paginate(cards(10), 3)).toBeNull();
     expect(paginate(cards(10), 1.5)).toBeNull();
     expect(paginate(cards(10), NaN)).toBeNull();
+  });
+});
+
+describe("turnTargets", () => {
+  it("steps one page, or two on a spread starting at the odd page", () => {
+    expect(turnTargets(4, 7)).toEqual({
+      left: 3,
+      prev: 3,
+      next: 5,
+      spreadPrev: 1,
+      spreadNext: 5,
+    });
+  });
+
+  it("returns null past either end", () => {
+    expect(turnTargets(1, 2)).toMatchObject({ prev: null, spreadPrev: null });
+    expect(turnTargets(7, 7)).toMatchObject({ next: null, spreadNext: null });
   });
 });

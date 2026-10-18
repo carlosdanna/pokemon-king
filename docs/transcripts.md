@@ -937,6 +937,255 @@ The M1 boxes are already ticked. Following the M0 precedent, I'll mark the follo
 
 - *Bash*: Mark follow-up complete and append remaining transcript
 
+### 2026-10-18 · M2
+
+#### 15:59 · Carlos
+
+Milestone M2 from docs/implementation-plan.md (see "Album design decisions"). Follow CLAUDE.md: log the start time first.
+
+Plan:
+- Routes: /album (set list with logo, series, owned / total) and /album/[set]?page=N.
+- BinderPage: header with set logo and name, 3x3 sleeve-pocket grid, page number footer. Binder look: faint paper texture, pockets with a soft inner shadow, neutral colours so the card art leads.
+- Layout: one page below 1280 px, a two-page spread (odd page left, even right) from 1280 px; ?page=N names one page and the spread includes its partner. Card size scales; the grid stays 3x3 at every width.
+- CardTile: next/image with skeleton and an error placeholder (name and number); unowned = grayscale(1) at about 45% opacity; quantity > 1 shows a ×N badge top right; leave room for a pin marker top left.
+- Page turns: previous / next buttons using Link transitionTypes ['page-forward'] / ['page-back'], a <ViewTransition> wrapper keyed by page with CSS rotateY page-flip keyframes around the spine (short slide on phones), and a prefers-reduced-motion fallback with no animation.
+- Swipe to turn on touch devices.
+
+Verify in a browser at 375, 1024 and 1440 px and describe what you saw. Log any visual decision that departs from the plan.
+
+Finish: tick M2 boxes, log end time, commit "feat: binder album pages (M2)".
+
+#### 15:59 · Claude
+
+Plan mode is on, so I'll read the codebase first and log the start time as step 1 of the plan.
+
+- *Bash*: List project files and read M2 plan section
+- *Bash*: Read design notes, lib, app, typography, decisions, worklog
+- *Bash*: Read remaining collection code, css, agents, next docs
+- *Bash*: Read Next.js view transition and Link docs
+- *Bash*: Check ui components, set order, browser tools, transcripts
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M2 · Binder album pages
+
+## Context
+M1 delivered `getAlbumPage(setId, page)` / `getSetSummaries()` (`lib/collection.ts`, server-only) and `cardImage()` / `PAGE_SIZE` (`lib/album.ts`). M2 makes them browsable: a set list and binder pages with 3x3 pockets, one page below 1280 px and a two-page spread from 1280 px, with animated page turns. Constraints that shape the design: `cacheComponents: true` in `next.config.ts` (dynamic `searchParams` must sit under `<Suspense>`), D-020 (all text via `<Typography>`), D-025 (images `unoptimized`), D-026 (card back at `public/card-back/{low,high}.webp`).
+
+## Steps
+
+0. **Log start**: `date '+%Y-%m-%d %H:%M %Z'`, add an M2 row to `docs/worklog.md`.
+
+1. **`/album`** — `app/album/page.tsx` (server, static): `getSetSummaries()` in sets.json order (release date) → grid of `<Link href="/album/<id>">` tiles: logo (`${logo}.webp`, `next/image fill object-contain unoptimized`; name-only when `logo` is missing, 8 sets), name, series, `owned / total`. Visible focus ring on each link. Home page (`app/page.tsx`) gets a link to `/album` (keep its h1 so the existing test passes).
+
+2. **`/album/[set]`** — `app/album/[set]/page.tsx`: renders `<Suspense fallback={<BinderSkeleton/>}><Binder params searchParams/></Suspense>`. `Binder` awaits both, parses `page` (missing → 1), calls `getAlbumPage`; null (unknown set, bad page) → `notFound()`. Partner page = `page odd ? page+1 : page-1`, fetched too when it exists. `generateMetadata` gives "Set name · page N".
+
+3. **`components/album/binder-page.tsx`** (server): header (set logo + name + series, `<Typography>`), `<ol>` 3x3 grid of pockets, footer "Page N of M". Spread container: odd page left, even right; the partner page is `hidden xl:block`, so one server render serves every width with no JS media query. Card width comes from the grid (`grid-cols-3`, pocket `aspect-[245/337]`) with the page width clamped by viewport width and height (`min(...vw, ...dvh)`), so the grid stays 3x3 everywhere.
+
+4. **`components/album/card-tile.tsx`** (client, needs load/error state): `next/image` `unoptimized` `fill` with `cardImage(card, "low")`, `<Skeleton>` until `onLoad`, on `onError` the card back plus name and number. Unowned: `grayscale opacity-45`. `quantity > 1`: `<Badge>` "×N" top right. Top-left left empty for M5's pin. Alt text includes name, number and "not in collection". Not focusable yet (no action until M3 zoom); M3 wraps it in a link.
+
+5. **Page turns** — `components/album/page-nav.tsx`: previous / next `<Link>`s styled with `buttonVariants`, `transitionTypes={['page-back']}` / `['page-forward']`, `scroll={false}`, real `aria-label`s, disabled-looking `<span>` at the ends. Two pairs: ±1 shown below `xl`, ±2 (to the next spread's odd page) shown from `xl` — CSS only. Binder content wrapped in `<ViewTransition key={page} enter/exit={{'page-forward':..., 'page-back':..., default:'none'}} default="none">`.
+   CSS in `app/globals.css`: `::view-transition-old/new(.page-forward|.page-back)` keyframes — `rotateY` around the spine (`transform-origin` left edge for single pages, centre for spreads, with `perspective`) from 640 px; a short `translate` slide below 640 px; `::view-transition { pointer-events:none }`; `@media (prefers-reduced-motion: reduce)` zeroes all view-transition durations. Also the paper texture (inline SVG `feTurbulence` data URI at low opacity) and pocket style (inset shadow + top highlight gradient), neutral colours.
+
+6. **Swipe** — `components/album/swipe-turn.tsx` (client): wraps the binder; `pointerdown/up` with `pointerType === 'touch'`, horizontal travel > 50 px and dominant over vertical → `router.push(href, { scroll:false, transitionTypes:[...] })` (Next 16 `useRouter` supports `transitionTypes`). `touch-action: pan-y` so vertical scroll still works.
+
+7. **Decisions**: add D-027+ entries (before the code) for anything beyond the plan — e.g. ±2 nav on spreads, error placeholder = card back with name/number overlay, tiles not focusable until M3, phone slide threshold 640 px.
+
+8. **Tests** (Vitest + Testing Library): `CardTile` (unowned class, ×N badge only when > 1, error placeholder text) and the partner/neighbour page arithmetic if pulled into a tiny pure helper in `lib/album.ts` (`spreadPartner`, plus a test).
+
+9. **Verify**: `pnpm check`; `pnpm build` (catches cacheComponents/Suspense errors; if sync fs on `/album` complains, wrap the summaries in a `"use cache"` function). `pnpm dev`, then a Playwright script in the scratchpad (`pnpm dlx playwright`, Chromium already cached) screenshots `/album` and `/album/base1?page=3` at 375, 1024 and 1440 px, plus one mid-transition frame; check reduced-motion via `emulateMedia`. Read the screenshots and describe what's seen; log any visual departure as a decision.
+
+10. **Finish**: tick M2 boxes in `docs/implementation-plan.md`; `date` → end time, duration, outcome in worklog; commit `feat: binder album pages (M2)` (pre-commit runs `pnpm check`); append the transcript (`python3 -I scripts/transcript.py`) as `### 2026-10-18 · M2` at the end of "Claude Code sessions", fill the commit hash, `git commit --amend --no-edit`.
+
+## Files
+New: `app/album/page.tsx`, `app/album/[set]/page.tsx`, `components/album/{binder-page,card-tile,page-nav,swipe-turn}.tsx`, `components/album/card-tile.test.tsx`.
+Edited: `app/globals.css`, `app/page.tsx`, `lib/album.ts` (+test), docs (worklog, decisions, implementation-plan, transcripts).
+~~~~
+
+</details>
+
+#### 16:02 · Claude
+
+The plan is written, so I'm loading the plan-approval tool.
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Get start time and check worklog end
+- *Bash*: Add M2 start row to worklog
+
+#### 16:03 · Claude
+
+Now the decisions, before the code.
+
+- *Bash*: Append decisions D-027 to D-030
+
+#### 16:05 · Claude
+
+Now the code: small helpers in `lib/` first.
+
+- *Bash*: Add turnTargets and getSet helpers
+- *Bash*: Add turnTargets tests
+
+#### 16:06 · Claude
+
+Now the components.
+
+- *Bash*: Write card tile, binder page, nav and swipe components
+
+#### 16:06 · Claude
+
+Now the routes.
+
+- *Bash*: Write album routes and view the rest of globals.css
+
+#### 16:06 · Claude
+
+Now the binder CSS: paper, pockets, card sizing, page-turn keyframes and the reduced-motion fallback.
+
+- *Bash*: Add binder CSS, format, lint and typecheck
+
+#### 16:07 · Claude
+
+Fixing the back flip's rotation sign. The single-page back turn has to come toward the viewer (−90°), but on a spread the left half has to rotate +90°.
+
+- *Bash*: Fix flip direction and start dev server
+
+#### 16:07 · Claude
+
+While the dev server starts, I'll write the CardTile test.
+
+- *Bash*: Write card tile tests and run test suite
+
+#### 16:07 · Claude
+
+Tests pass. Linking the home page to `/album` next, then screenshots.
+
+- *Bash*: Update home page and probe album routes
+
+#### 16:08 · Claude
+
+Playwright isn't in the repo, so I'll install `playwright-core` in the scratchpad and point it at the cached Chromium.
+
+- *Bash*: Install playwright-core in scratchpad
+- *Bash*: Screenshot album pages at three widths
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-375.png
+
+#### 16:10 · Claude
+
+`/album/base1` came back 404. Checking the server log and set ids.
+
+- *Bash*: Check dev log and set files
+
+#### 16:10 · Claude
+
+Something else holds port 3000, and my dev server is on 3001. Re-running against 3001.
+
+- *Bash*: Rerun screenshots against port 3001
+
+#### 16:10 · Claude
+
+Page turns navigate correctly at all three widths (3→4, 3→4, 3→5 on the spread). Now the screenshots.
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-375.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-1440.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-1024.png
+- *Bash*: Fix font token, eager tile images, show page nav
+- *Bash*: Move nav to flank binder and re-screenshot
+
+#### 16:11 · Claude
+
+Still 4 px too tall. Raising the height allowance from 15rem to 15.5rem.
+
+- *Bash*: Adjust height allowance and re-screenshot
+
+#### 16:11 · Claude
+
+The card width didn't change, so the dev server may be serving stale CSS. Checking.
+
+- *Bash*: Check which CSS the dev server serves
+
+#### 16:12 · Claude
+
+It's stale. Restarting the dev server.
+
+- *Bash*: Restart the dev server
+- *Bash*: Check dev server processes
+
+#### 16:12 · Claude
+
+The `pkill` pattern also matched my own shell and killed the command. The old server is gone, so I'll start a fresh one in the background.
+
+- *Bash*: Run dev server in background
+- *Bash*: Wait for server ready and re-screenshot
+- *Bash*: Re-screenshot against port 3000
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-375.png
+- *Bash*: Inspect served binder CSS
+
+#### 16:13 · Claude
+
+All my CSS is missing from the served stylesheet. Checking the dev log for a CSS error.
+
+- *Bash*: Show dev server errors
+- *Bash*: List stylesheets linked by the page
+- *Bash*: Inspect served stylesheet content
+
+#### 16:14 · Claude
+
+The served CSS still has the old font line and none of my rules. Checking the file on disk.
+
+- *Bash*: Check globals.css on disk
+
+#### 16:14 · Claude
+
+The file on disk is correct, so Turbopack is serving a stale cached stylesheet. I'll stop the server, clear `.next` (build output only) and restart.
+
+- *TaskStop*: TaskStop
+- *Bash*: Clear Next build cache and restart dev server
+- *Bash*: Wait for ready and re-screenshot
+
+#### 16:15 · Claude
+
+After clearing the cache everything fits: no scroll at 1024×768 or 1440×900, and no warnings in the log. Viewing the screenshots.
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-1440.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/set-1024.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/turn-1440.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/album-375.png
+- *Bash*: Record view transition animations and badge shot
+
+#### 16:15 · Claude
+
+The animations are confirmed: a slide at 375, the `page-flip-out` flip at 1024 and 1440, and every duration 0 under reduced motion. Viewing the mid-turn frames and the badge.
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/mid-1440.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7bd1a2a8-384e-41e5-aa0f-fe4e8fdcfe21/scratchpad/badge-375.png
+- *Bash*: Check not-found handling and run pnpm check
+
+#### 16:16 · Claude
+
+Checks pass. Now the production build, which is where `cacheComponents` errors would show.
+
+- *Bash*: Run production build
+
+#### 16:16 · Claude
+
+The build passes: `/album` is static and `/album/[set]` is partially prerendered. Swipe is still untested, so I'll drive a real touch drag through CDP.
+
+- *Bash*: Test touch swipe page turns
+
+#### 16:17 · Claude
+
+Swipe works: left goes forward, right goes back, and a short drag does nothing. Now the visual decisions that depart from the plan, then wrap-up.
+
+- *Bash*: Log D-031 and tick M2 checkboxes
+- *Bash*: Fill worklog row and stage changes
+- *Bash*: Commit M2 (pre-commit runs pnpm check)
+
 ## claude.ai conversations
 
 To be added.

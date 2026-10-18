@@ -7,7 +7,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -126,5 +126,167 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* Binder album (M2) */
+
+.binder-desk {
+  background-color: oklch(0.93 0.004 80);
+}
+
+.binder-paper {
+  background-color: oklch(0.985 0.004 85);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Card width: by viewport width on phones, then also by height so a page fits on screen. */
+.binder-spread {
+  --card-w: min(calc((100vw - 3.5rem) / 3), 130px);
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+}
+@media (width >= 640px) {
+  .binder-spread {
+    --card-w: min(
+      calc((100vw - 6rem) / 3),
+      calc((100dvh - 15.5rem) / 3 * 245 / 337),
+      200px
+    );
+  }
+}
+@media (width >= 1280px) {
+  .binder-spread {
+    --card-w: min(
+      calc((50vw - 6rem) / 3),
+      calc((100dvh - 15.5rem) / 3 * 245 / 337),
+      220px
+    );
+  }
+}
+
+.binder-pocket {
+  position: relative;
+  aspect-ratio: 245 / 337;
+  border-radius: 5%/3.6%;
+  background: oklch(0.94 0.003 85);
+  box-shadow:
+    inset 0 1px 3px oklch(0 0 0 / 0.2),
+    inset 0 -1px 0 oklch(1 0 0 / 0.8);
+}
+/* Sleeve sheen over the card. */
+.binder-pocket::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    160deg,
+    oklch(1 0 0 / 0.35),
+    transparent 35%,
+    transparent 75%,
+    oklch(1 0 0 / 0.12)
+  );
+}
+
+@utility spine-left {
+  box-shadow:
+    inset -14px 0 16px -14px oklch(0 0 0 / 0.3),
+    var(--tw-shadow);
+}
+@utility spine-right {
+  box-shadow:
+    inset 14px 0 16px -14px oklch(0 0 0 / 0.3),
+    var(--tw-shadow);
+}
+
+/* Page turns (D-030): a short slide on phones, a rotateY flip around the spine from 640 px. */
+
+::view-transition {
+  pointer-events: none;
+}
+
+::view-transition-old(.page-forward),
+::view-transition-new(.page-back) {
+  --turn-x: -40px;
+}
+::view-transition-new(.page-forward),
+::view-transition-old(.page-back) {
+  --turn-x: 40px;
+}
+::view-transition-old(.page-forward),
+::view-transition-old(.page-back) {
+  animation: 180ms ease-in both page-slide-out;
+}
+::view-transition-new(.page-forward),
+::view-transition-new(.page-back) {
+  animation: 240ms ease-out 120ms both page-slide-in;
+}
+
+@keyframes page-slide-out {
+  to {
+    translate: var(--turn-x) 0;
+    opacity: 0;
+  }
+}
+@keyframes page-slide-in {
+  from {
+    translate: var(--turn-x) 0;
+    opacity: 0;
+  }
+}
+
+/* Forward: the old page lifts off the spine and turns over it, uncovering the new one.
+   Back: the new page turns back over the spine on top of the old one. */
+@media (width >= 640px) {
+  ::view-transition-old(.page-forward) {
+    z-index: 1;
+    transform-origin: left center;
+    animation: 450ms cubic-bezier(0.45, 0, 0.55, 1) both page-flip-out;
+  }
+  ::view-transition-new(.page-forward),
+  ::view-transition-old(.page-back) {
+    animation: none;
+  }
+  ::view-transition-new(.page-back) {
+    z-index: 1;
+    transform-origin: left center;
+    animation: 450ms cubic-bezier(0.45, 0, 0.55, 1) both page-flip-in;
+  }
+}
+/* On a spread the spine is the centre and only the turning half moves. */
+@media (width >= 1280px) {
+  ::view-transition-old(.page-forward) {
+    transform-origin: center;
+    clip-path: inset(0 0 0 50%);
+  }
+  ::view-transition-new(.page-back) {
+    --flip-from: 90deg;
+    transform-origin: center;
+    clip-path: inset(0 50% 0 0);
+  }
+}
+
+@keyframes page-flip-out {
+  to {
+    transform: perspective(2000px) rotateY(-90deg);
+    filter: brightness(0.85);
+  }
+}
+@keyframes page-flip-in {
+  from {
+    transform: perspective(2000px) rotateY(var(--flip-from, -90deg));
+    filter: brightness(0.85);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
   }
 }

@@ -110,3 +110,6 @@ export function getSetSummaries() {
     };
   });
 }
+
+export const getSet = (setId: string) =>
+  load().sets.find((s) => s.id === setId) ?? null;

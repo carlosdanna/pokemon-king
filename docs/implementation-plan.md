@@ -112,11 +112,11 @@ Done when: `getAlbumPage(setCode, page)` returns 9 typed cards with `owned` and 
 
 ### M2 · Album pages (75 min)
 
-- [ ] Routes: `/album` (set list with owned / total counts) and `/album/[set]?page=N`
-- [ ] Binder page component: header with set logo, 3x3 pocket grid, page footer
-- [ ] Responsive layout: one page below 1280 px, two-page spread from 1280 px
-- [ ] Card tile: greyscale for unowned, ×N counter top right, pin marker top left, skeleton while the image loads, placeholder on error
-- [ ] Page turns: previous / next buttons and swipe, tagged `page-forward` / `page-back`, page-flip CSS keyframes, reduced-motion fallback
+- [x] Routes: `/album` (set list with owned / total counts) and `/album/[set]?page=N`
+- [x] Binder page component: header with set logo, 3x3 pocket grid, page footer
+- [x] Responsive layout: one page below 1280 px, two-page spread from 1280 px
+- [x] Card tile: greyscale for unowned, ×N counter top right, pin marker top left, skeleton while the image loads, placeholder on error
+- [x] Page turns: previous / next buttons and swipe, tagged `page-forward` / `page-back`, page-flip CSS keyframes, reduced-motion fallback
 
 Done when: Ash can open a set, see owned and unowned cards correctly, and turn pages with an animation on phone and desktop.
 
