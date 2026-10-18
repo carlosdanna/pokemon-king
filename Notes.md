@@ -25,6 +25,7 @@ What I would fix, improve or add with more time. Decision numbers (D-0xx) point 
 ## Ideas
 
 - A realistic page curl for desktop (react-pageflip or a custom shader), kept off for keyboard and reduced-motion users (D-014).
+- Charts and data exploration of Ash's collection and the sets: owned cards by type, rarity and era, completion per set over release years, his most-duplicated cards, and how his collection compares with each set's full list. `/browse` only shows counts today.
 - Set completion on `/album`: a progress bar per set and a "closest to complete" sort.
 - A wishlist made from greyed cards, shareable as a link for birthdays.
 - Price data per card and a collection value.

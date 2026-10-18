@@ -4,7 +4,7 @@ Oct 18, 2026 · @Carlos Danna
 
 ## Summary
 
-The app is built as a binder-style card album in eight milestones, about 7 hours of work. It extends the [requirements plan](https://claude.ai/code/artifact/2c16a812-4ef8-461a-ae01-8b69e2cf7308) with a visual layer: 3x3 binder pages, two-page spreads on large screens, greyed-out cards Ash does not own, a copy counter, page-turn animations and a card zoom with an info panel.
+The app is built as a binder-style card album in eight milestones, about 7 hours of work. It extends the [requirements plan](requirements.md) with a visual layer: 3x3 binder pages, two-page spreads on large screens, greyed-out cards Ash does not own, a copy counter, page-turn animations and a card zoom with an info panel.
 
 The stack stays Next.js 16 + React + TypeScript on Vercel, with shadcn/ui as the component base. Animations use React's built-in `<ViewTransition>` for page turns and the card zoom, plus Motion for small interactions and a tilt library for a holo shine.
 

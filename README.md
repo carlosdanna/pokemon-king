@@ -134,5 +134,5 @@ Planned first, then built with Claude Code one milestone per session, with every
 - [Decision log](docs/decisions.md): 55 numbered decisions with reasons and rejected alternatives
 - [Worklog](docs/worklog.md): every session with start and end times, outcome and commit
 - [Prompts](docs/prompts.md): the prompts given to Claude Code
-- [Transcripts](docs/transcripts.md): the Claude Code sessions, word for word
+- [Transcripts](docs/transcripts.md): the claude.ai planning conversation and the Claude Code sessions
 - [Notes](Notes.md): problems, improvements and ideas left for later
