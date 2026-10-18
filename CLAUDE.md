@@ -25,7 +25,15 @@ Keyboard is an equal path to the mouse, and every view is shareable through its 
 
 - One milestone (M0–M7 in the implementation plan) per session.
 - Start of session: run `date '+%Y-%m-%d %H:%M %Z'` and add a row to docs/worklog.md with that start time and the milestone.
-- End of session: run `date` again and fill in the end time, duration, outcome and the short commit hash (`git rev-parse --short HEAD`); tick the milestone's checkboxes in docs/implementation-plan.md; commit, then `git commit --amend --no-edit` to include the log.
+- End of session: run `date` again and fill in the end time, duration, outcome and the short commit hash (`git rev-parse --short HEAD`); tick the milestone's checkboxes in docs/implementation-plan.md; append the session's transcript to docs/transcripts.md as a new `### <date> · <milestone>` section at the end of "Claude Code sessions" (`python3 -I scripts/transcript.py` prints the newest session log as Markdown); commit, then `git commit --amend --no-edit` to include the log.
+
+## Commits
+
+Every commit message follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): `<type>(<optional scope>): <description>`.
+
+- Types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+- Description in the imperative, lower case, no trailing period, e.g. `feat(album): add 3x3 binder page`
+- Breaking changes: `!` after the type or scope, plus a `BREAKING CHANGE:` footer
 
 ## Decision rule
 
