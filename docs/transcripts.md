@@ -873,6 +873,70 @@ The check is clean: 19 tests pass and there are no lint warnings. Next, the docs
 - *Bash*: Update docs and stage changes
 - *Bash*: Commit and render transcript
 
+#### 15:37 · Claude
+
+The session log still contains the M1 part, which is already in `docs/transcripts.md`, so I'll append only from 15:20 onward.
+
+- *Bash*: Append follow-up transcript and amend commit
+
+#### 15:37 · Claude
+
+Set lists, set details and card images now all come from TCGdex, through a table that converts the old card ids. This is committed as `f12eb18 feat(data): switch set lists and images to tcgdex`. All 19 tests pass and the pre-commit check is clean. Nothing has been pushed.
+
+**Conversion table:** 10 of Ash's 121 set codes are named differently in TCGdex (for example `sm35` became `sm3.5` and `pgo` became `swsh10.5`). The other 111 are the same. Card numbers match once leading zeros are dropped, so `001` equals `1`.
+- `data/id-map.json` converts 1,640 of Ash's 1,644 cards.
+- The other 4 (`ecard2-74`, `ex10-L`, `sm3-116a`, `sm8-188a`) aren't in TCGdex. They keep their old id and data from Ash's collection file, so they still appear in the album.
+- Ids in the app and in links are now TCGdex ids, for example `/album/sm3.5`.
+
+**Using TCGdex:** `scripts/fetch-sets.ts` now gets everything from TCGdex. It made 226 requests in about 70 seconds and saved 14,625 cards across the 121 sets. That's 77 fewer than the old data: the `ex10` set and a few Sun & Moon sets are missing some cards in TCGdex.
+
+**Images from TCGdex:** each card has a small 18 KB image and a large 80 KB one. The old images were about 157 KB each. I tested one image link and it loads.
+- 522 cards have no TCGdex image. If Ash owns the card, the album uses its image from the old pokemontcg site; otherwise it shows the card back.
+- Card images are loaded as-is, skipping Vercel's image optimization, because that's what costs money.
+
+**Card back:** TCGdex has no card-back image, so I took the standard back from `images.pokemontcg.io/card-back.png` and checked it visually. I converted it to TCGdex's two sizes and committed it as `public/card-back/low.webp` and `high.webp`. Because the files are in the project, they'll keep working when the pokemontcg site shuts down. The album pages (M2) can also show it while a card image loads or if one fails.
+
+**Database:** I didn't add one. The card data never changes while the app runs, so the JSON files in the repo are free, fast and need nothing set up. Favourites still go to Upstash Redis on its free tier, as planned before.
+
+All of this is recorded as decisions D-023 to D-026, along with the plan, worklog and transcript updates.
+
+**Worth knowing:**
+- **Fetch script resume:** it skips set files already on disk. When I switched sources, the old files had the same names, so I had to delete them by hand before rerunning.
+- **Rarity names:** TCGdex's rarity names differ slightly from the ones in Ash's collection file. The search filters in M4 should use the TCGdex ones.
+- **Set logos:** the logo links need `.webp` or `.png` added to the end, which matters when M2 shows them.
+
+Sources:
+- [TCGdex assets docs](https://tcgdex.dev/it/assets)
+- [TCGdex card object](https://tcgdex.dev/it/reference/card)
+
+#### 15:40 · Carlos
+
+I know it doesn't make much of a difference to claude but can you change the references to the docs and object to english language which is the language we are using for this assignment. Make sure to remove any reference to italian languages like on the sources you listed
+
+- *Bash*: Find Italian/Spanish doc links and check English URLs
+- *Bash*: Search tracked files for language-specific doc links
+
+#### 15:40 · Claude
+
+The Italian links were only in my last chat reply, never in the repo. `git grep` finds no `tcgdex.dev` links and no `/it/` or `/es/` paths in any committed file, so there is nothing to change or commit. Here are the sources again, using the English pages (both return 200):
+
+- [TCGdex assets docs](https://tcgdex.dev/assets)
+- [TCGdex card object](https://tcgdex.dev/reference/card)
+
+**One catch:** the Italian links will reach the repo with the next transcript. `docs/transcripts.md` currently stops at 15:37, just before that reply. The next time a transcript is appended, it will include that reply word for word, Italian links and all, because D-017 says transcripts are copied from the session log exactly. I can either swap in the English links when appending, with a one-line note that the links were corrected, or keep the transcript exactly as it is. Which do you prefer?
+
+#### 15:43 · Carlos
+
+OK I checked to make sure, let's keep it as is for now then. and makr this step as complete
+
+- *Bash*: Check M1 boxes, worklog rows, git state
+
+#### 15:43 · Claude
+
+The M1 boxes are already ticked. Following the M0 precedent, I'll mark the follow-up row as complete with your sign-off time, append the rest of the transcript word for word, and commit.
+
+- *Bash*: Mark follow-up complete and append remaining transcript
+
 ## claude.ai conversations
 
 To be added.
