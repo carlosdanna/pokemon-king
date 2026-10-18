@@ -2730,6 +2730,192 @@ The morph still pairs after a turn. Now the decision log entries, then the commi
 - *Bash*: Fill worklog and commit animation change
 - *Bash*: Fix end time and prepare transcript
 
+### 2026-10-18 · M7
+
+#### 19:42 · Carlos
+
+Milestone M7 from docs/implementation-plan.md. Follow CLAUDE.md: log the start time first.
+
+Plan:
+- Check phone width on the Vercel URL, prefers-reduced-motion, contrast of badges and labels on greyed cards, and a Lighthouse accessibility pass.
+- docs/prompts.md: I add this file myself; link it from the README.
+- README: what it is, live URL, setup (pnpm, env vars from .env.example, running scripts/fetch-sets.ts), approach, library choices with reasons, trade-offs, features cut and why, keyboard shortcut table, and a "How this was built" section linking docs/decisions.md, docs/worklog.md and docs/prompts.md.
+- Total the worklog: planning time, build time per milestone against the plan, overall total; put the summary at the top of docs/worklog.md and in the README.
+- Write a 2-minute script for the demo video: login, album and page turns, zoom with side panel, keyboard-only run, a pin syncing to the phone.
+
+Finish: tick M7 boxes, log end time, commit "docs: README and submission (M7)", and list what I still need to do by hand (record the video, send the password).
+
+- *Bash*: Get time and read worklog, M7 plan, README, env
+- *Bash*: Read scripts, remote, decisions, Vercel link, tools
+- *Bash*: Read Vercel repo link, decision headings, shortcut source
+- *Bash*: Read shortcuts list, Vercel prod URL, cut features
+- *Bash*: Milestone estimates, prod aliases, transcripts layout
+
+#### 19:43 · Claude
+
+Still planning (read-only): I've read the worklog, M7 checklist, decisions, shortcuts and Vercel aliases (production is `https://pokemon-king.vercel.app`). Writing the plan now.
+
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M7 · Polish and submission
+
+## Context
+Last milestone. The app is built (M0–M6 plus polish passes) and deployed: production alias `https://pokemon-king.vercel.app` (latest prod deploy `pokemon-king-knyv4jom0-arlos2`, 32 min old at planning time, so it should include the filter-toggle fix; confirm against `git log`). There is no README yet, the worklog summary table is blank, and the M7 boxes in `docs/implementation-plan.md:160-166` are unticked. Goal: checks done, README + worklog totals + video script written, one commit `docs: README and submission (M7)`.
+
+## Steps
+
+1. **Log start** (CLAUDE.md): `date '+%Y-%m-%d %H:%M %Z'` → new row in `docs/worklog.md` Sessions table, milestone `M7`.
+
+2. **Checks** (Playwright Chromium from `~/.cache/ms-playwright`, scripts in the scratchpad):
+   - Phone width: open the Vercel URL at 375×812 (touch), log in with `APP_PASSWORD` from `.env.local` (never print it), screenshot login, album, a set page, zoom + drawer, search, home. Look for overflow (`scrollWidth > innerWidth`) and overlaps.
+   - Reduced motion: `reducedMotion: 'reduce'` context; turn a page and open a card, confirm `document.getAnimations()` is empty / instant.
+   - Contrast: on a set page with unowned cards, compute contrast of the ×N badge, "Not in collection" badge and pocket labels against their backgrounds (getComputedStyle + WCAG formula, small inline script). Greyed cards use greyscale at 45% opacity (D-028/M2): check labels aren't inside the filtered element.
+   - Lighthouse a11y: `pnpm dlx lighthouse <url> --only-categories=accessibility --chrome-flags=--headless` with `CHROME_PATH` pointing at Playwright's Chromium, passing the session cookie via `--extra-headers` for `/`, `/album/<set>`, `/search`; plus `/login` without it. Record scores.
+   - Any real failure: fix it minimally (decision entry first if it changes the plan), rerun `pnpm check`. Small fixes only; anything larger goes into the README's known issues and the to-do list for Carlos.
+
+3. **Worklog totals** (top of `docs/worklog.md`, replace the Summary table): per-milestone planned vs actual, from the existing rows:
+   | Milestone | Planned | Actual |
+   |---|---|---|
+   | M0 | 30 | 16 |
+   | M1 (+TCGdex follow-up) | 45 | 34 |
+   | M2 | 75 | 14 |
+   | M3 | 60 | 34 |
+   | M4 | 45 | 15 |
+   | M5 | 60 | 18 |
+   | M6 | 45 | 33 |
+   | Polish (unplanned: polish, theme + page turn, filter toggles) | — | 61 |
+   | M7 | 45 | this session |
+   Planning ~1 h 30 min (10:50–11:50 on 10-17, 09:39–10:10 on 10-18, bootstrap <1 min). Build planned 6 h 45 min ("about 7 h"); actual so far 3 h 45 min + M7. Overall = planning + build. Fill M7 and totals at the end of the session (end time known), same numbers go into the README.
+
+4. **README.md** (new, repo root; plain Markdown, no secrets, nothing quoted from `private/`):
+   - What it is (one paragraph), live URL `https://pokemon-king.vercel.app` (password sent separately), repo.
+   - Setup: Node 24, `pnpm install`, `cp .env.example .env.local` and the four vars (`APP_PASSWORD`, `SESSION_SECRET`, `UPSTASH_REDIS_REST_URL/TOKEN` or `KV_REST_API_*`; without Redis pins stay local), `pnpm dev`, `pnpm check`; refetching data with `pnpm dlx tsx scripts/fetch-sets.ts` (D-022/D-023: data is committed, only needed to refresh).
+   - Approach: binder album per set, 3x3/spread, greyed unowned cards, data pipeline (collection → TCGdex id map → committed set JSON, server-only), URL state, keyboard layer.
+   - Library choices with reasons (from decisions): Next.js 16 App Router (D-001), shadcn on Base UI (D-013/D-018), React `<ViewTransition>` + Motion + react-parallax-tilt (D-014), cmdk palette (D-047), Upstash Redis (D-008/D-041), TCGdex (D-023), no auth lib (D-040), no nuqs (D-035), no Fuse.js (D-048).
+   - Trade-offs: one shared password and one favourites list; committed JSON, no DB; images unoptimized; card sizes capped by viewport height (D-031); `[`/`]` stop at page edge (D-046); no reverse morph on Back; dev-mode zoom morph doesn't run.
+   - Features cut and why: react-pageflip curl (keyboard/layout, D-014), terminal UI theme, price data, editing the collection, accounts/password reset, deck building, offline PWA (requirements out-of-scope list); 4 cards TCGdex lacks show basic facts only.
+   - Keyboard shortcut table: copy the 10 rows of `SHORTCUTS` in `components/keyboard-shortcuts.tsx:18-27`.
+   - Time spent: the summary table from step 3.
+   - "How this was built": links to `docs/requirements.md`, `docs/implementation-plan.md`, `docs/decisions.md`, `docs/worklog.md`, `docs/prompts.md` (Carlos adds it), `docs/transcripts.md`.
+   - Prettier will check it (pre-commit runs `pnpm check`), so run `pnpm format` on it.
+
+5. **Demo video script** (2 min) — `docs/demo-script.md`? No: keep it out of the repo unless wanted; deliver it in the final reply and in the scratchpad. Beats with timings: 0:00 login (wrong then right password) · 0:15 home, album, open a set, page turns on a spread · 0:40 zoom a card, side panel tabs, `[`/`]`, pin · 1:00 keyboard-only run (`g a`, arrows, PageDown, Enter, `f`, Esc, `/`, Ctrl K to a card, `?`) · 1:40 phone: refresh, the pin appears · 1:55 close on the URL.
+
+6. **Finish**: tick the three M7 boxes; `date` for end time, fill the worklog row (duration, outcome) and the M7/total cells in both summaries; append transcript (`python3 -I scripts/transcript.py` → new `### 2026-10-18 · M7` at the end of "Claude Code sessions" in `docs/transcripts.md`); `git commit -m "docs: README and submission (M7)"` (with Co-Authored-By line), then put `git rev-parse --short HEAD` in the worklog row and `git commit --amend --no-edit`. Don't push unless asked (memory: work on main; Vercel deploys from main on push).
+
+7. **Hand-off list for Carlos**: record the video from the script; send the password separately; add `docs/prompts.md` (README already links it); push to `main` so Vercel deploys the README commit; send URL + repo + video; any check failures not fixed.
+
+## Verification
+- `pnpm check` passes (pre-commit runs it anyway).
+- Screenshots and Lighthouse JSON in the scratchpad; scores and contrast ratios quoted in the worklog outcome.
+- README links resolve (`ls` each linked doc except prompts.md).
+
+## Open question for execution
+Video script location: reply only (default) vs a committed `docs/demo-script.md`.
+~~~~
+
+</details>
+
+
+*Claude asked:*
+
+> **Where should the 2-minute demo video script go?**
+> Reply only (Recommended) / docs/demo-script.md
+> **Should I push the M7 commit to main at the end (triggers the Vercel production deploy)?**
+> Don't push (Recommended) / Push to main
+
+
+*Carlos answered:* Reply only (Recommended); Don't push (Recommended)
+
+- *Edit*: /home/cduser/.claude/plans/pasted-content-id-72be-milestone-m7-peaceful-goose.md
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Edit*: /home/cduser/.claude/plans/pasted-content-id-72be-milestone-m7-peaceful-goose.md
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Get session start time
+- *Bash*: Add M7 start row to worklog
+- *Bash*: Check deploy is current and Playwright availability
+- *Bash*: Look for global Playwright install
+- *Bash*: Find earlier scratchpad Playwright install
+
+#### 19:46 · Claude
+
+Logged the start (19:45). Setting up Playwright in the scratchpad to run the phone, reduced-motion and contrast checks against the live URL.
+
+- *Bash*: Install playwright-core in scratchpad
+- *Bash*: Inspect tile markup and set ids
+- *Bash*: Stash password to scratchpad, inspect login form
+- *Write*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/c90f3428-7ed7-4c39-9d43-311a3f16d260/scratchpad/pw/check.mjs
+- *Bash*: Run phone, contrast and reduced-motion checks
+- *Bash*: Rerun checks waiting on load instead of network idle
+
+#### 19:49 · Claude
+
+Still running the browser checks; the script clicked a hidden (CSS-switched) spread copy, fixing the selector.
+
+- *Bash*: Rerun checks with visible-only card selector
+- *Bash*: Summarise contrast and overflow per page
+- *Bash*: Inspect muted colour tokens and typography variants
+- *Bash*: Find backgrounds behind the 3.76 contrast text
+- *Bash*: Scan contrast in light/dark, then with darker muted text
+- *Bash*: Get time and context for decision and CSS edit
+- *Bash*: Darken muted text token and log D-055
+- *Bash*: Production build with the contrast fix
+- *Bash*: Run production server on port 3123
+- *Bash*: Wait for server and test cookie works locally
+- *Bash*: Lighthouse accessibility on key pages locally
+
+#### 19:55 · Claude
+
+Running Lighthouse against a local production build with the fix; the first loop failed to launch, debugging.
+
+- *Bash*: Debug a single Lighthouse run
+- *Bash*: Lighthouse accessibility on key pages locally
+
+#### 19:57 · Claude
+
+All eight pages score 100 on Lighthouse accessibility. Quick look at the phone screenshots.
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/c90f3428-7ed7-4c39-9d43-311a3f16d260/scratchpad/pw/phone-set.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/c90f3428-7ed7-4c39-9d43-311a3f16d260/scratchpad/pw/phone-zoom.png
+
+#### 19:57 · Claude
+
+Phone layout is clean at 375 px (no horizontal overflow on any page). Stopping the server and writing the docs.
+
+- *Bash*: Stop server and read requirements intro
+- *Bash*: Read requirements intro
+- *Write*: README.md
+- *Bash*: Check Motion and sonner are used
+- *Bash*: See what Motion animates
+- *Bash*: Make Motion and card-count lines accurate
+
+#### 19:58 · Claude
+
+README is drafted; checking one claim about the pin animation, then writing Notes.md.
+
+- *Bash*: Check what the pin toggle animates
+- *Bash*: Correct the Motion description
+- *Write*: Notes.md
+- *Bash*: Correct two claims in Notes.md
+
+#### 19:58 · Claude
+
+Notes.md done. Formatting and running `pnpm check` before filling in the times.
+
+- *Bash*: Format docs and run full check
+- *Bash*: Get session end time
+- *Bash*: Fill time tables, worklog row and tick M7 boxes
+
 ## claude.ai conversations
 
 To be added.

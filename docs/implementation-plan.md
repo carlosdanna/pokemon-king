@@ -159,9 +159,9 @@ Done when: the demo video's walkthrough can be done without a mouse.
 
 ### M7 · Polish and submission (45 min)
 
-- [ ] Phone check on the Vercel URL; reduced-motion check; contrast of labels on greyed cards
-- [ ] README: setup, environment variables, approach, library choices, trade-offs, cut features, shortcut table
-- [ ] 2-minute demo video: login, page turns, zoom, a keyboard-only run, favourites syncing to the phone
+- [x] Phone check on the Vercel URL; reduced-motion check; contrast of labels on greyed cards
+- [x] README: setup, environment variables, approach, library choices, trade-offs, cut features, shortcut table
+- [x] 2-minute demo video: login, page turns, zoom, a keyboard-only run, favourites syncing to the phone
 
 Done when: the URL, repo and video are ready to send, with the password sent separately.
 

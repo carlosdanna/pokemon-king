@@ -6,9 +6,20 @@ One row per session. Times are Stockholm time (CET/CEST). Planning rows record w
 
 | Phase | Planned | Actual |
 | --- | --- | --- |
-| Planning | — | about 1 h 30 min |
-| Build (M0–M7) | about 7 h | — |
-| Total | — | — |
+| Planning (requirements and implementation plans) | — | about 1 h 30 min |
+| M0 · Setup and deploy | 30 min | 16 min |
+| M1 · Data pipeline (incl. the TCGdex switch) | 45 min | 34 min |
+| M2 · Album pages | 1 h 15 min | 14 min |
+| M3 · Card zoom and side panel | 1 h | 34 min |
+| M4 · Search and filters | 45 min | 15 min |
+| M5 · Login and favourites | 1 h | 18 min |
+| M6 · Keyboard layer | 45 min | 33 min |
+| Polish, theme and page turns (unplanned) | — | 1 h 1 min |
+| M7 · Polish and submission | 45 min | 13 min |
+| **Build (M0–M7)** | **6 h 45 min** | **3 h 58 min** |
+| **Total** | — | **about 5 h 30 min** |
+
+Times are Claude Code session lengths from the [worklog](#sessions); time spent reviewing between sessions and recording the video is not included.
 
 ## Sessions
 
@@ -28,6 +39,7 @@ One row per session. Times are Stockholm time (CET/CEST). Planning rows record w
 | 2026-10-18 | 18:31 | 19:05 | 34 min | Polish | Done: header controls all 36 px (`buttonVariants` ghost lg), phone search and log out icon-only; `?` header button opens the shortcuts overlay (D-052); pin toggle swaps Star / StarOff instead of filling the outline and sits left of the name in the info panel (D-051); set name in the panel links to its album, and a `@modal/[...rest]` catch-all closes the overlay on that soft navigation (it stayed open and mounted the card twice); search page reordered to heading, then one panel with the box and wrapping filters; set, type and rarity are multi-select comboboxes (shadcn Base UI) with repeated URL params (D-049); Home search styled like the header trigger with a `/` hint; Home pins capped at 8 below 1024 px and 12 from it, with a link to a new `/pinned` page (D-050). Overlaps fixed: phone header search squeezed to "Sear…", zoom close button over the card corner, "Not in collection" badge over the card name (now under the card, card height reduced so it clears the phone drawer), always-on stars on touch tiles (now pinned only), toggle groups shorter than selects. Animations: page flip and zoom morph run in Chromium and Firefox 157 on a production build; under `next dev` the zoom morph never starts (no prefetch), and the dev log shows a `react-parallax-tilt` "e is null" error from the user's browser that did not reproduce. Mobile: a sideways swipe over the open card triggered Chromium's swipe-back (history back / forward, closing and reopening the overlay); fixed with `overscroll-behavior-x: none` while a dialog is open. 70 tests pass | `fix(ui): polish header, pins, search filters and mobile overlay` (0ad5266) |
 | 2026-10-18 | 19:12 | 19:36 | 24 min | Theme + page turn | Done: shadcn preset `b1YobvhKq` applied theme-only (mist base, blue primary and charts; binder paper unchanged, D-053). Page turns reworked (D-054): one ViewTransition per page (`page-current` / `page-facing`), so on a spread the leaving page lifts off the spine and the arriving one lands on the other side in two 250 ms phases, where before the new left page showed from the first frame. Found while checking: on every turn each card cross-faded flat with its hidden twin (the `card-<id>` morph paired across the remounted spread) instead of turning with its page; tiles now drop the morph for page-turn transitions. Static pages under a turning one no longer use plus-lighter blending. Checked on a production build in headless Chromium with animations slowed 10× (frames and `getAnimations()`): forward and back at 1440, single-page flip at 1024, slide at 375, card zoom morph after a turn. 70 tests pass | `style(theme): apply shadcn preset b1YobvhKq`, `feat(album): turn spread pages in two phases` |
 | 2026-10-18 | ~19:38 | 19:41 | ~3 min | Polish (filter toggles) | Done: the selected option in the Kind and Owned / All toggle groups on `/search` was marked only by `bg-muted`, the same grey as hover; `toggleVariants` now fills the pressed item with the primary colour (border, background, foreground text, slightly lighter on hover) and drops the Radix-only `data-[state=on]` class. Only these toggle groups use `Toggle`. Not checked in a browser. 70 tests pass | `fix(search): make selected filter toggle clearly visible` (4b088a6) |
+| 2026-10-18 | 19:45 | 19:58 | 13 min | M7 | Done: checks on the Vercel URL and a local production build. Phone at 375 px (touch): home, album, set, search, browse, pinned and the zoom drawer have no horizontal overflow or overlaps. Reduced motion: a page turn and a zoom run no animations (only 150 ms colour transitions). Contrast: every visible text node scanned on 6 pages; muted grey text was 3.76:1 on the binder desk and 4.42:1 on paper, so the light `--muted-foreground` went from 0.56 to 0.48 lightness (D-055) and all pages pass AA; labels on greyed cards sit outside the greyscale filter. Lighthouse accessibility 100 on `/login`, `/`, `/album`, `/album/base1`, `/search`, `/browse`, `/pinned` and `/cards/base1-10`. README (setup, approach, library choices, trade-offs, cuts, shortcuts, time spent, how it was built), Notes.md (problems, improvements, ideas) and the worklog summary; demo script given in the session. 70 tests pass | `docs: README and submission (M7)` (e96a9f3) |
 
 ## Notes
 
