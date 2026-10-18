@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 
 vi.mock("server-only", () => ({}));
 
-const { getAlbumPage, getSetCards, getSetSummaries } =
+const { getAlbumPage, getCard, getSetCards, getSetSummaries } =
   await import("./collection");
 
 describe("collection (real data)", () => {
@@ -38,5 +38,19 @@ describe("collection (real data)", () => {
     expect(summaries).toHaveLength(121);
     expect(summaries.reduce((n, s) => n + s.owned, 0)).toBe(1644);
     for (const s of summaries) expect(s.owned).toBeLessThanOrEqual(s.total);
+  });
+
+  it("finds a card with its set and album page", () => {
+    expect(getCard("base1-4")).toMatchObject({
+      card: { name: "Charizard", hp: 120 },
+      set: { id: "base1" },
+      page: 1,
+    });
+    expect(getCard("base1-10")?.page).toBe(2);
+    // hyphenated set id, and an owned card TCGdex lacks (pokemontcg id)
+    expect(getCard("tk-ex-m-1")?.set.id).toBe("tk-ex-m");
+    expect(getCard("sm3-116a")?.card.owned).toBe(true);
+    expect(getCard("nope-1")).toBeNull();
+    expect(getCard("../etc-1")).toBeNull();
   });
 });

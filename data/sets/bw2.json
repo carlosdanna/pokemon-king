@@ -8,7 +8,43 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/1"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/1",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Collect",
+    "effect": "Draw a card."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-2",
@@ -19,7 +55,47 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/2"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/2",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Pansage",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fire's Power",
+    "effect": "If this Pokémon has any Fire Energy attached to it, the Defending Pokémon is now Burned.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Seed Bomb",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-3",
@@ -30,7 +106,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/3"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/3",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "String Shot",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-4",
@@ -41,7 +146,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/4"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/4",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Razor Leaf",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-5",
@@ -52,7 +187,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/5"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/5",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Sewaddle",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Razor Leaf",
+    "effect": "Flip 2 coins. This attack does 50 damage times the number of heads.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-6",
@@ -63,7 +231,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/6"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/6",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Sewaddle",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Grass Cocooning",
+    "effect": "Heal 40 damage from this Pokémon."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Razor Leaf",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-7",
@@ -74,7 +273,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/7"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/7",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Swadloon",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Nurturing",
+    "effect": "Choose 1 of your Pokémon. Search your deck for a card that evolves from that Pokémon and put it onto that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "X-Scissor",
+    "effect": "Flip a coin. If heads, this attack does 50 more damage.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-8",
@@ -85,7 +316,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/8"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/8",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Swadloon",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Triple Cutter",
+    "effect": "Flip 3 coins. This attack does 60 damage times the number of heads.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-9",
@@ -96,7 +360,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/9"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/9",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Absorb",
+    "effect": "Heal 10 damage from this Pokémon.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-10",
@@ -107,7 +400,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/10"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/10",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Cotton Guard",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 10 (after applying Weakness and Resistance).",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-11",
@@ -118,7 +440,44 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/11"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/11",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Cottonee",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Helping Hand",
+    "effect": "Search your deck for a basic Energy card and attach it to 1 of your Benched Pokémon. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Cotton Guard",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 30 (after applying Weakness and Resistance).",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-12",
@@ -129,7 +488,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/12"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/12",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Cottonee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Encore",
+    "effect": "Choose 1 of the Defending Pokémon's attacks. During your opponent's next turn, that Pokémon can use only that attack.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass"
+    ],
+    "name": "U-turn",
+    "effect": "Switch this Pokémon with 1 of your Benched Pokémon.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-13",
@@ -140,7 +538,43 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/13"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/13",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Stun Spore",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Cut",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-14",
@@ -151,7 +585,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/14"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/14",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Petilil",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Bemusing Aroma",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and Poisoned. If tails, the Defending Pokémon is now Confused.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cut",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-15",
@@ -162,7 +635,44 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/15"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/15",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass"
+    ],
+    "name": "Wild Kick",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-16",
@@ -173,7 +683,47 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/16"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/16",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Deerling",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Push Down",
+    "effect": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Take Down",
+    "effect": "This Pokémon does 20 damage to itself.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-17",
@@ -184,7 +734,47 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/17"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/17",
+  "hp": 100,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Giga Drain",
+    "effect": "Heal from this Pokémon the same amount of damage you did to the Defending Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Sacred Sword",
+    "effect": "This Pokémon can't use Sacred Sword during your next turn.",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-18",
@@ -195,7 +785,37 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/18"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/18",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Collect",
+    "effect": "Draw a card."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-19",
@@ -206,7 +826,42 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/19"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/19",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Pansear",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Water's Power",
+    "effect": "If this Pokémon has any Water Energy attached to it, the Defending Pokémon is now Asleep.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-20",
@@ -217,7 +872,38 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/20"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/20",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Combustion",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-21",
@@ -228,7 +914,43 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/21"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/21",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Darumaka",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rock Smash",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fire Punch",
+    "effect": "The Defending Pokémon is now Burned.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-22",
@@ -239,7 +961,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/22"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/22",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Collect",
+    "effect": "Draw a card."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-23",
@@ -250,7 +1002,42 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/23"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/23",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Panpour",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Grass' Power",
+    "effect": "If this Pokémon has any Grass Energy attached to it, heal 20 damage from this Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rushing Water",
+    "effect": "Move an Energy attached to the Defending Pokémon to 1 of your opponent's Benched Pokémon.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-24",
@@ -261,7 +1048,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/24"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/24",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Flail",
+    "effect": "Does 10 damage times the number of damage counters on this Pokémon.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Final Gambit",
+    "effect": "Flip 2 coins. If both of them are tails, this Pokémon does 80 damage to itself.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-25",
@@ -272,7 +1092,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/25"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/25",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Splatter",
+    "effect": "Does 30 damage to one of your oppoent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-26",
@@ -283,7 +1133,43 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/26"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/26",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Roost",
+    "effect": "Heal 40 damage from this Pokémon. This Pokémon can't retreat during your next turn."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water"
+    ],
+    "name": "Rain Splash",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-27",
@@ -294,7 +1180,48 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/27"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/27",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Ducklett",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wing Dance",
+    "effect": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Air Slash",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-28",
@@ -305,7 +1232,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/28"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/28",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Powder Snow",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Asleep.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rest",
+    "effect": "Heal 60 damage from this Pokémon. This Pokémon is now Asleep."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-29",
@@ -316,7 +1274,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/29"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/29",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water"
+    ],
+    "name": "Icicle Punch",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-30",
@@ -327,7 +1308,44 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/30"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/30",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Cubchoo",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sheer Cold",
+    "effect": "The Defending Pokémon can't attack during your opponent's next turn.",
+    "damage": "50"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Icicle Crash",
+    "effect": "This attack's damage isn't affected by Resistance.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-31",
@@ -338,7 +1356,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/31"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/31",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Cubchoo",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Icy Wind",
+    "effect": "The Defending Pokémon is now Asleep.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Superpower",
+    "effect": "You may do 20 more damage. If you do, this Pokémon does 20 damage to itself.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-32",
@@ -349,7 +1401,39 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/32"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/32",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Thundershock",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Acrobatics",
+    "effect": "Flip 2 coins. This attack does 20 more damage for each heads.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-33",
@@ -360,7 +1444,29 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/33"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/33",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-34",
@@ -371,7 +1477,39 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/34"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/34",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Joltik",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Stun Needle",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-35",
@@ -382,7 +1520,39 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/35"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/35",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Charge",
+    "effect": "Search your deck for a Lightning Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Disaster Volt",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-36",
@@ -393,7 +1563,31 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/36"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/36",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psy Bolt",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-37",
@@ -404,7 +1598,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/37"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/37",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Woobat",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psyshot",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Phat Sound",
+    "effect": "Flip 3 coins. This attack does 10 damage times the number of heads to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-38",
@@ -415,7 +1646,37 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/38"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/38",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Poison Sting",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-39",
@@ -426,7 +1687,41 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/39"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/39",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Venipede",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Venoshock",
+    "effect": "If the Defending Pokémon is Poisoned, this attack does 60 more damage.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Steamroller",
+    "effect": "This attack's damage isn't affected by Resistance.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-40",
@@ -437,7 +1732,42 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/40"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/40",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Whirlipede",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Toxic Claws",
+    "effect": "The Defending Pokémon is now Poisoned. Put 2 damage counters instead of 1 on that Pokémon between turns.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wild Horn",
+    "effect": "Flip 2 coins. This attack does 20 more damage for each heads.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-41",
@@ -448,7 +1778,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/41"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/41",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Reflect",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 40 (after applying Weakness and Resistance)."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Telekinesis",
+    "effect": "Does 50 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness or Resistance."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-42",
@@ -459,7 +1826,46 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/42"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/42",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Quick Turn",
+    "effect": "Flip 2 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic Assault",
+    "effect": "Does 10 more damage for each damage counter on the Defending Pokémon.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-43",
@@ -470,7 +1876,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/43"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/43",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Hypnotic Gaze",
+    "effect": "The Defending Pokémon is now Asleep."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Slap",
+    "effect": "Flip 2 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-44",
@@ -481,7 +1918,30 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/44"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/44",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Smack",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-45",
@@ -492,7 +1952,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/45"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/45",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Gothita",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Double Slap",
+    "effect": "Flip 2 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psybeam",
+    "effect": "The Defending Pokémon is now Confused.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-46",
@@ -503,7 +1996,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/46"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/46",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Gothita",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Deleting Glare",
+    "effect": "Flip a coin. If heads, discard an Energy attached to 1 of your opponent's Pokémon."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Super Psy Bolt",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-47",
@@ -514,7 +2039,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/47"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/47",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Gothorita",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Magic Room",
+    "effect": "As long as this Pokémon is your Active Pokémon, your opponent can’t play any Item cards from his or her hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Madkinesis",
+    "effect": "Does 20 more damage for each Psychic Energy attached to this Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-48",
@@ -525,7 +2083,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/48"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/48",
+  "hp": 120,
+  "stage": "Stage2",
+  "evolveFrom": "Gothorita",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Smack",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mental Shock",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Confused. If tails, discard an Energy attached to the Defending Pokémon.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-49",
@@ -536,7 +2127,38 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/49"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/49",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Harden",
+    "effect": "During your opponent's next turn, if this Pokémon would be damaged by an attack, prevent that attack's damage done to this Pokémon if that damage is 40 or less."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-50",
@@ -547,7 +2169,38 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/50"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/50",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Reckless Charge",
+    "effect": "This Pokémon does 10 damage to itself.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-51",
@@ -558,7 +2211,42 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/51"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/51",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Roggenrola",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Smack Down",
+    "effect": "If the Defending Pokémon has Fighting Resistance, this attack does 60 more damage.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Power Gem",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-52",
@@ -569,7 +2257,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/52"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/52",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Roggenrola",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hard Crash",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage. If tails, this Pokémon does 20 damage to itself.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-53",
@@ -580,7 +2302,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/53"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/53",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Boldore",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Shear",
+    "effect": "Discard the top 5 cards of your deck. If any of those cards are Fighting Energy cards, attach them to this Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rock Bullet",
+    "effect": "Does 20 more damage for each Fighting Energy attached to this Pokémon.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-54",
@@ -591,7 +2347,42 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/54"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/54",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Hone Claws",
+    "effect": "During your next turn, each of this Pokémon's attacks does 30 more damage (before applying Weakness and Resistance)."
+   },
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Scratch",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-55",
@@ -602,7 +2393,37 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/55"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/55",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Mud-Slap",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-56",
@@ -613,7 +2434,46 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/56"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/56",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Drilbur",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Metal Claw",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Drill Run",
+    "effect": "Discard an Energy attached to the Defending Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-57",
@@ -624,7 +2484,48 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/57"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/57",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Drilbur",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Dig",
+    "effect": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Earthquake",
+    "effect": "Does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-58",
@@ -635,7 +2536,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/58"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/58",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Scarf Hold",
+    "effect": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-59",
@@ -646,7 +2571,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/59"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/59",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Five Fierce Chops",
+    "effect": "Flip 5 coins. This attack does 20 damage times the number of heads. This Pokémon can't attack during your next turn.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-60",
@@ -657,7 +2606,30 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/60"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/60",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-61",
@@ -668,7 +2640,40 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/61"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/61",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Sandile",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Crunch",
+    "effect": "Flip a coin. If heads, discard an Energy attached to the Defending Pokémon.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-62",
@@ -679,7 +2684,46 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/62"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/62",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Krokorok",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Black Eyes",
+    "effect": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may flip a coin. If heads, discard an Energy attached to your opponent’s Active Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Thrash",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage. If tails, this Pokémon does 20 damage to itself.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-63",
@@ -690,7 +2734,40 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/63"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/63",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Boulder Crush",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Sacred Sword",
+    "effect": "This Pokémon can't use Sacred Sword during your next turn.",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-64",
@@ -701,7 +2778,37 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/64"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/64",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Knock Off",
+    "effect": "Flip a coin. If heads, discard a random card from your opponent's hand.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-65",
@@ -712,7 +2819,46 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/65"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/65",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Purrloin",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Feint Attack",
+    "effect": "Does 30 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness, Resistance, or any other effects on that Pokémon."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Claw Rend",
+    "effect": "If the Defending Pokémon already has any damage counters on it, this attack does 30 more damage.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-66",
@@ -723,7 +2869,44 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/66"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/66",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Ram",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Rising Lunge",
+    "effect": "Flip a coin. If heads, this attack does 10 more damage.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-67",
@@ -734,7 +2917,46 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/67"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/67",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Zorua",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Night Daze",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-68",
@@ -745,7 +2967,43 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/68"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/68",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Rear Guard",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 30 (after applying Weakness and Resistance)."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Gust",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-69",
@@ -756,7 +3014,46 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/69"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/69",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Vullaby",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Bone Rush",
+    "effect": "Flip a coin until you get tails. This attack does 30 damage times the number of heads.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Dark Pulse",
+    "effect": "Does 10 more damage for each Darkness Energy attached to all of your Pokémon.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-70",
@@ -767,7 +3064,37 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/70"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/70",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Pin Missile",
+    "effect": "Flip 4 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-71",
@@ -778,7 +3105,36 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/71"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/71",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Metal"
+    ],
+    "name": "Pierce",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-72",
@@ -789,7 +3145,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/72"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/72",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Ferroseed",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Steel Feelers",
+    "effect": "Flip 3 coins. This attack does 30 damage times the number of heads.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gyro Ball",
+    "effect": "Switch this Pokémon with 1 of your Benched Pokémon. Then, your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-73",
@@ -800,7 +3196,44 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/73"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/73",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Ferroseed",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Iron Defense",
+    "effect": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Power Whip",
+    "effect": "Does 10 damage for each Energy attached to this Pokémon to one of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-74",
@@ -811,7 +3244,45 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/74"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/74",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Spinning Attack",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gear Grind",
+    "effect": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-75",
@@ -822,7 +3293,46 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/75"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/75",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Klink",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Metal Sound",
+    "effect": "The Defending Pokémon is now Confused."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Guard Press",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance).",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-76",
@@ -833,7 +3343,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/76"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/76",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Klang",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Charge Beam",
+    "effect": "Attach an Energy card from your discard pile to this Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Zap Cannon",
+    "effect": "Flip a coin. If tails, this Pokémon can't use Zap Cannon during your next turn.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-77",
@@ -844,7 +3394,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/77"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/77",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Metal Horns",
+    "effect": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Metal",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Sacred Sword",
+    "effect": "This Pokémon can't use Sacred Sword during your next turn.",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-78",
@@ -855,7 +3445,30 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/78"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/78",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Hyper Fang",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-79",
@@ -866,7 +3479,39 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/79"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/79",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Patrat",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Watcheck",
+    "effect": "Look at the top 5 cards of your opponent's deck and put them back on top of his or her deck in any order."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Tail Smash",
+    "effect": "Before doing damage, you may flip a coin. If heads, this attack does 60 more damage. If tails, this attack does nothing.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-80",
@@ -877,7 +3522,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/80"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/80",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gust",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-81",
@@ -888,7 +3562,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/81"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/81",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Pidove",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Claw",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wing Attack",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-82",
@@ -899,7 +3612,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/82"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/82",
+  "hp": 120,
+  "stage": "Stage2",
+  "evolveFrom": "Tranquill",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tailwind",
+    "effect": "Attach an Energy card from your hand to 1 of your Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Feather Strike",
+    "effect": "Flip a coin. If heads, this attack does 40 more damage. If tails, discard an Energy attached to the Defending Pokémon.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-83",
@@ -910,7 +3662,39 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/83"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/83",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Powerful Slap",
+    "effect": "Flip a coin for each Energy attached to this Pokémon. This attack does 40 damage times the number of heads.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Heal Pulse",
+    "effect": "Heal 50 damage from 1 of your Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-84",
@@ -921,7 +3705,30 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/84"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/84",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Last Resort",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-85",
@@ -932,7 +3739,39 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/85"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/85",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Minccino",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Captivate",
+    "effect": "Switch the Defending Pokémon with 1 of your opponent's Benched Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fluffy Tail",
+    "effect": "The Defending Pokémon is now Asleep.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-86",
@@ -943,7 +3782,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/86"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/86",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Peck",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-87",
@@ -954,7 +3829,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/87"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/87",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Peck",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Claw",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-88",
@@ -965,7 +3877,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/88"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/88",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Rufflet",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wing Attack",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Brave Bird",
+    "effect": "This Pokémon does 30 damage to itself.",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-89",
@@ -976,7 +3928,45 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/89"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/89",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Energy Wheel",
+    "effect": "Move an Energy from 1 of your Benched Pokémon to this Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hurricane",
+    "effect": "Move a basic Energy from this Pokémon to 1 of your Benched Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-90",
@@ -984,7 +3974,13 @@
   "number": "90",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/90"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/90",
+  "effect": "Draw cards until you have 6 cards in your hand.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-91",
@@ -992,7 +3988,13 @@
   "number": "91",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/91"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/91",
+  "effect": "Draw 3 cards.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-92",
@@ -1000,7 +4002,13 @@
   "number": "92",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/92"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/92",
+  "effect": "Flip a coin. If heads, discard an Energy attached to 1 of your opponent’s Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-93",
@@ -1008,7 +4016,13 @@
   "number": "93",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/93"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/93",
+  "effect": "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-94",
@@ -1016,7 +4030,13 @@
   "number": "94",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/94"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/94",
+  "effect": "Heal all damage from 1 of your Pokémon. Then, discard all Energy attached to that Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-95",
@@ -1024,7 +4044,13 @@
   "number": "95",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/95"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/95",
+  "effect": "Flip a coin. If heads, switch 1 of your opponent’s Benched Pokémon with his or her Active Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-96",
@@ -1032,7 +4058,13 @@
   "number": "96",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/bw/bw2/96"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/96",
+  "effect": "Flip a coin. If heads, put a card from your discard pile on top of your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-97",
@@ -1043,7 +4075,39 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/97"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/97",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Charge",
+    "effect": "Search your deck for a Lightning Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Disaster Volt",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "bw2-98",
@@ -1054,6 +4118,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/bw/bw2/98"
+  "image": "https://assets.tcgdex.net/en/bw/bw2/98",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Energy Wheel",
+    "effect": "Move an Energy from 1 of your Benched Pokémon to this Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hurricane",
+    "effect": "Move a basic Energy from this Pokémon to 1 of your Benched Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  }
 ]

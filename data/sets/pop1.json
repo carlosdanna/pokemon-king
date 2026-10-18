@@ -8,7 +8,40 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/1"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/1",
+  "hp": 110,
+  "stage": "Stage2",
+  "evolveFrom": "Combusken",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Fire Punch",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Kick",
+    "effect": "Flip 2 coins. This attack does 50 damage times the number of heads.",
+    "damage": "50×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-2",
@@ -19,7 +52,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/2"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/2",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Metang",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Metal Claw",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hyper Beam",
+    "effect": "Flip a coin. If heads, discard 1 Energy attached to the Defending Pokémon.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-3",
@@ -30,7 +103,37 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/3"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/3",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Fly",
+    "effect": "Flip a coin. If tails, this attack does nothing. If heads, prevent all effects of an attack, including damage, done to Rayquaza during your opponent's next turn.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Lightning"
+    ],
+    "name": "Dragon Claw",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Colorless"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-4",
@@ -41,7 +144,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/4"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/4",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Grovyle",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Cling",
+    "effect": "After your attack, remove from Sceptile the number of damage counters equal to the damage you did to the Defending Pokémon. If Sceptile has fewer damage counters than that, remove all of them.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Leaf Blade",
+    "effect": "Flip a coin. If heads, this attack does 40 damage plus 30 more damage.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-5",
@@ -52,7 +194,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/5"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/5",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Marshtomp",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Bubble",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Mud Splash",
+    "effect": "If your opponent has any Benched Pokémon, choose 1 of them and flip a coin. If heads, this attack does 20 damage to that Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-6",
@@ -63,7 +238,41 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/6"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/6",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Silcoon",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Blot",
+    "effect": "Remove 1 damage counter from Beautifly.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Whirlwind",
+    "effect": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-7",
@@ -74,7 +283,45 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/7"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/7",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Surskit",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gust",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-8",
@@ -85,7 +332,42 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/8"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/8",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Insomnia",
+    "effect": "Murkrow can't be Asleep."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Feint Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-9",
@@ -96,7 +378,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/9"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/9",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Larvitar",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Rock Smash",
+    "effect": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-10",
@@ -107,7 +413,37 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/10"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/10",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Amnesia",
+    "effect": "Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use that attack during your opponent's next turn."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Body Slam",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-11",
@@ -118,7 +454,29 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/11"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/11",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Sand Attack",
+    "effect": "If the Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-12",
@@ -129,7 +487,44 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/12"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/12",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Thunder Wave",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Spark",
+    "effect": "Choose 2 of your opponent's Benched Pokémon. This attack does 10 damage to each of those Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-13",
@@ -140,7 +535,44 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/13"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/13",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Agility",
+    "effect": "Flip a coin. If heads, prevent all effects of an attack, including damage, done to Plusle during your opponent's next turn.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-14",
@@ -151,7 +583,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/14"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/14",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Bubble",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-15",
@@ -162,7 +616,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/15"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/15",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Taillow",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Focus Energy",
+    "effect": "During your next turn, base damage of Swellow's Agility is 70 instead of 30."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Agility",
+    "effect": "Flip a coin. If heads, prevent all effects of an attack, including damage, done to Swellow during your opponent's next turn.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-16",
@@ -173,7 +664,45 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/16"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/16",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Anorith",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Twin-blade",
+    "effect": "Does 30 damage to each Defending Pokémon."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Supersonic Claws",
+    "effect": "This attack's damage is not affected by Resistance.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass"
+   },
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop1-17",
@@ -184,6 +713,48 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop1/17"
+  "image": "https://assets.tcgdex.net/en/pop/pop1/17",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Pupitar",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Critical Crush",
+    "effect": "Discard 2 Basic Energy cards attached to Tyranitar ex or this attack does nothing.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass"
+   },
+   {
+    "type": "Fighting"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

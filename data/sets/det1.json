@@ -8,7 +8,29 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/1"
+  "image": "https://assets.tcgdex.net/en/sm/det1/1",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Find a Friend",
+    "effect": "Search your deck for a Grass Pokémon, reveal it, and put it into your hand. Then, shuffle your deck."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-2",
@@ -19,7 +41,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/2"
+  "image": "https://assets.tcgdex.net/en/sm/det1/2",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Lombre",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Table Service",
+    "effect": "Once during your turn (before your attack), you may heal 30 damage from 1 of your Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Punch and Run",
+    "effect": "Switch this Pokémon with 1 of your Benched Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-3",
@@ -30,7 +85,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/3"
+  "image": "https://assets.tcgdex.net/en/sm/det1/3",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Sleep Spore",
+    "effect": "Your opponent’s Active Pokémon is now Asleep.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-4",
@@ -41,7 +119,30 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/4"
+  "image": "https://assets.tcgdex.net/en/sm/det1/4",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Reckless Charge",
+    "effect": "This Pokémon does 10 damage to itself.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-5",
@@ -52,7 +153,43 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/5"
+  "image": "https://assets.tcgdex.net/en/sm/det1/5",
+  "hp": 180,
+  "stage": "Stage2",
+  "evolveFrom": "Charmeleon",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "70"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wild Tackle",
+    "effect": "This Pokémon does 50 damage to itself.",
+    "damage": "180"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-6",
@@ -63,7 +200,39 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/6"
+  "image": "https://assets.tcgdex.net/en/sm/det1/6",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Growlithe",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Security Guard",
+    "effect": "As long as this Pokémon is your Active Pokémon, all of your Pokémon take 30 less damage from your opponent’s attacks (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sharp Fang",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-7",
@@ -74,7 +243,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/7"
+  "image": "https://assets.tcgdex.net/en/sm/det1/7",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Panic",
+    "effect": "This Pokémon is now Confused.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-8",
@@ -85,7 +277,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/8"
+  "image": "https://assets.tcgdex.net/en/sm/det1/8",
+  "hp": 30,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Hold Still",
+    "effect": "Heal 10 damage from this Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-9",
@@ -96,7 +310,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/9"
+  "image": "https://assets.tcgdex.net/en/sm/det1/9",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Frogadier",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Evasion Jutsu",
+    "effect": "If any damage is done to this Pokémon by attacks, flip a coin. If heads, prevent that damage."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water"
+    ],
+    "name": "Furious Shurikens",
+    "effect": "This attack does 50 damage to 2 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-10",
@@ -107,7 +352,45 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/10"
+  "image": "https://assets.tcgdex.net/en/sm/det1/10",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Scout",
+    "effect": "Your opponent reveals their hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Surprise Attack",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-11",
@@ -118,7 +401,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/11"
+  "image": "https://assets.tcgdex.net/en/sm/det1/11",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Pantomime",
+    "effect": "When you play this Pokémon from your hand onto your Bench during your turn, you may switch 1 of your face-down Prize cards with the top card of your deck."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Juggling",
+    "effect": "Flip 4 coins. This attack does 20 damage for each heads.",
+    "damage": "20×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-12",
@@ -129,7 +443,41 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/12"
+  "image": "https://assets.tcgdex.net/en/sm/det1/12",
+  "hp": 130,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psyjack",
+    "effect": "Choose 1 of your opponent’s Active Pokémon’s attacks. That Pokémon can’t use that attack during your opponent’s next turn.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Break Burn",
+    "effect": "Discard 2 Psychic Energy from this Pokémon.",
+    "damage": "130"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-13",
@@ -140,7 +488,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/13"
+  "image": "https://assets.tcgdex.net/en/sm/det1/13",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Machoke",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Directing Traffic",
+    "effect": "Look at the top 5 cards of your deck and put them back in any order."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Cross Chop",
+    "effect": "Flip a coin. If heads, this attack does 60 more damage.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-14",
@@ -151,7 +531,35 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/14"
+  "image": "https://assets.tcgdex.net/en/sm/det1/14",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Healing Melody",
+    "effect": "Heal 10 damage from each of your Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-15",
@@ -162,7 +570,37 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/15"
+  "image": "https://assets.tcgdex.net/en/sm/det1/15",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Play Rough",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-16",
@@ -173,7 +611,31 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/16"
+  "image": "https://assets.tcgdex.net/en/sm/det1/16",
+  "hp": 100,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Continuous Lick",
+    "effect": "Flip a coin until you get tails. This attack does 20 damage for each heads.",
+    "damage": "20×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-17",
@@ -184,7 +646,29 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/17"
+  "image": "https://assets.tcgdex.net/en/sm/det1/17",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Copy Anything",
+    "effect": "Choose 1 of your opponent’s Pokémon’s attacks and use it as this attack. If this Pokémon doesn’t have the necessary Energy to use that attack, this attack does nothing."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "det1-18",
@@ -195,6 +679,33 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/det1/18"
+  "image": "https://assets.tcgdex.net/en/sm/det1/18",
+  "hp": 180,
+  "stage": "Stage2",
+  "evolveFrom": "Vigoroth",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Pitch",
+    "effect": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon.",
+    "damage": "150"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  }
 ]

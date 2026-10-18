@@ -8,7 +8,41 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/1"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/1",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Fire Wing",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Fire Blast",
+    "effect": "Discard a Fire Energy attached to Ho-Oh.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-2",
@@ -19,7 +53,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/2"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/2",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Super Psy Bolt",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Aerowing",
+    "effect": "Before doing damage, you may flip a coin. If tails, this attack does nothing. If heads, this attack does 60 damage instead.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-3",
@@ -30,7 +97,36 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/3"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/3",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Copy",
+    "effect": "Choose 1 of the Defending Pokémon's attacks. Copy copies that attack. This attack does nothing if Mew doesn't have the Energy necessary to use that attack. (You must still do anything else required for that attack.) Mew performs that attack."
+   },
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Extra Draw",
+    "effect": "If your opponent has any Pokémon-ex in play, search your deck for up to 2 basic Energy cards and attach them to Mew. Shuffle your deck afterward."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-4",
@@ -38,7 +134,13 @@
   "number": "4",
   "rarity": "Rare",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/pop/pop5/4"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/4",
+  "effect": "Double Rainbow Energy can be attached only to an Evolved Pokémon (excluding Pokémon-ex). While in play, Double Rainbow Energy provides every type of Energy but provides 2 Energy at a time. (Has no effect other than providing Energy.) Damage done to your opponent’s Pokémon by the Pokémon Double Rainbow Energy is attached to is reduced by 10 (before applying Weakness and Resistance). When the Pokémon Double Rainbow Energy is attached to is no longer an Evolved Pokémon, discard Double Rainbow Energy.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-5",
@@ -49,7 +151,41 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/5"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/5",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Charmander",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Thunder Jolt",
+    "effect": "Flip a coin. If tails, Charmeleon does 10 damage to itself.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-6",
@@ -57,7 +193,13 @@
   "number": "6",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/pop/pop5/6"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/6",
+  "effect": "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card. If you have any cards in your hand, shuffle 1 of them into your deck, then draw 3 cards.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-7",
@@ -65,7 +207,13 @@
   "number": "7",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/pop/pop5/7"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/7",
+  "effect": "Choose 1 of your Basic Pokémon in play. If you have a Stage 1 or Stage 2 card that evolves from that Pokémon in your hand, put that card on the Basic Pokémon. (This counts as evolving that Pokémon.)",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-8",
@@ -73,7 +221,13 @@
   "number": "8",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/pop/pop5/8"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/8",
+  "effect": "Boost Energy can be attached only to an Evolved Pokémon. Discard Boost Energy at the end of the turn it was attached. Boost Energy provides ColorlessColorlessColorless Energy. The Pokémon Boost Energy is attached to can’t retreat. If the Pokémon Boost Energy is attached to isn’t an Evolved Pokémon, discard Boost Energy.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-9",
@@ -81,7 +235,13 @@
   "number": "9",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/pop/pop5/9"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/9",
+  "effect": "δ Rainbow Energy provides Colorless Energy. While attached to a Pokémon that has δ on its card, δ Rainbow Energy provides every type of Energy but provides only 1 Energy at a time. (Has no effect other than providing Energy.)",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-10",
@@ -92,7 +252,37 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/10"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/10",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-11",
@@ -103,7 +293,29 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/11"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/11",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Feint Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 10 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-12",
@@ -114,7 +326,39 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/12"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/12",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Lightning Ball",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Thunderbolt",
+    "effect": "Discard all Energy cards attached to Pikachu.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-13",
@@ -125,7 +369,38 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/13"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/13",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Electric Punch",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Heavy Metal",
+    "effect": "Flip a coin for each Metal Energy attached to Pikachu. This attack does 10 damage plus 20 more damage for each heads.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-14",
@@ -136,7 +411,46 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/14"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/14",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Wingull",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Mist",
+    "effect": "Any damage done to Pelipper by attacks from Stage 2 Evolved Pokémon (both yours and your opponent's) is reduced by 30 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Lightning Wing",
+    "effect": "Does 10 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "x2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-15",
@@ -147,7 +461,38 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/15"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/15",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Detect",
+    "effect": "Flip a coin. If heads, prevent all effects of an attack, including damage, done to Zangoose during your opponent's next turn."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Metal Claw",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-16",
@@ -158,7 +503,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/16"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/16",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Purple Ray",
+    "effect": "Once during your turn, when you put Espeon Star from your hand onto your Bench, you may use this power. Each Active Pokémon (both yours and your opponent's) is now Confused."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psychic Boom",
+    "effect": "Does 30 damage plus 10 more damage for each Energy attached to the Defending Pokémon.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop5-17",
@@ -169,6 +546,42 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop5/17"
+  "image": "https://assets.tcgdex.net/en/pop/pop5/17",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Dark Ray",
+    "effect": "Once during your turn, when you put Umbreon Star from your hand onto your Bench, you may choose 1 card from your opponent's hand without looking and discard it."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Darkness"
+    ],
+    "name": "Feint Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "x2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

@@ -282,6 +282,16 @@
   }
 }
 
+/* Card zoom (M3): the card grows out of its pocket; the page stays put behind the overlay. */
+::view-transition-group(.morph) {
+  animation-duration: 350ms;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-old(*),
   ::view-transition-new(*),

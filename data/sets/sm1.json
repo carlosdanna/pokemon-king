@@ -8,7 +8,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/1"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/1",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Nap",
+    "effect": "Heal 20 damage from this Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-2",
@@ -19,7 +49,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/2"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/2",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Caterpie",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Iron Defense",
+    "effect": "Flip a coin. If heads, prevent all damage done to this Pokémon by attacks during your opponent’s next turn."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bug Bite",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-3",
@@ -30,7 +92,41 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/3"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/3",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Metapod",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Psy Bolt",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Whirlwind",
+    "effect": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-4",
@@ -41,7 +137,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/4"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/4",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-5",
@@ -52,7 +171,42 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/5"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/5",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Paras",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fury Cutter",
+    "effect": "Flip 3 coins. If 1 of them is heads, this attack does 20 more damage. If 2 of them are heads, this attack does 60 more damage. If all of them are heads, this attack does 120 more damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Mushroom Drain",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-6",
@@ -63,7 +217,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/6"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/6",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Roof Fling",
+    "effect": "Flip a coin. If heads, put your opponent’s Active Pokémon and all cards attached to it into your opponent’s hand."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass"
+    ],
+    "name": "Guillotine",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-7",
@@ -74,7 +259,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/7"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/7",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-8",
@@ -85,7 +293,31 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/8"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/8",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Surskit",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Struggle Bug",
+    "effect": "Move an Energy from your opponent’s Active Pokémon to 1 of their Benched Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-9",
@@ -96,7 +328,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/9"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/9",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Leafage",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-10",
@@ -107,7 +369,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/10"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/10",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Rowlet",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sharp Blade Quill",
+    "effect": "This attack does 20 damage to 1 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Leaf Blade",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-11",
@@ -118,7 +413,41 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/11"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/11",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Dartrix",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Leaf Blade",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "30+"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Brave Bird",
+    "effect": "This Pokémon does 20 damage to itself.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-12",
@@ -129,7 +458,45 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/12"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/12",
+  "hp": 240,
+  "evolveFrom": "Dartrix",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Feather Arrow",
+    "effect": "Once during your turn (before your attack), you may put 2 damage counters on 1 of your opponent’s Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Razor Leaf",
+    "damage": "90"
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Hollow Hunt GX",
+    "effect": "Put 3 cards from your discard pile into your hand. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-13",
@@ -140,7 +507,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/13"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/13",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Vice Grip",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-14",
@@ -151,7 +541,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/14"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/14",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Synthesis",
+    "effect": "Search your deck for a Grass Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Leafage",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-15",
@@ -162,7 +582,48 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/15"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/15",
+  "hp": 210,
+  "evolveFrom": "Fomantis",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Flower Supply",
+    "effect": "Attach 2 basic Energy cards from your discard pile to your Pokémon in any way you like.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Solar Blade",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Chloroscythe GX",
+    "effect": "This attack does 50 damage times the amount of Grass Energy attached to this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "50×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-16",
@@ -173,7 +634,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/16"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/16",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Flickering Spores",
+    "effect": "Your opponent’s Active Pokémon is now Asleep."
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Ram",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-17",
@@ -184,7 +674,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/17"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/17",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Morelull",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Illuminate",
+    "effect": "Once during your turn (before your attack), you may search your deck for a Grass Pokémon, reveal it, and put it into your hand. Then, shuffle your deck."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Flickering Spores",
+    "effect": "Your opponent’s Active Pokémon is now Asleep.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-18",
@@ -195,7 +717,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/18"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/18",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Sweet Scent",
+    "effect": "Heal 30 damage from 1 of your Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Splash",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-19",
@@ -206,7 +757,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/19"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/19",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Bounsweet",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Sweet Scent",
+    "effect": "Heal 30 damage from 1 of your Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Stomp",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-20",
@@ -217,7 +800,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/20"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/20",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Steenee",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Queenly Majesty",
+    "effect": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may have your opponent reveal their hand. Then, discard a card from it."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Trop Kick",
+    "effect": "Heal 20 damage and remove all Special Conditions from this Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-21",
@@ -228,7 +844,32 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/21"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/21",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Take Down",
+    "effect": "This Pokémon does 20 damage to itself.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-22",
@@ -239,7 +880,44 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/22"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/22",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Growlithe",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Searing Flame",
+    "effect": "Your opponent’s Active Pokémon is now Burned.",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Firestorm",
+    "effect": "Discard 3 Fire Energy from this Pokémon.",
+    "damage": "190"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-23",
@@ -250,7 +928,38 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/23"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/23",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Singe",
+    "effect": "Your opponent’s Active Pokémon is now Burned."
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Body Slam",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-24",
@@ -261,7 +970,37 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/24"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/24",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Bite",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flare",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-25",
@@ -272,7 +1011,41 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/25"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/25",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Litten",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 20 damage for each heads.",
+    "damage": "20×"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "effect": "Discard an Energy from this Pokémon.",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-26",
@@ -283,7 +1056,42 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/26"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/26",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Torracat",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Fire Fang",
+    "effect": "Your opponent’s Active Pokémon is now Burned.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Darkest Lariat",
+    "effect": "Flip 2 coins. This attack does 100 damage for each heads.",
+    "damage": "100×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-27",
@@ -294,7 +1102,50 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/27"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/27",
+  "hp": 250,
+  "evolveFrom": "Torracat",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Hustling Strike",
+    "effect": "This attack does 20 more damage for each of your Benched Fire Pokémon.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Tiger Swing",
+    "effect": "Flip 2 coins. This attack does 50 more damage for each heads.",
+    "damage": "80+"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Burning Slam GX",
+    "effect": "Your opponent’s Active Pokémon is now Burned. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "200"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-28",
@@ -305,7 +1156,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/28"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/28",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Confusion Wave",
+    "effect": "Both Active Pokémon are now Confused."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-29",
@@ -316,7 +1189,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/29"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/29",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Psyduck",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Double Jet",
+    "effect": "Discard up to 2 Water Energy cards from your hand. This attack does 60 damage for each card you discarded in this way.",
+    "damage": "60×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-30",
@@ -327,7 +1231,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/30"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/30",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Water Gun",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hydro Pump",
+    "effect": "This attack does 10 more damage times the amount of Water Energy attached to this Pokémon.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-31",
@@ -338,7 +1274,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/31"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/31",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Poliwag",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Slap",
+    "effect": "Flip 2 coins. This attack does 30 damage for each heads.",
+    "damage": "30×"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wave Splash",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-32",
@@ -349,7 +1319,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/32"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/32",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Poliwhirl",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Split Spiral Punch",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wake-Up Slap",
+    "effect": "If your opponent’s Active Pokémon is affected by a Special Condition, this attack does 80 more damage. Then, remove all Special Conditions from that Pokémon.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-33",
@@ -360,7 +1364,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/33"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/33",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-34",
@@ -371,7 +1397,42 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/34"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/34",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Shellder",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Headlock",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage. If tails, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "30+"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Guard Press",
+    "effect": "During your opponent’s next turn, this Pokémon takes 20 less damage from attacks (after applying Weakness and Resistance).",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-35",
@@ -382,7 +1443,48 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/35"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/35",
+  "hp": 190,
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Collect",
+    "effect": "Draw 3 cards."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water"
+    ],
+    "name": "Blizzard Burn",
+    "effect": "This Pokémon can’t attack during your next turn.",
+    "damage": "160"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Ice Beam GX",
+    "effect": "Your opponent’s Active Pokémon is now Paralyzed. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-36",
@@ -393,7 +1495,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/36"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/36",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Call for Family",
+    "effect": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Surf",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-37",
@@ -404,7 +1537,35 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/37"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/37",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Roost",
+    "effect": "Heal 30 damage from this Pokémon. It can’t retreat during your next turn."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-38",
@@ -415,7 +1576,47 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/38"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/38",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Wingull",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Courier",
+    "effect": "Put 1 of your Benched Pokémon and all cards attached to it into your hand."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fly",
+    "effect": "Flip a coin. If tails, this attack does nothing. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent’s next turn.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-39",
@@ -426,7 +1627,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/39"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/39",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Pound",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Water Gun",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-40",
@@ -437,7 +1668,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/40"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/40",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Popplio",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Wave Splash",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Disarming Voice",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-41",
@@ -448,7 +1713,42 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/41"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/41",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Brionne",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Disarming Voice",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Sparkling Aria",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-42",
@@ -459,7 +1759,50 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/42"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/42",
+  "hp": 250,
+  "evolveFrom": "Brionne",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bubble Beat",
+    "effect": "This attack does 20 more damage times the amount of Water Energy attached to your Pokémon.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Roaring Seas",
+    "effect": "Discard an Energy from your opponent’s Active Pokémon.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Grand Echo GX",
+    "effect": "Heal all damage from all of your Pokémon. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-43",
@@ -470,7 +1813,43 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/43"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/43",
+  "hp": 140,
+  "stage": "Stage1",
+  "evolveFrom": "Crabrawler",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Avalanche",
+    "effect": "This attack does 10 damage to each of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "80"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Ice Hammer",
+    "damage": "140"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-44",
@@ -481,7 +1860,36 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/44"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/44",
+  "hp": 30,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Cowardice",
+    "effect": "Once during your turn (before your attack), you may discard all cards attached to this Pokémon and return it to your hand. You can’t use this Ability during your first turn or on the turn this Pokémon was put into play."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Water Gun",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-45",
@@ -492,7 +1900,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/45"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/45",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Bubble",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-46",
@@ -503,7 +1934,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/46"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/46",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Dewpider",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Water Bubble",
+    "effect": "Prevent all damage done to this Pokémon by attacks from your opponent’s Fire Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Aqua Edge",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-47",
@@ -514,7 +1977,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/47"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/47",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Innards Out",
+    "effect": "If this Pokémon is your Active Pokémon and is Knocked Out by damage from an opponent’s attack, put 6 damage counters on the Attacking Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Continuous Tumble",
+    "effect": "Flip a coin until you get tails. This attack does 30 damage for each heads.",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-48",
@@ -525,7 +2018,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/48"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/48",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Vivid Charge",
+    "effect": "Search your deck for up to 3 basic Energy cards, reveal them, and put them into your hand. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Psychic Fangs",
+    "effect": "This attack’s damage isn’t affected by any effects on your opponent’s Active Pokémon.",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-49",
@@ -536,7 +2061,44 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/49"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/49",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Searching Light",
+    "effect": "Look at 1 of your face-down Prize cards."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Electro Ball",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-50",
@@ -547,7 +2109,46 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/50"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/50",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Chinchou",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Confuse Ray",
+    "effect": "Your opponent’s Active Pokémon is now Confused."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Aqua Spark",
+    "effect": "If this Pokémon has any Water Energy attached to it, this attack does 60 more damage.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-51",
@@ -558,7 +2159,47 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/51"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/51",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Grubbin",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Shocking Jaws",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Electric Ball",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-52",
@@ -569,7 +2210,47 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/52"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/52",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Charjabug",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Strong Charge",
+    "effect": "Once during your turn (before your attack), you may search your deck for a Grass Energy card and a Lightning Energy card and attach them to your Pokémon in any way you like. Then, shuffle your deck."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Electro Cannon",
+    "effect": "Discard 3 Energy from this Pokémon.",
+    "damage": "150"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-53",
@@ -580,7 +2261,43 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/53"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/53",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Defense Curl",
+    "effect": "Flip a coin. If heads, prevent all damage done to this Pokémon by attacks during your opponent’s next turn."
+   },
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Discharge",
+    "effect": "Discard all Lightning Energy from this Pokémon. This attack does 30 damage for each card you discarded in this way.",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-54",
@@ -591,7 +2308,35 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/54"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/54",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Astonish",
+    "effect": "Choose a random card from your opponent’s hand. Your opponent reveals that card and shuffles it into their deck."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-55",
@@ -602,7 +2347,45 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/55"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/55",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Zubat",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Super Poison Breath",
+    "effect": "Your opponent’s Active Pokémon is now Poisoned."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Acrobatics",
+    "effect": "Flip 2 coins. This attack does 20 more damage for each heads.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-56",
@@ -613,7 +2396,46 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/56"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/56",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Golbat",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Triple Poison",
+    "effect": "Your opponent’s Active Pokémon is now Poisoned. Put 3 damage counters instead of 1 on that Pokémon between turns."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Surprise Strike",
+    "effect": "If this Pokémon was on the Bench and became your Active Pokémon this turn, this attack does 60 more damage.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-57",
@@ -624,7 +2446,35 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/57"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/57",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "name": "Super Poison Breath",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Poisoned."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Pound",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-58",
@@ -635,7 +2485,41 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/58"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/58",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Alolan Grimer",
+  "retreat": 4,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Power of Alchemy",
+    "effect": "Each Basic Pokémon in play, in each player’s hand, and in each player’s discard pile has no Abilities."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Crunch",
+    "effect": "Flip a coin. If heads, discard an Energy from your opponent’s Active Pokémon.",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-59",
@@ -646,7 +2530,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/59"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/59",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psychic Boom",
+    "effect": "This attack does 10 damage times the amount of Energy attached to your opponent’s Active Pokémon.",
+    "damage": "10×"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-60",
@@ -657,7 +2572,42 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/60"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/60",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Drowzee",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Meditate",
+    "effect": "This attack does 10 more damage for each damage counter on your opponent’s Active Pokémon.",
+    "damage": "20+"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hypnoblast",
+    "effect": "Your opponent’s Active Pokémon is now Asleep.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-61",
@@ -668,7 +2618,49 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/61"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/61",
+  "hp": 200,
+  "evolveFrom": "Eevee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psybeam",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic",
+    "effect": "This attack does 30 more damage times the amount of Energy attached to your opponent’s Active Pokémon.",
+    "damage": "60+"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Divide GX",
+    "effect": "Put 10 damage counters on your opponent’s Pokémon in any way you like. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-62",
@@ -679,7 +2671,29 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/62"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/62",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Poison Sting",
+    "effect": "Your opponent’s Active Pokémon is now Poisoned."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-63",
@@ -690,7 +2704,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/63"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/63",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Mareanie",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Toxic Spikes",
+    "effect": "Whenever your opponent’s Active Pokémon retreats, their new Active Pokémon is Poisoned."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Venoshock",
+    "effect": "If your opponent’s Active Pokémon is Poisoned, this attack does 50 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-64",
@@ -701,7 +2748,29 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/64"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/64",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Dust Gathering",
+    "effect": "Draw a card."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-65",
@@ -712,7 +2781,30 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/65"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/65",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Cosmog",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Teleport",
+    "effect": "Switch this Pokémon with 1 of your Benched Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-66",
@@ -723,7 +2815,55 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/66"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/66",
+  "hp": 250,
+  "evolveFrom": "Cosmoem",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Psychic Transfer",
+    "effect": "As often as you like during your turn (before your attack), you may move a Psychic Energy from 1 of your Pokémon to another of your Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Moongeist Beam",
+    "effect": "The Defending Pokémon can’t be healed during your opponent’s next turn.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Lunar Fall GX",
+    "effect": "Knock Out 1 of your opponent’s Basic Pokémon that isn’t a Pokémon-GX. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-67",
@@ -734,7 +2874,38 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/67"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/67",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Surprise Attack",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Strength",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-68",
@@ -745,7 +2916,43 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/68"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/68",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Makuhita",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Push Out",
+    "effect": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon.",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Megaton Slap Push",
+    "damage": "130"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-69",
@@ -756,7 +2963,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/69"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/69",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Smack Down",
+    "effect": "If your opponent’s Active Pokémon has Fighting Resistance, this attack does 50 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-70",
@@ -767,7 +2998,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/70"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/70",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Roggenrola",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rock Hurl",
+    "effect": "This attack’s damage isn’t affected by Resistance.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-71",
@@ -778,7 +3043,43 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/71"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/71",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Boldore",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Rock Artillery",
+    "effect": "Discard any amount of Fighting Energy from your Pokémon. This attack does 50 damage for each card you discarded in this way.",
+    "damage": "50×"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rock Tumble",
+    "effect": "This attack’s damage isn’t affected by Resistance.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-72",
@@ -789,7 +3090,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/72"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/72",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Punch",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Crabhammer",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-73",
@@ -800,7 +3133,38 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/73"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/73",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Fling",
+    "effect": "This attack does 30 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Team Play",
+    "effect": "This attack does 30 more damage for each of your Benched Passimian.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-74",
@@ -811,7 +3175,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/74"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/74",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Shore Up",
+    "effect": "Attach a Fighting Energy card from your discard pile to this Pokémon."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sand Tomb",
+    "effect": "The Defending Pokémon can’t retreat during your opponent’s next turn.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-75",
@@ -822,7 +3218,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/75"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/75",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Sandygast",
+  "retreat": 4,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Wall of Sand",
+    "effect": "This Pokémon takes 20 less damage from attacks (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Absorb Vitality",
+    "effect": "Heal from this Pokémon the same amount of damage you did to your opponent’s Active Pokémon.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-76",
@@ -833,7 +3263,32 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/76"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/76",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 0,
+  "attacks": [
+   {
+    "name": "Gnaw",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-77",
@@ -844,7 +3299,47 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/77"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/77",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Alolan Rattata",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Evil Orders",
+    "effect": "Search your deck for a number of cards up to the number of your Benched Pokémon and put them into your hand. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Endeavor",
+    "effect": "Flip 2 coins. This attack does 30 more damage for each heads.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-78",
@@ -855,7 +3350,33 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/78"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/78",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 10 damage for each heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-79",
@@ -866,7 +3387,41 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/79"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/79",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Alolan Meowth",
+  "retreat": 1,
+  "attacks": [
+   {
+    "name": "Taunt",
+    "effect": "Switch 1 of your opponent’s Benched Pokémon with their Active Pokémon."
+   },
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Claw Rend",
+    "effect": "If your opponent’s Active Pokémon already has any damage counters on it, this attack does 30 more damage.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-80",
@@ -877,7 +3432,54 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/80"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/80",
+  "hp": 200,
+  "evolveFrom": "Eevee",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Strafe",
+    "effect": "You may switch this Pokémon with 1 of your Benched Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Shadow Bullet",
+    "effect": "This attack does 30 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "90"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Dark Call GX",
+    "effect": "Discard 2 Energy from your opponent’s Pokémon. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-81",
@@ -888,7 +3490,43 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/81"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/81",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gnaw Through",
+    "effect": "Discard all Pokémon Tool cards from your opponent’s Active Pokémon."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-82",
@@ -899,7 +3537,46 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/82"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/82",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Carvanha",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Rough Skin",
+    "effect": "If this Pokémon is your Active Pokémon and is damaged by an opponent’s attack (even if this Pokémon is Knocked Out), put 3 damage counters on the Attacking Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Aqua Impact",
+    "effect": "This attack does 20 more damage for each Colorless in your opponent’s Active Pokémon’s Retreat Cost.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-83",
@@ -910,7 +3587,46 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/83"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/83",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Crunch",
+    "effect": "Flip a coin. If heads, discard an Energy from your opponent’s Active Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-84",
@@ -921,7 +3637,47 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/84"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/84",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Sandile",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Knock Off",
+    "effect": "Discard a random card from your opponent’s hand.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Darkness Fang",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-85",
@@ -932,7 +3688,48 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/85"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/85",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Krokorok",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "False Accusation",
+    "effect": "This attack does 20 more damage for each card in your opponent’s hand.",
+    "damage": "20+"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Obsidian Fang",
+    "effect": "Before doing damage, discard all Pokémon Tool cards from your opponent’s Active Pokémon.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-86",
@@ -943,7 +3740,39 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/86"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/86",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "name": "Spelunk",
+    "effect": "Look at the top 3 cards of your deck and put them back in any order."
+   },
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Mud-Slap",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-87",
@@ -954,7 +3783,45 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/87"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/87",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Alolan Diglett",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Tangling Hair",
+    "effect": "Your opponent’s Active Pokémon’s Retreat Cost is Colorless more."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Dig Under",
+    "effect": "This attack does 50 damage to 1 of your opponent’s Pokémon. This damage isn’t affected by Weakness or Resistance."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-88",
@@ -965,7 +3832,46 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/88"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/88",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Metallic Sound",
+    "effect": "Discard all Special Energy from each Pokémon."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Aerial Ace",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-89",
@@ -976,7 +3882,52 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/89"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/89",
+  "hp": 250,
+  "evolveFrom": "Cosmoem",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Ultra Road",
+    "effect": "Once during your turn (before your attack), you may switch your Active Pokémon with 1 of your Benched Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Sunsteel Strike",
+    "effect": "Discard all Energy from this Pokémon.",
+    "damage": "230"
+   },
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Sol Burst GX",
+    "effect": "Search your deck for up to 5 Energy cards and attach them to your Pokémon in any way you like. Then, shuffle your deck. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-90",
@@ -987,7 +3938,36 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/90"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/90",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Reckless Charge",
+    "effect": "Flip a coin. If tails, this Pokémon does 10 damage to itself.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-91",
@@ -998,7 +3978,47 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/91"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/91",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Snubbull",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Dark Clamp",
+    "effect": "The Defending Pokémon can’t retreat during your opponent’s next turn.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fight Back",
+    "effect": "If this Pokémon has any damage counters on it, this attack does 80 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-92",
@@ -1009,7 +4029,36 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/92"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/92",
+  "hp": 30,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Fly Around",
+    "effect": "If any damage is done to this Pokémon by attacks during your opponent’s next turn, flip a coin. If heads, prevent that damage.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-93",
@@ -1020,7 +4069,43 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/93"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/93",
+  "hp": 60,
+  "stage": "Stage1",
+  "evolveFrom": "Cutiefly",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Curative Pollen",
+    "effect": "Once during your turn (before your attack), you may heal 20 damage from 1 of your Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Fairy Wind",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-94",
@@ -1031,7 +4116,36 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/94"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/94",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Signs of Evolution",
+    "effect": "Search your deck for a Dratini, a Dragonair, and a Dragonite, reveal them, and put them into your hand. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Tail Smack",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-95",
@@ -1042,7 +4156,39 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/95"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/95",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Dratini",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Dragon’s Wish",
+    "effect": "During your next turn, you may attach any number of Energy cards from your hand to your Pokémon."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Tail Smack",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-96",
@@ -1053,7 +4199,44 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/96"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/96",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Dragonair",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Lightning"
+    ],
+    "name": "Dragon Wave",
+    "effect": "Discard a Grass Energy and a Lightning Energy from this Pokémon.",
+    "damage": "130"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Giant Tail",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "200"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-97",
@@ -1064,7 +4247,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/97"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/97",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Peck Bugs",
+    "effect": "If your opponent’s Active Pokémon is a Grass Pokémon, this attack does 30 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-98",
@@ -1075,7 +4287,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/98"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/98",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Spearow",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Devastating Wind",
+    "effect": "Your opponent shuffles their hand into their deck and draws 3 cards."
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Slashing Strike",
+    "effect": "This Pokémon can’t use Slashing Strike during your next turn.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-99",
@@ -1086,7 +4335,41 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/99"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/99",
+  "hp": 130,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Cross-Cut",
+    "effect": "If your opponent’s Active Pokémon is an Evolution Pokémon, this attack does 30 more damage.",
+    "damage": "30+"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hurricane Punch",
+    "effect": "Flip 4 coins. This attack does 50 damage for each heads.",
+    "damage": "50×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-100",
@@ -1097,7 +4380,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/100"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/100",
+  "hp": 180,
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rage",
+    "effect": "This attack does 10 more damage for each damage counter on this Pokémon.",
+    "damage": "20+"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Horn Attack",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mad Bull GX",
+    "effect": "This attack does 30 damage for each damage counter on this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-101",
@@ -1108,7 +4431,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/101"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/101",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Energy Evolution",
+    "effect": "When you attach a basic Energy card from your hand to this Pokémon, you may search your deck for a card that evolves from this Pokémon that is the same type as that Energy card and put it onto this Pokémon. (This counts as evolving this Pokémon.) Shuffle your deck afterward."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Quick Draw",
+    "effect": "Flip a coin. If heads, draw a card."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-102",
@@ -1119,7 +4471,30 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/102"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/102",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Teeter Punch",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-103",
@@ -1130,7 +4505,37 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/103"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/103",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Work Up",
+    "effect": "During your next turn, this Pokémon’s attacks do 20 more damage to your opponent’s Active Pokémon (before applying Weakness and Resistance)."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-104",
@@ -1141,7 +4546,39 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/104"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/104",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Lillipup",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Treasure Hunt",
+    "effect": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may put an Item card from your discard pile into your hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-105",
@@ -1152,7 +4589,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/105"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/105",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Herdier",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Ferocious Bellow",
+    "effect": "During your opponent’s next turn, the Defending Pokémon’s attacks do 50 less damage (before applying Weakness and Resistance).",
+    "damage": "50"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hammer In",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-106",
@@ -1163,7 +4636,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/106"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/106",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Rock Smash",
+    "effect": "Flip a coin. If heads, this attack does 10 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-107",
@@ -1174,7 +4676,37 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/107"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/107",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Pikipek",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bullet Seed",
+    "effect": "Flip 4 coins. This attack does 20 damage for each heads.",
+    "damage": "20×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-108",
@@ -1185,7 +4717,48 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/108"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/108",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Trumbeak",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Echoed Voice",
+    "effect": "During your next turn, this Pokémon’s Echoed Voice attack does 60 more damage (before applying Weakness and Resistance).",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Beak Blast",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Burned.",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-109",
@@ -1196,7 +4769,37 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/109"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/109",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-110",
@@ -1207,7 +4810,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/110"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/110",
+  "hp": 210,
+  "evolveFrom": "Yungoos",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Search the Premises",
+    "effect": "Once during your turn (before your attack), you may have your opponent reveal their hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headbutt Bounce",
+    "damage": "100"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gumshoe Chance GX",
+    "effect": "This attack does 50 more damage times the amount of Energy attached to your opponent’s Active Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-111",
@@ -1218,7 +4860,30 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/111"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/111",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-112",
@@ -1229,7 +4894,42 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/112"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/112",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Stufful",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bear Hug",
+    "effect": "The Defending Pokémon can’t retreat during your opponent’s next turn.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Superpower",
+    "effect": "You may do 40 more damage. If you do, this Pokémon does 20 damage to itself.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-113",
@@ -1240,7 +4940,39 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/113"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/113",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Instruct",
+    "effect": "Once during your turn (before your attack), you may draw cards until you have 3 cards in your hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic",
+    "effect": "This attack does 20 more damage times the amount of Energy attached to your opponent’s Active Pokémon.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-114",
@@ -1248,7 +4980,13 @@
   "number": "114",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/114"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/114",
+  "effect": "Heal 20 damage and remove a Special Condition from your Active Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-115",
@@ -1256,7 +4994,13 @@
   "number": "115",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/115"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/115",
+  "effect": "Flip a coin. If heads, discard an Energy from 1 of your opponent’s Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-116",
@@ -1264,7 +5008,13 @@
   "number": "116",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/116"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/116",
+  "effect": "Put 2 basic Energy cards from your discard pile into your hand.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-117",
@@ -1272,7 +5022,13 @@
   "number": "117",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/117"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/117",
+  "effect": "Move a basic Energy from 1 of your Pokémon to another of your Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-118",
@@ -1280,7 +5036,13 @@
   "number": "118",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/118"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/118",
+  "effect": "When your Active Pokémon is Knocked Out by damage from an opponent’s attack, you may move 1 basic Energy card from that Pokémon to the Pokémon this card is attached to.",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-119",
@@ -1288,7 +5050,13 @@
   "number": "119",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/119"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/119",
+  "effect": "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-120",
@@ -1296,7 +5064,13 @@
   "number": "120",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/120"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/120",
+  "effect": "Draw 3 cards.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-121",
@@ -1304,7 +5078,13 @@
   "number": "121",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/121"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/121",
+  "effect": "Each player shuffles their hand into their deck and flips a coin. If heads, that player draws 6 cards. If tails, they draw 3 cards.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-122",
@@ -1312,7 +5092,13 @@
   "number": "122",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/122"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/122",
+  "effect": "Draw cards until you have 6 cards in your hand. If it’s your first turn, draw cards until you have 8 cards in your hand.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-123",
@@ -1320,7 +5106,13 @@
   "number": "123",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/123"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/123",
+  "effect": "Search your deck for a Basic Pokémon and put it onto your Bench. Then, shuffle your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-124",
@@ -1328,7 +5120,13 @@
   "number": "124",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/124"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/124",
+  "effect": "If the Pokémon this card is attached to is your Active Pokémon and is damaged by an opponent’s attack (even if this Pokémon is Knocked Out), the Attacking Pokémon is now Poisoned.",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-125",
@@ -1336,7 +5134,13 @@
   "number": "125",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/125"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/125",
+  "effect": "Flip a coin. If heads, search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-126",
@@ -1344,7 +5148,13 @@
   "number": "126",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/126"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/126",
+  "effect": "Flip a coin. If heads, switch 1 of your opponent’s Benched Pokémon with their Active Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-127",
@@ -1352,7 +5162,13 @@
   "number": "127",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/127"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/127",
+  "effect": "Heal 30 damage from 1 of your Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-128",
@@ -1360,7 +5176,13 @@
   "number": "128",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/128"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/128",
+  "effect": "Draw 2 cards. During this turn, your Pokémon’s attacks do 20 more damage to your opponent’s Active Pokémon (before applying Weakness and Resistance).",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-129",
@@ -1368,7 +5190,13 @@
   "number": "129",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/129"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/129",
+  "effect": "Choose 1 of your Basic Pokémon in play. If you have a Stage 2 card in your hand that evolves from that Pokémon, put that card onto the Basic Pokémon to evolve it. You can’t use this card during your first turn or on a Basic Pokémon that was put into play this turn.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-130",
@@ -1376,7 +5204,13 @@
   "number": "130",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/130"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/130",
+  "effect": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-131",
@@ -1384,7 +5218,13 @@
   "number": "131",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/131"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/131",
+  "effect": "After counting your Prize cards, shuffle them into your deck. Then, take that many cards from the top of your deck and put them face down as your Prize cards.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-132",
@@ -1392,7 +5232,13 @@
   "number": "132",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/132"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/132",
+  "effect": "Switch your Active Pokémon with 1 of your Benched Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-133",
@@ -1400,7 +5246,13 @@
   "number": "133",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/133"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/133",
+  "effect": "Your opponent reveals their hand. Discard 2 Energy cards from it.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-134",
@@ -1408,7 +5260,13 @@
   "number": "134",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/134"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/134",
+  "effect": "Flip 2 coins. For each heads, search your deck for an Evolution Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-135",
@@ -1416,7 +5274,13 @@
   "number": "135",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/135"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/135",
+  "effect": "Discard 2 cards from your hand. If you do, search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-136",
@@ -1424,7 +5288,13 @@
   "number": "136",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/136"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/136",
+  "effect": "Double Colorless Energy provides ColorlessColorless Energy.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-137",
@@ -1432,7 +5302,13 @@
   "number": "137",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/137"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/137",
+  "effect": "This card provides Colorless Energy. While in play, this card provides every type of Energy but provides only 1 Energy at a time. When you attach this card from your hand to 1 of your Pokémon, put 1 damage counter on that Pokémon.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-138",
@@ -1443,7 +5319,48 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/138"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/138",
+  "hp": 210,
+  "evolveFrom": "Fomantis",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Flower Supply",
+    "effect": "Attach 2 basic Energy cards from your discard pile to your Pokémon in any way you like.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Solar Blade",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Chloroscythe GX",
+    "effect": "This attack does 50 damage times the amount of Grass Energy attached to this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "50×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-139",
@@ -1454,7 +5371,48 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/139"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/139",
+  "hp": 190,
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Collect",
+    "effect": "Draw 3 cards."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water"
+    ],
+    "name": "Blizzard Burn",
+    "effect": "This Pokémon can’t attack during your next turn.",
+    "damage": "160"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Ice Beam GX",
+    "effect": "Your opponent’s Active Pokémon is now Paralyzed. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-140",
@@ -1465,7 +5423,49 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/140"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/140",
+  "hp": 200,
+  "evolveFrom": "Eevee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psybeam",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic",
+    "effect": "This attack does 30 more damage times the amount of Energy attached to your opponent’s Active Pokémon.",
+    "damage": "60+"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Divide GX",
+    "effect": "Put 10 damage counters on your opponent’s Pokémon in any way you like. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-141",
@@ -1476,7 +5476,55 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/141"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/141",
+  "hp": 250,
+  "evolveFrom": "Cosmoem",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Psychic Transfer",
+    "effect": "As often as you like during your turn (before your attack), you may move a Psychic Energy from 1 of your Pokémon to another of your Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Moongeist Beam",
+    "effect": "The Defending Pokémon can’t be healed during your opponent’s next turn.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Lunar Fall GX",
+    "effect": "Knock Out 1 of your opponent’s Basic Pokémon that isn’t a Pokémon-GX. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-142",
@@ -1487,7 +5535,54 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/142"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/142",
+  "hp": 200,
+  "evolveFrom": "Eevee",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Strafe",
+    "effect": "You may switch this Pokémon with 1 of your Benched Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Shadow Bullet",
+    "effect": "This attack does 30 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "90"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Dark Call GX",
+    "effect": "Discard 2 Energy from your opponent’s Pokémon. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-143",
@@ -1498,7 +5593,52 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/143"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/143",
+  "hp": 250,
+  "evolveFrom": "Cosmoem",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Ultra Road",
+    "effect": "Once during your turn (before your attack), you may switch your Active Pokémon with 1 of your Benched Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Sunsteel Strike",
+    "effect": "Discard all Energy from this Pokémon.",
+    "damage": "230"
+   },
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Sol Burst GX",
+    "effect": "Search your deck for up to 5 Energy cards and attach them to your Pokémon in any way you like. Then, shuffle your deck. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-144",
@@ -1509,7 +5649,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/144"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/144",
+  "hp": 180,
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rage",
+    "effect": "This attack does 10 more damage for each damage counter on this Pokémon.",
+    "damage": "20+"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Horn Attack",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mad Bull GX",
+    "effect": "This attack does 30 damage for each damage counter on this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-145",
@@ -1520,7 +5700,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/145"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/145",
+  "hp": 210,
+  "evolveFrom": "Yungoos",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Search the Premises",
+    "effect": "Once during your turn (before your attack), you may have your opponent reveal their hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headbutt Bounce",
+    "damage": "100"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gumshoe Chance GX",
+    "effect": "This attack does 50 more damage times the amount of Energy attached to your opponent’s Active Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-146",
@@ -1528,7 +5747,13 @@
   "number": "146",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/146"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/146",
+  "effect": "Each player shuffles their hand into their deck and flips a coin. If heads, that player draws 6 cards. If tails, they draw 3 cards.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-147",
@@ -1536,7 +5761,13 @@
   "number": "147",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/147"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/147",
+  "effect": "Draw cards until you have 6 cards in your hand. If it’s your first turn, draw cards until you have 8 cards in your hand.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-148",
@@ -1544,7 +5775,13 @@
   "number": "148",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/148"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/148",
+  "effect": "Draw 2 cards. During this turn, your Pokémon’s attacks do 20 more damage to your opponent’s Active Pokémon (before applying Weakness and Resistance).",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-149",
@@ -1552,7 +5789,13 @@
   "number": "149",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/149"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/149",
+  "effect": "Your opponent reveals their hand. Discard 2 Energy cards from it.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-150",
@@ -1563,7 +5806,48 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/150"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/150",
+  "hp": 210,
+  "evolveFrom": "Fomantis",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Flower Supply",
+    "effect": "Attach 2 basic Energy cards from your discard pile to your Pokémon in any way you like.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Solar Blade",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Chloroscythe GX",
+    "effect": "This attack does 50 damage times the amount of Grass Energy attached to this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "50×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-151",
@@ -1574,7 +5858,48 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/151"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/151",
+  "hp": 190,
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Collect",
+    "effect": "Draw 3 cards."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water"
+    ],
+    "name": "Blizzard Burn",
+    "effect": "This Pokémon can’t attack during your next turn.",
+    "damage": "160"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Ice Beam GX",
+    "effect": "Your opponent’s Active Pokémon is now Paralyzed. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-152",
@@ -1585,7 +5910,49 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/152"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/152",
+  "hp": 200,
+  "evolveFrom": "Eevee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psybeam",
+    "effect": "Your opponent’s Active Pokémon is now Confused.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic",
+    "effect": "This attack does 30 more damage times the amount of Energy attached to your opponent’s Active Pokémon.",
+    "damage": "60+"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Divide GX",
+    "effect": "Put 10 damage counters on your opponent’s Pokémon in any way you like. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-153",
@@ -1596,7 +5963,55 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/153"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/153",
+  "hp": 250,
+  "evolveFrom": "Cosmoem",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Psychic Transfer",
+    "effect": "As often as you like during your turn (before your attack), you may move a Psychic Energy from 1 of your Pokémon to another of your Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Moongeist Beam",
+    "effect": "The Defending Pokémon can’t be healed during your opponent’s next turn.",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Lunar Fall GX",
+    "effect": "Knock Out 1 of your opponent’s Basic Pokémon that isn’t a Pokémon-GX. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-154",
@@ -1607,7 +6022,54 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/154"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/154",
+  "hp": 200,
+  "evolveFrom": "Eevee",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Strafe",
+    "effect": "You may switch this Pokémon with 1 of your Benched Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Shadow Bullet",
+    "effect": "This attack does 30 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "90"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Dark Call GX",
+    "effect": "Discard 2 Energy from your opponent’s Pokémon. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-155",
@@ -1618,7 +6080,52 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/155"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/155",
+  "hp": 250,
+  "evolveFrom": "Cosmoem",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Ultra Road",
+    "effect": "Once during your turn (before your attack), you may switch your Active Pokémon with 1 of your Benched Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Sunsteel Strike",
+    "effect": "Discard all Energy from this Pokémon.",
+    "damage": "230"
+   },
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Sol Burst GX",
+    "effect": "Search your deck for up to 5 Energy cards and attach them to your Pokémon in any way you like. Then, shuffle your deck. (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-156",
@@ -1629,7 +6136,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/156"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/156",
+  "hp": 180,
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rage",
+    "effect": "This attack does 10 more damage for each damage counter on this Pokémon.",
+    "damage": "20+"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Horn Attack",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mad Bull GX",
+    "effect": "This attack does 30 damage for each damage counter on this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-157",
@@ -1640,7 +6187,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/157"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/157",
+  "hp": 210,
+  "evolveFrom": "Yungoos",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Search the Premises",
+    "effect": "Once during your turn (before your attack), you may have your opponent reveal their hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headbutt Bounce",
+    "damage": "100"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gumshoe Chance GX",
+    "effect": "This attack does 50 more damage times the amount of Energy attached to your opponent’s Active Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-158",
@@ -1648,7 +6234,13 @@
   "number": "158",
   "rarity": "Secret Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/158"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/158",
+  "effect": "Search your deck for a Basic Pokémon and put it onto your Bench. Then, shuffle your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-159",
@@ -1656,7 +6248,13 @@
   "number": "159",
   "rarity": "Secret Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/159"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/159",
+  "effect": "After counting your Prize cards, shuffle them into your deck. Then, take that many cards from the top of your deck and put them face down as your Prize cards.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-160",
@@ -1664,7 +6262,13 @@
   "number": "160",
   "rarity": "Secret Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/160"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/160",
+  "effect": "Switch your Active Pokémon with 1 of your Benched Pokémon.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-161",
@@ -1672,7 +6276,13 @@
   "number": "161",
   "rarity": "Secret Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/161"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/161",
+  "effect": "Discard 2 cards from your hand. If you do, search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-162",
@@ -1680,7 +6290,14 @@
   "number": "162",
   "rarity": "Secret Rare",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/162"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/162",
+  "stage": "Basic",
+  "effect": "",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-163",
@@ -1688,7 +6305,14 @@
   "number": "163",
   "rarity": "Secret Rare",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/163"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/163",
+  "stage": "Basic",
+  "effect": "",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-164",
@@ -1696,7 +6320,13 @@
   "number": "164",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/164"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/164",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-165",
@@ -1704,7 +6334,13 @@
   "number": "165",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/165"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/165",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-166",
@@ -1712,7 +6348,13 @@
   "number": "166",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/166"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/166",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-167",
@@ -1720,7 +6362,13 @@
   "number": "167",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/167"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/167",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-168",
@@ -1728,7 +6376,13 @@
   "number": "168",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/168"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/168",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-169",
@@ -1736,7 +6390,13 @@
   "number": "169",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/169"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/169",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-170",
@@ -1744,7 +6404,13 @@
   "number": "170",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/170"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/170",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-171",
@@ -1752,7 +6418,13 @@
   "number": "171",
   "rarity": "Common",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/sm/sm1/171"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/171",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "sm1-172",
@@ -1763,6 +6435,12 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm1/172"
+  "image": "https://assets.tcgdex.net/en/sm/sm1/172",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  }
 ]

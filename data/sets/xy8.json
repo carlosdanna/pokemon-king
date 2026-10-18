@@ -8,7 +8,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/1"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/1",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Blot",
+    "effect": "Heal 10 damage from this Pokémon.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-2",
@@ -19,7 +42,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/2"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/2",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Paras",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Colorful Spores",
+    "effect": "Choose 3 of your Pokémon. For each of those Pokémon, search your deck for a different type of basic Energy card and attach it to that Pokémon. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "X-Scissor",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-3",
@@ -30,7 +85,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/3"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/3",
+  "hp": 100,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Overhead Throw",
+    "effect": "This attack does 20 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Heavy Suplex",
+    "effect": "This attack does 20 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-4",
@@ -41,7 +129,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/4"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/4",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Swagger",
+    "effect": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-5",
@@ -52,7 +163,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/5"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/5",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-6",
@@ -63,7 +197,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/6"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/6",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Pansage",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Fire Fling",
+    "effect": "Put 3 Fire Energy cards from your discard pile into your hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hand Fling",
+    "effect": "This attack does 10 damage times the number of cards in your hand.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-7",
@@ -74,7 +240,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/7"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/7",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Nosh",
+    "effect": "Heal 20 damage from this Pokémon."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Seed Bomb",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-8",
@@ -85,7 +282,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/8"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/8",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Work",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Seed Bomb",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-9",
@@ -96,7 +324,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/9"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/9",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Tree Climb",
+    "effect": "Search your deck for a Grass Energy card, reveal it, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Seed Bomb",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-10",
@@ -107,7 +366,41 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/10"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/10",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Chespin",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Pin Missile",
+    "effect": "Flip 4 coins. This attack does 40 damage times the number of heads.",
+    "damage": "40×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-11",
@@ -118,7 +411,44 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/11"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/11",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Quilladin",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Spike Lariat",
+    "effect": "If your opponent's Active Pokémon already has any damage counters on it, this attack does 60 more damage.",
+    "damage": "60+"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Adamantine Press",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance).",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-12",
@@ -129,7 +459,28 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/12"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/12",
+  "hp": 190,
+  "stage": "BREAK",
+  "evolveFrom": "Chesnaught",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tough Hammer",
+    "effect": "This Pokémon does 30 damage to itself. This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "160"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-13",
@@ -140,7 +491,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/13"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/13",
+  "hp": 30,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "String Shot",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-14",
@@ -151,7 +532,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/14"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/14",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Scatterbug",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Protect",
+    "effect": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-15",
@@ -162,7 +574,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/15"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/15",
+  "hp": 120,
+  "stage": "Stage2",
+  "evolveFrom": "Spewpa",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Energy Color",
+    "effect": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for a basic Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sleep Powder",
+    "effect": "Your opponent's Active Pokémon is now Asleep.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-16",
@@ -173,7 +618,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/16"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/16",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Razor Leaf",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Rising Lunge",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-17",
@@ -184,7 +660,41 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/17"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/17",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Skiddo",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Overrun",
+    "effect": "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Grass"
+    ],
+    "name": "Horn Leech",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-18",
@@ -195,7 +705,38 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/18"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/18",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Ember",
+    "effect": "Discard a Fire Energy attached to this Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-19",
@@ -206,7 +747,32 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/19"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/19",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Cyndaquil",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Mini Eruption",
+    "effect": "Discard the top card of your deck. If that card is an Energy card, this attack does 30 more damage.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-20",
@@ -217,7 +783,41 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/20"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/20",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Quilava",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Massive Eruption",
+    "effect": "Discard the top 5 cards of your deck. This attack does 80 damage times the number of Energy cards you discarded.",
+    "damage": "80×"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flare Destroy",
+    "effect": "Discard an Energy attached to this Pokémon. Then, discard an Energy attached to your opponent's Active Pokémon.",
+    "damage": "130"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-21",
@@ -228,7 +828,38 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/21"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/21",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Melting Horn",
+    "effect": "Discard the top 2 cards of your opponent's deck."
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Grand Flame",
+    "effect": "Attach a Fire Energy card from your discard pile to 1 of your Benched Pokémon.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-22",
@@ -239,7 +870,32 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/22"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/22",
+  "hp": 210,
+  "stage": "MEGA",
+  "evolveFrom": "Houndoom-EX",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Inferno Fang",
+    "effect": "You may discard all Fire Energy attached to this Pokémon. If you do, this attack does 80 more damage.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-23",
@@ -250,7 +906,30 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/23"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/23",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-24",
@@ -261,7 +940,39 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/24"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/24",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Pansear",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Water Fling",
+    "effect": "Put 3 Water Energy cards from your discard pile into your hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hand Fling",
+    "effect": "This attack does 10 damage times the number of cards in your hand.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-25",
@@ -272,7 +983,31 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/25"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/25",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Firebreathing",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-26",
@@ -283,7 +1018,33 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/26"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/26",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Fennekin",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-27",
@@ -294,7 +1055,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/27"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/27",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Reckless Charge",
+    "effect": "This Pokémon does 10 damage to itself.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-28",
@@ -305,7 +1089,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/28"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/28",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Goldeen",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Soaking Horn",
+    "effect": "If this Pokémon was healed during this turn, this attack does 80 more damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Reckless Charge",
+    "effect": "This Pokémon does 10 damage to itself.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-29",
@@ -316,7 +1132,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/29"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/29",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Continuous Spin",
+    "effect": "Flip a coin until you get tails. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-30",
@@ -327,7 +1166,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/30"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/30",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Staryu",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Deep Sea Swirl",
+    "effect": "Shuffle your hand into your deck. Then, draw 7 cards."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Balance Bind",
+    "effect": "If you and your opponent have the same number of Benched Pokémon, your opponent's Active Pokémon is now Paralyzed.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-31",
@@ -338,7 +1209,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/31"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/31",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Wild River",
+    "effect": "Switch this Pokémon with 1 of your Benched Pokémon."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Water Gun",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-32",
@@ -349,7 +1250,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/32"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/32",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Ion Pool",
+    "effect": "Discard any Stadium card in play."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Water Gun",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-33",
@@ -360,7 +1291,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/33"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/33",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Remoraid",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Abyssal Hand",
+    "effect": "Once during your turn (before your attack), you may draw cards until you have 5 cards in your hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Hug",
+    "effect": "The Defending Pokémon can't retreat during your opponent's next turn.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-34",
@@ -371,7 +1335,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/34"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/34",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Ice Breath",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Instant Freeze",
+    "effect": "If you have the same number of cards in your hand as your opponent, this attack does 100 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-35",
@@ -382,7 +1378,33 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/35"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/35",
+  "hp": 220,
+  "stage": "MEGA",
+  "evolveFrom": "Glalie-EX",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cryo Mouth",
+    "effect": "If this Pokémon has 10 or more damage counters on it, this attack does 150 more damage.",
+    "damage": "100+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-36",
@@ -393,7 +1415,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/36"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/36",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Wave Splash",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-37",
@@ -404,7 +1449,32 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/37"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/37",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Piplup",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Ice Beam",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-38",
@@ -415,7 +1485,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/38"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/38",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Prinplup",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Dignified Fighter",
+    "effect": "Each of your Basic Pokémon's attacks does 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Hydro Splash",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-39",
@@ -426,7 +1527,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/39"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/39",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Powder Snow",
+    "effect": "Your opponent's Active Pokémon is now Asleep."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Smash",
+    "effect": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-40",
@@ -437,7 +1570,43 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/40"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/40",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Snover",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Ice Age",
+    "effect": "If your opponent's Active Pokémon is a Dragon Pokémon, it is now Paralyzed.",
+    "damage": "80"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Frost Breath",
+    "damage": "110"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-41",
@@ -448,7 +1617,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/41"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/41",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-42",
@@ -459,7 +1651,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/42"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/42",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Panpour",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Green Fling",
+    "effect": "Put 3 Grass Energy cards from your discard pile into your hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hand Fling",
+    "effect": "This attack does 10 damage times the number of cards in your hand.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-43",
@@ -470,7 +1694,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/43"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/43",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Stiffen",
+    "effect": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Icy Snow",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-44",
@@ -481,7 +1735,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/44"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/44",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Vanillite",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Ice Edge",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water"
+    ],
+    "name": "Icy Wind",
+    "effect": "Your opponent's Active Pokémon is now Asleep.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-45",
@@ -492,7 +1779,42 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/45"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/45",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Vanillish",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Frigid Breath",
+    "effect": "Until the end of your next turn, each player can't play any Supporter or Stadium cards from his or her hand.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Deep Freeze",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed. If tails, your opponent's Active Pokémon is now Confused.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-46",
@@ -503,7 +1825,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/46"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/46",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Pound",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-47",
@@ -514,7 +1858,31 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/47"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/47",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Froakie",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cut",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-48",
@@ -525,7 +1893,44 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/48"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/48",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Gnaw",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Agility",
+    "effect": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-49",
@@ -536,7 +1941,47 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/49"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/49",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Pikachu",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Thunderclap Shot",
+    "effect": "This attack does 50 damage to each of your opponent's Pokémon-EX. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Electrosmash",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "70+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-50",
@@ -547,7 +1992,27 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/50"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/50",
+  "hp": 130,
+  "stage": "BREAK",
+  "evolveFrom": "Raichu",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Grand Bolt",
+    "effect": "Discard all Energy attached to this Pokémon.",
+    "damage": "170"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-51",
@@ -558,7 +2023,43 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/51"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/51",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Sparkling Induction",
+    "effect": "As long as this Pokémon is your Active Pokémon, its Retreat Cost is Colorless less for each Magnemite on your Bench."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Lightning Ball",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-52",
@@ -569,7 +2070,43 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/52"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/52",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Shock Generator",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Lightning Ball",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-53",
@@ -580,7 +2117,46 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/53"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/53",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Magnemite",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Static Shock",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Electro Ball",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-54",
@@ -591,7 +2167,46 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/54"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/54",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Magneton",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Magnetic Circuit",
+    "effect": "As often as you like during your turn (before your attack), you may attach a Lightning Energy card from your hand to 1 of your Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Thunder Blast",
+    "effect": "Discard a Lightning Energy attached to this Pokémon.",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-55",
@@ -602,7 +2217,45 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/55"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/55",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Shining Body",
+    "effect": "If this Pokémon has any Lightning Energy attached to it, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Thunder Lance",
+    "effect": "This attack does 20 more damage for each Lightning Energy attached to this Pokémon.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-56",
@@ -613,7 +2266,47 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/56"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/56",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Revenge",
+    "effect": "If any of your Pokémon were Knocked Out by damage from an opponent's attack during his or her last turn, this attack does 80 more damage.",
+    "damage": "20+"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Thunder Blast",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-57",
@@ -624,7 +2317,36 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/57"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/57",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Thunder Shock",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-58",
@@ -635,7 +2357,35 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/58"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/58",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Sleep Poison",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Asleep and Poisoned."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-59",
@@ -646,7 +2396,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/59"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/59",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Gastly",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Gothic Fear",
+    "effect": "When you play this Pokémon from your hand to evolve 1 of your Pokémon, you may leave both Active Pokémon Confused."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Poison Ring",
+    "effect": "Your opponent's Active Pokémon is now Poisoned. That Pokémon can't retreat during your opponent's next turn."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-60",
@@ -657,7 +2444,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/60"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/60",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Haunter",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Sinister Fog",
+    "effect": "Your opponent's Active Pokémon is now Poisoned. Put 1 damage counter on each of your opponent's Benched Pokémon."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Creep Show",
+    "effect": "If your opponent's Active Pokémon has 3 or more damage counters on it, that Pokémon is Knocked Out."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-61",
@@ -668,7 +2492,41 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/61"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/61",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Photon Wave",
+    "effect": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 30 (before applying Weakness and Resistance).",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psyburn",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-62",
@@ -679,7 +2537,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/62"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/62",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Shatter Shot",
+    "effect": "This attack does 30 damage times the amount of Psychic Energy attached to this Pokémon.",
+    "damage": "30×"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Damage Change",
+    "effect": "Switch all damage counters on this Pokémon with those on your opponent's Active Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-63",
@@ -690,7 +2580,34 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/63"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/63",
+  "hp": 230,
+  "stage": "MEGA",
+  "evolveFrom": "Mewtwo-EX",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Vanishing Strike",
+    "effect": "If there is any Stadium card in play, this attack does 50 more damage, and this attack's damage isn't affected by Resistance or any effects on your opponent's Active Pokémon.",
+    "damage": "150+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-64",
@@ -701,7 +2618,32 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/64"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/64",
+  "hp": 210,
+  "stage": "MEGA",
+  "evolveFrom": "Mewtwo-EX",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic Infinity",
+    "effect": "This attack does 30 more damage times the amount of Energy attached to both Active Pokémon. This attack's damage isn't affected by Weakness.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-65",
@@ -712,7 +2654,35 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/65"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/65",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Haunt",
+    "effect": "Put 2 damage counters on your opponent's Active Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-66",
@@ -723,7 +2693,46 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/66"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/66",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Misdreavus",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Twisted Incantation",
+    "effect": "When you play this Pokémon from your hand to evolve 1 of your Pokémon, you may have your opponent shuffle his or her hand into his or her deck and draw a card for each of his or her remaining Prize cards."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Curse Deeply",
+    "effect": "Your opponent's Active Pokémon is now Confused.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-67",
@@ -734,7 +2743,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/67"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/67",
+  "hp": 100,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Mirror Barrier",
+    "effect": "Flip a coin. If heads, prevent all damage done to this Pokémon by attacks during your opponent's next turn."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Rolling Tackle",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-68",
@@ -745,7 +2785,37 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/68"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/68",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Nap",
+    "effect": "Heal 30 damage from this Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Smack",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-69",
@@ -756,7 +2826,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/69"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/69",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Ralts",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Beckon",
+    "effect": "Put a Supporter card from your discard pile into your hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Turn",
+    "effect": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+    "damage": "30×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-70",
@@ -767,7 +2869,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/70"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/70",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "My Way",
+    "effect": "If there is any Stadium card in play, this Pokémon has no Retreat Cost."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Moonlight Gain",
+    "effect": "Heal 20 damage from this Pokémon.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-71",
@@ -778,7 +2912,42 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/71"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/71",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Odor Sleuth",
+    "effect": "Flip a coin. If heads, put a card from your discard pile into your hand."
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psyshot",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-72",
@@ -789,7 +2958,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/72"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/72",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Woobat",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Wave Amplification",
+    "effect": "During your next turn, this Pokémon's Returning Echo attack does 60 more damage (before applying Weakness and Resistance)."
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Returning Echo",
+    "effect": "Flip a coin. If tails, return this Pokémon and all cards attached to it to your hand.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-73",
@@ -800,7 +3006,30 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/73"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/73",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psych Up",
+    "effect": "During your next turn, this Pokémon's Psych Up attack does 20 more damage (before applying Weakness and Resistance).",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-74",
@@ -811,7 +3040,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/74"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/74",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Elgyem",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Mind Bullet",
+    "effect": "This attack does 20 damage to 1 of your opponent's Pokémon times the amount of Energy attached to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Psybeam",
+    "effect": "Your opponent's Active Pokémon is now Confused.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-75",
@@ -822,7 +3083,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/75"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/75",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Double Scratch",
+    "effect": "Flip 2 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Sand Tomb",
+    "effect": "The Defending Pokémon can't retreat during your opponent's next turn.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-76",
@@ -833,7 +3126,40 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/76"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/76",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Sandshrew",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Swift",
+    "effect": "This attack's damage isn't affected by Weakness, Resistance, or any other effects on your opponent's Active Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-77",
@@ -844,7 +3170,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/77"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/77",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Whimsy Tackle",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-78",
@@ -855,7 +3205,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/78"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/78",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Cubone",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Sharpshooting",
+    "effect": "This attack does 30 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Bone Windmill",
+    "effect": "If your opponent's Active Pokémon is a Pokémon-EX, switch this Pokémon with 1 of your Benched Pokémon.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-79",
@@ -866,7 +3248,26 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/79"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/79",
+  "hp": 140,
+  "stage": "BREAK",
+  "evolveFrom": "Marowak",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Bone Revenge",
+    "effect": "This attack does 40 more damage for each Prize card your opponent has taken.",
+    "damage": "20+"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-80",
@@ -877,7 +3278,38 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/80"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/80",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Powder Snow",
+    "effect": "Your opponent's Active Pokémon is now Asleep."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Mud-Slap",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-81",
@@ -888,7 +3320,42 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/81"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/81",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Swinub",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Push Down",
+    "effect": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gathering Footsteps",
+    "effect": "This attack does 10 more damage for each Colorless in the Retreat Cost of your Swinub, Piloswine, and Mamoswine.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-82",
@@ -899,7 +3366,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/82"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/82",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Piloswine",
+  "retreat": 4,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Thick Fat",
+    "effect": "Any damage done to this Pokémon by attacks from your opponent's Fire or Water Pokémon is reduced by 30 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Primordial Boom",
+    "effect": "If you have a Stadium card in play, this attack does 40 more damage. If your opponent has a Stadium card in play, heal 40 damage from this Pokémon.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-83",
@@ -910,7 +3411,32 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/83"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/83",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Nose Jet",
+    "effect": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-84",
@@ -921,7 +3447,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/84"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/84",
+  "hp": 150,
+  "stage": "Stage2",
+  "evolveFrom": "Kirlia",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Premonition",
+    "effect": "Once during your turn (before your attack), you may look at the top 5 cards of your deck and put them back on top of your deck in any order."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sensitive Blade",
+    "effect": "If you played a Supporter card from your hand during this turn, this attack does 70 more damage.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-85",
@@ -932,7 +3490,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/85"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/85",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Accelerating Spin",
+    "effect": "Attach 2 Fighting Energy cards from your discard pile to this Pokémon. Then, switch this Pokémon with 1 of your Benched Pokémon."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Prima Rondo",
+    "effect": "If this Pokémon has any Psychic Energy attached to it, this attack does 50 more damage.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-86",
@@ -943,7 +3533,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/86"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/86",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Pompous Punch",
+    "effect": "Discard a random card from your opponent's hand.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-87",
@@ -954,7 +3568,44 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/87"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/87",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "High Jump Kick",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Skyward Kick",
+    "effect": "This attack's damage isn't affected by Resistance.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-88",
@@ -965,7 +3616,47 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/88"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/88",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Cacnea",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Derail",
+    "effect": "Discard a Special Energy attached to your opponent's Active Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Pin Missile",
+    "effect": "Flip 3 coins. This attack does 40 damage times the number of heads.",
+    "damage": "40×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-89",
@@ -976,7 +3667,44 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/89"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/89",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Moonless Madness",
+    "effect": "Your opponent's Active Pokémon is now Confused."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Dark Edge",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-90",
@@ -987,7 +3715,44 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/90"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/90",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Whiny Voice",
+    "effect": "Choose a random card from your opponent's hand. Your opponent reveals that card and shuffles it into his or her deck."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Dark Edge",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-91",
@@ -998,7 +3763,45 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/91"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/91",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Zorua",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Stand In",
+    "effect": "Once during your turn (before your attack), if this Pokémon is on your Bench, you may switch this Pokémon with your Active Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mind Jack",
+    "effect": "This attack does 30 more damage for each of your opponent's Benched Pokémon.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-92",
@@ -1009,7 +3812,24 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/92"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/92",
+  "hp": 140,
+  "stage": "BREAK",
+  "evolveFrom": "Zoroark",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness"
+    ],
+    "name": "Foul Play",
+    "effect": "Choose 1 of your opponent's Active Pokémon's attacks and use it as this attack."
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-93",
@@ -1020,7 +3840,37 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/93"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/93",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Disorderly Flip",
+    "effect": "Flip 4 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-94",
@@ -1031,7 +3881,45 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/94"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/94",
+  "hp": 130,
+  "stage": "Basic",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Fright Night",
+    "effect": "As long as this Pokémon is your Active Pokémon, each Pokémon Tool card in play has no effect."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Pitch-Black Spear",
+    "effect": "This attack does 60 damage to 1 of your opponent's Benched Pokémon-EX. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-95",
@@ -1042,7 +3930,37 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/95"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/95",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Payback",
+    "effect": "If your opponent has only 1 Prize card left, this attack does 60 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-96",
@@ -1053,7 +3971,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/96"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/96",
+  "hp": 110,
+  "stage": "Stage1",
+  "evolveFrom": "Bronzor",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Pain Amplifier",
+    "effect": "Put 3 damage counters on each of your opponent's Pokémon that has any damage counters on it."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Knock Away",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "70+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-97",
@@ -1064,7 +4022,44 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/97"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/97",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Bench Barrier",
+    "effect": "Prevent all damage done to your Benched Pokémon by attacks."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Juggling",
+    "effect": "Flip 4 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-98",
@@ -1075,7 +4070,44 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/98"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/98",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Roar",
+    "effect": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-99",
@@ -1086,7 +4118,47 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/99"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/99",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Snubbull",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Startling Bark",
+    "effect": "Flip a coin. If heads, choose 3 random cards from your opponent's hand. Your opponent reveals those cards and shuffles them into his or her deck."
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tantrum",
+    "effect": "This Pokémon is now Confused.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-100",
@@ -1097,7 +4169,43 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/100"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/100",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Mumble",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Magical Shot",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-101",
@@ -1108,7 +4216,35 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/101"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/101",
+  "hp": 30,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Wish",
+    "effect": "Flip a coin. If heads, search your deck for a card and put it into your hand. Shuffle your deck afterward."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-102",
@@ -1119,7 +4255,45 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/102"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/102",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Flabébé",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Aromatherapy",
+    "effect": "Heal 30 damage from each of your Pokémon."
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Fairy"
+    ],
+    "name": "Magical Leaf",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage and heal 20 damage from this Pokémon.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-103",
@@ -1130,7 +4304,46 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/103"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/103",
+  "hp": 110,
+  "stage": "Stage2",
+  "evolveFrom": "Floette",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Calming Aroma",
+    "effect": "Each of your Pokémon's attacks costs Fairy less."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fairy",
+     "Fairy",
+     "Fairy"
+    ],
+    "name": "Wonder Shine",
+    "effect": "Your opponent's Active Pokémon is now Confused.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-104",
@@ -1141,7 +4354,22 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/104"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/104",
+  "hp": 140,
+  "stage": "BREAK",
+  "evolveFrom": "Florges",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Floral Breeze",
+    "effect": "Once during your turn (before your attack), you may heal 30 damage and remove a Special Condition from your Active Pokémon."
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-105",
@@ -1152,7 +4380,36 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/105"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/105",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Flail",
+    "effect": "This attack does 10 damage times the number of damage counters on this Pokémon.",
+    "damage": "10×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-106",
@@ -1163,7 +4420,44 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/106"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/106",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Spritzee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Heavy Perfume",
+    "effect": "Your opponent's Active Pokémon is now Confused. Put 6 damage counters instead of 3 on that Pokémon for this Special Condition."
+   },
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Hug",
+    "effect": "The Defending Pokémon can't retreat during your opponent's next turn.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-107",
@@ -1174,7 +4468,49 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/107"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/107",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rainbow Force",
+    "effect": "This attack does 30 more damage for each different type of Pokémon on your Bench.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Fairy",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Power Creation",
+    "effect": "If this Pokémon was healed during this turn, this attack does 80 more damage.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-108",
@@ -1185,7 +4521,38 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/108"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/108",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Brat Snack",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Dragon Claw",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-109",
@@ -1196,7 +4563,39 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/109"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/109",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Extra Chop",
+    "effect": "This Pokémon does 10 damage to itself.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Dragon Claw",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-110",
@@ -1207,7 +4606,40 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/110"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/110",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Axew",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sharp Fang",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Dragon Slayer",
+    "effect": "If your opponent's Active Pokémon is a Dragon Pokémon, this attack does 40 more damage (before applying Weakness and Resistance).",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-111",
@@ -1218,7 +4650,46 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/111"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/111",
+  "hp": 160,
+  "stage": "Stage2",
+  "evolveFrom": "Fraxure",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Dragon Dance",
+    "effect": "As long as this Haxorus is your Active Pokémon, each of its attacks does 100 more damage (before applying Weakness and Resistance). You can't add more than 100 damage in this way."
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sharp Fang",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Metal"
+    ],
+    "name": "Dragon Pulse",
+    "effect": "Discard the top 3 cards of your deck.",
+    "damage": "130"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-112",
@@ -1229,7 +4700,40 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/112"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/112",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Noibat",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tuning",
+    "effect": "Shuffle your hand into your deck. Then, draw a number of cards equal to the number of cards in your opponent's hand."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Air Slash",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fairy",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-113",
@@ -1240,7 +4744,27 @@
   "types": [
    "Dragon"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/113"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/113",
+  "hp": 130,
+  "stage": "BREAK",
+  "evolveFrom": "Noivern",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Synchro Woofer",
+    "effect": "If you have the same number of cards in your hand as your opponent, this attack does 80 more damage.",
+    "damage": "70+"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-114",
@@ -1251,7 +4775,29 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/114"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/114",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Exhausted Tackle",
+    "effect": "Flip a coin. If heads, this attack does 30 damage to your opponent's Active Pokémon. If tails, this Pokémon does 30 damage to itself."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-115",
@@ -1262,7 +4808,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/115"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/115",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Simultaneous Peck",
+    "effect": "Flip 2 coins. If either of them is tails, this attack does nothing.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Doduo Delivery",
+    "effect": "Draw 2 cards."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-116",
@@ -1273,7 +4856,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/116"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/116",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Double Stab",
+    "effect": "Flip 2 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Doduo Delivery",
+    "effect": "Draw 2 cards."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-117",
@@ -1284,7 +4904,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/117"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/117",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Doduo",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Retreat Aid",
+    "effect": "As long as this Pokémon is on your Bench, your Active Pokémon's Retreat Cost is ColorlessColorless less."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fury Attack",
+    "effect": "Flip 3 coins. This attack does 40 damage times the number of heads.",
+    "damage": "40×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-118",
@@ -1295,7 +4954,40 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/118"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/118",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 4,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Plump Body",
+    "effect": "Any damage done to this Pokémon by attacks is reduced by 30 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Knock Away",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-119",
@@ -1306,7 +4998,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/119"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/119",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Proclaim the Night",
+    "effect": "Your opponent can't play any Item cards from his or her hand during his or her next turn."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-120",
@@ -1317,7 +5038,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/120"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/120",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Hoothoot",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "High Flight",
+    "effect": "Each player reveals his or her hand. This attack does 20 damage times the number of Item cards revealed.",
+    "damage": "20×"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Speed Dive",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-121",
@@ -1328,7 +5089,30 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/121"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/121",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Flop",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-122",
@@ -1339,7 +5123,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/122"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/122",
+  "hp": 130,
+  "stage": "Stage1",
+  "evolveFrom": "Teddiursa",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Drag Off",
+    "effect": "Switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon. This attack does 50 damage to the new Active Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Swing Around",
+    "effect": "Flip 2 coins. This attack does 40 more damage for each heads.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-123",
@@ -1350,7 +5170,37 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/123"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/123",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Second Coat",
+    "effect": "Once during your turn (before your attack), you may switch a basic Energy card attached to your Active Pokémon with a different type of basic Energy card from your discard pile."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Beat",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-124",
@@ -1361,7 +5211,35 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/124"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/124",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bind Wound",
+    "effect": "Heal 20 damage from 1 of your Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-125",
@@ -1372,7 +5250,35 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/125"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/125",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Call for Pals",
+    "effect": "Search your deck for as many Starly as you like and put them onto your Bench. Shuffle your deck afterward."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-126",
@@ -1383,7 +5289,45 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/126"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/126",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Starly",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Glide",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-127",
@@ -1394,7 +5338,48 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/127"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/127",
+  "hp": 140,
+  "stage": "Stage2",
+  "evolveFrom": "Staravia",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cyclone Slash",
+    "effect": "Before doing damage, have your opponent switch his or her Active Pokémon with 1 of his or her Benched Pokémon.",
+    "damage": "70"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Brave Bird",
+    "effect": "This Pokémon does 20 damage to itself.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-128",
@@ -1405,7 +5390,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/128"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/128",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sing",
+    "effect": "Your opponent's Active Pokémon is now Asleep."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Aerial Ace",
+    "effect": "Flip a coin. If heads, this attack does 30 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-129",
@@ -1416,7 +5438,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/129"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/129",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Peck",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-130",
@@ -1427,7 +5478,48 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/130"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/130",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Rufflet",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Wing Attack",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Dual Cut",
+    "effect": "Flip 2 coins. This attack does 80 damage times the number of heads.",
+    "damage": "80×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-131",
@@ -1438,7 +5530,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/131"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/131",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Blot",
+    "effect": "Heal 10 damage from this Pokémon.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-132",
@@ -1449,7 +5570,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/132"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/132",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Mysterious Beam",
+    "effect": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gust",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-133",
@@ -1457,7 +5614,13 @@
   "number": "133",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/133"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/133",
+  "effect": "Any damage done to the Pokémon this card is attached to by attacks from your opponent's Pokémon that have any Special Energy attached to them is reduced by 40 (after applying Weakness and Resistance).",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-134",
@@ -1465,7 +5628,13 @@
   "number": "134",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/134"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/134",
+  "effect": "Search your deck for 1 Basic Pokémon-EX or 3 Basic Pokémon (except for Pokémon-EX) and put them onto your Bench. Shuffle your deck afterward.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-135",
@@ -1473,7 +5642,13 @@
   "number": "135",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/135"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/135",
+  "effect": "Each player puts a Pokémon from his or her discard pile into his or her hand. (Your opponent chooses first.)",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-136",
@@ -1481,7 +5656,13 @@
   "number": "136",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/136"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/136",
+  "effect": "Put 4 basic Energy cards from your discard pile into your hand.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-137",
@@ -1489,7 +5670,13 @@
   "number": "137",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/137"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/137",
+  "effect": "The Pokémon this card is attached to has no Retreat Cost.",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-138",
@@ -1497,7 +5684,13 @@
   "number": "138",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/138"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/138",
+  "effect": "Choose 1:\n\n• Draw cards until you have 5 cards in your hand.\n• During this turn, your Pokémon's attacks do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-139",
@@ -1505,7 +5698,13 @@
   "number": "139",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/139"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/139",
+  "effect": "Your turn does not end if the Pokémon this card is attached to becomes M Glalie-EX.",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-140",
@@ -1513,7 +5712,13 @@
   "number": "140",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/140"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/140",
+  "effect": "Search your deck for a Pokémon with a Retreat Cost of 3 or more, reveal it, and put it into your hand. Shuffle your deck afterward.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-141",
@@ -1521,7 +5726,13 @@
   "number": "141",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/141"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/141",
+  "effect": "If the Retreat Cost of the Pokémon this card is attached to is 3 or more, that Pokémon gets +20 HP and can't be Confused. (If that Pokémon is currently Confused, remove that Special Condition.)",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-142",
@@ -1529,7 +5740,13 @@
   "number": "142",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/142"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/142",
+  "effect": "Your turn does not end if the Pokémon this card is attached to becomes M Houndoom-EX.",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-143",
@@ -1537,7 +5754,13 @@
   "number": "143",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/143"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/143",
+  "effect": "Each player shuffles his or her hand into his or her deck and draws 4 cards.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-144",
@@ -1545,7 +5768,13 @@
   "number": "144",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/144"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/144",
+  "effect": "Your turn does not end if the Pokémon this card is attached to becomes M Mewtwo-EX.",
+  "trainerType": "Tool",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-145",
@@ -1553,14 +5782,26 @@
   "number": "145",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/145"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/145",
+  "effect": "Choose which way this card faces before you play it. This ↓ player can't have more than 3 Benched Pokémon.(When this card comes into play, this ↓ player discards Benched Pokémon until he or she has 3 Pokémon on the Bench.)\n\nAny damage done by attacks from this ↓ player's Grass, Fire, or Water Pokémon is reduced by 20 (before applying Weakness and Resistance).",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-146a",
   "name": "Professor's Letter",
   "number": "146a",
   "rarity": "None",
-  "category": "Trainer"
+  "category": "Trainer",
+  "effect": "Search your deck for up to 2 basic Energy cards, reveal them, and put them into your hand. Shuffle your deck afterward.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-146",
@@ -1568,7 +5809,13 @@
   "number": "146",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/146"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/146",
+  "effect": "Search your deck for up to 2 basic Energy cards, reveal them, and put them into your hand. Shuffle your deck afterward.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-147",
@@ -1576,7 +5823,13 @@
   "number": "147",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/147"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/147",
+  "effect": "Flip a coin. If heads, search your deck for a card, shuffle your deck, then put that card on top of it.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-148",
@@ -1584,7 +5837,13 @@
   "number": "148",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/148"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/148",
+  "effect": "Search your deck for a Trainer card, reveal it, and put it into your hand. Shuffle your deck afterward.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-149",
@@ -1592,7 +5851,13 @@
   "number": "149",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/149"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/149",
+  "effect": "Shuffle 3 in any combination of Pokémon and basic Energy cards from your discard pile into your deck.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-150",
@@ -1600,7 +5865,13 @@
   "number": "150",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/150"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/150",
+  "effect": "Turn all of your Prize cards face up. (Those Prize cards remain face up for the rest of the game.)",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-151",
@@ -1608,7 +5879,13 @@
   "number": "151",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/151"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/151",
+  "effect": "This card can only be attached to Fire Pokémon. This card provides Fire Energy only while this card is attached to a Fire Pokémon.\n\nIf this card is discarded by an attack of the Fire Pokémon this card is attached to, attach this card from your discard pile to that Pokémon after attacking.\n\n(If this card is attached to anything other than a Fire Pokémon, discard this card.)",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-152",
@@ -1616,7 +5893,13 @@
   "number": "152",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/152"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/152",
+  "effect": "This card provides Colorless Energy. While in play, this card provides every type of Energy but provides only 1 Energy at a time. When you attach this card from your hand to 1 of your Pokémon, put 1 damage counter on that Pokémon.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-153",
@@ -1627,7 +5910,38 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/153"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/153",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Melting Horn",
+    "effect": "Discard the top 2 cards of your opponent's deck."
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Grand Flame",
+    "effect": "Attach a Fire Energy card from your discard pile to 1 of your Benched Pokémon.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-154",
@@ -1638,7 +5952,32 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/154"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/154",
+  "hp": 210,
+  "stage": "MEGA",
+  "evolveFrom": "Houndoom-EX",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Inferno Fang",
+    "effect": "You may discard all Fire Energy attached to this Pokémon. If you do, this attack does 80 more damage.",
+    "damage": "80+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-155",
@@ -1649,7 +5988,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/155"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/155",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Ice Breath",
+    "effect": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Instant Freeze",
+    "effect": "If you have the same number of cards in your hand as your opponent, this attack does 100 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-156",
@@ -1660,7 +6031,33 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/156"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/156",
+  "hp": 220,
+  "stage": "MEGA",
+  "evolveFrom": "Glalie-EX",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cryo Mouth",
+    "effect": "If this Pokémon has 10 or more damage counters on it, this attack does 150 more damage.",
+    "damage": "100+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-157",
@@ -1671,7 +6068,41 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/157"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/157",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Photon Wave",
+    "effect": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 30 (before applying Weakness and Resistance).",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psyburn",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-158",
@@ -1682,7 +6113,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/158"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/158",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Shatter Shot",
+    "effect": "This attack does 30 damage times the amount of Psychic Energy attached to this Pokémon.",
+    "damage": "30×"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Damage Change",
+    "effect": "Switch all damage counters on this Pokémon with those on your opponent's Active Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-159",
@@ -1693,7 +6156,34 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/159"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/159",
+  "hp": 230,
+  "stage": "MEGA",
+  "evolveFrom": "Mewtwo-EX",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Vanishing Strike",
+    "effect": "If there is any Stadium card in play, this attack does 50 more damage, and this attack's damage isn't affected by Resistance or any effects on your opponent's Active Pokémon.",
+    "damage": "150+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-160",
@@ -1704,7 +6194,32 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/160"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/160",
+  "hp": 210,
+  "stage": "MEGA",
+  "evolveFrom": "Mewtwo-EX",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic Infinity",
+    "effect": "This attack does 30 more damage times the amount of Energy attached to both Active Pokémon. This attack's damage isn't affected by Weakness.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-161",
@@ -1712,7 +6227,13 @@
   "number": "161",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/161"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/161",
+  "effect": "Search your deck for 1 Basic Pokémon-EX or 3 Basic Pokémon (except for Pokémon-EX) and put them onto your Bench. Shuffle your deck afterward.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-162",
@@ -1720,7 +6241,13 @@
   "number": "162",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/xy/xy8/162"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/162",
+  "effect": "Choose 1:\n\n• Draw cards until you have 5 cards in your hand.\n• During this turn, your Pokémon's attacks do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-163",
@@ -1731,7 +6258,41 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/163"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/163",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Photon Wave",
+    "effect": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 30 (before applying Weakness and Resistance).",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psyburn",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "xy8-164",
@@ -1742,6 +6303,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/xy/xy8/164"
+  "image": "https://assets.tcgdex.net/en/xy/xy8/164",
+  "hp": 170,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Shatter Shot",
+    "effect": "This attack does 30 damage times the amount of Psychic Energy attached to this Pokémon.",
+    "damage": "30×"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Damage Change",
+    "effect": "Switch all damage counters on this Pokémon with those on your opponent's Active Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  }
 ]

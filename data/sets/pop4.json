@@ -8,7 +8,38 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/1"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/1",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Wrap",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Sonicboom",
+    "effect": "This attack's damage isn't affected by Weakness or Resistance.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-2",
@@ -19,7 +50,38 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/2"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/2",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Form Change",
+    "effect": "Once during your turn (before your attack), you may search your deck for another Deoxys and switch it with Deoxys. (Any cards attached to Deoxys, damage counters, Special Conditions, and effects on it are now on the new Pokémon.) If you do, put Deoxys on top of your deck. Shuffle your deck afterward. You can't use more than 1 Form Change Poké-Power each turn."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Crystal Laser",
+    "effect": "During your next turn, Deoxys's attacks do 40 more damage to the Defending Pokémon (before applying Weakness and Resistance).",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-3",
@@ -30,7 +92,49 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/3"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/3",
+  "hp": 120,
+  "stage": "Stage2",
+  "evolveFrom": "Vibrava",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Levitate",
+    "effect": "As long as Flygon has any Energy attached to it, the Retreat Cost for Flygon is 0."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sand Pit",
+    "effect": "The Defending Pokémon can't retreat during your opponent's next turn.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-4",
@@ -41,7 +145,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/4"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/4",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Barrier",
+    "effect": "As long as Mew has any React Energy cards attached to it, prevent all effects, excluding damage, done to Mew by attacks from your opponent's Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psyshock",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-5",
@@ -52,7 +187,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/5"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/5",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Grovyle",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Energy Trans",
+    "effect": "As often as you like during your turn (before your attack), move a Grass Energy card attached to 1 of your Pokémon to another of your Pokémon. This power can't be used if Sceptile is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tail Rap",
+    "effect": "Flip 2 coins. This attack does 50 damage times the number of heads.",
+    "damage": "50×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "x2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-6",
@@ -63,7 +237,41 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/6"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/6",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Torchic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Smokescreen",
+    "effect": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sky Uppercut",
+    "effect": "This attack's damage isn't affected by Resistance.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-7",
@@ -74,7 +282,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/7"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/7",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Treecko",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Blot",
+    "effect": "Remove 2 damage counters from Grovyle.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "x2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-8",
@@ -82,7 +329,13 @@
   "number": "8",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/pop/pop4/8"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/8",
+  "effect": "Heal Energy provides Colorless Energy. When you attach this card from your hand to 1 of your Pokémon, remove 1 damage counter and all Special Conditions from that Pokémon. If Heal Energy is attached to Pokémon-ex, Heal Energy has no effect other than providing Energy.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-9",
@@ -90,7 +343,13 @@
   "number": "9",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/pop/pop4/9"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/9",
+  "effect": "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card. Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-10",
@@ -98,7 +357,13 @@
   "number": "10",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/pop/pop4/10"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/10",
+  "effect": "Scramble Energy can be attached only to an Evolved Pokémon (excluding Pokémon-ex). Scramble Energy provides Colorless Energy. While in play, if you have more Prize cards left than your opponent, Scramble Energy provides every type of Energy but provides only 3 in any combination at a time. If the Pokémon Scramble Energy is attached to isn’t an Evolved Pokémon (or evolves into Pokémon-ex), discard Scramble Energy.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-11",
@@ -109,7 +374,31 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/11"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/11",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Super Hypno Wave",
+    "effect": "The Defending Pokémon is now Asleep.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-12",
@@ -120,7 +409,37 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/12"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/12",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "x2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-13",
@@ -131,7 +450,31 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/13"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/13",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Spark",
+    "effect": "Does 10 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-14",
@@ -142,7 +485,36 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/14"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/14",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Shell Retreat",
+    "effect": "As long as Squirtle has any Energy cards attached to it, damage done to Squirtle by an opponent's attack is reduced by 10 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-15",
@@ -153,7 +525,43 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/15"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/15",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Pound",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Shining Claws",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "x2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-16",
@@ -164,7 +572,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/16"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/16",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Nap",
+    "effect": "Remove 2 damage counters from Wobbuffet."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Expand",
+    "effect": "During your opponent's next turn, any damage done to Wobbuffet is reduced by 20 (after applying Weakness and Resistance).",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop4-17",
@@ -175,6 +614,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop4/17"
+  "image": "https://assets.tcgdex.net/en/pop/pop4/17",
+  "hp": 110,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Form Change",
+    "effect": "Once during your turn (before your attack), you may search your deck for another Deoxys ex and switch it with Deoxys ex. (Any cards attached to Deoxys ex, damage counters, Special Conditions, and effects on it are now on the new Pokémon.) If you do, put Deoxys ex on top of your deck. Shuffle your deck afterward. You can't use more than 1 Form Change Poké-Power each turn."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fastwave",
+    "effect": "This attack's damage isn't affected by Resistance, Poké-Powers, Poké-Bodies, or any other effects on the Defending Pokémon.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "x2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

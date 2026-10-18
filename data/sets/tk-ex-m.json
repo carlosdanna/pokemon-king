@@ -7,7 +7,40 @@
   "category": "Pokemon",
   "types": [
    "Fire"
-  ]
+  ],
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Growlithe",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Flare",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Heat Tackle",
+    "effect": "Arcanine does 10 damage to itself.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-2",
@@ -17,7 +50,36 @@
   "category": "Pokemon",
   "types": [
    "Fire"
-  ]
+  ],
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-3",
@@ -27,7 +89,40 @@
   "category": "Pokemon",
   "types": [
    "Fire"
-  ]
+  ],
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Charmander",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flare",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Damage Burn",
+    "effect": "If the Defending Pokémon already has any damage counters on it, this attack does 40 damage plus 20 more damage.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-4",
@@ -37,7 +132,37 @@
   "category": "Pokemon",
   "types": [
    "Fire"
-  ]
+  ],
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Flame Tail",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-5",
@@ -47,7 +172,37 @@
   "category": "Pokemon",
   "types": [
    "Lightning"
-  ]
+  ],
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Minor Errand-Running",
+    "effect": "Search your deck for a basic Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-6",
@@ -57,7 +212,43 @@
   "category": "Pokemon",
   "types": [
    "Lightning"
-  ]
+  ],
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Drawup Power",
+    "effect": "Search your deck for an Energy card, show it to your opponent, and put into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Front Spark",
+    "effect": "Does 10 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-7",
@@ -67,28 +258,79 @@
   "category": "Pokemon",
   "types": [
    "Fire"
-  ]
+  ],
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Firebreathing",
+    "effect": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-8",
   "name": "Celio's Network",
   "number": "8",
   "rarity": "None",
-  "category": "Trainer"
+  "category": "Trainer",
+  "effect": "You can play only one supporter card each turn. When you play this card, put it next to your Active Pokemon. When your turn ends, discard this card. Search your deck for a Basic Pokemon or Evolution card (excluding Pokemon-ex), show it to your opponent, and put it into your hand. Shuffle your deck afterward.",
+  "trainerType": "Supporter",
+  "retreat": 0,
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-9",
   "name": "Energy Search",
   "number": "9",
   "rarity": "None",
-  "category": "Trainer"
+  "category": "Trainer",
+  "effect": "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card. Search your deck for a Basic Pokémon or Evolution card (excluding Pokémon-ex), show it to your opponent, and put it into your hand. Shuffle your deck afterward.",
+  "trainerType": "Item",
+  "retreat": 0,
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-10",
   "name": "Potion",
   "number": "10",
   "rarity": "None",
-  "category": "Trainer"
+  "category": "Trainer",
+  "effect": "Remove 2 damage counters from 1 of your Pokémon (remove 1 damage counter if that Pokémon has only 1).",
+  "trainerType": "Item",
+  "retreat": 0,
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "tk-ex-m-11",
@@ -98,13 +340,27 @@
   "category": "Energy",
   "types": [
    "Fire"
-  ]
+  ],
+  "stage": "Basic",
+  "energyType": "Normal",
+  "retreat": 0,
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  },
  {
   "id": "tk-ex-m-12",
   "name": "Lightning Energy",
   "number": "12",
   "rarity": "None",
-  "category": "Energy"
+  "category": "Energy",
+  "stage": "Basic",
+  "energyType": "Normal",
+  "retreat": 0,
+  "legal": {
+   "standard": true,
+   "expanded": true
+  }
  }
 ]

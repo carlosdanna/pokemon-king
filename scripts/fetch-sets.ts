@@ -1,6 +1,6 @@
 // One-off: fetch set metadata and full set lists for Ash's sets from TCGdex,
 // plus the pokemontcg → TCGdex id map for his collection (D-023).
-// Run: pnpm dlx tsx scripts/fetch-sets.ts
+// Run: pnpm dlx tsx scripts/fetch-sets.ts (existing set files are kept; delete data/sets to refetch)
 import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -8,6 +8,7 @@ import {
   numberKey,
   setCodeOf,
   tcgdexSetId,
+  type CardDetails,
   type SetCard,
   type SetInfo,
 } from "../lib/album";
@@ -32,10 +33,18 @@ async function query(q: string): Promise<Record<string, unknown>> {
     if (res.ok) {
       const body = (await res.json()) as {
         data?: Record<string, unknown>;
-        errors?: unknown;
+        errors?: { message?: string; path?: unknown }[];
       };
-      if (!body.data || body.errors)
+      // TCGdex has a few attacks with no name; GraphQL nulls the field and
+      // reports it, so keep the rest of the page and warn.
+      const errors = body.errors ?? [];
+      const nullOnly = errors.every((e) =>
+        e.message?.startsWith("Cannot return null for non-nullable field"),
+      );
+      if (!body.data || !nullOnly)
         throw new Error(`GraphQL error: ${JSON.stringify(body.errors)}`);
+      for (const e of errors)
+        console.warn(`  dropped null field at ${JSON.stringify(e.path)}`);
       return body.data;
     }
     const retryable = res.status === 429 || res.status >= 500;
@@ -53,12 +62,36 @@ const asArray = (value: unknown, what: string): Raw[] => {
   return value as Raw[];
 };
 
+const DETAIL_FIELDS = [
+  "hp",
+  "stage",
+  "evolveFrom",
+  "effect",
+  "trainerType",
+  "energyType",
+  "retreat",
+  "abilities",
+  "attacks",
+  "weaknesses",
+  "resistances",
+  "legal",
+] as const;
+
+/** Detail fields TCGdex has for a card, dropping nulls (also nested) to keep files small. */
+const details = (c: Raw): CardDetails =>
+  JSON.parse(
+    JSON.stringify(
+      Object.fromEntries(DETAIL_FIELDS.map((k) => [k, c[k]])),
+      (_, v) => (v === null ? undefined : v),
+    ),
+  );
+
 async function fetchSetCards(setId: string): Promise<SetCard[]> {
   const cards: SetCard[] = [];
   for (let page = 1; ; page++) {
     await sleep(200);
     const data = await query(
-      `{ cards(filters:{id:"${setId}-"}, pagination:{page:${page},count:${PAGE}}) { id localId name rarity category types image set { id } } }`,
+      `{ cards(filters:{id:"${setId}-"}, pagination:{page:${page},count:${PAGE}}) { id localId name rarity category types image set { id } hp stage evolveFrom effect trainerType energyType retreat abilities { type name effect } attacks { cost name effect damage } weaknesses { type value } resistances { type value } legal { standard expanded } } }`,
     );
     const batch = asArray(data.cards, `cards of ${setId}`);
     // The id filter is a substring match, so keep only this set's cards.
@@ -72,6 +105,7 @@ async function fetchSetCards(setId: string): Promise<SetCard[]> {
         category: String(c.category),
         ...(Array.isArray(c.types) && { types: c.types.map(String) }),
         ...(typeof c.image === "string" && { image: c.image }),
+        ...details(c),
       });
     }
     if (batch.length < PAGE) return cards;

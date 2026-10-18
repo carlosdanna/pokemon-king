@@ -122,11 +122,11 @@ Done when: Ash can open a set, see owned and unowned cards correctly, and turn p
 
 ### M3 · Card zoom and side panel (60 min)
 
-- [ ] `/cards/[id]` full page plus intercepting route `@modal/(.)cards/[id]` for the overlay
-- [ ] Shared `<ViewTransition name="card-<id>">` on the tile and the zoomed card for the morph
-- [ ] Zoomed card in full colour with tilt and glare; "Not in collection" label when unowned
-- [ ] Side panel (desktop) / bottom drawer (phone): facts, copies owned, tabs for Attacks, Weaknesses & resistances, Legalities; layouts for Trainer and Energy cards
-- [ ] Close with `Esc`, click outside or Back; focus returns to the card's pocket
+- [x] `/cards/[id]` full page plus intercepting route `@modal/(.)cards/[id]` for the overlay
+- [x] Shared `<ViewTransition name="card-<id>">` on the tile and the zoomed card for the morph
+- [x] Zoomed card in full colour with tilt and glare; "Not in collection" label when unowned
+- [x] Side panel (desktop) / bottom drawer (phone): facts, copies owned, tabs for Attacks, Weaknesses & resistances, Legalities; layouts for Trainer and Energy cards
+- [x] Close with `Esc`, click outside or Back; focus returns to the card's pocket
 
 Done when: clicking any card zooms it with a morph, the panel shows correct data, and a copied `/cards/[id]` link opens the full page.
 

@@ -5,6 +5,7 @@ import { join } from "node:path";
 import {
   groupQuantities,
   mergeSet,
+  PAGE_SIZE,
   paginate,
   setCodeOf,
   tcgdexSetId,
@@ -113,3 +114,29 @@ export function getSetSummaries() {
 
 export const getSet = (setId: string) =>
   load().sets.find((s) => s.id === setId) ?? null;
+
+/** A card with its set and album page, or null for an unknown id. */
+export function getCard(id: string) {
+  // TCGdex set ids can hold "-" ("tk-ex-m"); unmapped ids are pokemontcg ones.
+  for (const setId of [
+    id.slice(0, id.lastIndexOf("-")),
+    tcgdexSetId(setCodeOf(id)),
+  ]) {
+    const cards = getSetCards(setId);
+    const index = cards?.findIndex((c) => c.id === id) ?? -1;
+    const set = getSet(setId);
+    if (cards && set && index >= 0)
+      return {
+        card: cards[index],
+        set,
+        page: Math.floor(index / PAGE_SIZE) + 1,
+      };
+  }
+  return null;
+}
+
+/** getCard behind `use cache`, so `<Link prefetch>` can resolve a card page before the click. */
+export async function loadCard(id: string) {
+  "use cache";
+  return getCard(id);
+}

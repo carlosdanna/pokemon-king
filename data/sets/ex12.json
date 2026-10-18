@@ -8,7 +8,54 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/1"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/1",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Mysterious Fossil",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Protection",
+    "effect": "Any damage done to Aerodactyl by attacks from your opponent's Pokémon is reduced by 10 for each React Energy card attached to Aerodactyl (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Power Blow",
+    "effect": "Does 10 damage plus 10 more damage for each Energy attached to Aerodactyl.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Speed Stroke",
+    "effect": "During your opponent's next turn, prevent all effects, including damage, done to Aerodactyl by attacks from your opponent's Pokémon-ex.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-2",
@@ -19,7 +66,49 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/2"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/2",
+  "hp": 110,
+  "stage": "Stage2",
+  "evolveFrom": "Lairon",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Heavy Blow",
+    "effect": "Does 70 damage minus 10 damage for each damage counter on Aggron. If Aggron has any React Energy cards attached to it, this attack does 70 damage instead.",
+    "damage": "70-"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bound Crush",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 60 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) During your next turn, Aggron can't use Bound Crush."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-3",
@@ -30,7 +119,48 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/3"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/3",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Lileep",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Devolution Wave",
+    "effect": "Count the number of React Energy cards attached to Cradily and choose up to that number of your opponent's Evolved Pokémon. Remove the highest Stage Evolution card from each of those Pokémon, then have your opponent shuffle those cards into his or her deck."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Linear Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mud Shot",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-4",
@@ -41,7 +171,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/4"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/4",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Skitty",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Reactive Shift",
+    "effect": "Once during your turn (before your attack), you may move a React Energy card attached to 1 of your Pokémon to another of your Pokémon. This power can't be used if Delcatty is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Energy Link",
+    "effect": "Search your discard pile for an Energy card and attach it to Delcatty.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tail Whap",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-5",
@@ -52,7 +222,52 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/5"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/5",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Haunter",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Shadow Curse",
+    "effect": "If Gengar would be Knocked Out by damage from an opponent's attack, you may put 3 damage counters on 1 of your opponent's Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Cursed Reaction",
+    "effect": "Put 2 damage counters on your opponent's Pokémon in any way you like. If Gengar has any React Energy cards attached to it, put 4 damage counters instead."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Super Psy Bolt",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-6",
@@ -63,7 +278,49 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/6"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/6",
+  "hp": 120,
+  "stage": "Stage2",
+  "evolveFrom": "Graveler",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Mend",
+    "effect": "Search your discard pile for a Fighting Energy card and attach it to Golem. If you do, remove 2 damage counters from Golem."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Enraged Linear Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 10 damage for each damage counter on Golem to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rock Tumble",
+    "effect": "This attack's damage isn't affected by Resistance.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-7",
@@ -74,7 +331,48 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/7"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/7",
+  "hp": 110,
+  "stage": "Stage2",
+  "evolveFrom": "Kabuto",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Ancient Shell",
+    "effect": "As long as you have Omanyte or Omastar in play, damage done to Kabutops by attacks is reduced by 20 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Energy Stream",
+    "effect": "Search your discard pile for a basic Energy card and attach it to Kabutops.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Extra Claws",
+    "effect": "If the Defending Pokémon is Pokémon-ex, this attack does 50 damage plus 30 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-8",
@@ -85,7 +383,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/8"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/8",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Support Navigation",
+    "effect": "Once during your turn, when you put Lapras onto your Bench from your hand, you may search your deck for a Supporter card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Surf",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-9",
@@ -96,7 +424,42 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/9"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/9",
+  "hp": 120,
+  "stage": "Stage2",
+  "evolveFrom": "Machoke",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Derail",
+    "effect": "Discard a Special Energy card, if any, attached to the Defending Pokémon.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Swift Blow",
+    "effect": "Does 60 damage plus 20 damage for each React Energy card attached to Machamp.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-10",
@@ -107,7 +470,38 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/10"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/10",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Type Change",
+    "effect": "Once during your turn (before your attack), you may choose 1 of the Defending Pokémon. Mew is the same type as that Pokémon (all if that Pokémon is more than 1 type) until the end of your turn. This power can't be used if Mew is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Link Blast",
+    "effect": "If Mew and the Defending Pokémon have a different amount of Energy attached to them, this attack's base damage is 20 instead of 50.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-11",
@@ -118,7 +512,48 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/11"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/11",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Grimer",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Stench",
+    "effect": "As long as Muk is your Active Pokémon, each player's Pokémon can't use any Poké-Powers."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Poison Ring",
+    "effect": "The Defending Pokémon is now Poisoned. The Defending Pokémon can't retreat during your opponent's next turn.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sludge Toss",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-12",
@@ -129,7 +564,55 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/12"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/12",
+  "hp": 110,
+  "stage": "Stage2",
+  "evolveFrom": "Nuzleaf",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Evolutionary Fan",
+    "effect": "Once during your turn, when you play Shiftry from your hand to evolve 1 of your Pokémon, you may choose 1 of your Evolved Pokémon in play (excluding any Shiftry). Return that Pokémon and all cards attached to it to your hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Reactive Beating",
+    "effect": "If Shiftry has any React Energy cards attached to it, the Defending Pokémon is now Confused.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cross-Cut",
+    "effect": "If the Defending Pokémon is an Evolved Pokémon, this attack does 40 damage plus 30 more damage.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-13",
@@ -140,7 +623,49 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/13"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/13",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Weepinbell",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Nectar Pod",
+    "effect": "Once during your turn (before your attack), you may switch 1 of your opponent's Benched Stage 2 Evolved Pokémon with 1 of the Defending Pokémon. Your opponent chooses the Defending Pokémon to switch. This power can't be used if Victreebel is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Sleep Poison",
+    "effect": "The Defending Pokémon is now Asleep and Poisoned.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sharp Leaf",
+    "effect": "Flip a coin. If heads, this attack does 40 damage plus 30 more damage.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-14",
@@ -151,7 +676,51 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/14"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/14",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Wailmer",
+  "retreat": 4,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Lift",
+    "effect": "As long as Wailord has any React Energy cards attached to it, the Retreat Cost for each of your Water Pokémon (excluding Pokémon-ex) is 0."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Hypno Splash",
+    "effect": "The Defending Pokémon is now Asleep.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Water",
+     "Water"
+    ],
+    "name": "Rely on Friends",
+    "effect": "Does 40 damage plus 10 more damage for each of your Benched Stage 1 Evolved Pokémon.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-15",
@@ -162,7 +731,50 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/15"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/15",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Shining Horn",
+    "effect": "As long as Absol is the only Pokémon you have in play, your opponent's Basic Pokémon can't attack."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Extra Call",
+    "effect": "Search your deck for a Pokémon-ex, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Feint Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-16",
@@ -173,7 +785,45 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/16"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/16",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Rear Sensor",
+    "effect": "Each player's Active Basic Pokémon (excluding Pokémon-ex) can't use any Poké-Powers."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Foresight",
+    "effect": "Look at the top 5 cards of either player's deck and put them back on top of that player's deck in any order you like."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Disorder",
+    "effect": "If the Defending Pokémon has any Special Energy cards attached to it, the Defending Pokémon is now Confused.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-17",
@@ -184,7 +834,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/17"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/17",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Clamperl",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Booster",
+    "effect": "Each React Energy card attached to all of your Huntail and Gorebyss provides 2 Energy of every type but has no effect other than providing Energy."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Water"
+    ],
+    "name": "Hydro Pump",
+    "effect": "Does 30 damage plus 20 more damage for each Water Energy attached to Gorebyss but not used to pay for this attack's Energy cost. You can't add more than 40 damage in this way.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-18",
@@ -195,7 +877,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/18"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/18",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Clamperl",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Reactive Generator",
+    "effect": "Once during your turn (before your attack), if Huntail has no React Energy cards attached to it, you may search your deck for a React Energy card and attach it to Huntail. Shuffle your deck afterward. This power can't be used if Huntail is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite Off",
+    "effect": "If the Defending Pokémon is Pokémon-ex, this attack does 40 damage plus 30 more damage.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-19",
@@ -206,7 +921,48 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/19"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/19",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Chinchou",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Dual Armor",
+    "effect": "As long as Lanturn has any Water Energy attached to it, Lanturn is both Water and Lightning type."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Razor Fin",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Water Gun",
+    "effect": "Does 40 damage plus 20 more damage for each Water Energy attached to Lanturn but not used to pay for this attack's Energy cost. You can't add more then 40 damage in this way.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-20",
@@ -217,7 +973,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/20"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/20",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Sol Shade",
+    "effect": "As long as you have Solrock in play, each player's Fire Pokémon (excluding Pokémon-ex) can't use any Poké-Powers."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Moon Guidance",
+    "effect": "Search your deck for a Trainer card (excluding Supporter cards), show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psyshock",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-21",
@@ -228,7 +1021,46 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/21"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/21",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Stages of Evolution",
+    "effect": "As long as Magmar is an Evolved Pokémon, all Energy attached to Magmar are Fire Energy instead of their usual types."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Linear Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Fire"
+    ],
+    "name": "Burning Sensation",
+    "effect": "If the Defending Pokémon already has any damage counters on it, the Defending Pokémon is now Burned.",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-22",
@@ -239,7 +1071,55 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/22"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/22",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Magnemite",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Reactive Recharge",
+    "effect": "If Magneton would be Knocked Out by damage from an opponent's attack, you may move any number of React Energy cards from Magneton to your Pokémon in any way you like."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Multiple Force",
+    "effect": "If Magneton has any React Energy cards attached to it, this attack does 30 damage plus 10 more damage for each Magnemite and Magneton (both yours and your opponent's) in play.",
+    "damage": "30+"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Magnetic Blast",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-23",
@@ -250,7 +1130,47 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/23"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/23",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Omanyte",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Ancient Fang",
+    "effect": "As long as you have Kabuto, Kabutops, or Kabutops ex in play, Omastar's attacks do 20 more damage to the Defending Pokémon (before applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Drag Off",
+    "effect": "Before doing damage, you may choose 1 of your opponent's Benched Pokémon and switch it with 1 of the Defending Pokémon. Your opponent chooses the Defending Pokémon to switch.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hydro Splash",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-24",
@@ -261,7 +1181,45 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/24"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/24",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Shining Horn",
+    "effect": "As long as Pinsir is the only Pokémon you have in play, your opponent's Basic Pokémon can't attack."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Cry for Help",
+    "effect": "Search your deck for a Grass Pokémon (excluding Pokémon-ex), show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Overhead Toss",
+    "effect": "Does 20 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-25",
@@ -272,7 +1230,43 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/25"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/25",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Luna Shade",
+    "effect": "As long as you have Lunatone in play, each player's Colorless Pokémon (excluding Pokémon-ex) can't use any Poké-Powers."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Call for Family",
+    "effect": "Search your deck for a Lunatone and put it onto your Bench. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Hyper Beam",
+    "effect": "Flip a coin. If heads, discard an Energy card attached to the Defending Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-26",
@@ -283,7 +1277,45 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/26"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/26",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Pattern Distraction",
+    "effect": "As long as Spinda is your Active Pokémon, whenever your opponent's Basic Pokémon tries to attack, your opponent flips a coin. If tails, that attack does nothing. You can't use more than 1 Pattern Distraction Poké-Body each turn."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Whimsy Draw",
+    "effect": "Flip a coin until you get tails. For each heads, draw 2 cards."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double-edge",
+    "effect": "Flip a coin. If tails, Spinda does 10 damage to itself.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-27",
@@ -294,7 +1326,38 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/27"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/27",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Cry for Help",
+    "effect": "Search your deck for a Fire Pokémon (excluding Pokémon-ex), show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Fireworks",
+    "effect": "Flip a coin. If tails, discard a Fire Energy attached to Torkoal.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-28",
@@ -305,7 +1368,46 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/28"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/28",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Stages of Evolution",
+    "effect": "As long as Wobbuffet is an Evolved Pokémon, your opponent pays Colorless more to retreat his or her Active Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Grind",
+    "effect": "Does 10 damage times the amount of Energy attached to Wobbuffet.",
+    "damage": "10x"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Shadow Tag",
+    "effect": "Put 7 damage counters on the Defending Pokémon at the end of your opponent's next turn."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-29",
@@ -316,7 +1418,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/29"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/29",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Claw Fossil",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Influence",
+    "effect": "Search your deck for Omanyte, Kabuto, Aerodactyl, Lileep, or Anorith and put up to 2 of them onto your Bench. Shuffle your deck afterward. Treat the new Benched Pokémon as Basic Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Stretch Claws",
+    "effect": "If Anorith has any React Energy cards attached to it, this attack does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-30",
@@ -327,7 +1461,38 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/30"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/30",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Wurmple",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Emerge",
+    "effect": "Once during your turn (before your attack), if Cascoon is your Active Pokémon, you may flip a coin. If heads, search your deck for a card that evolves from Cascoon and put it onto Cascoon. (This counts as evolving Cascoon.) Shuffle your deck afterward. This power can't be used if Cascoon is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-31",
@@ -338,7 +1503,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/31"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/31",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Deadlock",
+    "effect": "As long as Dunsparce is your Active Pokémon, your opponent's Dunsparce can't attack."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Down Draw",
+    "effect": "Draw 2 cards from the bottom of your deck."
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tripping Turn",
+    "effect": "The Defending Pokémon is now Confused. You may switch Dunsparce with 1 of your Benched Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-32",
@@ -349,7 +1550,42 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/32"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/32",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Voltorb",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Supersonic",
+    "effect": "The Defending Pokémon is now Confused.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tumbling Attack",
+    "effect": "Flip a coin. If heads, this attack does 40 damage plus 20 more damage.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-33",
@@ -360,7 +1596,42 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/33"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/33",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Sentret",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Body Slam",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Do the Wave",
+    "effect": "Does 10 damage plus 10 more damage for each of your Benched Pokémon.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-34",
@@ -371,7 +1642,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/34"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/34",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Geodude",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Exoskeleton",
+    "effect": "Any damage done to Graveler by attacks is reduced by 10 (after applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Rock Slide",
+    "effect": "Does 10 damage to 2 of your opponent's Benched Pokémon (1 if there is only 1). (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-35",
@@ -382,7 +1685,45 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/35"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/35",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Gastly",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Time Spiral",
+    "effect": "If your opponent has any Evolved Pokémon in play, choose 1 of them and flip a coin. If heads, remove the highest Stage Evolution card on that Pokémon and have your opponent shuffled it into his or her deck."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Haunt",
+    "effect": "Put 2 damage counters on the Defending Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-36",
@@ -393,7 +1734,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/36"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/36",
+  "hp": 60,
+  "stage": "Stage1",
+  "evolveFrom": "Mysterious Fossil",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Ancient Protection",
+    "effect": "Each of your Omanyte, Omastar, Kabuto, Kabutops, and Kabutops ex has no Weakness."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Granite Head",
+    "effect": "During your opponent's next turn, any damage done to Kabuto by attacks is reduced by 10 (after applying Weakness and Resistance).",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-37",
@@ -404,7 +1777,45 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/37"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/37",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Colors",
+    "effect": "If Kecleon has any React Energy cards attached to it, Kecleon is Grass, Fire, Water, Lightning, Psychic, and Fighting type."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tongue Whip",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-38",
@@ -415,7 +1826,46 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/38"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/38",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Aron",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rest",
+    "effect": "Remove all Special Conditions and 5 damage counters (all if there are less than 5) from Lairon. Lairon is now Asleep."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Body Slam",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-39",
@@ -426,7 +1876,46 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/39"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/39",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Machop",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Paranoid",
+    "effect": "As long as Machoke is Confused, Machoke's attacks do 50 more damage to the Defending Pokémon (before applying Weakness and Resistance)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Split Kick",
+    "effect": "Does 20 damage to each Defending Pokémon."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Magnum Punch",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-40",
@@ -437,7 +1926,50 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/40"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/40",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Deep Sleep",
+    "effect": "As long as Misdreavus is your Active Pokémon, each player flips 2 coins for his or her Pokémon that is Asleep between turns. If either coin is tails, that Pokémon is still Asleep."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Return Trance",
+    "effect": "Return an Energy card attached to Misdreavus to your hand. The Defending Pokémon is now Asleep."
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Dream Eater",
+    "effect": "If the Defending Pokémon is not Asleep, this attack does nothing.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-41",
@@ -448,7 +1980,45 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/41"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/41",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Seedot",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Pound",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Plunder",
+    "effect": "Before doing damage, discard all Trainer cards attached to the Defending Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-42",
@@ -459,7 +2029,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/42"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/42",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Aroma",
+    "effect": "As long as Roselia has any React Energy cards attached to it, remove 1 damage counter from each of your Pokémon (excluding Pokémon-ex) that has any React Energy cards attached to it between turns. You can't use more than 1 Reactive Aroma Poké-Body each turn."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Flick Poison",
+    "effect": "Switch 1 of your opponent's Benched Pokémon with 1 of the Defending Pokémon. Your opponent chooses the Defending Pokémon to switch. The new Defending Pokémon is now Poisoned."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-43",
@@ -470,7 +2069,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/43"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/43",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Spheal",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Power Circulation",
+    "effect": "Once during your turn (before your attack), you may search your discard pile for a basic Energy card, show it to your opponent, and put it on top of your deck. If you do, put 1 damage counter on Sealeo. This power can't be used if Sealeo is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Lunge Out",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-44",
@@ -481,7 +2111,53 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/44"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/44",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Healing",
+    "effect": "Whenever you attach a React Energy card from your hand to Tangela, remove all damage counters from Tangela."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Entangling Vines",
+    "effect": "If the Defending Pokémon is a Basic Pokémon, that Pokémon can't attack during your opponent's next turn.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Gentle Wrap",
+    "effect": "The Defending Pokémon can't retreat during your opponent's next turn.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Water",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-45",
@@ -492,7 +2168,46 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/45"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/45",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Tentacool",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Reactive Shield",
+    "effect": "As long as Tentacruel has any React Energy cards attached to it, prevent all effects, including damage, done to any of your Tentacruel in play by attacks from your opponent's Pokémon-ex."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Water Arrow",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Fury Strikes",
+    "effect": "Flip 3 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-46",
@@ -503,7 +2218,45 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/46"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/46",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Trapinch",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Supersonic",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bi-Blast",
+    "effect": "If Vibrava has any React Energy cards attached to it, this attack does 20 damage plus 20 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Colorless",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-47",
@@ -514,7 +2267,41 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/47"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/47",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Bellsprout",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sleep Seed",
+    "effect": "The Defending Pokémon is now Asleep.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Vine Whip",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-48",
@@ -525,7 +2312,43 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/48"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/48",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Self Charge",
+    "effect": "Attach a Metal Energy card from your hand to Aron."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-49",
@@ -536,7 +2359,29 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/49"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/49",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sleep Powder",
+    "effect": "The Defending Pokémon is now Asleep."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-50",
@@ -547,7 +2392,37 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/50"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/50",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Random Spark",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Lightning Ball",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-51",
@@ -558,7 +2433,36 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/51"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/51",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Iron Defense",
+    "effect": "Flip a coin. If heads, prevent all effects of an attack, including damage, done to Clamperl during your opponent's next turn."
+   },
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Clamp Splash",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-52",
@@ -569,7 +2473,42 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/52"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/52",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Lick",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Smog",
+    "effect": "The Defending Pokémon is now Poisoned."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-53",
@@ -580,7 +2519,31 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/53"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/53",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Selfdestruct",
+    "effect": "Does 10 damage to each Benched Pokémon (both yours and your opponent's). (Don't apply Weakness and Resistance for Benched Pokémon.) Geodude does 50 damage to itself.",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-54",
@@ -591,7 +2554,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/54"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/54",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Ascension",
+    "effect": "Search your deck for a card that evolves from Grimer and put it onto Grimer. (This counts as evolving Grimer.) Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sludge Toss",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-55",
@@ -602,7 +2595,39 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/55"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/55",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Body Slam",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Firebreathing",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-56",
@@ -613,7 +2638,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/56"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/56",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Root Fossil",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tender Tentacles",
+    "effect": "If Lileep has any React Energy cards attached to it, remove 2 damage counters from Lileep.",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Confuse Ray",
+    "effect": "The Defending Pokémon is now Confused.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-57",
@@ -624,7 +2682,30 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/57"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/57",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Mach Punch",
+    "effect": "Does 10 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-58",
@@ -635,7 +2716,37 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/58"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/58",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Baby Evolution",
+    "effect": "Once during your turn (before your attack), you may put Magmar from your hand onto Magby (this counts as evolving Magby) and remove all damage counters from Magby."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Ignite",
+    "effect": "If Full Flame is in play, the Defending Pokémon is now Burned.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-59",
@@ -646,7 +2757,36 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/59"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/59",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Magnetic Swirl",
+    "effect": "Flip a coin. If tails, this attack does nothing. If heads, discard an Energy attached to the Defending Pokémon.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-60",
@@ -657,7 +2797,39 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/60"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/60",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Mysterious Fossil",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Ancient Tentacles",
+    "effect": "Damage done to your opponent's Pokémon by your Omanyte, Omastar, Kabuto, Kabutops, or Kabutops ex isn't affected by Resistance."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Rising Lunge",
+    "effect": "Flip a coin. If heads, this attack does 20 damage plus 20 more damage.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-61",
@@ -668,7 +2840,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/61"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/61",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Drawup Power",
+    "effect": "Search your deck for an Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Continuous Tumble",
+    "effect": "Flip a coin until you get tails. This attack does 10 damage times the number of heads.",
+    "damage": "10x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-62",
@@ -679,7 +2881,38 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/62"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/62",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-63",
@@ -690,7 +2923,43 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/63"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/63",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Headbutt",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Will-o'-the-wisp",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-64",
@@ -701,7 +2970,38 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/64"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/64",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Important Errands",
+    "effect": "Search your deck for a React Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Jump On",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-65",
@@ -712,7 +3012,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/65"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/65",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Ram",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-66",
@@ -723,7 +3046,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/66"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/66",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Poison Sting",
+    "effect": "The Defending Pokémon is now Poisoned."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-67",
@@ -734,7 +3079,38 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/67"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/67",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Pebble Throw",
+    "effect": "Choose 1 of your opponent's Benched Pokémon. This attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Double Pinchers",
+    "effect": "Flip 2 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-68",
@@ -745,7 +3121,38 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/68"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/68",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Thunder Wave",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Bouncing Ball",
+    "effect": "Voltorb does 10 damage to itself.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-69",
@@ -756,7 +3163,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/69"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/69",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Tackle",
+    "effect": "Does 20 damage to each Defending Pokémon."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Whirlpool",
+    "effect": "Flip a coin. If heads, discard an Energy card attached to the Defending Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-70",
@@ -767,7 +3207,36 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/70"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/70",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Poison Payback",
+    "effect": "If Wurmple is your Active Pokémon and is damaged by an opponent's attack (even if Wurmple is Knocked Out), the Attacking Pokémon is now Poisoned."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "String Pull",
+    "effect": "Switch 1 of your opponent's Benched Pokémon with 1 of the Defending Pokémon. Your opponent chooses the Defending Pokémon to switch."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-71",
@@ -778,7 +3247,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/71"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/71",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Baby Evolution",
+    "effect": "Once during your turn (before your attack), you may put Wobbuffet from your hand onto Wynaut (this counts as evolving Wynaut) and remove all damage counters from Wynaut."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Confusion Wave",
+    "effect": "Both Wynaut and the Defending Pokémon are now Confused."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-72",
@@ -786,7 +3284,13 @@
   "number": "72",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/72"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/72",
+  "effect": "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card. At any time between turns, each player puts 1 damage counter on his or her Pokémon that has a Poké-Power.",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-73",
@@ -794,7 +3298,13 @@
   "number": "73",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/73"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/73",
+  "effect": "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card. Draw 3 cards. Your opponent may also draw a card.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-74",
@@ -802,7 +3312,13 @@
   "number": "74",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/74"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/74",
+  "effect": "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card. Put 4 damage counters instead of 2 on each Burned Pokémon between turns. The Special Condition Burned can't be removed by evolving or devolving the Burned Pokémon.",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-75",
@@ -810,7 +3326,13 @@
   "number": "75",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/75"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/75",
+  "effect": "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card. Each player can't have more than 3 Benched Pokémon. When Giant Stump comes into play, each player discards Benched Pokémon and any cards attached to them until he or she has 3 Benched Pokémon. (You discard your Pokémon first.)",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-76",
@@ -818,7 +3340,13 @@
   "number": "76",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/76"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/76",
+  "effect": "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card. Once during each player's turn, if the player has no Special Energy cards in his or her discard pile, that player searches his or her discard pile for a basic Energy card, show it to the opponent, and put it into his or her hand.",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-77",
@@ -826,7 +3354,13 @@
   "number": "77",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/77"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/77",
+  "effect": "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card. Once during each player's turn, that player may put an Omanyte, Kabuto, Aerodactyl, Aerodactyl ex, Lileep, or Anorith onto his or her Bench from his or her hand. Treat the new Benched Pokémon as Basic Pokémon.",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-78",
@@ -834,7 +3368,19 @@
   "number": "78",
   "rarity": "Common",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/78"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/78",
+  "hp": 40,
+  "effect": "Play Claw Fossil as if it were a Basic Pokémon. While in play, Claw Fossil counts as a Colorless Pokémon (as well as a Trainer card). Claw Fossil has no attacks of its own, can't retreat, and can't be affected by any Special Conditions. If Claw Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Claw Fossil from play.",
+  "trainerType": "Item",
+  "abilities": [
+   {
+    "type": "Poke-BODY"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-79",
@@ -842,7 +3388,14 @@
   "number": "79",
   "rarity": "Common",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/79"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/79",
+  "hp": 50,
+  "effect": "Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Colorless Pokémon (as well as a Trainer card). Mysterious Fossil has no attacks of its own, can't retreat, and can't be affected by any Special Conditions. If Mysterious Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Mysterious Fossil from play.",
+  "trainerType": "Item",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-80",
@@ -850,7 +3403,19 @@
   "number": "80",
   "rarity": "Common",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/80"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/80",
+  "hp": 40,
+  "effect": "Play Root Fossil as if it were a Basic Pokémon. While in play, Root Fossil counts as a Colorless Pokémon (as well as a Trainer card). Root Fossil has no attacks of its own, can't retreat, and can't be affected by any Special Conditions. If Root Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Root Fossil from play.",
+  "trainerType": "Item",
+  "abilities": [
+   {
+    "type": "Poke-BODY"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-81",
@@ -858,7 +3423,13 @@
   "number": "81",
   "rarity": "Rare",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/81"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/81",
+  "effect": "Attach Rainbow Energy to 1 of your Pokémon. While in play, Rainbow Energy provides every type of Energy but provides only 1 Energy at a time. (Has no effect other than providing Energy.) When you attach this card from your hand to 1 of your Pokémon, put 1 damage counter on that Pokémon.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-82",
@@ -866,7 +3437,13 @@
   "number": "82",
   "rarity": "Uncommon",
   "category": "Energy",
-  "image": "https://assets.tcgdex.net/en/ex/ex12/82"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/82",
+  "effect": "React Energy provides Colorless Energy.",
+  "energyType": "Special",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-83",
@@ -877,7 +3454,39 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/83"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/83",
+  "hp": 120,
+  "evolveFrom": "Growlithe",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Fire Remedy",
+    "effect": "Whenever you attach a Fire Energy from your hand to Arcanine ex, remove 1 damage counter and all Special Conditions from Arcanine ex."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Overrun",
+    "effect": "Does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "30"
+   },
+   null
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-84",
@@ -888,7 +3497,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/84"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/84",
+  "hp": 160,
+  "evolveFrom": "Anorith",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Dual Armor",
+    "effect": "As long as Armaldo ex has any React Energy cards attached to it, Armaldo ex is both Grass and Fighting type."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Fighting"
+    ],
+    "name": "Spiral Drain",
+    "effect": "Remove 2 damage counters from Armaldo ex.",
+    "damage": "40"
+   },
+   null
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-85",
@@ -899,7 +3540,44 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/85"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/85",
+  "hp": 90,
+  "evolveFrom": "Shuppet",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Shady Move",
+    "effect": "Once during your turn (before your attack), if Banette ex is your Active Pokémon, you may move 1 damage counter from either player's Pokémon to another Pokémon (yours or your opponent's). This power can't be used if Banette ex is affected by a Special Condition."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Psychic"
+    ],
+    "name": "Shadow Chant",
+    "effect": "Does 30 damage plus 10 more damage for each Supporter card in your discard pile. You can't add more than 60 damage in this way.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Darkness",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-86",
@@ -910,7 +3588,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/86"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/86",
+  "hp": 140,
+  "evolveFrom": "Cascoon",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Safeguard",
+    "effect": "Prevent all effects of attacks, including damage, done to Dustox ex by your opponent's Pokémon-ex."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Silver Wind",
+    "effect": "During your next turn, if an attack does damage to the Defending Pokémon (after applying Weakness and Resistance), that attack does 30 more damage.",
+    "damage": "40"
+   },
+   null
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-87",
@@ -921,7 +3631,45 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/87"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/87",
+  "hp": 150,
+  "evolveFrom": "Vibrava",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Emerge Charge",
+    "effect": "Once during your turn, when you play Flygon ex from your hand to evolve 1 of your Pokémon, you may search your discard pile for up to 2 Energy cards and attach them to Flygon ex."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Reactive Blast",
+    "effect": "You may discard any number of React Energy cards attached to Flygon ex. If you do, this attack does 40 damage plus 30 more damage for each React Energy card you discarded.",
+    "damage": "40+"
+   },
+   null
+  ],
+  "weaknesses": [
+   {
+    "type": "Colorless",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-88",
@@ -932,7 +3680,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/88"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/88",
+  "hp": 90,
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Versatile",
+    "effect": "Mew ex can use the attacks of all Pokémon in play as its own. (You still need the necessary Energy to use each attack.)"
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Power Move",
+    "effect": "Search your deck for an Energy card and attach it to Mew ex. Shuffle your deck afterward. Then, you may switch Mew ex with 1 of your Benched Pokémon."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-89",
@@ -943,7 +3720,42 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/89"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/89",
+  "hp": 150,
+  "evolveFrom": "Sealeo",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Icy Aura",
+    "effect": "As long as Walrein ex is your Active Pokémon, put 1 damage count on each Active Pokémon (both yours and your opponent's) between turns, excluding Water Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Water Arrow",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 40 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   },
+   null
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   },
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-90",
@@ -954,7 +3766,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/90"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/90",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Ice Barrier",
+    "effect": "Prevent all effects of an attack, including damage, done to Regice ☆ by your opponent's Pokémon-ex during your opponent's next turn.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Final Blizzard",
+    "effect": "If your opponent has only 1 Prize card left and Regice ☆ is the only Pokémon you have in play, this attack does 30 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-91",
@@ -965,7 +3810,40 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/91"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/91",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Dig Drain",
+    "effect": "Remove 1 damage counter from Regirock ☆.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Final Blast",
+    "effect": "If your opponent has only 1 Prize card left and Regirock ☆ is the only Pokémon you have in play, this attack's base damage is 100 instead of 30.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-92",
@@ -976,7 +3854,45 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/92"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/92",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "Barrier Attack",
+    "effect": "During your opponent's next turn, any damage done to Registeel Star by attacks is reduced by 10 (after applying Weakness and Resistance).",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Metal",
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Final Laser",
+    "effect": "Put 3 damage counters on your opponent's Pokémon in any way you like. If your opponent has only 1 Prize card left and Registeel ☆ is the only Pokémon you have in play, put 6 damage counters instead."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "ex12-93",
@@ -987,6 +3903,37 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/ex/ex12/93"
+  "image": "https://assets.tcgdex.net/en/ex/ex12/93",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Thunder Wave",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless"
+    ],
+    "name": "Iron Tail",
+    "effect": "Flip a coin until you get tails. This attack does 20 damage times the number of heads.",
+    "damage": "20x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

@@ -1186,6 +1186,320 @@ Swipe works: left goes forward, right goes back, and a short drag does nothing. 
 - *Bash*: Fill worklog row and stage changes
 - *Bash*: Commit M2 (pre-commit runs pnpm check)
 
+### 2026-10-18 · M3
+
+#### 16:21 · Carlos
+
+Milestone M3 from docs/implementation-plan.md. Follow CLAUDE.md: log the start time first.
+
+Plan:
+- /cards/[id] full page, plus the intercepting route @modal/(.)cards/[id] so clicking a card in the album opens an overlay over the page with its own URL; Back closes it.
+- Shared <ViewTransition name={`card-${id}`} share="morph" default="none"> on the tile and the zoomed card so it grows out of its pocket. Prefetch card links and render the overlay from data already loaded so the morph pairs.
+- Zoomed card always in full colour, wrapped in react-parallax-tilt with glare; label "Not in collection" when unowned.
+- Side panel on desktop, bottom Drawer on phones: name, set, number, rarity, copies owned, HP, types; Tabs for Attacks, Weaknesses & resistances, Legalities with the active tab in the URL (?tab=); Trainer and Energy cards show rules text instead; "none listed" for missing data.
+- Close with Esc, click outside or Back; return focus to the card's pocket.
+- Tests for the panel's handling of Pokémon, Trainer and Energy cards.
+
+Finish: tick M3 boxes, log end time, commit "feat: card zoom and info panel (M3)".
+
+- *Bash*: Get start time and survey project files
+- *Bash*: Read album components, data lib, and layout
+- *Bash*: Inspect card data fields and UI primitives
+- *Bash*: Sample a TCGdex card detail and review fetch script
+- *Bash*: Check test setup and UI component APIs
+
+*Claude asked:*
+
+> **Where should the info panel's full card data (HP, attacks, weaknesses, legalities, rules) come from?**
+> TCGdex for all cards (Recommended) / Collection only / Collection + TCGdex
+
+
+*Carlos answered:* TCGdex for all cards (Recommended)
+
+- *Bash*: Test TCGdex GraphQL detail fields
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M3 · Card zoom and info panel
+
+## Context
+M2 shipped the binder album. M3 adds the main interaction: clicking a card zooms it out of its pocket into an overlay with its own URL, with an info panel beside it. Right now the set lists (`data/sets/*.json`) hold only id, name, number, rarity, category, types and image. The panel needs HP, attacks, weaknesses, legalities and rules text for every card, owned or not. **Decided: fetch those fields from TCGdex for all cards** by extending the existing script.
+
+Session start was 2026-10-18 16:22 CEST (from `date`). Step 0 writes it to the worklog.
+
+## Steps
+
+0. **Worklog**: add an M3 row to `docs/worklog.md` starting 16:22.
+1. **Decisions** (`docs/decisions.md`, timestamped with `date`, written before the code that depends on them):
+   - D-032: card details (hp, stage, evolveFrom, effect, trainerType, energyType, retreat, abilities, attacks, weaknesses, resistances, legal) come from TCGdex and are stored in the set lists. Null fields are dropped. The 4 unmapped owned cards show only their basic facts. Rejected: collection-only details (empty tabs for most cards); two data sources.
+   - D-033: the overlay is a Base UI Dialog. Below `lg` its panel goes into a non-modal bottom Drawer that is only mounted after a client `matchMedia` check. The full `/cards/[id]` page puts the panel inline: beside the card on `lg`, below it on phones. Rejected: a Drawer on the full page too; picking the layout from JS on the server render.
+   - D-034: the active tab is stored in `?tab=` via `history.replaceState`, so switching tabs does no server round trip. Values: `attacks | weaknesses | legal`. Anything else falls back to the first tab.
+2. **Data** (`scripts/fetch-sets.ts:60`): add the detail fields to the cards GraphQL query (checked live: `{ hp stage evolveFrom effect trainerType energyType retreat abilities{type name effect} attacks{cost name effect damage} weaknesses{type value} resistances{type value} legal{standard expanded} }`). Copy each field only when it is non-null, the way `types` and `image` are copied now. Extend `SetCard` in `lib/album.ts` with these optional fields. Rerun with `pnpm dlx tsx scripts/fetch-sets.ts` and report the size of `data/sets`.
+3. **Lookup**: add `getCard(id)` to `lib/collection.ts`. It finds the set id as `id.slice(0, id.lastIndexOf("-"))` (this handles `tk-ex-m-1`), falls back to `tcgdexSetId(setCodeOf(id))` for unmapped pokemontcg ids, then searches `getSetCards()`. It also returns the set's `SetInfo`. Unknown ids return null, which leads to `notFound()`. Add a unit test in `lib/collection.test.ts`.
+4. **Routes**:
+   - `app/layout.tsx`: take a `modal` slot and render `{children}{modal}`.
+   - `app/@modal/default.tsx` returns `null`.
+   - `app/cards/[id]/page.tsx`: the full page with `generateMetadata` and a `<Suspense>` around the part that reads params (needed by cacheComponents, same as `app/album/[set]/page.tsx`). It shows a back link to the card's album page: `pageHref`, with page = index/9 + 1. Below that is `<CardView>` with the inline panel.
+   - `app/@modal/(.)cards/[id]/page.tsx`: renders `<CardOverlay>` with the same `getCard` data.
+5. **Components** (`components/card/`):
+   - `zoomed-card.tsx` (client): `<ViewTransition name={`card-${id}`} share="morph" default="none">` around react-parallax-tilt with glare (`tiltEnable`/`glareEnable` off under `prefers-reduced-motion`). The image is `next/image` `unoptimized` at `high` quality with `cardImage()`, always in colour. The "Not in collection" `Badge` shows when `!owned`.
+   - `card-panel.tsx` (client): facts list (name, set, number, rarity, copies owned, HP, types, stage). Pokémon cards get `Tabs` (Attacks with cost, damage and effect, plus abilities above the attacks; Weaknesses & resistances, with retreat; Legalities: standard/expanded). Trainer and Energy cards get their `effect` text and trainer/energy type instead of tabs. Missing data shows "none listed". All text goes through `<Typography>`.
+   - `card-view.tsx`: card plus inline panel. `grid lg:grid-cols-2`: card on the left, panel on the right; stacked on phones.
+   - `card-overlay.tsx` (client): `Dialog` open by default. `onOpenChange(false)` calls `router.back()`, which covers Esc and clicks outside. Below `lg` the panel goes into a `Drawer` (`modal={false}`, always open; dismissing it also calls `router.back()`). Focus return: `finalFocus={false}`, plus an unmount effect that runs `requestAnimationFrame(() => document.querySelector(`[data-card-link="${id}"]`)?.focus())`. That covers all three close paths, browser Back included.
+6. **Tile** (`components/album/card-tile.tsx`): wrap the pocket in `<Link href={`/cards/${id}`} prefetch data-card-link={id}>` with the existing focus-ring classes (D-029 said tiles become links in M3). Prefetching the card route fully means the overlay renders on click without a Suspense fallback, so the morph pairs. Wrap the image in the same named `ViewTransition` **only when `usePathname() !== /cards/${id}`**. The album stays mounted under the overlay, so the tile's boundary has to unmount for React to pair it with the zoomed card. The reverse happens on close.
+7. **Tests**:
+   - `components/card/card-panel.test.tsx`:
+     - Pokémon: HP, types, attacks tab content, "none listed" for missing resistances.
+     - Trainer: rules text and no tabs.
+     - Energy: basic energy with no effect shows "none listed".
+     - Unowned card: copies owned 0.
+     - `?tab=` selects the tab.
+   - Update `card-tile.test.tsx` to mock `next/navigation`, and assert the link href.
+8. **Finish**:
+   - Run `pnpm check` and a browser check at 375 / 1440 px: morph, Esc, click outside, Back, focus ring on the pocket after closing, direct `/cards/base1-4` load, `?tab=legal` survives a reload.
+   - Tick the 5 M3 boxes in `docs/implementation-plan.md`.
+   - Log the end time and outcome in the worklog. Append the transcript (`python3 -I scripts/transcript.py`) to `docs/transcripts.md`.
+   - Commit `feat: card zoom and info panel (M3)`, then `git commit --amend --no-edit` with the hash.
+
+## Reused
+`cardImage`, `PAGE_SIZE` (lib/album.ts), `getSetCards`/`getSet` (lib/collection.ts), `pageHref` (components/album), `Dialog`, `Drawer`, `Tabs`, `Badge`, `Typography` (components/ui).
+
+## Risks / not doing
+- The morph depends on the prefetched RSC payload arriving before the click. If it still shows a fallback, move the `ViewTransition` + image into the Suspense fallback, using data from the tile's link state. This gets checked in the browser.
+- `[` / `]` card flipping stays in M6.
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+#### 16:26 · Claude
+
+Starting: worklog row and decisions first.
+
+- *Bash*: Log start in worklog and read remaining UI files
+- *Bash*: Append decisions D-032 to D-034
+
+#### 16:27 · Claude
+
+Now the data types and fetch script.
+
+- *Bash*: Extend SetCard type and fetch script query
+- *Bash*: Drop nested nulls and view script head/tail
+- *Bash*: Refetch all set lists with card details
+- *Bash*: Inspect query helper and the failing cards
+- *Bash*: Check partial data returned with the error
+- *Bash*: Tolerate null-field errors and rerun fetch
+
+#### 16:31 · Claude
+
+The data refetch is done: 11 MB, 121 sets, id map unchanged. Now checking it against the old files, then building the routes and components.
+
+- *Bash*: Compare card counts and check detail coverage
+
+#### 16:31 · Claude
+
+Data is good (14,625 cards, same as before). Now the lookup and the routes.
+
+- *Bash*: Add getCard lookup with a test
+- *Bash*: Check Typography tags, Tabs, Badge, Tilt props
+- *Bash*: Find tilt props and existing reduced-motion helpers
+- *Bash*: Find reduced-motion and view-transition CSS
+- *Bash*: Read view transition CSS
+
+#### 16:33 · Claude
+
+Writing the components and routes.
+
+- *Bash*: Create component and route directories
+- *Write*: components/card/card-panel.tsx
+- *Write*: components/card/zoomed-card.tsx
+- *Write*: components/card/card-view.tsx
+- *Write*: components/card/card-overlay.tsx
+- *Write*: app/@modal/(.)cards/[id]/page.tsx
+- *Write*: app/@modal/default.tsx
+- *Write*: app/cards/[id]/page.tsx
+
+#### 16:33 · Claude
+
+Now the layout slot and the tile link.
+
+- *Bash*: Wire modal slot and tile link, then typecheck
+
+#### 16:34 · Claude
+
+Typecheck passes. Next: tidy the hook call, then write the tests.
+
+- *Bash*: Hoist usePathname and view tile test tail
+- *Bash*: Write panel tests, update tile test, run tests
+
+#### 16:35 · Claude
+
+All 33 tests pass. Running lint and a production build next (cacheComponents errors only show up at build time).
+
+- *Bash*: Run lint, format check, and production build
+
+#### 16:35 · Claude
+
+Build is clean. Now the browser check; M2 used a render script, so I'll check that first.
+
+- *Bash*: Look for existing browser render script
+- *Bash*: Check how M2 drove Chromium and start server
+- *Bash*: See how playwright-core was used in M2
+- *Bash*: Install playwright-core in scratchpad and ping server
+- *Bash*: Check server log
+- *Bash*: Rebuild production bundle
+- *Bash*: Start production server in background
+
+#### 16:36 · Claude
+
+The production server is up. Driving Chromium to check the morph, the close paths and focus return at 1440 and 375 px.
+
+- *Bash*: Run browser checks for zoom overlay
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/desk-open.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/phone-open.png
+- *Bash*: Test whether view transitions fire on turn and zoom
+
+#### 16:39 · Claude
+
+Page turns fire view transitions, so the hook works. The zoom just doesn't start one. Checking how Next 16.4 gates router view transitions.
+
+- *Bash*: Search Next config for viewTransition flag
+- *Bash*: See how router queue uses transition types
+- *Bash*: Inspect sequential router queue transitions
+- *Bash*: Find docs on partialPrefetching
+- *Bash*: Read partial prefetching guide
+- *Bash*: Read prefetching URL data section
+- *Bash*: Add cached loadCard and rebuild
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Rerun view transition detection
+
+#### 16:40 · Claude
+
+Still no transition. Next I'll check whether the click fetches from the server, which would mean the prefetch isn't being used, and whether the tile sees the new pathname.
+
+- *Bash*: Inspect prefetch requests and overlay timing
+- *Bash*: Check whether Base UI portal mounts late
+- *Bash*: Locate Base UI createPortal usage
+- *Bash*: Locate Base UI createPortal usage
+- *Bash*: Read Base UI portal node hook
+- *Bash*: Read DrawerContent portal section
+- *Bash*: Add container prop to DrawerContent
+- *Write*: components/card/card-overlay.tsx
+- *Bash*: Add morph CSS, lint, typecheck, build
+- *Bash*: Remove unused eslint-disable directive
+- *TaskStop*: TaskStop
+- *Bash*: Rebuild after overlay change
+- *Bash*: Restart production server
+- *Bash*: Rerun view transition detection
+
+#### 16:45 · Claude
+
+The morph works now: the `card-base1-20` group pairs from the tile into the dialog. Closing has no reverse morph, so I'm checking whether Next applies Back navigation inside a transition.
+
+- *Bash*: Check how Next handles popstate
+- *Bash*: Read Next popstate handler
+- *Bash*: Check traverse transition handling
+- *Bash*: Rerun full browser check
+- *Edit*: components/card/card-overlay.tsx
+- *TaskStop*: TaskStop
+- *Bash*: Rebuild
+- *Bash*: Restart production server
+- *Bash*: Rerun full browser check
+- *Bash*: Guard double close and rebuild
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Rerun full browser check
+
+#### 16:48 · Claude
+
+Every close path works at both widths and focus lands back on the pocket. Checking the screenshots.
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/desk-mid.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/phone-open.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/trainer.png
+
+#### 16:48 · Claude
+
+On phones the drawer renders behind the dialog's backdrop, so it isn't inside the dialog yet. Checking where it ends up in the DOM.
+
+- *Bash*: Inspect drawer DOM placement on phone
+- *Bash*: Use state for dialog element and rebuild
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Recheck drawer placement and full flow
+- *Bash*: Find drawer close reasons and verify morph pairs
+- *Bash*: Find drawer change event reasons
+- *Bash*: Get reason string constants and current overlay code
+
+#### 16:51 · Claude
+
+With the Drawer only reacting to a swipe, the double-close guard isn't needed anymore, so I'll remove it.
+
+- *Bash*: Open dialog in ref, swipe-only drawer close
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Recheck drawer, morph, and close paths
+- *Bash*: Show where the check fails
+- *Bash*: Handle Esc in drawer with close guard
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Rerun full browser check
+
+#### 16:54 · Claude
+
+All checks pass at both widths. Quick look at the phone drawer and the focus ring after closing:
+
+- *Bash*: Keyboard open/close and focus ring screenshot
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/phone-drawer.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/focus.png
+
+#### 16:54 · Claude
+
+Focus does return to the Chansey pocket, but no ring shows. `.binder-pocket`'s own inset `box-shadow` overrides Tailwind's box-shadow ring, so I'll switch the tile to an outline ring.
+
+- *Bash*: Use outline focus ring on tiles and rebuild
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Recheck focus ring
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/focus.png
+
+#### 16:55 · Claude
+
+Still no ring. Checking whether it's `:focus-visible` not matching or the outline style itself.
+
+- *Bash*: Inspect focus-visible state and outline style
+
+#### 16:55 · Claude
+
+`outline-none` also sets `--tw-outline-style: none`, so `outline-3` inherits a `none` style. Adding `focus-visible:outline-solid`.
+
+- *Bash*: Add solid outline style and rebuild
+- *TaskStop*: TaskStop
+- *Bash*: Restart production server
+- *Bash*: Recheck focus outline
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/8688f062-6703-4a5f-bb3d-716377b2e65c/scratchpad/focus.png
+
+#### 16:56 · Claude
+
+The ring shows now. It's the grey `ring` token, so I'll switch it to `foreground` for contrast. Then: run `pnpm check`, update D-033 to say native `<dialog>`, and do the session wrap-up.
+
+- *Bash*: Darken focus ring, update D-033, run full check
+- *TaskStop*: TaskStop
+
+#### 16:56 · Claude
+
+`pnpm check` passes: lint, typecheck, Prettier and 33 tests. Wrapping up the session.
+
+- *Bash*: Get end time, tick M3 boxes, review changes
+- *Bash*: Fill worklog row and commit M3
+
 ## claude.ai conversations
 
 To be added.

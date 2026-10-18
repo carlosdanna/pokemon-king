@@ -8,7 +8,46 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/1"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/1",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Flaaffy",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Jamming",
+    "effect": "After your opponent plays a Supporter card from his or her hand, put 1 damage counter on each of your opponent's Pokémon. You can't use more than 1 Jamming Poké-Body each turn."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Cluster Bolt",
+    "effect": "You may discard all Lightning Energy attached to Ampharos. If you do, this attack does 20 damage to each of your opponent's Benched Pokémon that has any Energy cards attached to it. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "+30"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-2",
@@ -19,7 +58,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/2"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/2",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Kirlia",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Sonic Blade",
+    "effect": "Put damage counters on the Defending Pokémon until it is 50 HP away from being Knocked Out. If you do, your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Psychic Cut",
+    "effect": "You may choose as many of your face-down Prize cards as you like and put them face up. If you do, this attack does 60 damage plus 20 more damage for each Prize card you chose. (These cards remain face up for the rest of the game.)",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "+30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-3",
@@ -30,7 +103,46 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/3"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/3",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Miraculous Light",
+    "effect": "Remove 2 damage counters and all Special Conditions from Latias.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Mist Ball",
+    "effect": "Discard a Fire and a Water Energy attached to Latias.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Colorless",
+    "value": "+20"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-4",
@@ -41,7 +153,47 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/4"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/4",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Energy Draw",
+    "effect": "Flip a coin. If heads, search your deck for a basic Energy card and attach it to Latios. Shuffle your deck afterward.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Luster Purge",
+    "effect": "Discard 3 Energy attached to Latios.",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Colorless",
+    "value": "+20"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-5",
@@ -52,7 +204,42 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/5"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/5",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Burmy",
+  "retreat": 0,
+  "attacks": [
+   {
+    "name": "Silver Wind",
+    "effect": "During your next turn, if an attack does damage to the Defending Pokémon (after applying Weakness and Resistance), that attack does 40 more damage."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Raging Scales",
+    "effect": "If Mothim has any damage counters on it, this attack does 30 damage plus 40 more damage.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "+20"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-6",
@@ -63,7 +250,33 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/6"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/6",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "name": "Present",
+    "effect": "Flip a coin. If heads, search your deck for any 1 card and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Ice Ball",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "+20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-7",
@@ -74,7 +287,47 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/7"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/7",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Mareep",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Attract Current",
+    "effect": "Search your deck for a Lightning Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Electromagnetic Kick",
+    "effect": "Flip a coin. If tails, Flaaffy does 10 damage to itself.",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "+20"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-8",
@@ -85,7 +338,39 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/8"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/8",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Ralts",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Psychic Research",
+    "effect": "Search your discard pile for a Supporter card and use the effect of that card as the effect of this attack. (The Supporter card remains in your discard pile.)"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Telekinesis",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 40 damage to that Pokémon. This attack's damage isn't affected by Weakness or Resistance."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "+20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-9",
@@ -96,7 +381,35 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/9"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/9",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "name": "Lead",
+    "effect": "Search your deck for a Supporter card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Frighten Horn",
+    "effect": "If the Defending Pokémon isn't an Evolved Pokémon, that Pokémon is now Confused.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "+20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-10",
@@ -107,7 +420,46 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/10"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/10",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Burmy",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-BODY",
+    "name": "Sandy Cloak",
+    "effect": "Prevent all effects, excluding damage, done to Wormadam Sandy Cloak."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Push Over",
+    "effect": "Does 40 damage plus 10 more damage for each Fighting Energy attached to Wormadam Sandy Cloak.",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "+20"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-11",
@@ -118,7 +470,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/11"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/11",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Wear Cloak",
+    "effect": "Once during your turn (before your attack), if Burmy Plant Cloak is your Active Pokémon, you may search your discard pile for a basic Grass Energy card and attach it to Burmy Plant Cloak."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Plant Cloak Tackle",
+    "effect": "If Burmy Plant Cloak has any Grass Energy attached to it, this attack does 10 damage plus 10 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "+10"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-12",
@@ -129,7 +511,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/12"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/12",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Poke-POWER",
+    "name": "Wear Cloak",
+    "effect": "Once during your turn (before your attack), if Burmy Sandy Cloak is your Active Pokémon, you may search your discard pile for a basic Fighting Energy card and attach it to Burmy Sandy Cloak."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sandy Cloak Tackle",
+    "effect": "If Burmy Sandy Cloak has any Fighting Energy attached to it, this attack does 10 damage plus 10 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "+10"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-13",
@@ -140,7 +552,37 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/13"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/13",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Rally",
+    "effect": "Search your deck for up to 3 different types of Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Hook",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "+20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-14",
@@ -151,7 +593,44 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/14"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/14",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Thundershock",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Static Shock",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "+10"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-15",
@@ -162,7 +641,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/15"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/15",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Smack",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Confuse Ray",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "+10"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-16",
@@ -173,7 +681,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/16"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/16",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Grope",
+    "effect": "Look at the top 2 cards of your deck, choose 1 of them, and put it into your hand. Put the other card on the bottom of your deck."
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "+10"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "pop7-17",
@@ -184,6 +721,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/pop/pop7/17"
+  "image": "https://assets.tcgdex.net/en/pop/pop7/17",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Dish Out",
+    "effect": "Draw a card from the top and the bottom of your deck."
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Synchro Punch",
+    "effect": "If any basic Energy card attached to Spinda is the same type as any Energy attached to the Defending Pokémon, this attack does 10 damage plus 30 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "+20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

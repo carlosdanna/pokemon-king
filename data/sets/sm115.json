@@ -8,7 +8,29 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/1"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/1",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-2",
@@ -19,7 +41,31 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/2"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/2",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Caterpie",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-3",
@@ -30,7 +76,31 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/3"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/3",
+  "hp": 130,
+  "stage": "Stage2",
+  "evolveFrom": "Metapod",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Gust",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-4",
@@ -41,7 +111,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/4"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/4",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-5",
@@ -52,7 +152,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/5"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/5",
+  "hp": 100,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Slash",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Sharp Scythe",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-6",
@@ -63,7 +193,40 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/6"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/6",
+  "hp": 180,
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Superpowered Horns",
+    "damage": "110"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Guillotine GX",
+    "effect": "(You can’t use more than 1 GX attack in a game.)",
+    "damage": "160"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-7",
@@ -74,7 +237,37 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/7"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/7",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Gnaw",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flare",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-8",
@@ -85,7 +278,40 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/8"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/8",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Charmander",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-9",
@@ -96,7 +322,43 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/9"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/9",
+  "hp": 250,
+  "evolveFrom": "Charmeleon",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "damage": "140"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Flare Blitz GX",
+    "effect": "(You can’t use more than 1 GX attack in a game.)",
+    "damage": "300"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-10",
@@ -107,7 +369,30 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/10"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/10",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Fire Punch",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-11",
@@ -118,7 +403,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/11"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/11",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Headache",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-12",
@@ -129,7 +436,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/12"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/12",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Yawn",
+    "effect": "Your opponent’s Active Pokémon is now Asleep."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-13",
@@ -140,7 +469,30 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/13"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/13",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Numbing Water",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-14",
@@ -151,7 +503,47 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/14"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/14",
+  "hp": 190,
+  "evolveFrom": "Staryu",
+  "retreat": 0,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Star Stream",
+    "effect": "Attach 2 Water Energy cards from your discard pile to 1 of your Pokémon.",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Spinning Attack",
+    "damage": "100"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Hydro Pump GX",
+    "effect": "This attack does 40 more damage times the amount of Water Energy attached to this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "40+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-15",
@@ -162,7 +554,29 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/15"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/15",
+  "hp": 30,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Splash",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-16",
@@ -173,7 +587,43 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/16"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/16",
+  "hp": 230,
+  "evolveFrom": "Magikarp",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Dragon Rage",
+    "damage": "130"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Hyper Beam GX",
+    "effect": "(You can’t use more than 1 GX attack in a game.)",
+    "damage": "240"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-17",
@@ -184,7 +634,31 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/17"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/17",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Aqua Wave",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-18",
@@ -195,7 +669,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/18"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/18",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Eevee",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Colorless"
+    ],
+    "name": "Water Gun",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Bubble Drain",
+    "effect": "Heal 30 damage from this Pokémon.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-19",
@@ -206,7 +714,44 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/19"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/19",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Quick Attack",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Electro Ball",
+    "damage": "60"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-20",
@@ -217,7 +762,47 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/20"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/20",
+  "hp": 210,
+  "evolveFrom": "Pikachu",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Thunderbolt",
+    "damage": "120"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Spark Ball GX",
+    "effect": "(You can’t use more than 1 GX attack in a game.)",
+    "damage": "200"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-21",
@@ -228,7 +813,35 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/21"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/21",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Lightning Ball",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-22",
@@ -239,7 +852,46 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/22"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/22",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Voltorb",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning"
+    ],
+    "name": "Lightning Ball",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Electroblast",
+    "effect": "Flip 2 coins. This attack does 30 more damage for each heads.",
+    "damage": "60+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-23",
@@ -250,7 +902,45 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/23"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/23",
+  "hp": 90,
+  "stage": "Stage1",
+  "evolveFrom": "Eevee",
+  "retreat": 0,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Electromagnetic Wall",
+    "effect": "As long as this Pokémon is your Active Pokémon, whenever your opponent attaches an Energy card from their hand to 1 of their Pokémon, put 2 damage counters on that Pokémon."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Thunderbolt",
+    "effect": "Discard all Energy from this Pokémon.",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Metal",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-24",
@@ -261,7 +951,45 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/24"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/24",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Hurricane Call",
+    "effect": "Flip 4 coins. For each heads, search your deck for a Lightning Energy card and attach it to 1 of your Pokémon-GX or Pokémon-EX. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Sky-High Claws",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-25",
@@ -272,7 +1000,30 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/25"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/25",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Wrap",
+    "effect": "Flip a coin. If heads, discard an Energy from your opponent’s Active Pokémon.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-26",
@@ -283,7 +1034,30 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/26"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/26",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tail Whap",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-27",
@@ -294,7 +1068,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/27"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/27",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Ekans",
+  "retreat": 2,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Last Pattern",
+    "effect": "If this Pokémon is Knocked Out by damage from an opponent’s attack, discard 2 random cards from your opponent’s hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rocket Tail",
+    "effect": "If Jessie & James is in your discard pile, this attack does 80 more damage.",
+    "damage": "50+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-28",
@@ -305,7 +1112,29 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/28"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/28",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-29",
@@ -316,7 +1145,37 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/29"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/29",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Koffing",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Ability",
+    "name": "Surrender Now",
+    "effect": "Once during your turn, if this Pokémon is discarded with the effect of Jessie & James, you may have your opponent discard a card from their hand. (They discard that card after the effect of Jessie & James.)"
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-30",
@@ -327,7 +1186,37 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/30"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/30",
+  "hp": 100,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Slap",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Lovely Kiss",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-31",
@@ -338,7 +1227,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/31"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/31",
+  "hp": 180,
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Super Psy Bolt",
+    "damage": "110"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psycrush GX",
+    "effect": "Discard all Energy from your opponent’s Active Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "120"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-32",
@@ -349,7 +1271,30 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/32"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/32",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic",
+     "Psychic"
+    ],
+    "name": "Psyshot",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-33",
@@ -360,7 +1305,29 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/33"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/33",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-34",
@@ -371,7 +1338,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/34"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/34",
+  "hp": 100,
+  "stage": "Stage1",
+  "evolveFrom": "Geodude",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Mudslide",
+    "effect": "Discard 2 Fighting Energy from this Pokémon. This attack does 80 damage to 1 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-35",
@@ -382,7 +1383,43 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/35"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/35",
+  "hp": 170,
+  "stage": "Stage2",
+  "evolveFrom": "Graveler",
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rock Slide",
+    "effect": "This attack does 20 damage to 3 of your opponent’s Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "60"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Land Crush",
+    "damage": "140"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-36",
@@ -393,7 +1430,52 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/36"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/36",
+  "hp": 200,
+  "retreat": 4,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Bind",
+    "effect": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Heavy Impact",
+    "damage": "150"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rocky Avalanche GX",
+    "effect": "During your opponent’s next turn, this Pokémon takes 100 less damage from attacks (after applying Weakness and Resistance). (You can’t use more than 1 GX attack in a game.)",
+    "damage": "200"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-37",
@@ -404,7 +1486,30 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/37"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/37",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sharpshooting",
+    "effect": "This attack does 20 damage to 1 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-38",
@@ -415,7 +1520,42 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/38"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/38",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Lead",
+    "effect": "Flip a coin. If heads, search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+   },
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Pound",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-39",
@@ -426,7 +1566,43 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/39"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/39",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Pound",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Moon Dance",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-40",
@@ -437,7 +1613,46 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/40"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/40",
+  "hp": 120,
+  "stage": "Stage1",
+  "evolveFrom": "Clefairy",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Pound",
+    "damage": "40"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Moon Impact",
+    "damage": "90"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-41",
@@ -448,7 +1663,43 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/41"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/41",
+  "hp": 70,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Singing Voice",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Rollout",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-42",
@@ -459,7 +1710,48 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/42"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/42",
+  "hp": 210,
+  "evolveFrom": "Jigglypuff",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy",
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Rolling Rush",
+    "effect": "Flip a coin until you get tails. This attack does 30 more damage for each heads.",
+    "damage": "100+"
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Fairy",
+     "Colorless"
+    ],
+    "name": "Lovely Star GX",
+    "effect": "Heal all damage from this Pokémon. (You can’t use more than 1 GX attack in a game.)",
+    "damage": "130"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-43",
@@ -470,7 +1762,44 @@
   "types": [
    "Fairy"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/43"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/43",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fairy"
+    ],
+    "name": "Happy Mime",
+    "effect": "Each player draws a card."
+   },
+   {
+    "cost": [
+     "Fairy",
+     "Fairy"
+    ],
+    "name": "Double Slap",
+    "effect": "Flip 2 coins. This attack does 40 damage for each heads.",
+    "damage": "40×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Metal",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Darkness",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-44",
@@ -481,7 +1810,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/44"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/44",
+  "hp": 300,
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Water",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Trinity Burn",
+    "damage": "210"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sky Legends GX",
+    "effect": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack’s cost), this attack does 110 damage to 3 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.) (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-45",
@@ -492,7 +1858,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/45"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/45",
+  "hp": 80,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Leek Slap",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-46",
@@ -503,7 +1898,32 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/46"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/46",
+  "hp": 130,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double-Edge",
+    "effect": "This Pokémon does 20 damage to itself.",
+    "damage": "80"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-47",
@@ -514,7 +1934,31 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/47"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/47",
+  "hp": 120,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Parental Fury",
+    "effect": "Flip a coin until you get tails. This attack does 40 damage for each heads.",
+    "damage": "40×"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-48",
@@ -525,7 +1969,38 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/48"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/48",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Curiosity",
+    "effect": "Your opponent reveals their hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Spin Tackle",
+    "effect": "Flip a coin. If tails, this Pokémon does 10 damage to itself.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-49",
@@ -536,7 +2011,29 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/49"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/49",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Gnaw",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-50",
@@ -547,7 +2044,32 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/50"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/50",
+  "hp": 150,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Incredible Snore",
+    "damage": "100"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-51",
@@ -555,7 +2077,13 @@
   "number": "51",
   "rarity": "Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/51"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/51",
+  "effect": "Look at the top 7 cards of your deck. You may reveal up to 2 Trainer cards you find there and put them into your hand. Shuffle the other cards back into your deck.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-52",
@@ -563,7 +2091,13 @@
   "number": "52",
   "rarity": "Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/52"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/52",
+  "effect": "You can play this card only when it is the last card in your hand.\n\nDraw 2 cards for each Fire Pokémon you have in play.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-53",
@@ -571,7 +2105,13 @@
   "number": "53",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/53"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/53",
+  "effect": "Shuffle 6 in any combination of Pokémon and basic Energy cards from your discard pile into your deck.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-54",
@@ -579,7 +2119,13 @@
   "number": "54",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/54"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/54",
+  "effect": "Onix-GX (both yours and your opponent’s) take 40 less damage from the opponent’s attacks (after applying Weakness and Resistance).",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-55",
@@ -587,7 +2133,13 @@
   "number": "55",
   "rarity": "Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/55"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/55",
+  "effect": "Attach an Energy card from your hand to 1 of your Geodude, Graveler, Golem, Onix-GX, Cubone, Rhyhorn, Rhydon, or Sudowoodo.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-56",
@@ -595,7 +2147,13 @@
   "number": "56",
   "rarity": "Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/56"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/56",
+  "effect": "You can play this card only if you have 4 or fewer other cards in your hand.\n\nDraw a card for each of your opponent’s Pokémon in play.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-57",
@@ -603,7 +2161,13 @@
   "number": "57",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/57"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/57",
+  "effect": "Discard up to 2 of your Benched Pokémon that have no damage counters on them and all cards attached to them.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-58",
@@ -611,7 +2175,13 @@
   "number": "58",
   "rarity": "Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/58"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/58",
+  "effect": "Each player discards 2 cards from their hand. Your opponent discards first.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "sm115-59",
@@ -619,7 +2189,13 @@
   "number": "59",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/59"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/59",
+  "effect": "Your opponent’s Active Pokémon is now Confused and Poisoned.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-60",
@@ -627,7 +2203,13 @@
   "number": "60",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/60"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/60",
+  "effect": "You can play this card only if you have more Prize cards remaining than your opponent.\n\nDuring this turn, you can play 3 Supporter cards (including this card).",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-61",
@@ -635,7 +2217,13 @@
   "number": "61",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/61"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/61",
+  "effect": "The attacks of Starmie-GX (both yours and your opponent’s) do 40 more damage to the opponent’s Active Pokémon (before applying Weakness and Resistance).",
+  "trainerType": "Stadium",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-62",
@@ -643,7 +2231,13 @@
   "number": "62",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/62"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/62",
+  "effect": "Discard a card from your hand. If you do, look at the top 8 cards of your deck and put 1 of them into your hand. Shuffle the other cards back into your deck.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-63",
@@ -651,7 +2245,13 @@
   "number": "63",
   "rarity": "Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/63"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/63",
+  "effect": "Move any number of Water Energy from your Pokémon to your Psyduck, Horsea, Staryu, Starmie-GX, Magikarp, Gyarados, or Lapras in any way you like.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-64",
@@ -659,7 +2259,13 @@
   "number": "64",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/64"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/64",
+  "effect": "Heal 60 damage and remove all Special Conditions from 1 of your Pokémon.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-65",
@@ -667,7 +2273,13 @@
   "number": "65",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/65"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/65",
+  "effect": "Your opponent reveals their hand. You may choose a Supporter card you find there and use the effect of that card as the effect of this card.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-66",
@@ -678,7 +2290,44 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/66"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/66",
+  "hp": 300,
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Water",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Trinity Burn",
+    "damage": "210"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sky Legends GX",
+    "effect": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack’s cost), this attack does 110 damage to 3 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.) (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-67",
@@ -686,7 +2335,13 @@
   "number": "67",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/67"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/67",
+  "effect": "Discard up to 2 of your Benched Pokémon that have no damage counters on them and all cards attached to them.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  },
  {
   "id": "sm115-68",
@@ -694,7 +2349,13 @@
   "number": "68",
   "rarity": "Ultra Rare",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/sm/sm115/68"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/68",
+  "effect": "Each player discards 2 cards from their hand. Your opponent discards first.",
+  "trainerType": "Supporter",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "sm115-69",
@@ -705,6 +2366,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/sm/sm115/69"
+  "image": "https://assets.tcgdex.net/en/sm/sm115/69",
+  "hp": 300,
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Fire",
+     "Water",
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Trinity Burn",
+    "damage": "210"
+   },
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Sky Legends GX",
+    "effect": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack’s cost), this attack does 110 damage to 3 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.) (You can’t use more than 1 GX attack in a game.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Lightning",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": true
+  }
  }
 ]

@@ -7,7 +7,20 @@
   "category": "Pokemon",
   "types": [
    "Grass"
-  ]
+  ],
+  "hp": 60,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Slam",
+    "effect": "Flip 2 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20×"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-2",
@@ -17,7 +30,25 @@
   "category": "Pokemon",
   "types": [
    "Grass"
-  ]
+  ],
+  "hp": 80,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Mega Drain",
+    "effect": "Heal 20 damage from this Pokémon.",
+    "damage": "20"
+   },
+   {
+    "name": "Pin Missile",
+    "effect": "Flip 4 coins. This attack does 20 damage times the number of heads.",
+    "damage": "20×"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-3",
@@ -27,7 +58,20 @@
   "category": "Pokemon",
   "types": [
    "Fire"
-  ]
+  ],
+  "hp": 70,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Ember",
+    "effect": "Discard an Energy attached to this Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-4",
@@ -37,7 +81,20 @@
   "category": "Pokemon",
   "types": [
    "Water"
-  ]
+  ],
+  "hp": 60,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Water Pulse",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Asleep.",
+    "damage": "20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-5",
@@ -47,7 +104,23 @@
   "category": "Pokemon",
   "types": [
    "Water"
-  ]
+  ],
+  "hp": 100,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Pound",
+    "damage": "20"
+   },
+   {
+    "name": "Wave Splash",
+    "damage": "60"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-6",
@@ -57,7 +130,20 @@
   "category": "Pokemon",
   "types": [
    "Lightning"
-  ]
+  ],
+  "hp": 60,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 20 more damage.",
+    "damage": "10+"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-7",
@@ -67,7 +153,19 @@
   "category": "Pokemon",
   "types": [
    "Psychic"
-  ]
+  ],
+  "hp": 60,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Yawn",
+    "effect": "The Defending Pokémon is now Asleep."
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-8",
@@ -77,7 +175,20 @@
   "category": "Pokemon",
   "types": [
    "Fighting"
-  ]
+  ],
+  "hp": 70,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Sand Tomb",
+    "effect": "The Defending Pokémon can’t retreat during your opponent’s next turn.",
+    "damage": "30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-9",
@@ -87,7 +198,24 @@
   "category": "Pokemon",
   "types": [
    "Darkness"
-  ]
+  ],
+  "hp": 50,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Scratch",
+    "damage": "10"
+   },
+   {
+    "name": "Fury Swipes",
+    "effect": "Flip 3 coins. This attack does 10 damage times the number of heads.",
+    "damage": "10×"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-10",
@@ -97,7 +225,24 @@
   "category": "Pokemon",
   "types": [
    "Metal"
-  ]
+  ],
+  "hp": 50,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Charge Beam",
+    "effect": "Flip a coin. If heads, attach an Energy card from your discard pile to this Pokémon.",
+    "damage": "10"
+   },
+   {
+    "name": "Irongrip",
+    "damage": "20"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-11",
@@ -107,7 +252,23 @@
   "category": "Pokemon",
   "types": [
    "Colorless"
-  ]
+  ],
+  "hp": 40,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Growl",
+    "effect": "During your opponent’s next turn, any damage done by attacks from the Defending Pokémon is reduced by 20 (before applying Weakness and Resistance)."
+   },
+   {
+    "name": "Gust",
+    "damage": "10"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "2011bw-12",
@@ -117,6 +278,19 @@
   "category": "Pokemon",
   "types": [
    "Colorless"
-  ]
+  ],
+  "hp": 80,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "name": "Double Slap",
+    "effect": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+    "damage": "30×"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

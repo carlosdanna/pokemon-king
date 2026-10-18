@@ -1,7 +1,9 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import type { AlbumCard } from "@/lib/album";
 import { CardTile } from "./card-tile";
+
+vi.mock("next/navigation", () => ({ usePathname: () => "/album/base1" }));
 
 const card = (over: Partial<AlbumCard> = {}): AlbumCard => ({
   id: "base1-4",
@@ -41,5 +43,10 @@ describe("CardTile", () => {
     fireEvent.error(screen.getByRole("img"));
     expect(screen.getByRole("img").getAttribute("src")).toContain("card-back");
     expect(screen.getByText("#4")).toBeInTheDocument();
+  });
+
+  it("links to the card's zoom", () => {
+    render(<CardTile card={card()} />);
+    expect(screen.getByRole("link")).toHaveAttribute("href", "/cards/base1-4");
   });
 });

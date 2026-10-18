@@ -14,6 +14,32 @@ export type SetCard = {
   /** TCGdex image base URL; append `/low.webp` or `/high.webp`. */
   image?: string;
   images?: CardImages;
+} & CardDetails;
+
+export type Attack = {
+  name: string;
+  cost?: string[];
+  damage?: string;
+  effect?: string;
+};
+export type Ability = { type: string; name: string; effect: string };
+export type TypeModifier = { type: string; value?: string };
+
+/** TCGdex detail fields (D-032); absent when TCGdex lists none. */
+export type CardDetails = {
+  hp?: number;
+  stage?: string;
+  evolveFrom?: string;
+  /** Rules text of Trainer and Energy cards. */
+  effect?: string;
+  trainerType?: string;
+  energyType?: string;
+  retreat?: number;
+  abilities?: Ability[];
+  attacks?: Attack[];
+  weaknesses?: TypeModifier[];
+  resistances?: TypeModifier[];
+  legal?: { standard: boolean; expanded: boolean };
 };
 
 /** One set in data/sets.json. */

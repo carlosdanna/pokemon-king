@@ -8,7 +8,40 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/1"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/1",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Eevee",
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psychic",
+    "effect": "Does 30 damage plus 10 more for each Energy Card attached to the Defending Pokémon.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-2",
@@ -19,7 +52,46 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/2"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/2",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Pineco",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Spikes",
+    "effect": "During your opponent's turn, whenever 1 of your opponent's Benched Pokémon becomes his or her Active Pokémon, Forretress does 10 damage to it. (Don't apply Weakness and Resistance.) This power stops working if Forretress is Asleep, Confused, or Paralyzed."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rapid Spin",
+    "effect": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with their Active Pokémon; then, if you have any Benched Pokémon, you switch 1 of them with your Active Pokémon. (Do the damage before switching the Pokémon.)",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-3",
@@ -30,7 +102,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/3"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/3",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Detect",
+    "effect": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Hitmontop."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Triple Kick",
+    "effect": "Flip 3 coins. This attack does 30 times the number of heads.",
+    "damage": "30x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-4",
@@ -41,7 +145,43 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/4"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/4",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Houndour",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Crunch",
+    "effect": "Until the end of your next turn, if an attack damages the Defending Pokémon (after applying Weakness and Resistance), that attack does 20 more damage to the Defending Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "effect": "Discard 1 Energy card attached to Houndoom or this attack does nothing.",
+    "damage": "50"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-5",
@@ -52,7 +192,39 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/5"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/5",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Smog",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Collect Fire",
+    "effect": "If there are any Energy in your discard pile, choose 1 of them and attach it to Houndour.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-6",
@@ -63,7 +235,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/6"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/6",
+  "hp": 90,
+  "stage": "Stage2",
+  "evolveFrom": "Kabuto",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Hydrocutter",
+    "effect": "Flip a number of coins equal to the number of Energy cards attached to Kabutops. This attack does 40 times the number of heads. You can't flips more than 3 coins in this way.",
+    "damage": "40x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-7",
@@ -74,7 +277,44 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/7"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/7",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Lock-on",
+    "effect": "During your next turn, treat any tails flipped when using Magnemite's Electric Bolt attack on the Defending Pokémon as if they were heads. (Benching or evolving either Pokémon ends this effect.)"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Electric Bolt",
+    "effect": "Flip 2 coins. If both are heads, the Defending Pokémon is now Paralyzed. If either of them is tails, this attack does nothing (not even damage).",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-8",
@@ -85,7 +325,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/8"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/8",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Poliwhirl",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Frog Song",
+    "effect": "Whenever Politoed's attack damages the Defending Pokémon (after applying Weakness and Resistance), if there are more than 3 Poliwags, Poliwhirls, Poliwraths, and/or Politoeds in play (including your opponent's), that attack does 40 more damage (no matter how many heads you get). This power stops working while Politoed is Asleep, Confused, or Paralyzed."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Doubleslap",
+    "effect": "Flip 2 coins. This attack does 40 times the number of heads.",
+    "damage": "40x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-9",
@@ -96,7 +370,42 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/9"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/9",
+  "hp": 90,
+  "stage": "Stage2",
+  "evolveFrom": "Poliwhirl",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Corkscrew Punch",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Submission",
+    "effect": "Poliwrath does 20 damage to itself.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-10",
@@ -107,7 +416,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/10"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/10",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Scyther",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "False Swipe",
+    "effect": "Does damage equal to half the Defending Pokémon's remaining HP (rounded down to the nearest 10).",
+    "damage": "?"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Claw",
+    "effect": "Flip 2 coins. This attack does 20 times the number of heads.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-11",
@@ -118,7 +467,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/11"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/11",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sketch",
+    "effect": "If the Defending Pokémon attacked last turn, and Smeargle was in play during that attack, Smeargle copies that attack except for its Energy costs and anything else required in order to use that attack."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-12",
@@ -129,7 +507,44 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/12"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/12",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Pupitar",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Slam",
+    "effect": "Flip 2 coins. This attack does 30 times the number of heads.",
+    "damage": "30x"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Trample",
+    "effect": "For each Benched Pokémon in play (yours and your opponent's), flip a coin. If heads, this attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "50"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-13",
@@ -140,7 +555,41 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/13"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/13",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Eevee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Feint Attack",
+    "effect": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers or any other effects on the Defending Pokémon.",
+    "damage": "30+"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-14",
@@ -151,7 +600,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/14"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/14",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Anger",
+    "effect": "Whenever 1 of your Pokémon with Unown in its name uses its Hidden Power attack, that attack does 10 more damage for each damage counter on Unown A. If you have more than 1 Unown A in play, use only 1 Anger for each attack."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-15",
@@ -162,7 +640,49 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/15"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/15",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Teddiursa",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headpress",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, this attack does nothing (not even damage).",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Lariat",
+    "effect": "Flip 2 coins. This attack does 40 times the number of heads.",
+    "damage": "40x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-16",
@@ -173,7 +693,29 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/16"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/16",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Counter",
+    "effect": "If an attack damages Wobbuffet during your opponent's next turn (even if Wobbuffet is knocked out), flip a coin. If heads, Wobbuffet attacks the Defending Pokémon for an equal amount of damage."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-17",
@@ -184,7 +726,44 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/17"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/17",
+  "hp": 60,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Shockwave",
+    "effect": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Pokémon. Don't apply Weakness and Resistance. Then, if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Grass"
+    ],
+    "name": "Swift",
+    "effect": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-18",
@@ -195,7 +774,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/18"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/18",
+  "hp": 80,
+  "stage": "Stage2",
+  "evolveFrom": "Kakuna",
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Triple Poison",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Poisoned. Your opponent now puts 3 damage counters instead of 1 after each player's turn (even if it was already Poisoned).",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Pin Missile",
+    "effect": "Flip 4 coins. This attack does 20 times the number of heads.",
+    "damage": "20x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-19",
@@ -206,7 +824,46 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/19"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/19",
+  "hp": 80,
+  "stage": "Stage2",
+  "evolveFrom": "Metapod",
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Magic Dust",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now either Asleep, Confused, Paralyzed, or Poisoned (your choice).",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Hyper Reverse",
+    "effect": "Does 10 damage times the number of Energy cards attached to the Defending Pokémon. After doing damage, remove a number of damage counters from Butterfree equal to the amount of damage done to the Defending Pokémon (after applying Weakness and Resistance)."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-20",
@@ -217,7 +874,42 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/20"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/20",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Eevee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Psybeam",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-21",
@@ -228,7 +920,46 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/21"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/21",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Pineco",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Spikes",
+    "effect": "During your opponent's turn, whenever 1 of your opponent's Benched Pokémon becomes his or her Active Pokémon, Forretress does 10 damage to it. (Don't apply Weakness and Resistance.) This power stops working if Forretress is Asleep, Confused, or Paralyzed."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Rapid Spin",
+    "effect": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with their Active Pokémon; then, if you have any Benched Pokémon, you switch 1 of them with your Active Pokémon. (Do the damage before switching the Pokémon.)",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-22",
@@ -239,7 +970,39 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/22"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/22",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Detect",
+    "effect": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Hitmontop."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Triple Kick",
+    "effect": "Flip 3 coins. This attack does 30 times the number of heads.",
+    "damage": "30x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-23",
@@ -250,7 +1013,43 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/23"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/23",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Houndour",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Crunch",
+    "effect": "Until the end of your next turn, if an attack damages the Defending Pokémon (after applying Weakness and Resistance), that attack does 20 more damage to the Defending Pokémon.",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire",
+     "Colorless"
+    ],
+    "name": "Flamethrower",
+    "effect": "Discard 1 Energy card attached to Houndoom or this attack does nothing.",
+    "damage": "50"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-24",
@@ -261,7 +1060,39 @@
   "types": [
    "Fire"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/24"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/24",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Fire"
+    ],
+    "name": "Smog",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Fire",
+     "Fire"
+    ],
+    "name": "Collect Fire",
+    "effect": "If there are any Energy in your discard pile, choose 1 of them and attach it to Houndour.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Water",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-25",
@@ -272,7 +1103,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/25"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/25",
+  "hp": 90,
+  "stage": "Stage2",
+  "evolveFrom": "Kabuto",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Slash",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting"
+    ],
+    "name": "Hydrocutter",
+    "effect": "Flip a number of coins equal to the number of Energy cards attached to Kabutops. This attack does 40 times the number of heads. You can't flips more than 3 coins in this way.",
+    "damage": "40x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-26",
@@ -283,7 +1145,44 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/26"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/26",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Lock-on",
+    "effect": "During your next turn, treat any tails flipped when using Magnemite's Electric Bolt attack on the Defending Pokémon as if they were heads. (Benching or evolving either Pokémon ends this effect.)"
+   },
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Electric Bolt",
+    "effect": "Flip 2 coins. If both are heads, the Defending Pokémon is now Paralyzed. If either of them is tails, this attack does nothing (not even damage).",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-27",
@@ -294,7 +1193,41 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/27"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/27",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Poliwhirl",
+  "retreat": 3,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Frog Song",
+    "effect": "Whenever Politoed's attack damages the Defending Pokémon (after applying Weakness and Resistance), if there are more than 3 Poliwags, Poliwhirls, Poliwraths, and/or Politoeds in play (including your opponent's), that attack does 40 more damage (no matter how many heads you get). This power stops working while Politoed is Asleep, Confused, or Paralyzed."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Doubleslap",
+    "effect": "Flip 2 coins. This attack does 40 times the number of heads.",
+    "damage": "40x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-28",
@@ -305,7 +1238,42 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/28"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/28",
+  "hp": 90,
+  "stage": "Stage2",
+  "evolveFrom": "Poliwhirl",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Corkscrew Punch",
+    "damage": "30"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Submission",
+    "effect": "Poliwrath does 20 damage to itself.",
+    "damage": "70"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-29",
@@ -316,7 +1284,47 @@
   "types": [
    "Metal"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/29"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/29",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Scyther",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Metal"
+    ],
+    "name": "False Swipe",
+    "effect": "Does damage equal to half the Defending Pokémon's remaining HP (rounded down to the nearest 10).",
+    "damage": "?"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Claw",
+    "effect": "Flip 2 coins. This attack does 20 times the number of heads.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Grass",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-30",
@@ -327,7 +1335,36 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/30"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/30",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Sketch",
+    "effect": "If the Defending Pokémon attacked last turn, and Smeargle was in play during that attack, Smeargle copies that attack except for its Energy costs and anything else required in order to use that attack."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-31",
@@ -338,7 +1375,44 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/31"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/31",
+  "hp": 100,
+  "stage": "Stage2",
+  "evolveFrom": "Pupitar",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Slam",
+    "effect": "Flip 2 coins. This attack does 30 times the number of heads.",
+    "damage": "30x"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Darkness",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Trample",
+    "effect": "For each Benched Pokémon in play (yours and your opponent's), flip a coin. If heads, this attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+    "damage": "50"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-32",
@@ -349,7 +1423,42 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/32"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/32",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Eevee",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Quick Attack",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Metal",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Pursuit",
+    "effect": "During your opponent's next turn, if the Defending Pokémon tries to retreat, do 10 damage to it. (Don't apply Weakness and Resistance.)",
+    "damage": "30"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-33",
@@ -360,7 +1469,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/33"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/33",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Anger",
+    "effect": "Whenever 1 of your Pokémon with Unown in its name uses its Hidden Power attack, that attack does 10 more damage for each damage counter on Unown A. If you have more than 1 Unown A in play, use only 1 Anger for each attack."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-34",
@@ -371,7 +1509,49 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/34"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/34",
+  "hp": 80,
+  "stage": "Stage1",
+  "evolveFrom": "Teddiursa",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Headpress",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, this attack does nothing (not even damage).",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless",
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Double Lariat",
+    "effect": "Flip 2 coins. This attack does 40 times the number of heads.",
+    "damage": "40x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-35",
@@ -382,7 +1562,29 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/35"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/35",
+  "hp": 90,
+  "stage": "Basic",
+  "retreat": 3,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Counter",
+    "effect": "If an attack damages Wobbuffet during your opponent's next turn (even if Wobbuffet is knocked out), flip a coin. If heads, Wobbuffet attacks the Defending Pokémon for an equal amount of damage."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-36",
@@ -393,7 +1595,44 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/36"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/36",
+  "hp": 60,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Shockwave",
+    "effect": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Pokémon. Don't apply Weakness and Resistance. Then, if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon."
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass",
+     "Grass"
+    ],
+    "name": "Swift",
+    "effect": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-37",
@@ -404,7 +1643,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/37"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/37",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Recover",
+    "effect": "Discard 1 Energy attached to Corsola or this attack does nothing. Remove all damage counters from Corsola."
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Spike Cannon",
+    "effect": "Flip 2 coins. This attack does 30 times the number of heads.",
+    "damage": "30x"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-38",
@@ -415,7 +1685,42 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/38"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/38",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Energy Evolution",
+    "effect": "Whenever you attach an Energy card to Eevee, flip a coin. If heads, search your deck for that evolves from Eevee that is the same type as the Energy card you attached to Eevee. Shuffle your deck afterward. This power can't be used if Eevee is Asleep, Confused, or Paralyzed."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Smash Kick",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-39",
@@ -426,7 +1731,38 @@
   "types": [
    "Darkness"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/39"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/39",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Darkness",
+     "Colorless"
+    ],
+    "name": "Plunder",
+    "effect": "Before doing damage, discard all Trainer cards attached to the Defending Pokémon.",
+    "damage": "20"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-40",
@@ -437,7 +1773,20 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/40"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/40",
+  "hp": 30,
+  "stage": "Basic",
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Gaze",
+    "effect": "Once during your turn (before you attack), choose 1 of your opponent's Benched Pokémon that has a Pokémon Power. That power stops working until the end of this turn. This effect ends if that Pokémon leaves the Bench. (Pokémon Power)"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-41",
@@ -448,7 +1797,31 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/41"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/41",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Weedle",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Grass"
+    ],
+    "name": "Secrete Poison",
+    "effect": "During your opponent's next turn, whenever your opponent's attack damages Kakuna (even if Kakuna is knocked out), your opponent's Active Pokémon is now Poisoned and Kakuna does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-42",
@@ -459,7 +1832,39 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/42"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/42",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Caterpie",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Harden",
+    "effect": "During your opponent's next turn, whenever 20 or less damage is done to Metapod (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+   },
+   {
+    "cost": [
+     "Grass",
+     "Grass"
+    ],
+    "name": "Hatch",
+    "effect": "Flip a coin. If heads, remove all damage counters from Metapod. Then, search your deck for a card that evolves from Metapod and attach that card to Metapod. This counts as evolving Metapod. Shuffle your deck afterward."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-43",
@@ -470,7 +1875,41 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/43"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/43",
+  "hp": 80,
+  "stage": "Stage2",
+  "evolveFrom": "Omanyte",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Squeeze",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage and the Defending Pokémon is now Paralyzed. If tails, this attack does 10 damage.",
+    "damage": "10+"
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Water"
+    ],
+    "name": "Spike Barrage",
+    "effect": "Flip a number of coins equal to the number of Energy attached to Omastar. This attack does 20 damage plus 20 more for each heads.",
+    "damage": "20+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-44",
@@ -481,7 +1920,40 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/44"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/44",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Poliwag",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Belly Drum",
+    "effect": "Put 3 damage counters on Poliwhirl. If this doesn't knock out Poliwhirl, search your deck for up to 2 Basic Energy cards and attach them to Poliwhirl. Shuffle your deck afterward."
+   },
+   {
+    "cost": [
+     "Water",
+     "Water",
+     "Colorless"
+    ],
+    "name": "Water Gun",
+    "effect": "Does 30 damage plus 10 more damage for each W Energy attached to Poliwhirl but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+    "damage": "30+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-45",
@@ -492,7 +1964,45 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/45"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/45",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Larvitar",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Skull Bash",
+    "damage": "20"
+   },
+   {
+    "cost": [
+     "Fighting",
+     "Fighting"
+    ],
+    "name": "Dust Devil",
+    "effect": "Does 10 damage to each non- Pokémon in play. Don't apply Weakness and Resistance."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-46",
@@ -503,7 +2013,37 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/46"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/46",
+  "hp": 60,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Grass"
+    ],
+    "name": "Fury Cutter",
+    "effect": "Flip 4 coins. This attack does 10 damage plus 10 more damage if exactly 1 is heads, or 20 more damage if exactly 2 are heads, or 40 more damage if exactly 3 are heads, or 80 more damage if all 4 are heads.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-47",
@@ -514,7 +2054,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/47"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/47",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Darkness",
+    "effect": "Whenever a D Pokémon damages 1 of your Pokémon, reduce that damage by 30 (after applying Weakness and Resistance). This power stops working if you have more than 1 Unown D in play. (This power even works if Unown D is Asleep, Confused, or Paralyzed.)"
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-48",
@@ -525,7 +2094,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/48"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/48",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "[Find]",
+    "effect": "Once during your turn (before you attack), if you have Unown F, Unown I, Unown N, and Unown D on your Bench, you may search your deck for a Trainer card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-49",
@@ -536,7 +2134,34 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/49"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/49",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power"
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-50",
@@ -547,7 +2172,34 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/50"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/50",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power"
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-51",
@@ -558,7 +2210,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/51"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/51",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Undo",
+    "effect": "Once during your turn (before you attack), if you have Unown U, Unown N, Unown D, and Unown O on your Bench, you may return your Active Pokémon and all cards attached to it to your hand."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-52",
@@ -569,7 +2250,46 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/52"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/52",
+  "hp": 70,
+  "stage": "Stage1",
+  "evolveFrom": "Natu",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Energy Cycle",
+    "effect": "Flip a coin. If heads, choose 1 Energy card attached to the Defending Pokémon and 1 of your opponent's Benched Pokémon. Attach that Energy card to that Pokémon.",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Psychic",
+     "Psychic",
+     "Colorless"
+    ],
+    "name": "Super Psy",
+    "damage": "50"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-53",
@@ -580,7 +2300,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/53"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/53",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Spin Tackle",
+    "effect": "Caterpie does 10 damage to itself.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-54",
@@ -591,7 +2334,35 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/54"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/54",
+  "hp": 30,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Glare",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-55",
@@ -602,7 +2373,34 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/55"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/55",
+  "hp": 30,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Rolling Tackle",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-56",
@@ -613,7 +2411,38 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/56"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/56",
+  "hp": 50,
+  "stage": "Stage1",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Revive Friends",
+    "effect": "Once during your turn (before you attack), you may flip a coin. If heads, search your deck for a card named Kabuto and put it on your Bench. Shuffle your deck afterward. Treat the new Kabuto as a Basic Pokémon. This power can't be used if Kabuto is Asleep, Confused, or Paralyzed (or if your Bench is full)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Fighting",
+     "Colorless"
+    ],
+    "name": "Work Together",
+    "effect": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage for each Omanyte, Omastar, Kabuto, and Kabutops on your Bench.",
+    "damage": "10+"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-57",
@@ -624,7 +2453,35 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/57"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/57",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Bite",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-58",
@@ -635,7 +2492,31 @@
   "types": [
    "Lightning"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/58"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/58",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Lightning",
+     "Colorless"
+    ],
+    "name": "Thunder Jolt",
+    "effect": "Flip a coin. If tails, Mareep does 10 damage to itself.",
+    "damage": "30"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-59",
@@ -646,7 +2527,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/59"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/59",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Confuse Ray",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Fighting",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-60",
@@ -657,7 +2567,37 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/60"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/60",
+  "hp": 50,
+  "stage": "Stage1",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Fossil",
+    "effect": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for a card that evolves from Mysterious Fossil and put it on your Bench. Shuffle your deck afterward. Treat that card as a Basic Pokémon. This power can't be used if Omanyte is Asleep, Confused, or Paralyzed (or if your Bench is full)."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Bind",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-61",
@@ -668,7 +2608,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/61"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/61",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 2,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Burst",
+    "effect": "Flip a coin. If heads, Pineco does 40 damage to itself and 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Flip a coin. If tails, this attack does nothing (not even damage).",
+    "damage": "40"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-62",
@@ -679,7 +2642,36 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/62"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/62",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Rollout",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Hypnosis",
+    "effect": "The Defending Pokémon is now Asleep."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-63",
@@ -690,7 +2682,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/63"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/63",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scout",
+    "effect": "Look at your opponent's hand."
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tackle",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-64",
@@ -701,7 +2729,31 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/64"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/64",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass",
+     "Colorless"
+    ],
+    "name": "Poison Sting",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-65",
@@ -712,7 +2764,43 @@
   "types": [
    "Colorless"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/65"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/65",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Scratch",
+    "damage": "10"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Nap Time",
+    "effect": "Remove all damage counters from Teddiursa. Teddiursa is now Asleep."
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fighting",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Psychic",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-66",
@@ -723,7 +2811,23 @@
   "types": [
    "Fighting"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/66"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/66",
+  "hp": 30,
+  "stage": "Basic",
+  "attacks": [
+   {
+    "cost": [
+     "Colorless"
+    ],
+    "name": "Smash Punch",
+    "effect": "Flip a coin. If tails, this attack does nothing.",
+    "damage": "30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-67",
@@ -734,7 +2838,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/67"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/67",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "[Engage]",
+    "effect": "When you play Unown E from your hand, your opponent may shuffle his or her hand into his or her deck and then draw 4 cards. Either way, you may shuffle your hand into your deck and draw 4 cards."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-68",
@@ -745,7 +2878,34 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/68"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/68",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power"
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-69",
@@ -756,7 +2916,36 @@
   "types": [
    "Psychic"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/69"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/69",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "abilities": [
+   {
+    "type": "Pokemon Power",
+    "name": "Observe",
+    "effect": "Once during your turn (before you attack), you may look at 5 cards from the top of your opponent's deck and put them back in the same order."
+   }
+  ],
+  "attacks": [
+   {
+    "cost": [
+     "Psychic"
+    ],
+    "name": "Hidden Power",
+    "damage": "10"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Psychic",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-70",
@@ -767,7 +2956,30 @@
   "types": [
    "Grass"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/70"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/70",
+  "hp": 40,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Grass"
+    ],
+    "name": "Spike Stab",
+    "effect": "Flip a coin. If heads, the Defending Pokémon is now Poisoned. If tails, this attack does nothing (not even damage).",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Fire",
+    "value": "×2"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-71",
@@ -778,7 +2990,43 @@
   "types": [
    "Water"
   ],
-  "image": "https://assets.tcgdex.net/en/neo/neo2/71"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/71",
+  "hp": 50,
+  "stage": "Basic",
+  "retreat": 1,
+  "attacks": [
+   {
+    "cost": [
+     "Water"
+    ],
+    "name": "Slime",
+    "effect": "If an attack would do damage to Wooper during your opponent's next turn, your opponent flips a coin. If tails, prevent all damage done to Wooper from that attack. (Any other effects of that attack happen.)"
+   },
+   {
+    "cost": [
+     "Colorless",
+     "Colorless"
+    ],
+    "name": "Tail Slap",
+    "damage": "20"
+   }
+  ],
+  "weaknesses": [
+   {
+    "type": "Grass",
+    "value": "×2"
+   }
+  ],
+  "resistances": [
+   {
+    "type": "Lightning",
+    "value": "-30"
+   }
+  ],
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-72",
@@ -786,7 +3034,12 @@
   "number": "72",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/neo/neo2/72"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/72",
+  "effect": "Flip a coin. If heads, search your deck for a card that evolves from Mysterious Fossil and put it onto your Bench or put a card that evolves from Mysterious Fossil from your hand onto your Bench. Either way, treat the new card as a Basic Pokémon. If you searched your deck, shuffle it. (You can't play this card if your Bench is full.)",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-73",
@@ -794,7 +3047,12 @@
   "number": "73",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/neo/neo2/73"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/73",
+  "effect": "Choose 1 of your evolved Pokémon. Take the highest Stage Evolution card from that Pokémon and put it into your hand. (You can't evolve a Pokémon the turn you devolve it.)",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-74",
@@ -802,7 +3060,12 @@
   "number": "74",
   "rarity": "Uncommon",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/neo/neo2/74"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/74",
+  "effect": "Search your deck for a card with Unown in its name and put it onto your Bench. Shuffle your deck afterward. (You can't play this card if your Bench is full.)",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  },
  {
   "id": "neo2-75",
@@ -810,6 +3073,11 @@
   "number": "75",
   "rarity": "Common",
   "category": "Trainer",
-  "image": "https://assets.tcgdex.net/en/neo/neo2/75"
+  "image": "https://assets.tcgdex.net/en/neo/neo2/75",
+  "effect": "Flip 2 coins. For each heads, search your deck for a Basic Energy card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.",
+  "legal": {
+   "standard": false,
+   "expanded": false
+  }
  }
 ]

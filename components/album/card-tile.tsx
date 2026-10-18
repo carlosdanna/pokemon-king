@@ -2,7 +2,9 @@
 
 import { cn } from "cn";
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState, ViewTransition } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Typography } from "@/components/ui/typography";
@@ -20,26 +22,45 @@ export function CardTile({ card }: { card: AlbumCard }) {
     .filter(Boolean)
     .join(", ");
 
+  const href = `/cards/${card.id}`;
+  const zoomed = usePathname() === href;
+  const image = (
+    <Image
+      src={status === "error" ? "/card-back/low.webp" : cardImage(card, "low")}
+      alt={label}
+      fill
+      unoptimized
+      sizes="220px"
+      loading="eager"
+      onLoad={() => setStatus((s) => (s === "error" ? s : "loaded"))}
+      onError={() => setStatus("error")}
+      className={cn(
+        "rounded-[4.5%] object-cover",
+        !card.owned && "opacity-45 grayscale",
+      )}
+    />
+  );
+
   // Top-left corner stays free for the favourite pin (M5).
+  // Full prefetch puts the overlay in the cache before the click, so it renders
+  // at once and its card pairs with this one for the morph.
   return (
-    <div className="binder-pocket">
+    <Link
+      href={href}
+      prefetch
+      data-card-link={card.id}
+      className="binder-pocket block outline-none focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-solid focus-visible:outline-foreground"
+    >
       {status === "loading" && <Skeleton className="absolute inset-0" />}
-      <Image
-        src={
-          status === "error" ? "/card-back/low.webp" : cardImage(card, "low")
-        }
-        alt={label}
-        fill
-        unoptimized
-        sizes="220px"
-        loading="eager"
-        onLoad={() => setStatus((s) => (s === "error" ? s : "loaded"))}
-        onError={() => setStatus("error")}
-        className={cn(
-          "rounded-[4.5%] object-cover",
-          !card.owned && "opacity-45 grayscale",
-        )}
-      />
+      {/* While zoomed the album stays mounted; dropping the name here lets React
+          pair this card with the zoomed one (and back again on close). */}
+      {zoomed ? (
+        image
+      ) : (
+        <ViewTransition name={`card-${card.id}`} share="morph" default="none">
+          {image}
+        </ViewTransition>
+      )}
       {status === "error" && (
         <div
           aria-hidden
@@ -60,6 +81,6 @@ export function CardTile({ card }: { card: AlbumCard }) {
           </Typography>
         </Badge>
       )}
-    </div>
+    </Link>
   );
 }
