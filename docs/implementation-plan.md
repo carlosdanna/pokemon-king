@@ -60,14 +60,14 @@ Visual direction: binder pages with a faint paper texture, sleeve pockets with a
 
 ## Data changes
 
-Showing cards Ash does not own needs the full card list of every set, which `ash_collection.json` does not contain. A one-off script fetches it and commits the result, so the app still makes no API calls at runtime. The Pokémon TCG API itself is down and being retired, so the script reads the same v2 data from the legacy `PokemonTCG/pokemon-tcg-data` GitHub repo, pinned to one commit (D-021).
+Showing cards Ash does not own needs the full card list of every set, which `ash_collection.json` does not contain. A one-off script fetches it from TCGdex (`api.tcgdex.net/v2`, GraphQL, free and keyless) and commits the result as JSON, so the app makes no API calls at runtime and needs no database (D-023, D-024).
 
-1. `sets/en.json` once → `data/sets.json` (name, series, release date, total, logo) for the 121 set codes in the collection.
-2. For each set, `cards/en/<code>.json`, slimmed to `id, name, number, rarity, supertype, types, images` → one file per set in `data/sets/<code>.json`. 122 requests in all.
-3. Merge with the collection: each card gets `owned` (true or false) and `quantity` (0 to 7).
-4. Sort each set by natural card number, then cut it into pages of 9.
+1. One `sets` query → `data/sets.json` (name, series, release date, totals, logo) for Ash's 121 sets.
+2. For each set, `cards` queries in pages of 100 → `data/sets/<setId>.json` with `id, name, number, rarity, category, types, image`. About 226 requests, about 70 seconds; sets already on disk are skipped so a rerun resumes.
+3. `data/id-map.json` converts Ash's pokemontcg ids to TCGdex ids: 10 set codes differ (`SET_ID_OVERRIDES` in `lib/album.ts`) and numbers match once leading zeros are stripped. 1,640 of 1,644 cards map; the other 4 keep their pokemontcg id and data.
+4. Merge with the collection: each card gets `owned` (true or false) and `quantity` (0 to 7); sort by natural card number, then cut into pages of 9.
 
-The script waits 250 ms between calls, retries 429 and 5xx with backoff, takes about a minute, and skips sets already on disk so it can resume.
+Images come from TCGdex as `<image>/low.webp` and `<image>/high.webp`, rendered `unoptimized` (D-025). Cards without a TCGdex image use the pokemontcg image if Ash owns them, otherwise the card back in `public/card-back/` (D-026).
 
 The album loads one set file at a time, so a phone never downloads every set. Full detail for owned cards still comes from `ash_collection.json` on the server; unowned cards show the slim fields, plus attacks and other details only if the script also fetched them (a stretch option, as it makes the files larger).
 

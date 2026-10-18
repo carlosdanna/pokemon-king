@@ -3,1536 +3,1204 @@
   "id": "ex7-1",
   "name": "Azumarill",
   "number": "1",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/1.png",
-   "large": "https://images.pokemontcg.io/ex7/1_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/1"
  },
  {
   "id": "ex7-2",
   "name": "Dark Ampharos",
   "number": "2",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Lightning",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/2.png",
-   "large": "https://images.pokemontcg.io/ex7/2_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/2"
  },
  {
   "id": "ex7-3",
   "name": "Dark Crobat",
   "number": "3",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Grass",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/3.png",
-   "large": "https://images.pokemontcg.io/ex7/3_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/3"
  },
  {
   "id": "ex7-4",
   "name": "Dark Electrode",
   "number": "4",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Lightning",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/4.png",
-   "large": "https://images.pokemontcg.io/ex7/4_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/4"
  },
  {
   "id": "ex7-5",
   "name": "Dark Houndoom",
   "number": "5",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
-   "Fire",
+   "Darkness",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/5.png",
-   "large": "https://images.pokemontcg.io/ex7/5_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/5"
  },
  {
   "id": "ex7-6",
   "name": "Dark Hypno",
   "number": "6",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Psychic",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/6.png",
-   "large": "https://images.pokemontcg.io/ex7/6_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/6"
  },
  {
   "id": "ex7-7",
   "name": "Dark Marowak",
   "number": "7",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Fighting",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/7.png",
-   "large": "https://images.pokemontcg.io/ex7/7_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/7"
  },
  {
   "id": "ex7-8",
   "name": "Dark Octillery",
   "number": "8",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Water",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/8.png",
-   "large": "https://images.pokemontcg.io/ex7/8_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/8"
  },
  {
   "id": "ex7-9",
   "name": "Dark Slowking",
   "number": "9",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Psychic",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/9.png",
-   "large": "https://images.pokemontcg.io/ex7/9_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/9"
  },
  {
   "id": "ex7-10",
   "name": "Dark Steelix",
   "number": "10",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
-   "Darkness",
-   "Metal"
+   "Metal",
+   "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/10.png",
-   "large": "https://images.pokemontcg.io/ex7/10_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/10"
  },
  {
   "id": "ex7-11",
   "name": "Jumpluff",
   "number": "11",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/11.png",
-   "large": "https://images.pokemontcg.io/ex7/11_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/11"
  },
  {
   "id": "ex7-12",
   "name": "Kingdra",
   "number": "12",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/12.png",
-   "large": "https://images.pokemontcg.io/ex7/12_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/12"
  },
  {
   "id": "ex7-13",
   "name": "Piloswine",
   "number": "13",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/13.png",
-   "large": "https://images.pokemontcg.io/ex7/13_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/13"
  },
  {
   "id": "ex7-14",
   "name": "Togetic",
   "number": "14",
-  "rarity": "Rare Holo",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/14.png",
-   "large": "https://images.pokemontcg.io/ex7/14_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/14"
  },
  {
   "id": "ex7-15",
   "name": "Dark Dragonite",
   "number": "15",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/15.png",
-   "large": "https://images.pokemontcg.io/ex7/15_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/15"
  },
  {
   "id": "ex7-16",
   "name": "Dark Muk",
   "number": "16",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/16.png",
-   "large": "https://images.pokemontcg.io/ex7/16_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/16"
  },
  {
   "id": "ex7-17",
   "name": "Dark Raticate",
   "number": "17",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/17.png",
-   "large": "https://images.pokemontcg.io/ex7/17_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/17"
  },
  {
   "id": "ex7-18",
   "name": "Dark Sandslash",
   "number": "18",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/18.png",
-   "large": "https://images.pokemontcg.io/ex7/18_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/18"
  },
  {
   "id": "ex7-19",
   "name": "Dark Tyranitar",
   "number": "19",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/19.png",
-   "large": "https://images.pokemontcg.io/ex7/19_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/19"
  },
  {
   "id": "ex7-20",
   "name": "Dark Tyranitar",
   "number": "20",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/20.png",
-   "large": "https://images.pokemontcg.io/ex7/20_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/20"
  },
  {
   "id": "ex7-21",
   "name": "Delibird",
   "number": "21",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/21.png",
-   "large": "https://images.pokemontcg.io/ex7/21_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/21"
  },
  {
   "id": "ex7-22",
   "name": "Furret",
   "number": "22",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/22.png",
-   "large": "https://images.pokemontcg.io/ex7/22_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/22"
  },
  {
   "id": "ex7-23",
   "name": "Ledian",
   "number": "23",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/23.png",
-   "large": "https://images.pokemontcg.io/ex7/23_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/23"
  },
  {
   "id": "ex7-24",
   "name": "Magby",
   "number": "24",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/24.png",
-   "large": "https://images.pokemontcg.io/ex7/24_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/24"
  },
  {
   "id": "ex7-25",
   "name": "Misdreavus",
   "number": "25",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/25.png",
-   "large": "https://images.pokemontcg.io/ex7/25_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/25"
  },
  {
   "id": "ex7-26",
   "name": "Quagsire",
   "number": "26",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/26.png",
-   "large": "https://images.pokemontcg.io/ex7/26_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/26"
  },
  {
   "id": "ex7-27",
   "name": "Qwilfish",
   "number": "27",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/27.png",
-   "large": "https://images.pokemontcg.io/ex7/27_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/27"
  },
  {
   "id": "ex7-28",
   "name": "Yanma",
   "number": "28",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/28.png",
-   "large": "https://images.pokemontcg.io/ex7/28_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/28"
  },
  {
   "id": "ex7-29",
   "name": "Dark Arbok",
   "number": "29",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/29.png",
-   "large": "https://images.pokemontcg.io/ex7/29_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/29"
  },
  {
   "id": "ex7-30",
   "name": "Dark Ariados",
   "number": "30",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/30.png",
-   "large": "https://images.pokemontcg.io/ex7/30_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/30"
  },
  {
   "id": "ex7-31",
   "name": "Dark Dragonair",
   "number": "31",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/31.png",
-   "large": "https://images.pokemontcg.io/ex7/31_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/31"
  },
  {
   "id": "ex7-32",
   "name": "Dark Dragonair",
   "number": "32",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
+   "Darkness",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/32.png",
-   "large": "https://images.pokemontcg.io/ex7/32_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/32"
  },
  {
   "id": "ex7-33",
   "name": "Dark Flaaffy",
   "number": "33",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/33.png",
-   "large": "https://images.pokemontcg.io/ex7/33_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/33"
  },
  {
   "id": "ex7-34",
   "name": "Dark Golbat",
   "number": "34",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/34.png",
-   "large": "https://images.pokemontcg.io/ex7/34_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/34"
  },
  {
   "id": "ex7-35",
   "name": "Dark Golduck",
   "number": "35",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/35.png",
-   "large": "https://images.pokemontcg.io/ex7/35_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/35"
  },
  {
   "id": "ex7-36",
   "name": "Dark Gyarados",
   "number": "36",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/36.png",
-   "large": "https://images.pokemontcg.io/ex7/36_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/36"
  },
  {
   "id": "ex7-37",
   "name": "Dark Houndoom",
   "number": "37",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/37.png",
-   "large": "https://images.pokemontcg.io/ex7/37_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/37"
  },
  {
   "id": "ex7-38",
   "name": "Dark Magcargo",
   "number": "38",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/38.png",
-   "large": "https://images.pokemontcg.io/ex7/38_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/38"
  },
  {
   "id": "ex7-39",
   "name": "Dark Magneton",
   "number": "39",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/39.png",
-   "large": "https://images.pokemontcg.io/ex7/39_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/39"
  },
  {
   "id": "ex7-40",
   "name": "Dark Pupitar",
   "number": "40",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/40.png",
-   "large": "https://images.pokemontcg.io/ex7/40_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/40"
  },
  {
   "id": "ex7-41",
   "name": "Dark Pupitar",
   "number": "41",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/41.png",
-   "large": "https://images.pokemontcg.io/ex7/41_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/41"
  },
  {
   "id": "ex7-42",
   "name": "Dark Weezing",
   "number": "42",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass",
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/42.png",
-   "large": "https://images.pokemontcg.io/ex7/42_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/42"
  },
  {
   "id": "ex7-43",
   "name": "Heracross",
   "number": "43",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/43.png",
-   "large": "https://images.pokemontcg.io/ex7/43_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/43"
  },
  {
   "id": "ex7-44",
   "name": "Magmar",
   "number": "44",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/44.png",
-   "large": "https://images.pokemontcg.io/ex7/44_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/44"
  },
  {
   "id": "ex7-45",
   "name": "Mantine",
   "number": "45",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/45.png",
-   "large": "https://images.pokemontcg.io/ex7/45_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/45"
  },
  {
   "id": "ex7-46",
   "name": "Rocket's Meowth",
   "number": "46",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/46.png",
-   "large": "https://images.pokemontcg.io/ex7/46_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/46"
  },
  {
   "id": "ex7-47",
   "name": "Rocket's Wobbuffet",
   "number": "47",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/47.png",
-   "large": "https://images.pokemontcg.io/ex7/47_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/47"
  },
  {
   "id": "ex7-48",
   "name": "Seadra",
   "number": "48",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/48.png",
-   "large": "https://images.pokemontcg.io/ex7/48_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/48"
  },
  {
   "id": "ex7-49",
   "name": "Skiploom",
   "number": "49",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/49.png",
-   "large": "https://images.pokemontcg.io/ex7/49_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/49"
  },
  {
   "id": "ex7-50",
   "name": "Togepi",
   "number": "50",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/50.png",
-   "large": "https://images.pokemontcg.io/ex7/50_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/50"
  },
  {
   "id": "ex7-51",
   "name": "Cubone",
   "number": "51",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/51.png",
-   "large": "https://images.pokemontcg.io/ex7/51_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/51"
  },
  {
   "id": "ex7-52",
   "name": "Dratini",
   "number": "52",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/52.png",
-   "large": "https://images.pokemontcg.io/ex7/52_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/52"
  },
  {
   "id": "ex7-53",
   "name": "Dratini",
   "number": "53",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/53.png",
-   "large": "https://images.pokemontcg.io/ex7/53_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/53"
  },
  {
   "id": "ex7-54",
   "name": "Drowzee",
   "number": "54",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/54.png",
-   "large": "https://images.pokemontcg.io/ex7/54_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/54"
  },
  {
   "id": "ex7-55",
   "name": "Ekans",
   "number": "55",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/55.png",
-   "large": "https://images.pokemontcg.io/ex7/55_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/55"
  },
  {
   "id": "ex7-56",
   "name": "Grimer",
   "number": "56",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/56.png",
-   "large": "https://images.pokemontcg.io/ex7/56_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/56"
  },
  {
   "id": "ex7-57",
   "name": "Hoppip",
   "number": "57",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/57.png",
-   "large": "https://images.pokemontcg.io/ex7/57_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/57"
  },
  {
   "id": "ex7-58",
   "name": "Horsea",
   "number": "58",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/58.png",
-   "large": "https://images.pokemontcg.io/ex7/58_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/58"
  },
  {
   "id": "ex7-59",
   "name": "Houndour",
   "number": "59",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/59.png",
-   "large": "https://images.pokemontcg.io/ex7/59_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/59"
  },
  {
   "id": "ex7-60",
   "name": "Houndour",
   "number": "60",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/60.png",
-   "large": "https://images.pokemontcg.io/ex7/60_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/60"
  },
  {
   "id": "ex7-61",
   "name": "Koffing",
   "number": "61",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/61.png",
-   "large": "https://images.pokemontcg.io/ex7/61_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/61"
  },
  {
   "id": "ex7-62",
   "name": "Larvitar",
   "number": "62",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/62.png",
-   "large": "https://images.pokemontcg.io/ex7/62_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/62"
  },
  {
   "id": "ex7-63",
   "name": "Larvitar",
   "number": "63",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/63.png",
-   "large": "https://images.pokemontcg.io/ex7/63_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/63"
  },
  {
   "id": "ex7-64",
   "name": "Ledyba",
   "number": "64",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/64.png",
-   "large": "https://images.pokemontcg.io/ex7/64_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/64"
  },
  {
   "id": "ex7-65",
   "name": "Magikarp",
   "number": "65",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/65.png",
-   "large": "https://images.pokemontcg.io/ex7/65_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/65"
  },
  {
   "id": "ex7-66",
   "name": "Magnemite",
   "number": "66",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/66.png",
-   "large": "https://images.pokemontcg.io/ex7/66_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/66"
  },
  {
   "id": "ex7-67",
   "name": "Mareep",
   "number": "67",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/67.png",
-   "large": "https://images.pokemontcg.io/ex7/67_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/67"
  },
  {
   "id": "ex7-68",
   "name": "Marill",
   "number": "68",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/68.png",
-   "large": "https://images.pokemontcg.io/ex7/68_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/68"
  },
  {
   "id": "ex7-69",
   "name": "Onix",
   "number": "69",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/69.png",
-   "large": "https://images.pokemontcg.io/ex7/69_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/69"
  },
  {
   "id": "ex7-70",
   "name": "Psyduck",
   "number": "70",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/70.png",
-   "large": "https://images.pokemontcg.io/ex7/70_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/70"
  },
  {
   "id": "ex7-71",
   "name": "Rattata",
   "number": "71",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/71.png",
-   "large": "https://images.pokemontcg.io/ex7/71_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/71"
  },
  {
   "id": "ex7-72",
   "name": "Rattata",
   "number": "72",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/72.png",
-   "large": "https://images.pokemontcg.io/ex7/72_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/72"
  },
  {
   "id": "ex7-73",
   "name": "Remoraid",
   "number": "73",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/73.png",
-   "large": "https://images.pokemontcg.io/ex7/73_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/73"
  },
  {
   "id": "ex7-74",
   "name": "Sandshrew",
   "number": "74",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/74.png",
-   "large": "https://images.pokemontcg.io/ex7/74_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/74"
  },
  {
   "id": "ex7-75",
   "name": "Sentret",
   "number": "75",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/75.png",
-   "large": "https://images.pokemontcg.io/ex7/75_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/75"
  },
  {
   "id": "ex7-76",
   "name": "Slowpoke",
   "number": "76",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/76.png",
-   "large": "https://images.pokemontcg.io/ex7/76_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/76"
  },
  {
   "id": "ex7-77",
   "name": "Slugma",
   "number": "77",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/77.png",
-   "large": "https://images.pokemontcg.io/ex7/77_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/77"
  },
  {
   "id": "ex7-78",
   "name": "Spinarak",
   "number": "78",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/78.png",
-   "large": "https://images.pokemontcg.io/ex7/78_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/78"
  },
  {
   "id": "ex7-79",
   "name": "Swinub",
   "number": "79",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/79.png",
-   "large": "https://images.pokemontcg.io/ex7/79_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/79"
  },
  {
   "id": "ex7-80",
   "name": "Voltorb",
   "number": "80",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/80.png",
-   "large": "https://images.pokemontcg.io/ex7/80_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/80"
  },
  {
   "id": "ex7-81",
   "name": "Wooper",
   "number": "81",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/81.png",
-   "large": "https://images.pokemontcg.io/ex7/81_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/81"
  },
  {
   "id": "ex7-82",
   "name": "Zubat",
   "number": "82",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/82.png",
-   "large": "https://images.pokemontcg.io/ex7/82_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/82"
  },
  {
   "id": "ex7-83",
   "name": "Copycat",
   "number": "83",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/83.png",
-   "large": "https://images.pokemontcg.io/ex7/83_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/83"
  },
  {
   "id": "ex7-84",
   "name": "Pokémon Retriever",
   "number": "84",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/84.png",
-   "large": "https://images.pokemontcg.io/ex7/84_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/84"
  },
  {
   "id": "ex7-85",
   "name": "Pow! Hand Extension",
   "number": "85",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/85.png",
-   "large": "https://images.pokemontcg.io/ex7/85_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/85"
  },
  {
   "id": "ex7-86",
   "name": "Rocket's Admin.",
   "number": "86",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/86.png",
-   "large": "https://images.pokemontcg.io/ex7/86_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/86"
  },
  {
   "id": "ex7-87",
   "name": "Rocket's Hideout",
   "number": "87",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/87.png",
-   "large": "https://images.pokemontcg.io/ex7/87_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/87"
  },
  {
   "id": "ex7-88",
   "name": "Rocket's Mission",
   "number": "88",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/88.png",
-   "large": "https://images.pokemontcg.io/ex7/88_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/88"
  },
  {
   "id": "ex7-89",
   "name": "Rocket's Poké Ball",
   "number": "89",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/89.png",
-   "large": "https://images.pokemontcg.io/ex7/89_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/89"
  },
  {
   "id": "ex7-90",
   "name": "Rocket's Tricky Gym",
   "number": "90",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/90.png",
-   "large": "https://images.pokemontcg.io/ex7/90_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/90"
  },
  {
   "id": "ex7-91",
   "name": "Surprise! Time Machine",
   "number": "91",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/91.png",
-   "large": "https://images.pokemontcg.io/ex7/91_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/91"
  },
  {
   "id": "ex7-92",
   "name": "Swoop! Teleporter",
   "number": "92",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/92.png",
-   "large": "https://images.pokemontcg.io/ex7/92_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/92"
  },
  {
   "id": "ex7-93",
   "name": "Venture Bomb",
   "number": "93",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/93.png",
-   "large": "https://images.pokemontcg.io/ex7/93_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/93"
  },
  {
   "id": "ex7-94",
   "name": "Dark Metal Energy",
   "number": "94",
   "rarity": "Uncommon",
-  "supertype": "Energy",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/94.png",
-   "large": "https://images.pokemontcg.io/ex7/94_hires.png"
-  }
+  "category": "Energy",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/94"
  },
  {
   "id": "ex7-95",
   "name": "R Energy",
   "number": "95",
   "rarity": "Uncommon",
-  "supertype": "Energy",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/95.png",
-   "large": "https://images.pokemontcg.io/ex7/95_hires.png"
-  }
+  "category": "Energy",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/95"
  },
  {
   "id": "ex7-96",
   "name": "Rocket's Articuno ex",
   "number": "96",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/96.png",
-   "large": "https://images.pokemontcg.io/ex7/96_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/96"
  },
  {
   "id": "ex7-97",
   "name": "Rocket's Entei ex",
   "number": "97",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/97.png",
-   "large": "https://images.pokemontcg.io/ex7/97_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/97"
  },
  {
   "id": "ex7-98",
   "name": "Rocket's Hitmonchan ex",
   "number": "98",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/98.png",
-   "large": "https://images.pokemontcg.io/ex7/98_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/98"
  },
  {
   "id": "ex7-99",
   "name": "Rocket's Mewtwo ex",
   "number": "99",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/99.png",
-   "large": "https://images.pokemontcg.io/ex7/99_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/99"
  },
  {
   "id": "ex7-100",
   "name": "Rocket's Moltres ex",
   "number": "100",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/100.png",
-   "large": "https://images.pokemontcg.io/ex7/100_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/100"
  },
  {
   "id": "ex7-101",
   "name": "Rocket's Scizor ex",
   "number": "101",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/101.png",
-   "large": "https://images.pokemontcg.io/ex7/101_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/101"
  },
  {
   "id": "ex7-102",
   "name": "Rocket's Scyther ex",
   "number": "102",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/102.png",
-   "large": "https://images.pokemontcg.io/ex7/102_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/102"
  },
  {
   "id": "ex7-103",
   "name": "Rocket's Sneasel ex",
   "number": "103",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/103.png",
-   "large": "https://images.pokemontcg.io/ex7/103_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/103"
  },
  {
   "id": "ex7-104",
   "name": "Rocket's Snorlax ex",
   "number": "104",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/104.png",
-   "large": "https://images.pokemontcg.io/ex7/104_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/104"
  },
  {
   "id": "ex7-105",
   "name": "Rocket's Suicune ex",
   "number": "105",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/105.png",
-   "large": "https://images.pokemontcg.io/ex7/105_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/105"
  },
  {
   "id": "ex7-106",
   "name": "Rocket's Zapdos ex",
   "number": "106",
-  "rarity": "Rare Holo EX",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/106.png",
-   "large": "https://images.pokemontcg.io/ex7/106_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/106"
  },
  {
   "id": "ex7-107",
-  "name": "Mudkip ★",
+  "name": "Mudkip ☆",
   "number": "107",
-  "rarity": "Rare Holo Star",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/107.png",
-   "large": "https://images.pokemontcg.io/ex7/107_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/107"
  },
  {
   "id": "ex7-108",
-  "name": "Torchic ★",
+  "name": "Torchic ☆",
   "number": "108",
-  "rarity": "Rare Holo Star",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/108.png",
-   "large": "https://images.pokemontcg.io/ex7/108_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/108"
  },
  {
   "id": "ex7-109",
-  "name": "Treecko ★",
+  "name": "Treecko ☆",
   "number": "109",
-  "rarity": "Rare Holo Star",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/109.png",
-   "large": "https://images.pokemontcg.io/ex7/109_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/109"
  },
  {
   "id": "ex7-110",
   "name": "Charmeleon",
   "number": "110",
-  "rarity": "Rare Secret",
-  "supertype": "Pokémon",
+  "rarity": "Rare",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/110.png",
-   "large": "https://images.pokemontcg.io/ex7/110_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/ex/ex7/110"
  },
  {
   "id": "ex7-111",
   "name": "Here Comes Team Rocket!",
   "number": "111",
-  "rarity": "Rare Secret",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/ex7/111.png",
-   "large": "https://images.pokemontcg.io/ex7/111_hires.png"
-  }
+  "rarity": "Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/ex/ex7/111"
  }
 ]

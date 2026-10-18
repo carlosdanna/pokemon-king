@@ -4,237 +4,186 @@
   "name": "Garchomp",
   "number": "1",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/1.png",
-   "large": "https://images.pokemontcg.io/pop9/1_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/1"
  },
  {
   "id": "pop9-2",
   "name": "Manaphy",
   "number": "2",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/2.png",
-   "large": "https://images.pokemontcg.io/pop9/2_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/2"
  },
  {
   "id": "pop9-3",
   "name": "Raichu",
   "number": "3",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/3.png",
-   "large": "https://images.pokemontcg.io/pop9/3_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/3"
  },
  {
   "id": "pop9-4",
   "name": "Regigigas",
   "number": "4",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/4.png",
-   "large": "https://images.pokemontcg.io/pop9/4_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/4"
  },
  {
   "id": "pop9-5",
   "name": "Rotom",
   "number": "5",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/5.png",
-   "large": "https://images.pokemontcg.io/pop9/5_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/5"
  },
  {
   "id": "pop9-6",
   "name": "Buizel",
   "number": "6",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/6.png",
-   "large": "https://images.pokemontcg.io/pop9/6_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/6"
  },
  {
   "id": "pop9-7",
   "name": "Croagunk",
   "number": "7",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/7.png",
-   "large": "https://images.pokemontcg.io/pop9/7_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/7"
  },
  {
   "id": "pop9-8",
   "name": "Gabite",
   "number": "8",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/8.png",
-   "large": "https://images.pokemontcg.io/pop9/8_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/8"
  },
  {
   "id": "pop9-9",
   "name": "Lopunny",
   "number": "9",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/9.png",
-   "large": "https://images.pokemontcg.io/pop9/9_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/9"
  },
  {
   "id": "pop9-10",
   "name": "Pachirisu",
   "number": "10",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/10.png",
-   "large": "https://images.pokemontcg.io/pop9/10_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/10"
  },
  {
   "id": "pop9-11",
   "name": "Pichu",
   "number": "11",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/11.png",
-   "large": "https://images.pokemontcg.io/pop9/11_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/11"
  },
  {
   "id": "pop9-12",
   "name": "Buneary",
   "number": "12",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/12.png",
-   "large": "https://images.pokemontcg.io/pop9/12_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/12"
  },
  {
   "id": "pop9-13",
   "name": "Chimchar",
   "number": "13",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/13.png",
-   "large": "https://images.pokemontcg.io/pop9/13_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/13"
  },
  {
   "id": "pop9-14",
   "name": "Gible",
   "number": "14",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/14.png",
-   "large": "https://images.pokemontcg.io/pop9/14_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/14"
  },
  {
   "id": "pop9-15",
   "name": "Pikachu",
   "number": "15",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/15.png",
-   "large": "https://images.pokemontcg.io/pop9/15_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/15"
  },
  {
   "id": "pop9-16",
   "name": "Piplup",
   "number": "16",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/16.png",
-   "large": "https://images.pokemontcg.io/pop9/16_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/16"
  },
  {
   "id": "pop9-17",
   "name": "Turtwig",
   "number": "17",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop9/17.png",
-   "large": "https://images.pokemontcg.io/pop9/17_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop9/17"
  }
 ]

@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
+  cardImage,
   compareCardNumber,
   groupQuantities,
   mergeSet,
+  numberKey,
   paginate,
   PAGE_SIZE,
   type SetCard,
@@ -12,8 +14,8 @@ const card = (id: string, number = id.split("-")[1]): SetCard => ({
   id,
   name: `Card ${id}`,
   number,
-  supertype: "Pokémon",
-  images: { small: `${id}.png`, large: `${id}_hires.png` },
+  category: "Pokemon",
+  image: `https://assets.tcgdex.net/en/x/${id}`,
 });
 
 const cards = (n: number) =>
@@ -51,6 +53,29 @@ describe("compareCardNumber", () => {
   });
 });
 
+describe("numberKey", () => {
+  it("matches numbers across sources", () => {
+    expect(numberKey("001")).toBe(numberKey("1"));
+    expect(numberKey("sv012")).toBe("SV12");
+    expect(numberKey("116a")).toBe("116A");
+  });
+});
+
+describe("cardImage", () => {
+  it("uses the TCGdex image in the asked quality", () => {
+    expect(cardImage(card("s-1"), "low")).toBe(
+      "https://assets.tcgdex.net/en/x/s-1/low.webp",
+    );
+  });
+
+  it("falls back to the pokemontcg image, then the card back", () => {
+    const noImage = { ...card("s-1"), image: undefined };
+    const images = { small: "s.png", large: "l.png" };
+    expect(cardImage({ ...noImage, images }, "high")).toBe("l.png");
+    expect(cardImage(noImage, "low")).toBe("/card-back/low.webp");
+  });
+});
+
 describe("mergeSet", () => {
   it("marks unowned cards with quantity 0 and owned with their count", () => {
     const merged = mergeSet([card("s-2"), card("s-1")], new Map([["s-2", 3]]));
@@ -58,7 +83,6 @@ describe("mergeSet", () => {
       ["s-1", false, 0],
       ["s-2", true, 3],
     ]);
-    expect(merged[0].image).toBe("s-1.png");
   });
 
   it("keeps owned cards missing from the set list", () => {

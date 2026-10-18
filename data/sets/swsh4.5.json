@@ -1,0 +1,760 @@
+[
+ {
+  "id": "swsh4.5-1",
+  "name": "Yanma",
+  "number": "1",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/1"
+ },
+ {
+  "id": "swsh4.5-2",
+  "name": "Yanmega",
+  "number": "2",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/2"
+ },
+ {
+  "id": "swsh4.5-3",
+  "name": "Celebi",
+  "number": "3",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/3"
+ },
+ {
+  "id": "swsh4.5-4",
+  "name": "Cacnea",
+  "number": "4",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/4"
+ },
+ {
+  "id": "swsh4.5-5",
+  "name": "Tropius",
+  "number": "5",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/5"
+ },
+ {
+  "id": "swsh4.5-6",
+  "name": "Rowlet",
+  "number": "6",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/6"
+ },
+ {
+  "id": "swsh4.5-7",
+  "name": "Dartrix",
+  "number": "7",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/7"
+ },
+ {
+  "id": "swsh4.5-8",
+  "name": "Decidueye",
+  "number": "8",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/8"
+ },
+ {
+  "id": "swsh4.5-9",
+  "name": "Dhelmise V",
+  "number": "9",
+  "rarity": "Ultra Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/9"
+ },
+ {
+  "id": "swsh4.5-10",
+  "name": "Dhelmise VMAX",
+  "number": "10",
+  "rarity": "Ultra Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/10"
+ },
+ {
+  "id": "swsh4.5-11",
+  "name": "Grookey",
+  "number": "11",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/11"
+ },
+ {
+  "id": "swsh4.5-12",
+  "name": "Thwackey",
+  "number": "12",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/12"
+ },
+ {
+  "id": "swsh4.5-13",
+  "name": "Rillaboom",
+  "number": "13",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/13"
+ },
+ {
+  "id": "swsh4.5-14",
+  "name": "Gossifleur",
+  "number": "14",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/14"
+ },
+ {
+  "id": "swsh4.5-15",
+  "name": "Eldegoss",
+  "number": "15",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/15"
+ },
+ {
+  "id": "swsh4.5-16",
+  "name": "Zarude",
+  "number": "16",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/16"
+ },
+ {
+  "id": "swsh4.5-17",
+  "name": "Reshiram",
+  "number": "17",
+  "rarity": "Amazing Rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/17"
+ },
+ {
+  "id": "swsh4.5-18",
+  "name": "Cinderace V",
+  "number": "18",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/18"
+ },
+ {
+  "id": "swsh4.5-19",
+  "name": "Cinderace VMAX",
+  "number": "19",
+  "rarity": "Holo Rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/19"
+ },
+ {
+  "id": "swsh4.5-20",
+  "name": "Horsea",
+  "number": "20",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/20"
+ },
+ {
+  "id": "swsh4.5-21",
+  "name": "Kyogre",
+  "number": "21",
+  "rarity": "Amazing Rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/21"
+ },
+ {
+  "id": "swsh4.5-22",
+  "name": "Buizel",
+  "number": "22",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/22"
+ },
+ {
+  "id": "swsh4.5-23",
+  "name": "Floatzel",
+  "number": "23",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/23"
+ },
+ {
+  "id": "swsh4.5-24",
+  "name": "Manaphy",
+  "number": "24",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/24"
+ },
+ {
+  "id": "swsh4.5-25",
+  "name": "Volcanion",
+  "number": "25",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/25"
+ },
+ {
+  "id": "swsh4.5-26",
+  "name": "Chewtle",
+  "number": "26",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/26"
+ },
+ {
+  "id": "swsh4.5-27",
+  "name": "Drednaw",
+  "number": "27",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/27"
+ },
+ {
+  "id": "swsh4.5-28",
+  "name": "Cramorant",
+  "number": "28",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/28"
+ },
+ {
+  "id": "swsh4.5-29",
+  "name": "Snom",
+  "number": "29",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/29"
+ },
+ {
+  "id": "swsh4.5-30",
+  "name": "Frosmoth",
+  "number": "30",
+  "rarity": "Holo Rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/30"
+ },
+ {
+  "id": "swsh4.5-31",
+  "name": "Shinx",
+  "number": "31",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/31"
+ },
+ {
+  "id": "swsh4.5-32",
+  "name": "Luxio",
+  "number": "32",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/32"
+ },
+ {
+  "id": "swsh4.5-33",
+  "name": "Luxray",
+  "number": "33",
+  "rarity": "Holo Rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/33"
+ },
+ {
+  "id": "swsh4.5-34",
+  "name": "Rotom",
+  "number": "34",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/34"
+ },
+ {
+  "id": "swsh4.5-35",
+  "name": "Morpeko",
+  "number": "35",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/35"
+ },
+ {
+  "id": "swsh4.5-36",
+  "name": "Morpeko",
+  "number": "36",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/36"
+ },
+ {
+  "id": "swsh4.5-37",
+  "name": "Morpeko V",
+  "number": "37",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/37"
+ },
+ {
+  "id": "swsh4.5-38",
+  "name": "Morpeko VMAX",
+  "number": "38",
+  "rarity": "Holo Rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/38"
+ },
+ {
+  "id": "swsh4.5-39",
+  "name": "Indeedee V",
+  "number": "39",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/39"
+ },
+ {
+  "id": "swsh4.5-40",
+  "name": "Trapinch",
+  "number": "40",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/40"
+ },
+ {
+  "id": "swsh4.5-41",
+  "name": "Koffing",
+  "number": "41",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/41"
+ },
+ {
+  "id": "swsh4.5-42",
+  "name": "Galarian Weezing",
+  "number": "42",
+  "rarity": "Holo Rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/42"
+ },
+ {
+  "id": "swsh4.5-43",
+  "name": "Spinarak",
+  "number": "43",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/43"
+ },
+ {
+  "id": "swsh4.5-44",
+  "name": "Crobat V",
+  "number": "44",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/44"
+ },
+ {
+  "id": "swsh4.5-45",
+  "name": "Crobat VMAX",
+  "number": "45",
+  "rarity": "Holo Rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/45"
+ },
+ {
+  "id": "swsh4.5-46",
+  "name": "Yveltal",
+  "number": "46",
+  "rarity": "Amazing Rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/46"
+ },
+ {
+  "id": "swsh4.5-47",
+  "name": "Nickit",
+  "number": "47",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/47"
+ },
+ {
+  "id": "swsh4.5-48",
+  "name": "Thievul",
+  "number": "48",
+  "rarity": "Holo Rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/48"
+ },
+ {
+  "id": "swsh4.5-49",
+  "name": "Cufant",
+  "number": "49",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/49"
+ },
+ {
+  "id": "swsh4.5-50",
+  "name": "Ditto V",
+  "number": "50",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/50"
+ },
+ {
+  "id": "swsh4.5-51",
+  "name": "Ditto VMAX",
+  "number": "51",
+  "rarity": "Holo Rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/51"
+ },
+ {
+  "id": "swsh4.5-52",
+  "name": "Eevee",
+  "number": "52",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/52"
+ },
+ {
+  "id": "swsh4.5-53",
+  "name": "Greedent V",
+  "number": "53",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/53"
+ },
+ {
+  "id": "swsh4.5-54",
+  "name": "Cramorant V",
+  "number": "54",
+  "rarity": "Holo Rare V",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/54"
+ },
+ {
+  "id": "swsh4.5-55",
+  "name": "Cramorant VMAX",
+  "number": "55",
+  "rarity": "Holo Rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/55"
+ },
+ {
+  "id": "swsh4.5-56",
+  "name": "Indeedee",
+  "number": "56",
+  "rarity": "Holo Rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/56"
+ },
+ {
+  "id": "swsh4.5-57",
+  "name": "Ball Guy",
+  "number": "57",
+  "rarity": "Uncommon",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/57"
+ },
+ {
+  "id": "swsh4.5-58",
+  "name": "Boss's Orders (Lysandre)",
+  "number": "58",
+  "rarity": "Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/58"
+ },
+ {
+  "id": "swsh4.5-59",
+  "name": "Gym Trainer",
+  "number": "59",
+  "rarity": "Uncommon",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/59"
+ },
+ {
+  "id": "swsh4.5-60",
+  "name": "Professor's Research (Professor Juniper)",
+  "number": "60",
+  "rarity": "Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/60"
+ },
+ {
+  "id": "swsh4.5-61",
+  "name": "Rusted Shield",
+  "number": "61",
+  "rarity": "Uncommon",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/61"
+ },
+ {
+  "id": "swsh4.5-62",
+  "name": "Rusted Sword",
+  "number": "62",
+  "rarity": "Uncommon",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/62"
+ },
+ {
+  "id": "swsh4.5-63",
+  "name": "Team Yell Towel",
+  "number": "63",
+  "rarity": "Uncommon",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/63"
+ },
+ {
+  "id": "swsh4.5-64",
+  "name": "Alcremie V",
+  "number": "64",
+  "rarity": "Ultra Rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/64"
+ },
+ {
+  "id": "swsh4.5-65",
+  "name": "Ball Guy",
+  "number": "65",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/65"
+ },
+ {
+  "id": "swsh4.5-66",
+  "name": "Bird Keeper",
+  "number": "66",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/66"
+ },
+ {
+  "id": "swsh4.5-67",
+  "name": "Cara Liss",
+  "number": "67",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/67"
+ },
+ {
+  "id": "swsh4.5-68",
+  "name": "Gym Trainer",
+  "number": "68",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/68"
+ },
+ {
+  "id": "swsh4.5-69",
+  "name": "Piers",
+  "number": "69",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/69"
+ },
+ {
+  "id": "swsh4.5-70",
+  "name": "Poké Kid",
+  "number": "70",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/70"
+ },
+ {
+  "id": "swsh4.5-71",
+  "name": "Rose",
+  "number": "71",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/71"
+ },
+ {
+  "id": "swsh4.5-72",
+  "name": "Skyla",
+  "number": "72",
+  "rarity": "Ultra Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/72"
+ },
+ {
+  "id": "swsh4.5-73",
+  "name": "Alcremie VMAX",
+  "number": "73",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/swsh/swsh4.5/73"
+ }
+]

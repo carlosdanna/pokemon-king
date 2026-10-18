@@ -4,2958 +4,2307 @@
   "name": "Chespin",
   "number": "XY01",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY01.png",
-   "large": "https://images.pokemontcg.io/xyp/XY01_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY01"
  },
  {
   "id": "xyp-XY02",
   "name": "Fennekin",
   "number": "XY02",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY02.png",
-   "large": "https://images.pokemontcg.io/xyp/XY02_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY02"
  },
  {
   "id": "xyp-XY03",
   "name": "Froakie",
   "number": "XY03",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY03.png",
-   "large": "https://images.pokemontcg.io/xyp/XY03_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY03"
  },
  {
   "id": "xyp-XY04",
   "name": "Sylveon",
   "number": "XY04",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY04.png",
-   "large": "https://images.pokemontcg.io/xyp/XY04_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY04"
  },
  {
   "id": "xyp-XY05",
   "name": "Xerneas",
   "number": "XY05",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY05.png",
-   "large": "https://images.pokemontcg.io/xyp/XY05_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY05"
  },
  {
   "id": "xyp-XY06",
   "name": "Yveltal",
   "number": "XY06",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY06.png",
-   "large": "https://images.pokemontcg.io/xyp/XY06_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY06"
  },
  {
   "id": "xyp-XY07",
-  "name": "Xerneas-EX",
+  "name": "Xerneas EX",
   "number": "XY07",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY07.png",
-   "large": "https://images.pokemontcg.io/xyp/XY07_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY07"
  },
  {
   "id": "xyp-XY08",
-  "name": "Yveltal-EX",
+  "name": "Yveltal EX",
   "number": "XY08",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY08.png",
-   "large": "https://images.pokemontcg.io/xyp/XY08_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY08"
  },
  {
   "id": "xyp-XY09",
-  "name": "Garchomp-EX",
+  "name": "Garchomp EX",
   "number": "XY09",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY09.png",
-   "large": "https://images.pokemontcg.io/xyp/XY09_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY09"
  },
  {
   "id": "xyp-XY10",
   "name": "Dragalge",
   "number": "XY10",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY10.png",
-   "large": "https://images.pokemontcg.io/xyp/XY10_hires.png"
-  }
- },
- {
-  "id": "xyp-XY11",
-  "name": "Skiddo",
-  "number": "XY11",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY11.png",
-   "large": "https://images.pokemontcg.io/xyp/XY11_hires.png"
-  }
- },
- {
-  "id": "xyp-XY12",
-  "name": "Honedge",
-  "number": "XY12",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY12.png",
-   "large": "https://images.pokemontcg.io/xyp/XY12_hires.png"
-  }
- },
- {
-  "id": "xyp-XY13",
-  "name": "Machamp",
-  "number": "XY13",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY13.png",
-   "large": "https://images.pokemontcg.io/xyp/XY13_hires.png"
-  }
- },
- {
-  "id": "xyp-XY14",
-  "name": "Trevenant",
-  "number": "XY14",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY14.png",
-   "large": "https://images.pokemontcg.io/xyp/XY14_hires.png"
-  }
- },
- {
-  "id": "xyp-XY15",
-  "name": "Slurpuff",
-  "number": "XY15",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fairy"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY15.png",
-   "large": "https://images.pokemontcg.io/xyp/XY15_hires.png"
-  }
- },
- {
-  "id": "xyp-XY16",
-  "name": "Gogoat",
-  "number": "XY16",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY16.png",
-   "large": "https://images.pokemontcg.io/xyp/XY16_hires.png"
-  }
- },
- {
-  "id": "xyp-XY17",
-  "name": "Charizard-EX",
-  "number": "XY17",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY17.png",
-   "large": "https://images.pokemontcg.io/xyp/XY17_hires.png"
-  }
- },
- {
-  "id": "xyp-XY18",
-  "name": "Chesnaught-EX",
-  "number": "XY18",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY18.png",
-   "large": "https://images.pokemontcg.io/xyp/XY18_hires.png"
-  }
- },
- {
-  "id": "xyp-XY19",
-  "name": "Delphox-EX",
-  "number": "XY19",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY19.png",
-   "large": "https://images.pokemontcg.io/xyp/XY19_hires.png"
-  }
- },
- {
-  "id": "xyp-XY20",
-  "name": "Greninja-EX",
-  "number": "XY20",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY20.png",
-   "large": "https://images.pokemontcg.io/xyp/XY20_hires.png"
-  }
- },
- {
-  "id": "xyp-XY21",
-  "name": "Bronzong",
-  "number": "XY21",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY21.png",
-   "large": "https://images.pokemontcg.io/xyp/XY21_hires.png"
-  }
- },
- {
-  "id": "xyp-XY22",
-  "name": "Darkrai",
-  "number": "XY22",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY22.png",
-   "large": "https://images.pokemontcg.io/xyp/XY22_hires.png"
-  }
- },
- {
-  "id": "xyp-XY23",
-  "name": "Shiftry",
-  "number": "XY23",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY23.png",
-   "large": "https://images.pokemontcg.io/xyp/XY23_hires.png"
-  }
- },
- {
-  "id": "xyp-XY24",
-  "name": "Greninja",
-  "number": "XY24",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY24.png",
-   "large": "https://images.pokemontcg.io/xyp/XY24_hires.png"
-  }
- },
- {
-  "id": "xyp-XY25",
-  "name": "Krookodile-EX",
-  "number": "XY25",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY25.png",
-   "large": "https://images.pokemontcg.io/xyp/XY25_hires.png"
-  }
- },
- {
-  "id": "xyp-XY26",
-  "name": "Pyroar",
-  "number": "XY26",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY26.png",
-   "large": "https://images.pokemontcg.io/xyp/XY26_hires.png"
-  }
- },
- {
-  "id": "xyp-XY27",
-  "name": "Champions Festival",
-  "number": "XY27",
-  "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY27.png",
-   "large": "https://images.pokemontcg.io/xyp/XY27_hires.png"
-  }
- },
- {
-  "id": "xyp-XY28",
-  "name": "Venusaur-EX",
-  "number": "XY28",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY28.png",
-   "large": "https://images.pokemontcg.io/xyp/XY28_hires.png"
-  }
- },
- {
-  "id": "xyp-XY29",
-  "name": "Charizard-EX",
-  "number": "XY29",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY29.png",
-   "large": "https://images.pokemontcg.io/xyp/XY29_hires.png"
-  }
- },
- {
-  "id": "xyp-XY30",
-  "name": "Blastoise-EX",
-  "number": "XY30",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY30.png",
-   "large": "https://images.pokemontcg.io/xyp/XY30_hires.png"
-  }
- },
- {
-  "id": "xyp-XY31",
-  "name": "Xerneas",
-  "number": "XY31",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fairy"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY31.png",
-   "large": "https://images.pokemontcg.io/xyp/XY31_hires.png"
-  }
- },
- {
-  "id": "xyp-XY32",
-  "name": "Yveltal",
-  "number": "XY32",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY32.png",
-   "large": "https://images.pokemontcg.io/xyp/XY32_hires.png"
-  }
- },
- {
-  "id": "xyp-XY33",
-  "name": "Trevor",
-  "number": "XY33",
-  "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY33.png",
-   "large": "https://images.pokemontcg.io/xyp/XY33_hires.png"
-  }
- },
- {
-  "id": "xyp-XY34",
-  "name": "Metagross-EX",
-  "number": "XY34",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY34.png",
-   "large": "https://images.pokemontcg.io/xyp/XY34_hires.png"
-  }
- },
- {
-  "id": "xyp-XY35",
-  "name": "M Metagross-EX",
-  "number": "XY35",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY35.png",
-   "large": "https://images.pokemontcg.io/xyp/XY35_hires.png"
-  }
- },
- {
-  "id": "xyp-XY36",
-  "name": "Treecko",
-  "number": "XY36",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY36.png",
-   "large": "https://images.pokemontcg.io/xyp/XY36_hires.png"
-  }
- },
- {
-  "id": "xyp-XY37",
-  "name": "Torchic",
-  "number": "XY37",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY37.png",
-   "large": "https://images.pokemontcg.io/xyp/XY37_hires.png"
-  }
- },
- {
-  "id": "xyp-XY38",
-  "name": "Mudkip",
-  "number": "XY38",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY38.png",
-   "large": "https://images.pokemontcg.io/xyp/XY38_hires.png"
-  }
- },
- {
-  "id": "xyp-XY39",
-  "name": "Kingdra",
-  "number": "XY39",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY39.png",
-   "large": "https://images.pokemontcg.io/xyp/XY39_hires.png"
-  }
- },
- {
-  "id": "xyp-XY40",
-  "name": "Ditto",
-  "number": "XY40",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY40.png",
-   "large": "https://images.pokemontcg.io/xyp/XY40_hires.png"
-  }
- },
- {
-  "id": "xyp-XY41",
-  "name": "Kyogre-EX",
-  "number": "XY41",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY41.png",
-   "large": "https://images.pokemontcg.io/xyp/XY41_hires.png"
-  }
- },
- {
-  "id": "xyp-XY42",
-  "name": "Groudon-EX",
-  "number": "XY42",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY42.png",
-   "large": "https://images.pokemontcg.io/xyp/XY42_hires.png"
-  }
- },
- {
-  "id": "xyp-XY43",
-  "name": "Diancie-EX",
-  "number": "XY43",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fairy"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY43.png",
-   "large": "https://images.pokemontcg.io/xyp/XY43_hires.png"
-  }
- },
- {
-  "id": "xyp-XY44",
-  "name": "M Diancie-EX",
-  "number": "XY44",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fairy"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY44.png",
-   "large": "https://images.pokemontcg.io/xyp/XY44_hires.png"
-  }
- },
- {
-  "id": "xyp-XY45",
-  "name": "Gallade-EX",
-  "number": "XY45",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY45.png",
-   "large": "https://images.pokemontcg.io/xyp/XY45_hires.png"
-  }
- },
- {
-  "id": "xyp-XY46",
-  "name": "Altaria",
-  "number": "XY46",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY46.png",
-   "large": "https://images.pokemontcg.io/xyp/XY46_hires.png"
-  }
- },
- {
-  "id": "xyp-XY47",
-  "name": "Heliolisk",
-  "number": "XY47",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Lightning"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY47.png",
-   "large": "https://images.pokemontcg.io/xyp/XY47_hires.png"
-  }
- },
- {
-  "id": "xyp-XY48",
-  "name": "Meowstic",
-  "number": "XY48",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY48.png",
-   "large": "https://images.pokemontcg.io/xyp/XY48_hires.png"
-  }
- },
- {
-  "id": "xyp-XY49",
-  "name": "Regirock",
-  "number": "XY49",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY49.png",
-   "large": "https://images.pokemontcg.io/xyp/XY49_hires.png"
-  }
- },
- {
-  "id": "xyp-XY50",
-  "name": "Pangoro",
-  "number": "XY50",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY50.png",
-   "large": "https://images.pokemontcg.io/xyp/XY50_hires.png"
-  }
- },
- {
-  "id": "xyp-XY51",
-  "name": "Kyogre",
-  "number": "XY51",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY51.png",
-   "large": "https://images.pokemontcg.io/xyp/XY51_hires.png"
-  }
- },
- {
-  "id": "xyp-XY52",
-  "name": "Groudon",
-  "number": "XY52",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY52.png",
-   "large": "https://images.pokemontcg.io/xyp/XY52_hires.png"
-  }
- },
- {
-  "id": "xyp-XY53",
-  "name": "Sceptile-EX",
-  "number": "XY53",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY53.png",
-   "large": "https://images.pokemontcg.io/xyp/XY53_hires.png"
-  }
- },
- {
-  "id": "xyp-XY54",
-  "name": "Blaziken-EX",
-  "number": "XY54",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY54.png",
-   "large": "https://images.pokemontcg.io/xyp/XY54_hires.png"
-  }
- },
- {
-  "id": "xyp-XY55",
-  "name": "Swampert-EX",
-  "number": "XY55",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY55.png",
-   "large": "https://images.pokemontcg.io/xyp/XY55_hires.png"
-  }
- },
- {
-  "id": "xyp-XY56",
-  "name": "Blissey",
-  "number": "XY56",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY56.png",
-   "large": "https://images.pokemontcg.io/xyp/XY56_hires.png"
-  }
- },
- {
-  "id": "xyp-XY57",
-  "name": "Fearow",
-  "number": "XY57",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY57.png",
-   "large": "https://images.pokemontcg.io/xyp/XY57_hires.png"
-  }
- },
- {
-  "id": "xyp-XY58",
-  "name": "Malamar",
-  "number": "XY58",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY58.png",
-   "large": "https://images.pokemontcg.io/xyp/XY58_hires.png"
-  }
- },
- {
-  "id": "xyp-XY59",
-  "name": "Salamence",
-  "number": "XY59",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY59.png",
-   "large": "https://images.pokemontcg.io/xyp/XY59_hires.png"
-  }
- },
- {
-  "id": "xyp-XY60",
-  "name": "Gyarados",
-  "number": "XY60",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY60.png",
-   "large": "https://images.pokemontcg.io/xyp/XY60_hires.png"
-  }
- },
- {
-  "id": "xyp-XY61",
-  "name": "Flygon-EX",
-  "number": "XY61",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY61.png",
-   "large": "https://images.pokemontcg.io/xyp/XY61_hires.png"
-  }
- },
- {
-  "id": "xyp-XY62",
-  "name": "Absol-EX",
-  "number": "XY62",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY62.png",
-   "large": "https://images.pokemontcg.io/xyp/XY62_hires.png"
-  }
- },
- {
-  "id": "xyp-XY63",
-  "name": "M Absol-EX",
-  "number": "XY63",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY63.png",
-   "large": "https://images.pokemontcg.io/xyp/XY63_hires.png"
-  }
- },
- {
-  "id": "xyp-XY64",
-  "name": "Rayquaza",
-  "number": "XY64",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY64.png",
-   "large": "https://images.pokemontcg.io/xyp/XY64_hires.png"
-  }
- },
- {
-  "id": "xyp-XY65",
-  "name": "Latios",
-  "number": "XY65",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY65.png",
-   "large": "https://images.pokemontcg.io/xyp/XY65_hires.png"
-  }
- },
- {
-  "id": "xyp-XY66",
-  "name": "Rayquaza-EX",
-  "number": "XY66",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY66.png",
-   "large": "https://images.pokemontcg.io/xyp/XY66_hires.png"
-  }
- },
- {
-  "id": "xyp-XY67",
-  "name": "Jirachi",
-  "number": "XY67",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY67.png",
-   "large": "https://images.pokemontcg.io/xyp/XY67_hires.png"
-  }
- },
- {
-  "id": "xyp-XY67a",
-  "name": "Jirachi",
-  "number": "XY67a",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY67a.png",
-   "large": "https://images.pokemontcg.io/xyp/XY67a_hires.png"
-  }
- },
- {
-  "id": "xyp-XY68",
-  "name": "Chesnaught",
-  "number": "XY68",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY68.png",
-   "large": "https://images.pokemontcg.io/xyp/XY68_hires.png"
-  }
- },
- {
-  "id": "xyp-XY69",
-  "name": "Rayquaza-EX",
-  "number": "XY69",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY69.png",
-   "large": "https://images.pokemontcg.io/xyp/XY69_hires.png"
-  }
- },
- {
-  "id": "xyp-XY70",
-  "name": "Tyrantrum-EX",
-  "number": "XY70",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY70.png",
-   "large": "https://images.pokemontcg.io/xyp/XY70_hires.png"
-  }
- },
- {
-  "id": "xyp-XY71",
-  "name": "Hoopa-EX",
-  "number": "XY71",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY71.png",
-   "large": "https://images.pokemontcg.io/xyp/XY71_hires.png"
-  }
- },
- {
-  "id": "xyp-XY72",
-  "name": "Latios-EX",
-  "number": "XY72",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY72.png",
-   "large": "https://images.pokemontcg.io/xyp/XY72_hires.png"
-  }
- },
- {
-  "id": "xyp-XY73",
-  "name": "Rayquaza-EX",
-  "number": "XY73",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY73.png",
-   "large": "https://images.pokemontcg.io/xyp/XY73_hires.png"
-  }
- },
- {
-  "id": "xyp-XY74",
-  "name": "Reshiram",
-  "number": "XY74",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY74.png",
-   "large": "https://images.pokemontcg.io/xyp/XY74_hires.png"
-  }
- },
- {
-  "id": "xyp-XY75",
-  "name": "Palkia",
-  "number": "XY75",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY75.png",
-   "large": "https://images.pokemontcg.io/xyp/XY75_hires.png"
-  }
- },
- {
-  "id": "xyp-XY76",
-  "name": "Zekrom",
-  "number": "XY76",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Lightning"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY76.png",
-   "large": "https://images.pokemontcg.io/xyp/XY76_hires.png"
-  }
- },
- {
-  "id": "xyp-XY77",
-  "name": "Dialga",
-  "number": "XY77",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Metal"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY77.png",
-   "large": "https://images.pokemontcg.io/xyp/XY77_hires.png"
-  }
- },
- {
-  "id": "xyp-XY78",
-  "name": "Latias",
-  "number": "XY78",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY78.png",
-   "large": "https://images.pokemontcg.io/xyp/XY78_hires.png"
-  }
- },
- {
-  "id": "xyp-XY79",
-  "name": "Latios",
-  "number": "XY79",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY79.png",
-   "large": "https://images.pokemontcg.io/xyp/XY79_hires.png"
-  }
- },
- {
-  "id": "xyp-XY80",
-  "name": "Black Kyurem",
-  "number": "XY80",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY80.png",
-   "large": "https://images.pokemontcg.io/xyp/XY80_hires.png"
-  }
- },
- {
-  "id": "xyp-XY81",
-  "name": "White Kyurem",
-  "number": "XY81",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Dragon"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY81.png",
-   "large": "https://images.pokemontcg.io/xyp/XY81_hires.png"
-  }
- },
- {
-  "id": "xyp-XY82",
-  "name": "Regigigas",
-  "number": "XY82",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY82.png",
-   "large": "https://images.pokemontcg.io/xyp/XY82_hires.png"
-  }
- },
- {
-  "id": "xyp-XY83",
-  "name": "Arceus",
-  "number": "XY83",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Colorless"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY83.png",
-   "large": "https://images.pokemontcg.io/xyp/XY83_hires.png"
-  }
- },
- {
-  "id": "xyp-XY84",
-  "name": "Pikachu-EX",
-  "number": "XY84",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Lightning"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY84.png",
-   "large": "https://images.pokemontcg.io/xyp/XY84_hires.png"
-  }
- },
- {
-  "id": "xyp-XY85",
-  "name": "Hoopa-EX",
-  "number": "XY85",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY85.png",
-   "large": "https://images.pokemontcg.io/xyp/XY85_hires.png"
-  }
- },
- {
-  "id": "xyp-XY86",
-  "name": "M Blaziken-EX",
-  "number": "XY86",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY86.png",
-   "large": "https://images.pokemontcg.io/xyp/XY86_hires.png"
-  }
- },
- {
-  "id": "xyp-XY87",
-  "name": "M Swampert-EX",
-  "number": "XY87",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY87.png",
-   "large": "https://images.pokemontcg.io/xyp/XY87_hires.png"
-  }
- },
- {
-  "id": "xyp-XY88",
-  "name": "Chespin",
-  "number": "XY88",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY88.png",
-   "large": "https://images.pokemontcg.io/xyp/XY88_hires.png"
-  }
- },
- {
-  "id": "xyp-XY89",
-  "name": "Pikachu",
-  "number": "XY89",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Lightning"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY89.png",
-   "large": "https://images.pokemontcg.io/xyp/XY89_hires.png"
-  }
- },
- {
-  "id": "xyp-XY90",
-  "name": "Hoopa",
-  "number": "XY90",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY90.png",
-   "large": "https://images.pokemontcg.io/xyp/XY90_hires.png"
-  }
- },
- {
-  "id": "xyp-XY91",
-  "name": "Champions Festival",
-  "number": "XY91",
-  "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY91.png",
-   "large": "https://images.pokemontcg.io/xyp/XY91_hires.png"
-  }
- },
- {
-  "id": "xyp-XY92",
-  "name": "Sableye",
-  "number": "XY92",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY92.png",
-   "large": "https://images.pokemontcg.io/xyp/XY92_hires.png"
-  }
- },
- {
-  "id": "xyp-XY93",
-  "name": "Celebi",
-  "number": "XY93",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY93.png",
-   "large": "https://images.pokemontcg.io/xyp/XY93_hires.png"
-  }
- },
- {
-  "id": "xyp-XY94",
-  "name": "Trevenant",
-  "number": "XY94",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Psychic"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY94.png",
-   "large": "https://images.pokemontcg.io/xyp/XY94_hires.png"
-  }
- },
- {
-  "id": "xyp-XY95",
-  "name": "Pikachu",
-  "number": "XY95",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Lightning"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY95.png",
-   "large": "https://images.pokemontcg.io/xyp/XY95_hires.png"
-  }
- },
- {
-  "id": "xyp-XY96",
-  "name": "Umbreon",
-  "number": "XY96",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Darkness"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY96.png",
-   "large": "https://images.pokemontcg.io/xyp/XY96_hires.png"
-  }
- },
- {
-  "id": "xyp-XY97",
-  "name": "Aerodactyl-EX",
-  "number": "XY97",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY97.png",
-   "large": "https://images.pokemontcg.io/xyp/XY97_hires.png"
-  }
- },
- {
-  "id": "xyp-XY98",
-  "name": "M Aerodactyl-EX",
-  "number": "XY98",
-  "rarity": "Promo",
-  "supertype": "Pokémon",
-  "types": [
-   "Fighting"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY98.png",
-   "large": "https://images.pokemontcg.io/xyp/XY98_hires.png"
-  }
- },
- {
-  "id": "xyp-XY99",
-  "name": "Aerodactyl Spirit Link",
-  "number": "XY99",
-  "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY99.png",
-   "large": "https://images.pokemontcg.io/xyp/XY99_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY10"
  },
  {
   "id": "xyp-XY100",
   "name": "Mewtwo",
   "number": "XY100",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY100.png",
-   "large": "https://images.pokemontcg.io/xyp/XY100_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY100"
  },
  {
   "id": "xyp-XY101",
   "name": "Mewtwo",
   "number": "XY101",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY101.png",
-   "large": "https://images.pokemontcg.io/xyp/XY101_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY101"
  },
  {
   "id": "xyp-XY102",
-  "name": "Aurorus-EX",
+  "name": "Aurorus EX",
   "number": "XY102",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY102.png",
-   "large": "https://images.pokemontcg.io/xyp/XY102_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY102"
  },
  {
   "id": "xyp-XY103",
-  "name": "Mawile-EX",
+  "name": "Mawile EX",
   "number": "XY103",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY103.png",
-   "large": "https://images.pokemontcg.io/xyp/XY103_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY103"
  },
  {
   "id": "xyp-XY104",
-  "name": "M Mawile-EX",
+  "name": "M Mawile EX",
   "number": "XY104",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY104.png",
-   "large": "https://images.pokemontcg.io/xyp/XY104_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY104"
  },
  {
   "id": "xyp-XY105",
   "name": "Mawile Spirit Link",
   "number": "XY105",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY105.png",
-   "large": "https://images.pokemontcg.io/xyp/XY105_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY105"
  },
  {
   "id": "xyp-XY106",
-  "name": "Gyarados-EX",
+  "name": "Gyarados EX",
   "number": "XY106",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY106.png",
-   "large": "https://images.pokemontcg.io/xyp/XY106_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY106"
  },
  {
   "id": "xyp-XY107",
-  "name": "Mewtwo-EX",
+  "name": "Mewtwo EX",
   "number": "XY107",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY107.png",
-   "large": "https://images.pokemontcg.io/xyp/XY107_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY107"
  },
  {
   "id": "xyp-XY108",
-  "name": "Machamp-EX",
+  "name": "Machamp EX",
   "number": "XY108",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY108.png",
-   "large": "https://images.pokemontcg.io/xyp/XY108_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY108"
  },
  {
   "id": "xyp-XY109",
   "name": "Gyarados",
   "number": "XY109",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY109.png",
-   "large": "https://images.pokemontcg.io/xyp/XY109_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY109"
+ },
+ {
+  "id": "xyp-XY11",
+  "name": "Skiddo",
+  "number": "XY11",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY11"
  },
  {
   "id": "xyp-XY110",
   "name": "Mew",
   "number": "XY110",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY110.png",
-   "large": "https://images.pokemontcg.io/xyp/XY110_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY110"
  },
  {
   "id": "xyp-XY111",
   "name": "Celebi",
   "number": "XY111",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY111.png",
-   "large": "https://images.pokemontcg.io/xyp/XY111_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY111"
  },
  {
   "id": "xyp-XY112",
   "name": "Jirachi",
   "number": "XY112",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY112.png",
-   "large": "https://images.pokemontcg.io/xyp/XY112_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY112"
  },
  {
   "id": "xyp-XY113",
   "name": "Manaphy",
   "number": "XY113",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY113.png",
-   "large": "https://images.pokemontcg.io/xyp/XY113_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY113"
  },
  {
   "id": "xyp-XY114",
   "name": "Darkrai",
   "number": "XY114",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY114.png",
-   "large": "https://images.pokemontcg.io/xyp/XY114_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY114"
  },
  {
   "id": "xyp-XY115",
   "name": "Shaymin",
   "number": "XY115",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY115.png",
-   "large": "https://images.pokemontcg.io/xyp/XY115_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY115"
  },
  {
   "id": "xyp-XY116",
   "name": "Arceus",
   "number": "XY116",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY116.png",
-   "large": "https://images.pokemontcg.io/xyp/XY116_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY116"
  },
  {
   "id": "xyp-XY117",
   "name": "Victini",
   "number": "XY117",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY117.png",
-   "large": "https://images.pokemontcg.io/xyp/XY117_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY117"
  },
  {
   "id": "xyp-XY118",
   "name": "Keldeo",
   "number": "XY118",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY118.png",
-   "large": "https://images.pokemontcg.io/xyp/XY118_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY118"
  },
  {
   "id": "xyp-XY119",
   "name": "Genesect",
   "number": "XY119",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY119.png",
-   "large": "https://images.pokemontcg.io/xyp/XY119_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY119"
+ },
+ {
+  "id": "xyp-XY12",
+  "name": "Honedge",
+  "number": "XY12",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY12"
  },
  {
   "id": "xyp-XY120",
   "name": "Meloetta",
   "number": "XY120",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY120.png",
-   "large": "https://images.pokemontcg.io/xyp/XY120_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY120"
  },
  {
   "id": "xyp-XY121",
-  "name": "Charizard-EX",
+  "name": "Charizard EX",
   "number": "XY121",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY121.png",
-   "large": "https://images.pokemontcg.io/xyp/XY121_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY121"
  },
  {
   "id": "xyp-XY122",
-  "name": "Blastoise-EX",
+  "name": "Blastoise EX",
   "number": "XY122",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY122.png",
-   "large": "https://images.pokemontcg.io/xyp/XY122_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY122"
  },
  {
   "id": "xyp-XY123",
-  "name": "Venusaur-EX",
+  "name": "Venusaur EX",
   "number": "XY123",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY123.png",
-   "large": "https://images.pokemontcg.io/xyp/XY123_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY123"
  },
  {
   "id": "xyp-XY124",
-  "name": "Pikachu-EX",
+  "name": "Pikachu EX",
   "number": "XY124",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY124.png",
-   "large": "https://images.pokemontcg.io/xyp/XY124_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY124"
  },
  {
   "id": "xyp-XY125",
-  "name": "Mewtwo-EX",
+  "name": "Mewtwo EX",
   "number": "XY125",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY125.png",
-   "large": "https://images.pokemontcg.io/xyp/XY125_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY125"
  },
  {
   "id": "xyp-XY126",
-  "name": "Mew-EX",
+  "name": "Mew EX",
   "number": "XY126",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY126.png",
-   "large": "https://images.pokemontcg.io/xyp/XY126_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY126"
  },
  {
   "id": "xyp-XY127",
   "name": "Moltres",
   "number": "XY127",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY127.png",
-   "large": "https://images.pokemontcg.io/xyp/XY127_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY127"
  },
  {
   "id": "xyp-XY128",
   "name": "White Kyurem",
   "number": "XY128",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY128.png",
-   "large": "https://images.pokemontcg.io/xyp/XY128_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY128"
  },
  {
   "id": "xyp-XY129",
   "name": "Zygarde",
   "number": "XY129",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY129.png",
-   "large": "https://images.pokemontcg.io/xyp/XY129_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY129"
+ },
+ {
+  "id": "xyp-XY13",
+  "name": "Machamp",
+  "number": "XY13",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY13"
  },
  {
   "id": "xyp-XY130",
   "name": "Tyranitar",
   "number": "XY130",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY130.png",
-   "large": "https://images.pokemontcg.io/xyp/XY130_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY130"
  },
  {
   "id": "xyp-XY131",
   "name": "Pansear",
   "number": "XY131",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY131.png",
-   "large": "https://images.pokemontcg.io/xyp/XY131_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY131"
  },
  {
   "id": "xyp-XY132",
   "name": "Gastly",
   "number": "XY132",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY132.png",
-   "large": "https://images.pokemontcg.io/xyp/XY132_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY132"
  },
  {
   "id": "xyp-XY133",
-  "name": "Ash-Greninja-EX",
+  "name": "Ash Greninja EX",
   "number": "XY133",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY133.png",
-   "large": "https://images.pokemontcg.io/xyp/XY133_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY133"
  },
  {
   "id": "xyp-XY134",
   "name": "Empoleon BREAK",
   "number": "XY134",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY134.png",
-   "large": "https://images.pokemontcg.io/xyp/XY134_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY134"
  },
  {
   "id": "xyp-XY135",
   "name": "Beheeyem BREAK",
   "number": "XY135",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY135.png",
-   "large": "https://images.pokemontcg.io/xyp/XY135_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY135"
  },
  {
   "id": "xyp-XY136",
   "name": "Noctowl BREAK",
   "number": "XY136",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY136.png",
-   "large": "https://images.pokemontcg.io/xyp/XY136_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY136"
  },
  {
   "id": "xyp-XY137",
   "name": "Vivillon",
   "number": "XY137",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY137.png",
-   "large": "https://images.pokemontcg.io/xyp/XY137_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY137"
  },
  {
   "id": "xyp-XY138",
   "name": "Froakie",
   "number": "XY138",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY138.png",
-   "large": "https://images.pokemontcg.io/xyp/XY138_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY138"
  },
  {
   "id": "xyp-XY139",
   "name": "Floette",
   "number": "XY139",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY139.png",
-   "large": "https://images.pokemontcg.io/xyp/XY139_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY139"
+ },
+ {
+  "id": "xyp-XY14",
+  "name": "Trevenant",
+  "number": "XY14",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY14"
  },
  {
   "id": "xyp-XY140",
   "name": "Lucario",
   "number": "XY140",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY140.png",
-   "large": "https://images.pokemontcg.io/xyp/XY140_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY140"
  },
  {
   "id": "xyp-XY141",
   "name": "Rayquaza",
   "number": "XY141",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY141.png",
-   "large": "https://images.pokemontcg.io/xyp/XY141_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY141"
  },
  {
   "id": "xyp-XY142",
   "name": "Azelf",
   "number": "XY142",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY142.png",
-   "large": "https://images.pokemontcg.io/xyp/XY142_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY142"
  },
  {
   "id": "xyp-XY143",
   "name": "Magikarp",
   "number": "XY143",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY143.png",
-   "large": "https://images.pokemontcg.io/xyp/XY143_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY143"
  },
  {
   "id": "xyp-XY144",
   "name": "Yanmega",
   "number": "XY144",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY144.png",
-   "large": "https://images.pokemontcg.io/xyp/XY144_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY144"
  },
  {
   "id": "xyp-XY145",
   "name": "Volcanion",
   "number": "XY145",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY145.png",
-   "large": "https://images.pokemontcg.io/xyp/XY145_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY145"
  },
  {
   "id": "xyp-XY146",
   "name": "Clawitzer",
   "number": "XY146",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY146.png",
-   "large": "https://images.pokemontcg.io/xyp/XY146_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY146"
  },
  {
   "id": "xyp-XY147",
   "name": "Hoopa",
   "number": "XY147",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY147.png",
-   "large": "https://images.pokemontcg.io/xyp/XY147_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY147"
  },
  {
   "id": "xyp-XY148",
-  "name": "Shaymin-EX",
+  "name": "Shaymin EX",
   "number": "XY148",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY148.png",
-   "large": "https://images.pokemontcg.io/xyp/XY148_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY148"
  },
  {
   "id": "xyp-XY149",
-  "name": "Xerneas-EX",
+  "name": "Xerneas EX",
   "number": "XY149",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY149.png",
-   "large": "https://images.pokemontcg.io/xyp/XY149_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY149"
+ },
+ {
+  "id": "xyp-XY15",
+  "name": "Slurpuff",
+  "number": "XY15",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fairy"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY15"
  },
  {
   "id": "xyp-XY150",
-  "name": "Yveltal-EX",
+  "name": "Yveltal EX",
   "number": "XY150",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY150.png",
-   "large": "https://images.pokemontcg.io/xyp/XY150_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY150"
  },
  {
   "id": "xyp-XY150a",
   "name": "Yveltal-EX",
   "number": "XY150a",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY150a.png",
-   "large": "https://images.pokemontcg.io/xyp/XY150a_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY150a"
  },
  {
   "id": "xyp-XY151",
-  "name": "Zygarde-EX",
+  "name": "Zygarde EX",
   "number": "XY151",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY151.png",
-   "large": "https://images.pokemontcg.io/xyp/XY151_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY151"
  },
  {
   "id": "xyp-XY152",
   "name": "Zygarde",
   "number": "XY152",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY152.png",
-   "large": "https://images.pokemontcg.io/xyp/XY152_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY152"
  },
  {
   "id": "xyp-XY153",
-  "name": "Ho-Oh",
+  "name": "Ho Oh",
   "number": "XY153",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY153.png",
-   "large": "https://images.pokemontcg.io/xyp/XY153_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY153"
  },
  {
   "id": "xyp-XY154",
   "name": "Ho-Oh BREAK",
   "number": "XY154",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY154.png",
-   "large": "https://images.pokemontcg.io/xyp/XY154_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY154"
  },
  {
   "id": "xyp-XY155",
   "name": "Wobbuffet BREAK",
   "number": "XY155",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY155.png",
-   "large": "https://images.pokemontcg.io/xyp/XY155_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY155"
  },
  {
   "id": "xyp-XY156",
   "name": "Lugia",
   "number": "XY156",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY156.png",
-   "large": "https://images.pokemontcg.io/xyp/XY156_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY156"
  },
  {
   "id": "xyp-XY157",
-  "name": "Beedrill-EX",
+  "name": "Beedrill EX",
   "number": "XY157",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY157.png",
-   "large": "https://images.pokemontcg.io/xyp/XY157_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY157"
  },
  {
   "id": "xyp-XY158",
   "name": "M Beedrill-EX",
   "number": "XY158",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY158.png",
-   "large": "https://images.pokemontcg.io/xyp/XY158_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY158"
  },
  {
   "id": "xyp-XY159",
   "name": "Beedrill Spirit Link",
   "number": "XY159",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY159.png",
-   "large": "https://images.pokemontcg.io/xyp/XY159_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY159"
+ },
+ {
+  "id": "xyp-XY16",
+  "name": "Gogoat",
+  "number": "XY16",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY16"
  },
  {
   "id": "xyp-XY160",
   "name": "Black Kyurem",
   "number": "XY160",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY160.png",
-   "large": "https://images.pokemontcg.io/xyp/XY160_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY160"
  },
  {
   "id": "xyp-XY161",
   "name": "Braixen",
   "number": "XY161",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY161.png",
-   "large": "https://images.pokemontcg.io/xyp/XY161_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY161"
  },
  {
   "id": "xyp-XY162",
   "name": "Greninja",
   "number": "XY162",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY162.png",
-   "large": "https://images.pokemontcg.io/xyp/XY162_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY162"
  },
  {
   "id": "xyp-XY163",
   "name": "Weezing",
   "number": "XY163",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY163.png",
-   "large": "https://images.pokemontcg.io/xyp/XY163_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY163"
  },
  {
   "id": "xyp-XY164",
   "name": "Volcanion",
   "number": "XY164",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY164.png",
-   "large": "https://images.pokemontcg.io/xyp/XY164_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY164"
  },
  {
   "id": "xyp-XY165",
   "name": "Magearna",
   "number": "XY165",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY165.png",
-   "large": "https://images.pokemontcg.io/xyp/XY165_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY165"
  },
  {
   "id": "xyp-XY166",
   "name": "M Gengar-EX",
   "number": "XY166",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY166.png",
-   "large": "https://images.pokemontcg.io/xyp/XY166_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY166"
  },
  {
   "id": "xyp-XY167",
   "name": "Garchomp-EX",
   "number": "XY167",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY167.png",
-   "large": "https://images.pokemontcg.io/xyp/XY167_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY167"
  },
  {
   "id": "xyp-XY168",
   "name": "M Garchomp-EX",
   "number": "XY168",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY168.png",
-   "large": "https://images.pokemontcg.io/xyp/XY168_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY168"
  },
  {
   "id": "xyp-XY169",
   "name": "Garchomp Spirit Link",
   "number": "XY169",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY169.png",
-   "large": "https://images.pokemontcg.io/xyp/XY169_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY169"
+ },
+ {
+  "id": "xyp-XY17",
+  "name": "Charizard EX",
+  "number": "XY17",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY17"
  },
  {
   "id": "xyp-XY170",
-  "name": "Salamence-EX",
+  "name": "Salamence EX",
   "number": "XY170",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY170.png",
-   "large": "https://images.pokemontcg.io/xyp/XY170_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY170"
  },
  {
   "id": "xyp-XY171",
   "name": "M Salamence-EX",
   "number": "XY171",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY171.png",
-   "large": "https://images.pokemontcg.io/xyp/XY171_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY171"
  },
  {
   "id": "xyp-XY172",
   "name": "Salamence Spirit Link",
   "number": "XY172",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY172.png",
-   "large": "https://images.pokemontcg.io/xyp/XY172_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY172"
  },
  {
   "id": "xyp-XY173",
-  "name": "Volcanion-EX",
+  "name": "Volcanion EX",
   "number": "XY173",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire",
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY173.png",
-   "large": "https://images.pokemontcg.io/xyp/XY173_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY173"
  },
  {
   "id": "xyp-XY174",
   "name": "Pikachu-EX",
   "number": "XY174",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY174.png",
-   "large": "https://images.pokemontcg.io/xyp/XY174_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY174"
  },
  {
   "id": "xyp-XY175",
   "name": "Magearna-EX",
   "number": "XY175",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY175.png",
-   "large": "https://images.pokemontcg.io/xyp/XY175_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY175"
  },
  {
   "id": "xyp-XY176",
   "name": "Champions Festival",
   "number": "XY176",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY176.png",
-   "large": "https://images.pokemontcg.io/xyp/XY176_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY176"
  },
  {
   "id": "xyp-XY177",
   "name": "Karen",
   "number": "XY177",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY177.png",
-   "large": "https://images.pokemontcg.io/xyp/XY177_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY177"
  },
  {
   "id": "xyp-XY177a",
   "name": "Karen",
   "number": "XY177a",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY177a.png",
-   "large": "https://images.pokemontcg.io/xyp/XY177a_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY177a"
  },
  {
   "id": "xyp-XY178",
   "name": "Absol",
   "number": "XY178",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY178.png",
-   "large": "https://images.pokemontcg.io/xyp/XY178_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY178"
  },
  {
   "id": "xyp-XY179",
   "name": "Snorlax",
   "number": "XY179",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY179.png",
-   "large": "https://images.pokemontcg.io/xyp/XY179_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY179"
+ },
+ {
+  "id": "xyp-XY18",
+  "name": "Chesnaught EX",
+  "number": "XY18",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY18"
  },
  {
   "id": "xyp-XY180",
   "name": "Arcanine BREAK",
   "number": "XY180",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY180.png",
-   "large": "https://images.pokemontcg.io/xyp/XY180_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY180"
  },
  {
   "id": "xyp-XY181",
   "name": "Crobat BREAK",
   "number": "XY181",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY181.png",
-   "large": "https://images.pokemontcg.io/xyp/XY181_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY181"
  },
  {
   "id": "xyp-XY182",
   "name": "Mandibuzz BREAK",
   "number": "XY182",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY182.png",
-   "large": "https://images.pokemontcg.io/xyp/XY182_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY182"
  },
  {
   "id": "xyp-XY183",
   "name": "Mewtwo-EX",
   "number": "XY183",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY183.png",
-   "large": "https://images.pokemontcg.io/xyp/XY183_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY183"
  },
  {
   "id": "xyp-XY184",
   "name": "Giratina",
   "number": "XY184",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY184.png",
-   "large": "https://images.pokemontcg.io/xyp/XY184_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY184"
  },
  {
   "id": "xyp-XY185",
   "name": "Volcanion",
   "number": "XY185",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY185.png",
-   "large": "https://images.pokemontcg.io/xyp/XY185_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY185"
  },
  {
   "id": "xyp-XY186",
   "name": "Magearna",
   "number": "XY186",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY186.png",
-   "large": "https://images.pokemontcg.io/xyp/XY186_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY186"
  },
  {
   "id": "xyp-XY187",
   "name": "Celebi",
   "number": "XY187",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY187.png",
-   "large": "https://images.pokemontcg.io/xyp/XY187_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY187"
  },
  {
   "id": "xyp-XY188",
   "name": "Shaymin",
   "number": "XY188",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY188.png",
-   "large": "https://images.pokemontcg.io/xyp/XY188_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY188"
  },
  {
   "id": "xyp-XY189",
   "name": "Victini",
   "number": "XY189",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY189.png",
-   "large": "https://images.pokemontcg.io/xyp/XY189_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY189"
+ },
+ {
+  "id": "xyp-XY19",
+  "name": "Delphox EX",
+  "number": "XY19",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY19"
  },
  {
   "id": "xyp-XY190",
   "name": "Manaphy",
   "number": "XY190",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY190.png",
-   "large": "https://images.pokemontcg.io/xyp/XY190_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY190"
  },
  {
   "id": "xyp-XY191",
   "name": "Keldeo",
   "number": "XY191",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY191.png",
-   "large": "https://images.pokemontcg.io/xyp/XY191_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY191"
  },
  {
   "id": "xyp-XY192",
   "name": "Mew",
   "number": "XY192",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY192.png",
-   "large": "https://images.pokemontcg.io/xyp/XY192_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY192"
  },
  {
   "id": "xyp-XY193",
   "name": "Meloetta",
   "number": "XY193",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY193.png",
-   "large": "https://images.pokemontcg.io/xyp/XY193_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY193"
  },
  {
   "id": "xyp-XY194",
   "name": "Darkrai",
   "number": "XY194",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY194.png",
-   "large": "https://images.pokemontcg.io/xyp/XY194_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY194"
  },
  {
   "id": "xyp-XY195",
   "name": "Jirachi",
   "number": "XY195",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY195.png",
-   "large": "https://images.pokemontcg.io/xyp/XY195_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY195"
  },
  {
   "id": "xyp-XY196",
   "name": "Genesect",
   "number": "XY196",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY196.png",
-   "large": "https://images.pokemontcg.io/xyp/XY196_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY196"
  },
  {
   "id": "xyp-XY197",
   "name": "Arceus",
   "number": "XY197",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY197.png",
-   "large": "https://images.pokemontcg.io/xyp/XY197_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY197"
  },
  {
   "id": "xyp-XY198",
   "name": "M Camerupt-EX",
   "number": "XY198",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY198.png",
-   "large": "https://images.pokemontcg.io/xyp/XY198_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY198"
  },
  {
   "id": "xyp-XY198a",
   "name": "M Camerupt-EX",
   "number": "XY198a",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY198a.png",
-   "large": "https://images.pokemontcg.io/xyp/XY198a_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY198a"
  },
  {
   "id": "xyp-XY199",
   "name": "Camerupt Spirit Link",
   "number": "XY199",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY199.png",
-   "large": "https://images.pokemontcg.io/xyp/XY199_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY199"
+ },
+ {
+  "id": "xyp-XY20",
+  "name": "Greninja EX",
+  "number": "XY20",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY20"
  },
  {
   "id": "xyp-XY200",
   "name": "M Sharpedo-EX",
   "number": "XY200",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY200.png",
-   "large": "https://images.pokemontcg.io/xyp/XY200_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY200"
  },
  {
   "id": "xyp-XY200a",
   "name": "M Sharpedo-EX",
   "number": "XY200a",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY200a.png",
-   "large": "https://images.pokemontcg.io/xyp/XY200a_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY200a"
  },
  {
   "id": "xyp-XY201",
   "name": "Sharpedo Spirit Link",
   "number": "XY201",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY201.png",
-   "large": "https://images.pokemontcg.io/xyp/XY201_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY201"
  },
  {
   "id": "xyp-XY202",
   "name": "Pikachu",
   "number": "XY202",
   "rarity": "Promo",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY202.png",
-   "large": "https://images.pokemontcg.io/xyp/XY202_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY202"
  },
  {
   "id": "xyp-XY203",
   "name": "Gym Badge",
   "number": "XY203",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY203.png",
-   "large": "https://images.pokemontcg.io/xyp/XY203_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY203"
  },
  {
   "id": "xyp-XY204",
   "name": "Gym Badge",
   "number": "XY204",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY204.png",
-   "large": "https://images.pokemontcg.io/xyp/XY204_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY204"
  },
  {
   "id": "xyp-XY205",
   "name": "Gym Badge",
   "number": "XY205",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY205.png",
-   "large": "https://images.pokemontcg.io/xyp/XY205_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY205"
  },
  {
   "id": "xyp-XY206",
   "name": "Gym Badge",
   "number": "XY206",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY206.png",
-   "large": "https://images.pokemontcg.io/xyp/XY206_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY206"
  },
  {
   "id": "xyp-XY207",
   "name": "Gym Badge",
   "number": "XY207",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY207.png",
-   "large": "https://images.pokemontcg.io/xyp/XY207_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY207"
  },
  {
   "id": "xyp-XY208",
   "name": "Gym Badge",
   "number": "XY208",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY208.png",
-   "large": "https://images.pokemontcg.io/xyp/XY208_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY208"
  },
  {
   "id": "xyp-XY209",
   "name": "Gym Badge",
   "number": "XY209",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY209.png",
-   "large": "https://images.pokemontcg.io/xyp/XY209_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY209"
+ },
+ {
+  "id": "xyp-XY21",
+  "name": "Bronzong",
+  "number": "XY21",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY21"
  },
  {
   "id": "xyp-XY210",
   "name": "Gym Badge",
   "number": "XY210",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY210.png",
-   "large": "https://images.pokemontcg.io/xyp/XY210_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY210"
  },
  {
   "id": "xyp-XY211",
   "name": "Lucario Spirit Link",
   "number": "XY211",
   "rarity": "Promo",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/xyp/XY211.png",
-   "large": "https://images.pokemontcg.io/xyp/XY211_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY211"
+ },
+ {
+  "id": "xyp-XY22",
+  "name": "Darkrai",
+  "number": "XY22",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY22"
+ },
+ {
+  "id": "xyp-XY23",
+  "name": "Shiftry",
+  "number": "XY23",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY23"
+ },
+ {
+  "id": "xyp-XY24",
+  "name": "Greninja",
+  "number": "XY24",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY24"
+ },
+ {
+  "id": "xyp-XY25",
+  "name": "Krookodile EX",
+  "number": "XY25",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY25"
+ },
+ {
+  "id": "xyp-XY26",
+  "name": "Pyroar",
+  "number": "XY26",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY26"
+ },
+ {
+  "id": "xyp-XY27",
+  "name": "Champions Festival",
+  "number": "XY27",
+  "rarity": "Promo",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY27"
+ },
+ {
+  "id": "xyp-XY28",
+  "name": "Venusaur EX",
+  "number": "XY28",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY28"
+ },
+ {
+  "id": "xyp-XY29",
+  "name": "Charizard EX",
+  "number": "XY29",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY29"
+ },
+ {
+  "id": "xyp-XY30",
+  "name": "Blastoise EX",
+  "number": "XY30",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY30"
+ },
+ {
+  "id": "xyp-XY31",
+  "name": "Xerneas",
+  "number": "XY31",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fairy"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY31"
+ },
+ {
+  "id": "xyp-XY32",
+  "name": "Yveltal",
+  "number": "XY32",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY32"
+ },
+ {
+  "id": "xyp-XY33",
+  "name": "Trevor",
+  "number": "XY33",
+  "rarity": "Promo",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY33"
+ },
+ {
+  "id": "xyp-XY34",
+  "name": "Metagross EX",
+  "number": "XY34",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY34"
+ },
+ {
+  "id": "xyp-XY35",
+  "name": "M Metagross EX",
+  "number": "XY35",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY35"
+ },
+ {
+  "id": "xyp-XY36",
+  "name": "Treecko",
+  "number": "XY36",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY36"
+ },
+ {
+  "id": "xyp-XY37",
+  "name": "Torchic",
+  "number": "XY37",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY37"
+ },
+ {
+  "id": "xyp-XY38",
+  "name": "Mudkip",
+  "number": "XY38",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY38"
+ },
+ {
+  "id": "xyp-XY39",
+  "name": "Kingdra",
+  "number": "XY39",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ]
+ },
+ {
+  "id": "xyp-XY40",
+  "name": "Ditto",
+  "number": "XY40",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY40"
+ },
+ {
+  "id": "xyp-XY41",
+  "name": "Kyogre EX",
+  "number": "XY41",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY41"
+ },
+ {
+  "id": "xyp-XY42",
+  "name": "Groudon EX",
+  "number": "XY42",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY42"
+ },
+ {
+  "id": "xyp-XY43",
+  "name": "Diancie EX",
+  "number": "XY43",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fairy"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY43"
+ },
+ {
+  "id": "xyp-XY44",
+  "name": "M Diancie EX",
+  "number": "XY44",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fairy"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY44"
+ },
+ {
+  "id": "xyp-XY45",
+  "name": "Gallade EX",
+  "number": "XY45",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY45"
+ },
+ {
+  "id": "xyp-XY46",
+  "name": "Altaria",
+  "number": "XY46",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "xyp-XY47",
+  "name": "Heliolisk",
+  "number": "XY47",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY47"
+ },
+ {
+  "id": "xyp-XY48",
+  "name": "Meowstic",
+  "number": "XY48",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY48"
+ },
+ {
+  "id": "xyp-XY49",
+  "name": "Regirock",
+  "number": "XY49",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY49"
+ },
+ {
+  "id": "xyp-XY50",
+  "name": "Pangoro",
+  "number": "XY50",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY50"
+ },
+ {
+  "id": "xyp-XY51",
+  "name": "Kyogre",
+  "number": "XY51",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY51"
+ },
+ {
+  "id": "xyp-XY52",
+  "name": "Groudon",
+  "number": "XY52",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY52"
+ },
+ {
+  "id": "xyp-XY53",
+  "name": "Sceptile EX",
+  "number": "XY53",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY53"
+ },
+ {
+  "id": "xyp-XY54",
+  "name": "Blaziken EX",
+  "number": "XY54",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY54"
+ },
+ {
+  "id": "xyp-XY55",
+  "name": "Swampert EX",
+  "number": "XY55",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY55"
+ },
+ {
+  "id": "xyp-XY56",
+  "name": "Blissey",
+  "number": "XY56",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY56"
+ },
+ {
+  "id": "xyp-XY57",
+  "name": "Fearow",
+  "number": "XY57",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY57"
+ },
+ {
+  "id": "xyp-XY58",
+  "name": "Malamar",
+  "number": "XY58",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY58"
+ },
+ {
+  "id": "xyp-XY59",
+  "name": "Salamence",
+  "number": "XY59",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY59"
+ },
+ {
+  "id": "xyp-XY60",
+  "name": "Gyarados",
+  "number": "XY60",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY60"
+ },
+ {
+  "id": "xyp-XY61",
+  "name": "Flygon EX",
+  "number": "XY61",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY61"
+ },
+ {
+  "id": "xyp-XY62",
+  "name": "Absol EX",
+  "number": "XY62",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY62"
+ },
+ {
+  "id": "xyp-XY63",
+  "name": "M Absol EX",
+  "number": "XY63",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY63"
+ },
+ {
+  "id": "xyp-XY64",
+  "name": "Rayquaza",
+  "number": "XY64",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY64"
+ },
+ {
+  "id": "xyp-XY65",
+  "name": "Latios",
+  "number": "XY65",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY65"
+ },
+ {
+  "id": "xyp-XY66",
+  "name": "Rayquaza EX",
+  "number": "XY66",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY66"
+ },
+ {
+  "id": "xyp-XY67",
+  "name": "Jirachi",
+  "number": "XY67",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY67"
+ },
+ {
+  "id": "xyp-XY67a",
+  "name": "Jirachi",
+  "number": "XY67a",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY67a"
+ },
+ {
+  "id": "xyp-XY68",
+  "name": "Chesnaught",
+  "number": "XY68",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "xyp-XY69",
+  "name": "Rayquaza EX",
+  "number": "XY69",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY69"
+ },
+ {
+  "id": "xyp-XY70",
+  "name": "Tyrantrum EX",
+  "number": "XY70",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY70"
+ },
+ {
+  "id": "xyp-XY71",
+  "name": "Hoopa EX",
+  "number": "XY71",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY71"
+ },
+ {
+  "id": "xyp-XY72",
+  "name": "Latios EX",
+  "number": "XY72",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY72"
+ },
+ {
+  "id": "xyp-XY73",
+  "name": "Rayquaza EX",
+  "number": "XY73",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY73"
+ },
+ {
+  "id": "xyp-XY74",
+  "name": "Reshiram",
+  "number": "XY74",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY74"
+ },
+ {
+  "id": "xyp-XY75",
+  "name": "Palkia",
+  "number": "XY75",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY75"
+ },
+ {
+  "id": "xyp-XY76",
+  "name": "Zekrom",
+  "number": "XY76",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY76"
+ },
+ {
+  "id": "xyp-XY77",
+  "name": "Dialga",
+  "number": "XY77",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY77"
+ },
+ {
+  "id": "xyp-XY78",
+  "name": "Latias",
+  "number": "XY78",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY78"
+ },
+ {
+  "id": "xyp-XY79",
+  "name": "Latios",
+  "number": "XY79",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY79"
+ },
+ {
+  "id": "xyp-XY80",
+  "name": "Black Kyurem",
+  "number": "XY80",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY80"
+ },
+ {
+  "id": "xyp-XY81",
+  "name": "White Kyurem",
+  "number": "XY81",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Dragon"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY81"
+ },
+ {
+  "id": "xyp-XY82",
+  "name": "Regigigas",
+  "number": "XY82",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY82"
+ },
+ {
+  "id": "xyp-XY83",
+  "name": "Arceus",
+  "number": "XY83",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY83"
+ },
+ {
+  "id": "xyp-XY84",
+  "name": "Pikachu EX",
+  "number": "XY84",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY84"
+ },
+ {
+  "id": "xyp-XY85",
+  "name": "Hoopa EX",
+  "number": "XY85",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY85"
+ },
+ {
+  "id": "xyp-XY86",
+  "name": "M Blaziken EX",
+  "number": "XY86",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY86"
+ },
+ {
+  "id": "xyp-XY87",
+  "name": "M Swampert EX",
+  "number": "XY87",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY87"
+ },
+ {
+  "id": "xyp-XY88",
+  "name": "Chespin",
+  "number": "XY88",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY88"
+ },
+ {
+  "id": "xyp-XY89",
+  "name": "Pikachu",
+  "number": "XY89",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY89"
+ },
+ {
+  "id": "xyp-XY90",
+  "name": "Hoopa",
+  "number": "XY90",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY90"
+ },
+ {
+  "id": "xyp-XY91",
+  "name": "Champions Festival",
+  "number": "XY91",
+  "rarity": "Promo",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY91"
+ },
+ {
+  "id": "xyp-XY92",
+  "name": "Sableye",
+  "number": "XY92",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY92"
+ },
+ {
+  "id": "xyp-XY93",
+  "name": "Celebi",
+  "number": "XY93",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY93"
+ },
+ {
+  "id": "xyp-XY94",
+  "name": "Trevenant",
+  "number": "XY94",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY94"
+ },
+ {
+  "id": "xyp-XY95",
+  "name": "Pikachu",
+  "number": "XY95",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY95"
+ },
+ {
+  "id": "xyp-XY96",
+  "name": "Umbreon",
+  "number": "XY96",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY96"
+ },
+ {
+  "id": "xyp-XY97",
+  "name": "Aerodactyl EX",
+  "number": "XY97",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY97"
+ },
+ {
+  "id": "xyp-XY98",
+  "name": "M Aerodactyl EX",
+  "number": "XY98",
+  "rarity": "Promo",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ],
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY98"
+ },
+ {
+  "id": "xyp-XY99",
+  "name": "Aerodactyl Spirit Link",
+  "number": "XY99",
+  "rarity": "Promo",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY99"
  }
 ]

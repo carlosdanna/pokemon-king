@@ -3,1286 +3,1004 @@
   "id": "sma-SV1",
   "name": "Scyther",
   "number": "SV1",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV1.png",
-   "large": "https://images.pokemontcg.io/sma/SV1_hires.png"
-  }
- },
- {
-  "id": "sma-SV2",
-  "name": "Rowlet",
-  "number": "SV2",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV2.png",
-   "large": "https://images.pokemontcg.io/sma/SV2_hires.png"
-  }
- },
- {
-  "id": "sma-SV3",
-  "name": "Dartrix",
-  "number": "SV3",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV3.png",
-   "large": "https://images.pokemontcg.io/sma/SV3_hires.png"
-  }
- },
- {
-  "id": "sma-SV4",
-  "name": "Wimpod",
-  "number": "SV4",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV4.png",
-   "large": "https://images.pokemontcg.io/sma/SV4_hires.png"
-  }
- },
- {
-  "id": "sma-SV5",
-  "name": "Pheromosa",
-  "number": "SV5",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Grass"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV5.png",
-   "large": "https://images.pokemontcg.io/sma/SV5_hires.png"
-  }
- },
- {
-  "id": "sma-SV6",
-  "name": "Charmander",
-  "number": "SV6",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV6.png",
-   "large": "https://images.pokemontcg.io/sma/SV6_hires.png"
-  }
- },
- {
-  "id": "sma-SV7",
-  "name": "Charmeleon",
-  "number": "SV7",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Fire"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV7.png",
-   "large": "https://images.pokemontcg.io/sma/SV7_hires.png"
-  }
- },
- {
-  "id": "sma-SV8",
-  "name": "Alolan Vulpix",
-  "number": "SV8",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV8.png",
-   "large": "https://images.pokemontcg.io/sma/SV8_hires.png"
-  }
- },
- {
-  "id": "sma-SV9",
-  "name": "Wooper",
-  "number": "SV9",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
-  "types": [
-   "Water"
-  ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV9.png",
-   "large": "https://images.pokemontcg.io/sma/SV9_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV1"
  },
  {
   "id": "sma-SV10",
   "name": "Quagsire",
   "number": "SV10",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV10.png",
-   "large": "https://images.pokemontcg.io/sma/SV10_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV10"
  },
  {
   "id": "sma-SV11",
   "name": "Froakie",
   "number": "SV11",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV11.png",
-   "large": "https://images.pokemontcg.io/sma/SV11_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV11"
  },
  {
   "id": "sma-SV12",
   "name": "Frogadier",
   "number": "SV12",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV12.png",
-   "large": "https://images.pokemontcg.io/sma/SV12_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV12"
  },
  {
   "id": "sma-SV13",
   "name": "Voltorb",
   "number": "SV13",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV13.png",
-   "large": "https://images.pokemontcg.io/sma/SV13_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV13"
  },
  {
   "id": "sma-SV14",
   "name": "Xurkitree",
   "number": "SV14",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV14.png",
-   "large": "https://images.pokemontcg.io/sma/SV14_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV14"
  },
  {
   "id": "sma-SV15",
   "name": "Seviper",
   "number": "SV15",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV15.png",
-   "large": "https://images.pokemontcg.io/sma/SV15_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV15"
  },
  {
   "id": "sma-SV16",
   "name": "Shuppet",
   "number": "SV16",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV16.png",
-   "large": "https://images.pokemontcg.io/sma/SV16_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV16"
  },
  {
   "id": "sma-SV17",
   "name": "Inkay",
   "number": "SV17",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV17.png",
-   "large": "https://images.pokemontcg.io/sma/SV17_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV17"
  },
  {
   "id": "sma-SV18",
   "name": "Malamar",
   "number": "SV18",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV18.png",
-   "large": "https://images.pokemontcg.io/sma/SV18_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV18"
  },
  {
   "id": "sma-SV19",
   "name": "Poipole",
   "number": "SV19",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV19.png",
-   "large": "https://images.pokemontcg.io/sma/SV19_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV19"
+ },
+ {
+  "id": "sma-SV2",
+  "name": "Rowlet",
+  "number": "SV2",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV2"
  },
  {
   "id": "sma-SV20",
   "name": "Sudowoodo",
   "number": "SV20",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV20.png",
-   "large": "https://images.pokemontcg.io/sma/SV20_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV20"
  },
  {
   "id": "sma-SV21",
   "name": "Riolu",
   "number": "SV21",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV21.png",
-   "large": "https://images.pokemontcg.io/sma/SV21_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV21"
  },
  {
   "id": "sma-SV22",
   "name": "Lucario",
   "number": "SV22",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV22.png",
-   "large": "https://images.pokemontcg.io/sma/SV22_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV22"
  },
  {
   "id": "sma-SV23",
   "name": "Rockruff",
   "number": "SV23",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV23.png",
-   "large": "https://images.pokemontcg.io/sma/SV23_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV23"
  },
  {
   "id": "sma-SV24",
   "name": "Buzzwole",
   "number": "SV24",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV24.png",
-   "large": "https://images.pokemontcg.io/sma/SV24_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV24"
  },
  {
   "id": "sma-SV25",
   "name": "Zorua",
   "number": "SV25",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV25.png",
-   "large": "https://images.pokemontcg.io/sma/SV25_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV25"
  },
  {
   "id": "sma-SV26",
   "name": "Guzzlord",
   "number": "SV26",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV26.png",
-   "large": "https://images.pokemontcg.io/sma/SV26_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV26"
  },
  {
   "id": "sma-SV27",
   "name": "Magnemite",
   "number": "SV27",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV27.png",
-   "large": "https://images.pokemontcg.io/sma/SV27_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV27"
  },
  {
   "id": "sma-SV28",
   "name": "Magneton",
   "number": "SV28",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV28.png",
-   "large": "https://images.pokemontcg.io/sma/SV28_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV28"
  },
  {
   "id": "sma-SV29",
   "name": "Magnezone",
   "number": "SV29",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV29.png",
-   "large": "https://images.pokemontcg.io/sma/SV29_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV29"
+ },
+ {
+  "id": "sma-SV3",
+  "name": "Dartrix",
+  "number": "SV3",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV3"
  },
  {
   "id": "sma-SV30",
   "name": "Beldum",
   "number": "SV30",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV30.png",
-   "large": "https://images.pokemontcg.io/sma/SV30_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV30"
  },
  {
   "id": "sma-SV31",
   "name": "Metang",
   "number": "SV31",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV31.png",
-   "large": "https://images.pokemontcg.io/sma/SV31_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV31"
  },
  {
   "id": "sma-SV32",
   "name": "Celesteela",
   "number": "SV32",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV32.png",
-   "large": "https://images.pokemontcg.io/sma/SV32_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV32"
  },
  {
   "id": "sma-SV33",
   "name": "Kartana",
   "number": "SV33",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV33.png",
-   "large": "https://images.pokemontcg.io/sma/SV33_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV33"
  },
  {
   "id": "sma-SV34",
   "name": "Ralts",
   "number": "SV34",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV34.png",
-   "large": "https://images.pokemontcg.io/sma/SV34_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV34"
  },
  {
   "id": "sma-SV35",
   "name": "Kirlia",
   "number": "SV35",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV35.png",
-   "large": "https://images.pokemontcg.io/sma/SV35_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV35"
  },
  {
   "id": "sma-SV36",
   "name": "Diancie",
   "number": "SV36",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV36.png",
-   "large": "https://images.pokemontcg.io/sma/SV36_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV36"
  },
  {
   "id": "sma-SV37",
   "name": "Altaria",
   "number": "SV37",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV37.png",
-   "large": "https://images.pokemontcg.io/sma/SV37_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV37"
  },
  {
   "id": "sma-SV38",
   "name": "Gible",
   "number": "SV38",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV38.png",
-   "large": "https://images.pokemontcg.io/sma/SV38_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV38"
  },
  {
   "id": "sma-SV39",
   "name": "Gabite",
   "number": "SV39",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV39.png",
-   "large": "https://images.pokemontcg.io/sma/SV39_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV39"
+ },
+ {
+  "id": "sma-SV4",
+  "name": "Wimpod",
+  "number": "SV4",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV4"
  },
  {
   "id": "sma-SV40",
   "name": "Garchomp",
   "number": "SV40",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV40.png",
-   "large": "https://images.pokemontcg.io/sma/SV40_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV40"
  },
  {
   "id": "sma-SV41",
   "name": "Eevee",
   "number": "SV41",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV41.png",
-   "large": "https://images.pokemontcg.io/sma/SV41_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV41"
  },
  {
   "id": "sma-SV42",
   "name": "Swablu",
   "number": "SV42",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV42.png",
-   "large": "https://images.pokemontcg.io/sma/SV42_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV42"
  },
  {
   "id": "sma-SV43",
   "name": "Noibat",
   "number": "SV43",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV43.png",
-   "large": "https://images.pokemontcg.io/sma/SV43_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV43"
  },
  {
   "id": "sma-SV44",
   "name": "Oranguru",
   "number": "SV44",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV44.png",
-   "large": "https://images.pokemontcg.io/sma/SV44_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV44"
  },
  {
   "id": "sma-SV45",
   "name": "Type: Null",
   "number": "SV45",
-  "rarity": "Rare Shiny",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV45.png",
-   "large": "https://images.pokemontcg.io/sma/SV45_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV45"
  },
  {
   "id": "sma-SV46",
   "name": "Leafeon-GX",
   "number": "SV46",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV46.png",
-   "large": "https://images.pokemontcg.io/sma/SV46_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV46"
  },
  {
   "id": "sma-SV47",
   "name": "Decidueye-GX",
   "number": "SV47",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV47.png",
-   "large": "https://images.pokemontcg.io/sma/SV47_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV47"
  },
  {
   "id": "sma-SV48",
   "name": "Golisopod-GX",
   "number": "SV48",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV48.png",
-   "large": "https://images.pokemontcg.io/sma/SV48_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV48"
  },
  {
   "id": "sma-SV49",
   "name": "Charizard-GX",
   "number": "SV49",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV49.png",
-   "large": "https://images.pokemontcg.io/sma/SV49_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV49"
+ },
+ {
+  "id": "sma-SV5",
+  "name": "Pheromosa",
+  "number": "SV5",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV5"
  },
  {
   "id": "sma-SV50",
   "name": "Ho-Oh-GX",
   "number": "SV50",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV50.png",
-   "large": "https://images.pokemontcg.io/sma/SV50_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV50"
  },
  {
   "id": "sma-SV51",
   "name": "Reshiram-GX",
   "number": "SV51",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV51.png",
-   "large": "https://images.pokemontcg.io/sma/SV51_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV51"
  },
  {
   "id": "sma-SV52",
   "name": "Turtonator-GX",
   "number": "SV52",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV52.png",
-   "large": "https://images.pokemontcg.io/sma/SV52_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV52"
  },
  {
   "id": "sma-SV53",
   "name": "Alolan Ninetales-GX",
   "number": "SV53",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV53.png",
-   "large": "https://images.pokemontcg.io/sma/SV53_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV53"
  },
  {
   "id": "sma-SV54",
   "name": "Articuno-GX",
   "number": "SV54",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV54.png",
-   "large": "https://images.pokemontcg.io/sma/SV54_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV54"
  },
  {
   "id": "sma-SV55",
   "name": "Glaceon-GX",
   "number": "SV55",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV55.png",
-   "large": "https://images.pokemontcg.io/sma/SV55_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV55"
  },
  {
   "id": "sma-SV56",
   "name": "Greninja-GX",
   "number": "SV56",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV56.png",
-   "large": "https://images.pokemontcg.io/sma/SV56_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV56"
  },
  {
   "id": "sma-SV57",
   "name": "Electrode-GX",
   "number": "SV57",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV57.png",
-   "large": "https://images.pokemontcg.io/sma/SV57_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV57"
  },
  {
   "id": "sma-SV58",
   "name": "Xurkitree-GX",
   "number": "SV58",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV58.png",
-   "large": "https://images.pokemontcg.io/sma/SV58_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV58"
  },
  {
   "id": "sma-SV59",
   "name": "Mewtwo-GX",
   "number": "SV59",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV59.png",
-   "large": "https://images.pokemontcg.io/sma/SV59_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV59"
+ },
+ {
+  "id": "sma-SV6",
+  "name": "Charmander",
+  "number": "SV6",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV6"
  },
  {
   "id": "sma-SV60",
   "name": "Espeon-GX",
   "number": "SV60",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV60.png",
-   "large": "https://images.pokemontcg.io/sma/SV60_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV60"
  },
  {
   "id": "sma-SV61",
   "name": "Banette-GX",
   "number": "SV61",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV61.png",
-   "large": "https://images.pokemontcg.io/sma/SV61_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV61"
  },
  {
   "id": "sma-SV62",
   "name": "Nihilego-GX",
   "number": "SV62",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV62.png",
-   "large": "https://images.pokemontcg.io/sma/SV62_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV62"
  },
  {
   "id": "sma-SV63",
   "name": "Naganadel-GX",
   "number": "SV63",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV63.png",
-   "large": "https://images.pokemontcg.io/sma/SV63_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV63"
  },
  {
   "id": "sma-SV64",
   "name": "Lucario-GX",
   "number": "SV64",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV64.png",
-   "large": "https://images.pokemontcg.io/sma/SV64_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV64"
  },
  {
   "id": "sma-SV65",
   "name": "Zygarde-GX",
   "number": "SV65",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV65.png",
-   "large": "https://images.pokemontcg.io/sma/SV65_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV65"
  },
  {
   "id": "sma-SV66",
   "name": "Lycanroc-GX",
   "number": "SV66",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV66.png",
-   "large": "https://images.pokemontcg.io/sma/SV66_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV66"
  },
  {
   "id": "sma-SV67",
   "name": "Lycanroc-GX",
   "number": "SV67",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV67.png",
-   "large": "https://images.pokemontcg.io/sma/SV67_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV67"
  },
  {
   "id": "sma-SV68",
   "name": "Buzzwole-GX",
   "number": "SV68",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV68.png",
-   "large": "https://images.pokemontcg.io/sma/SV68_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV68"
  },
  {
   "id": "sma-SV69",
   "name": "Umbreon-GX",
   "number": "SV69",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV69.png",
-   "large": "https://images.pokemontcg.io/sma/SV69_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV69"
+ },
+ {
+  "id": "sma-SV7",
+  "name": "Charmeleon",
+  "number": "SV7",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV7"
  },
  {
   "id": "sma-SV70",
   "name": "Darkrai-GX",
   "number": "SV70",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV70.png",
-   "large": "https://images.pokemontcg.io/sma/SV70_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV70"
  },
  {
   "id": "sma-SV71",
   "name": "Guzzlord-GX",
   "number": "SV71",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Darkness"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV71.png",
-   "large": "https://images.pokemontcg.io/sma/SV71_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV71"
  },
  {
   "id": "sma-SV72",
   "name": "Scizor-GX",
   "number": "SV72",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV72.png",
-   "large": "https://images.pokemontcg.io/sma/SV72_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV72"
  },
  {
   "id": "sma-SV73",
   "name": "Kartana-GX",
   "number": "SV73",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV73.png",
-   "large": "https://images.pokemontcg.io/sma/SV73_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV73"
  },
  {
   "id": "sma-SV74",
   "name": "Stakataka-GX",
   "number": "SV74",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV74.png",
-   "large": "https://images.pokemontcg.io/sma/SV74_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV74"
  },
  {
   "id": "sma-SV75",
   "name": "Gardevoir-GX",
   "number": "SV75",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV75.png",
-   "large": "https://images.pokemontcg.io/sma/SV75_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV75"
  },
  {
   "id": "sma-SV76",
   "name": "Sylveon-GX",
   "number": "SV76",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Fairy"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV76.png",
-   "large": "https://images.pokemontcg.io/sma/SV76_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV76"
  },
  {
   "id": "sma-SV77",
   "name": "Altaria-GX",
   "number": "SV77",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV77.png",
-   "large": "https://images.pokemontcg.io/sma/SV77_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV77"
  },
  {
   "id": "sma-SV78",
   "name": "Noivern-GX",
   "number": "SV78",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Dragon"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV78.png",
-   "large": "https://images.pokemontcg.io/sma/SV78_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV78"
  },
  {
   "id": "sma-SV79",
   "name": "Silvally-GX",
   "number": "SV79",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV79.png",
-   "large": "https://images.pokemontcg.io/sma/SV79_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV79"
+ },
+ {
+  "id": "sma-SV8",
+  "name": "Alolan Vulpix",
+  "number": "SV8",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV8"
  },
  {
   "id": "sma-SV80",
   "name": "Drampa-GX",
   "number": "SV80",
-  "rarity": "Rare Shiny GX",
-  "supertype": "Pokémon",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV80.png",
-   "large": "https://images.pokemontcg.io/sma/SV80_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV80"
  },
  {
   "id": "sma-SV81",
   "name": "Aether Foundation Employee",
   "number": "SV81",
-  "rarity": "Rare Ultra",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV81.png",
-   "large": "https://images.pokemontcg.io/sma/SV81_hires.png"
-  }
+  "rarity": "Shiny rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV81"
  },
  {
   "id": "sma-SV82",
   "name": "Cynthia",
   "number": "SV82",
-  "rarity": "Rare Ultra",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV82.png",
-   "large": "https://images.pokemontcg.io/sma/SV82_hires.png"
-  }
+  "rarity": "Shiny rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV82"
  },
  {
   "id": "sma-SV83",
   "name": "Fisherman",
   "number": "SV83",
-  "rarity": "Rare Ultra",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV83.png",
-   "large": "https://images.pokemontcg.io/sma/SV83_hires.png"
-  }
+  "rarity": "Shiny rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV83"
  },
  {
   "id": "sma-SV84",
   "name": "Guzma",
   "number": "SV84",
-  "rarity": "Rare Ultra",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV84.png",
-   "large": "https://images.pokemontcg.io/sma/SV84_hires.png"
-  }
+  "rarity": "Shiny rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV84"
  },
  {
   "id": "sma-SV85",
   "name": "Hiker",
   "number": "SV85",
-  "rarity": "Rare Ultra",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV85.png",
-   "large": "https://images.pokemontcg.io/sma/SV85_hires.png"
-  }
+  "rarity": "Shiny rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV85"
  },
  {
   "id": "sma-SV86",
   "name": "Lady",
   "number": "SV86",
-  "rarity": "Rare Ultra",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV86.png",
-   "large": "https://images.pokemontcg.io/sma/SV86_hires.png"
-  }
+  "rarity": "Shiny rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV86"
  },
  {
   "id": "sma-SV87",
   "name": "Aether Paradise Conservation Area",
   "number": "SV87",
-  "rarity": "Rare Secret",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV87.png",
-   "large": "https://images.pokemontcg.io/sma/SV87_hires.png"
-  }
+  "rarity": "Secret Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV87"
  },
  {
   "id": "sma-SV88",
   "name": "Brooklet Hill",
   "number": "SV88",
-  "rarity": "Rare Secret",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV88.png",
-   "large": "https://images.pokemontcg.io/sma/SV88_hires.png"
-  }
+  "rarity": "Secret Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV88"
  },
  {
   "id": "sma-SV89",
   "name": "Mt. Coronet",
   "number": "SV89",
-  "rarity": "Rare Secret",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV89.png",
-   "large": "https://images.pokemontcg.io/sma/SV89_hires.png"
-  }
+  "rarity": "Secret Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV89"
+ },
+ {
+  "id": "sma-SV9",
+  "name": "Wooper",
+  "number": "SV9",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ],
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV9"
  },
  {
   "id": "sma-SV90",
   "name": "Shrine of Punishment",
   "number": "SV90",
-  "rarity": "Rare Secret",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV90.png",
-   "large": "https://images.pokemontcg.io/sma/SV90_hires.png"
-  }
+  "rarity": "Secret Rare",
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV90"
  },
  {
   "id": "sma-SV91",
   "name": "Tapu Bulu-GX",
   "number": "SV91",
-  "rarity": "Rare Secret",
-  "supertype": "Pokémon",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV91.png",
-   "large": "https://images.pokemontcg.io/sma/SV91_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV91"
  },
  {
   "id": "sma-SV92",
   "name": "Tapu Fini-GX",
   "number": "SV92",
-  "rarity": "Rare Secret",
-  "supertype": "Pokémon",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV92.png",
-   "large": "https://images.pokemontcg.io/sma/SV92_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV92"
  },
  {
   "id": "sma-SV93",
   "name": "Tapu Koko-GX",
   "number": "SV93",
-  "rarity": "Rare Secret",
-  "supertype": "Pokémon",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV93.png",
-   "large": "https://images.pokemontcg.io/sma/SV93_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV93"
  },
  {
   "id": "sma-SV94",
   "name": "Tapu Lele-GX",
   "number": "SV94",
-  "rarity": "Rare Secret",
-  "supertype": "Pokémon",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/sma/SV94.png",
-   "large": "https://images.pokemontcg.io/sma/SV94_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/sm/sma/SV94"
  }
 ]

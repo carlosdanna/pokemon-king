@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "swsh4.5sv-SV001",
+  "name": "Rowlet",
+  "number": "SV001",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV002",
+  "name": "Dartrix",
+  "number": "SV002",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV003",
+  "name": "Decidueye",
+  "number": "SV003",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV004",
+  "name": "Grookey",
+  "number": "SV004",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV005",
+  "name": "Thwackey",
+  "number": "SV005",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV006",
+  "name": "Rillaboom",
+  "number": "SV006",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV007",
+  "name": "Blipbug",
+  "number": "SV007",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV008",
+  "name": "Dottler",
+  "number": "SV008",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV009",
+  "name": "Orbeetle",
+  "number": "SV009",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV010",
+  "name": "Gossifleur",
+  "number": "SV010",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV011",
+  "name": "Eldegoss",
+  "number": "SV011",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV012",
+  "name": "Applin",
+  "number": "SV012",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV013",
+  "name": "Flapple",
+  "number": "SV013",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV014",
+  "name": "Appletun",
+  "number": "SV014",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV015",
+  "name": "Scorbunny",
+  "number": "SV015",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV016",
+  "name": "Raboot",
+  "number": "SV016",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV017",
+  "name": "Cinderace",
+  "number": "SV017",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV018",
+  "name": "Sizzlipede",
+  "number": "SV018",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV019",
+  "name": "Centiskorch",
+  "number": "SV019",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV020",
+  "name": "Galarian Mr. Mime",
+  "number": "SV020",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV021",
+  "name": "Galarian Mr. Rime",
+  "number": "SV021",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV022",
+  "name": "Suicune",
+  "number": "SV022",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV023",
+  "name": "Galarian Darumaka",
+  "number": "SV023",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV024",
+  "name": "Galarian Darmanitan",
+  "number": "SV024",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV025",
+  "name": "Sobble",
+  "number": "SV025",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV026",
+  "name": "Drizzile",
+  "number": "SV026",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV027",
+  "name": "Inteleon",
+  "number": "SV027",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV028",
+  "name": "Chewtle",
+  "number": "SV028",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV029",
+  "name": "Drednaw",
+  "number": "SV029",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV030",
+  "name": "Cramorant",
+  "number": "SV030",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV031",
+  "name": "Arrokuda",
+  "number": "SV031",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV032",
+  "name": "Barraskewda",
+  "number": "SV032",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV033",
+  "name": "Snom",
+  "number": "SV033",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV034",
+  "name": "Frosmoth",
+  "number": "SV034",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV035",
+  "name": "Eiscue",
+  "number": "SV035",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV036",
+  "name": "Dracovish",
+  "number": "SV036",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV037",
+  "name": "Arctovish",
+  "number": "SV037",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV038",
+  "name": "Rotom",
+  "number": "SV038",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV039",
+  "name": "Yamper",
+  "number": "SV039",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV040",
+  "name": "Boltund",
+  "number": "SV040",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV041",
+  "name": "Toxel",
+  "number": "SV041",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV042",
+  "name": "Toxtricity",
+  "number": "SV042",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV043",
+  "name": "Pincurchin",
+  "number": "SV043",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV044",
+  "name": "Morpeko",
+  "number": "SV044",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV045",
+  "name": "Dracozolt",
+  "number": "SV045",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV046",
+  "name": "Arctozolt",
+  "number": "SV046",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV047",
+  "name": "Galarian Ponyta",
+  "number": "SV047",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV048",
+  "name": "Galarian Rapidash",
+  "number": "SV048",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV049",
+  "name": "Galarian Corsola",
+  "number": "SV049",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV050",
+  "name": "Galarian Cursola",
+  "number": "SV050",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV051",
+  "name": "Dedenne",
+  "number": "SV051",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV052",
+  "name": "Sinistea",
+  "number": "SV052",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV053",
+  "name": "Polteageist",
+  "number": "SV053",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV054",
+  "name": "Hatenna",
+  "number": "SV054",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV055",
+  "name": "Hattrem",
+  "number": "SV055",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV056",
+  "name": "Hatterene",
+  "number": "SV056",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV057",
+  "name": "Milcery",
+  "number": "SV057",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV058",
+  "name": "Alcremie",
+  "number": "SV058",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV059",
+  "name": "Indeedee",
+  "number": "SV059",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV060",
+  "name": "Dreepy",
+  "number": "SV060",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV061",
+  "name": "Drakloak",
+  "number": "SV061",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV062",
+  "name": "Dragapult",
+  "number": "SV062",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV063",
+  "name": "Galarian Farfetch'd",
+  "number": "SV063",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV064",
+  "name": "Galarian Sirfetch'd",
+  "number": "SV064",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV065",
+  "name": "Galarian Yamask",
+  "number": "SV065",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV066",
+  "name": "Galarian Runerigus",
+  "number": "SV066",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV067",
+  "name": "Rolycoly",
+  "number": "SV067",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV068",
+  "name": "Carkol",
+  "number": "SV068",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV069",
+  "name": "Coalossal",
+  "number": "SV069",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV070",
+  "name": "Silicobra",
+  "number": "SV070",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV071",
+  "name": "Sandaconda",
+  "number": "SV071",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV072",
+  "name": "Clobbopus",
+  "number": "SV072",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV073",
+  "name": "Grapploct",
+  "number": "SV073",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV074",
+  "name": "Falinks",
+  "number": "SV074",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV075",
+  "name": "Stonjourner",
+  "number": "SV075",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV076",
+  "name": "Koffing",
+  "number": "SV076",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV077",
+  "name": "Galarian Weezing",
+  "number": "SV077",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV078",
+  "name": "Galarian Zigzagoon",
+  "number": "SV078",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV079",
+  "name": "Galarian Linoone",
+  "number": "SV079",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV080",
+  "name": "Galarian Obstagoon",
+  "number": "SV080",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV081",
+  "name": "Nickit",
+  "number": "SV081",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV082",
+  "name": "Thievul",
+  "number": "SV082",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV083",
+  "name": "Impidimp",
+  "number": "SV083",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV084",
+  "name": "Morgrem",
+  "number": "SV084",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV085",
+  "name": "Grimmsnarl",
+  "number": "SV085",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV086",
+  "name": "Galarian Meowth",
+  "number": "SV086",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV087",
+  "name": "Galarian Perrserker",
+  "number": "SV087",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV088",
+  "name": "Galarian Stunfisk",
+  "number": "SV088",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV089",
+  "name": "Corviknight",
+  "number": "SV089",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV090",
+  "name": "Cufant",
+  "number": "SV090",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV091",
+  "name": "Copperajah",
+  "number": "SV091",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV092",
+  "name": "Duraludon",
+  "number": "SV092",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Metal"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV093",
+  "name": "Minccino",
+  "number": "SV093",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV094",
+  "name": "Cinccino",
+  "number": "SV094",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV095",
+  "name": "Ducklett",
+  "number": "SV095",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV096",
+  "name": "Swanna",
+  "number": "SV096",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV097",
+  "name": "Bunnelby",
+  "number": "SV097",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV098",
+  "name": "Oranguru",
+  "number": "SV098",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV099",
+  "name": "Skwovet",
+  "number": "SV099",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV100",
+  "name": "Greedent",
+  "number": "SV100",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV101",
+  "name": "Rookidee",
+  "number": "SV101",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV102",
+  "name": "Corvisquire",
+  "number": "SV102",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV103",
+  "name": "Wooloo",
+  "number": "SV103",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV104",
+  "name": "Dubwool",
+  "number": "SV104",
+  "rarity": "Shiny rare",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV105",
+  "name": "Rillaboom V",
+  "number": "SV105",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV106",
+  "name": "Rillaboom VMAX",
+  "number": "SV106",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Grass"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV107",
+  "name": "Charizard VMAX",
+  "number": "SV107",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV108",
+  "name": "Centiskorch V",
+  "number": "SV108",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV109",
+  "name": "Centiskorch VMAX",
+  "number": "SV109",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Fire"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV110",
+  "name": "Lapras V",
+  "number": "SV110",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV111",
+  "name": "Lapras VMAX",
+  "number": "SV111",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Water"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV112",
+  "name": "Toxtricity V",
+  "number": "SV112",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV113",
+  "name": "Toxtricity VMAX",
+  "number": "SV113",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Lightning"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV114",
+  "name": "Indeedee V",
+  "number": "SV114",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Psychic"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV115",
+  "name": "Falinks V",
+  "number": "SV115",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Fighting"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV116",
+  "name": "Grimmsnarl V",
+  "number": "SV116",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV117",
+  "name": "Grimmsnarl VMAX",
+  "number": "SV117",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV118",
+  "name": "Ditto V",
+  "number": "SV118",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV119",
+  "name": "Ditto VMAX",
+  "number": "SV119",
+  "rarity": "Shiny rare VMAX",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV120",
+  "name": "Dubwool V",
+  "number": "SV120",
+  "rarity": "Shiny rare V",
+  "category": "Pokemon",
+  "types": [
+   "Colorless"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV121",
+  "name": "Eternatus V",
+  "number": "SV121",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ },
+ {
+  "id": "swsh4.5sv-SV122",
+  "name": "Eternatus VMAX",
+  "number": "SV122",
+  "rarity": "Secret Rare",
+  "category": "Pokemon",
+  "types": [
+   "Darkness"
+  ]
+ }
+]

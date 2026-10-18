@@ -667,6 +667,212 @@ The transcript goes in next. A commit can't hold its own hash, so after the amen
 
 - *Bash*: Render transcript and inspect transcripts.md structure
 
+### 2026-10-18 · M1 follow-up (TCGdex)
+
+#### 15:20 · Carlos
+
+Is there a way to do a conversion table between v1 and v2 and use the new api instead? Also I would like to get the images from v2 instead. Ideally of these jsons would go in a database what are your suggestions here. I don't want to overcomplicate this or pay extra for hosting in vercel
+
+- *Bash*: Probe TCGdex set and card objects
+- *Bash*: Test TCGdex GraphQL for sets and per-set cards
+- *Bash*: Test GraphQL cards query filtered by set
+- *Bash*: Probe GraphQL card queries further
+
+#### 15:21 · Claude
+
+The GraphQL `cards(filters:{id:"<set>"})` query returns a whole set with `rarity`, `types`, `category` and `image` in one request. Next I'll measure how well Ash's 121 sets map automatically.
+
+- *Bash*: Auto-map pokemontcg set ids to TCGdex set ids
+- *Bash*: Fetch TCGdex cards for Ash's sets into scratchpad
+- *Bash*: Measure owned-card coverage in TCGdex mapping
+
+#### 15:22 · Claude
+
+The GraphQL pagination caps each page at 100 cards, so I'll fetch the extra pages for the sets that hit that cap.
+
+- *Bash*: Fetch remaining TCGdex pages into scratchpad
+- *Bash*: Re-measure coverage with full TCGdex data
+
+#### 15:24 · Claude
+
+Results: 1,640 of Ash's 1,644 cards map automatically. Next I'll check TCGdex image coverage across all cards and how images are served.
+
+- *Bash*: Check TCGdex image coverage, sizes, next config
+
+*Claude asked:*
+
+> **Where should the card data live? It's read-only (about 14.6k slim cards, 3–4 MB) and changes only when the fetch script is re-run. The only data that changes at runtime is favourites, which already go to Upstash Redis on its free tier (D-008).**
+> JSON files in repo (Recommended) / SQLite file in repo / Hosted free-tier DB
+
+
+*Carlos answered:* JSON files in repo (Recommended)
+
+- *Bash*: Get current time for plan
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M1 follow-up · Switch set lists and images to TCGdex
+
+## Context
+M1 (commit `e0bdf4d`) took set lists from the frozen `PokemonTCG/pokemon-tcg-data` repo (D-021), and its images come from `images.pokemontcg.io`. That host may go offline with the API on 2027-03-01. Carlos wants to use TCGdex (`api.tcgdex.net/v2`, free, maintained, no key) with a conversion table from the old ids, and TCGdex images. The data stays as committed JSON files: no database and no Vercel cost.
+
+Measured today with a probe in the scratchpad:
+- **Sets**: all 121 of Ash's sets exist in TCGdex. 111 have the same id; 10 differ: `base6→lc`, `tk2b→tk-ex-m`, `mcd11→2011bw`, `mcd14→2014xy`, `sm35→sm3.5`, `sm75→sm7.5`, `swsh35→swsh3.5`, `swsh45→swsh4.5`, `swsh45sv→swsh4.5sv`, `pgo→swsh10.5`.
+- **Cards**: they match on the set plus the number, with leading zeros stripped (`001` = `1`). 1,640 of 1,644 owned cards map. The 4 that don't are `ecard2-74`, `ex10-L`, `sm3-116a` and `sm8-188a`. Two names differ but are the same card (`Azelf LV.X`, `Boss's Orders (Lysandre)`).
+- **Coverage**: TCGdex has 14,625 cards in these sets, against 14,702 in the old data; `ex10` and some SM sets are a few cards short.
+- **Images**: 522 TCGdex cards have no image, 28 of them owned. Images are `<image>/low.webp` (about 18 KB) and `<image>/high.webp` (about 80 KB), against a 157 KB PNG from pokemontcg.
+- **API shape**: GraphQL `cards(filters:{id:"<set>-"}, pagination:{page, count:100})` returns `id localId name rarity category types image set{id}`. It is a substring match, so filter on `set.id`; it caps pages at 100.
+
+## Approach
+TCGdex becomes the only source. TCGdex ids become the album's ids (URLs: `/album/sv03.5`, `/cards/sv03.5-001`). `ash_collection.json` is converted once through a committed id map.
+
+1. **Worklog and decisions**:
+   - Add a worklog row: 2026-10-18, start 15:26, "M1 follow-up (TCGdex)".
+   - **D-023** supersedes D-021: set lists, set metadata and images come from TCGdex v2. Album ids are TCGdex ids, and pokemontcg ids are converted through `data/id-map.json`.
+     - Why: maintained, free, no key; images that outlive the pokemontcg host and are about 8× smaller.
+     - Rejected: keeping pokemontcg-data plus pokemontcg images; Scrydex.
+   - **D-024**: card data stays as committed JSON. No database.
+     - Why: read-only data, $0, no network hop or secrets; filtering 14.6k cards in memory is enough for M4.
+     - Rejected: SQLite file (`node:sqlite`), Turso or Neon free tiers.
+   - **D-025**: card images use `next/image` with `unoptimized`, because TCGdex already serves sized WebP. This keeps Vercel's paid image optimization out.
+2. **`scripts/fetch-sets.ts`** (rewrite, same run command `pnpm dlx tsx scripts/fetch-sets.ts`):
+   - `SET_ID_OVERRIDES`: the 10 overrides above; every other code maps to itself.
+   - One GraphQL `sets { id name releaseDate logo symbol serie{name} cardCount{official total} }` call. Write Ash's 121 sets to `data/sets.json` as `{ id, name, series, releaseDate, total, printedTotal, logo, symbol }`.
+   - Per set: page through `cards(...)` 100 at a time, keep only cards whose `set.id` matches, and write `data/sets/<tcgdexSetId>.json` as `{ id, name, number: localId, rarity, category, types?, image? }`.
+   - Resume (skip files already on disk), back off on 429 and 5xx, 200 ms between calls. About 225 requests, about 1–2 minutes.
+   - **Id map**: for each owned pokemontcg id, map its set code and match the number by stripping leading zeros and uppercasing. Write `data/id-map.json` as `{ "<pokemontcgId>": "<tcgdexId>" }`, 1,640 entries. Print the unmapped ids (expected 4).
+   - Delete the old pokemontcg `data/sets/*.json` files first (their names differ for the 10 overrides).
+3. **`lib/album.ts`**:
+   - `SetCard` becomes `{ id, name, number, rarity, category, types?, image? }`, and `SetInfo` follows the new set shape. `AlbumCard` swaps `supertype` for `category` and gets `image?` (the TCGdex base URL).
+   - Add `cardImage(card, "low" | "high")`. It returns `<image>/<q>.webp`, or the card's pokemontcg fallback URL when it has no TCGdex image.
+   - `groupQuantities`, `compareCardNumber`, `mergeSet` and `paginate` keep their logic. Owned cards with no TCGdex entry are still appended.
+4. **`lib/collection.ts`**:
+   - Load `id-map.json`, re-key the quantities to TCGdex ids, and turn the 4 unmapped owned cards into `SetCard`s from the collection. They keep their pokemontcg id and image, so they still show.
+   - Album cards with no TCGdex image fall back to the collection's `images.small` when owned. Otherwise `image` is undefined, and M2 shows its placeholder.
+   - Set validation now uses the TCGdex set ids.
+5. **`next.config.ts`**: add `assets.tcgdex.net` to `remotePatterns`. Keep `images.pokemontcg.io` for the fallback.
+6. **Tests**:
+   - Update the fixtures in `lib/album.test.ts`. Add a `cardImage` test (TCGdex URL, fallback, none).
+   - In `lib/collection.test.ts`: still 121 summaries and 1,644 owned in total. `getAlbumPage("sv03.5", 1)` or `"base3"` returns 9 cards. An unmapped owned card (`sm3-116a`) appears in its set.
+7. **Docs**:
+   - Update the "Data changes" section of the implementation plan to TCGdex.
+   - Close the worklog row; append the transcript (`python3 -I scripts/transcript.py`) to `docs/transcripts.md` as `### 2026-10-18 · M1 follow-up`.
+   - Commit `feat(data): switch set lists and images to tcgdex`, then `--amend --no-edit` to add the log.
+
+## Verification
+- The script summary: 121 set files, about 14,625 cards, 1,640 mapped, 4 unmapped (listed). A rerun skips everything.
+- `pnpm check` passes, with lint, typecheck, Prettier and the updated tests.
+- `curl -sI` on one `cardImage(..., "low")` URL from a generated page returns 200 `image/webp`.
+
+Skipped: runtime calls to TCGdex (data stays a committed snapshot; re-run the script to refresh); TCGdex pricing and variants data; full card details for unowned cards (M3 can fetch them through the same script later). Risk: TCGdex rarity names differ slightly from the collection's pokemontcg ones; M4 filters should use the TCGdex values from the set files.
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Probe common card back image URLs
+
+#### 15:31 · Claude
+
+`images.pokemontcg.io/card-back.png` exists and returns 200. That host also serves the same 186 KB PNG as its 404 page. Next I'll check what the image is and whether TCGdex has an official back.
+
+- *WebSearch*: WebSearch
+- *Bash*: Download card back, compare dimensions with card images
+
+#### 15:31 · Claude
+
+TCGdex has no card-back asset. The image at `images.pokemontcg.io/card-back.png` is 640×892, close to the card proportions. Let me look at it:
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/a843aa66-aa96-44e5-a595-45f8868d5dd9/scratchpad/back/card-back.png
+
+#### 15:31 · Claude
+
+That's the standard Pokémon card back. I'll add it to the plan.
+
+- *Edit*: /home/cduser/.claude/plans/pasted-content-id-359a-milestone-m1-flickering-breeze.md
+- *Bash*: Renumber plan steps and fix placeholder wording
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+#### 15:32 · Claude
+
+Starting with the worklog and decisions:
+
+- *Bash*: Log decisions, worklog row, generate card-back webps
+
+#### 15:32 · Claude
+
+The card backs are 600×825 and 245×337 WebP files (57 KB and 16 KB). Next, the script rewrite:
+
+- *Write*: scripts/fetch-sets.ts
+
+#### 15:33 · Claude
+
+Next, `lib/album.ts`:
+
+- *Bash*: Show current album.ts header after prettier
+- *Write*: lib/album.ts
+- *Edit*: lib/album.ts
+- *Bash*: Run TCGdex fetch script and verify outputs
+
+#### 15:33 · Claude
+
+Resume treated the 111 old pokemontcg files as finished, because their file names match TCGdex set ids. The plan said to delete them first. I'll clear the directory and run it again.
+
+- *Bash*: Clear old set files and rerun fetch from TCGdex
+
+#### 15:34 · Claude
+
+This matches the probe: 226 requests in 70 s, 14,625 cards, 1,640 mapped, and the same 4 unmapped. TCGdex logo URLs also need an extension, so I'll note that on the type. Next, `lib/collection.ts`:
+
+- *Edit*: lib/album.ts
+- *Write*: lib/collection.ts
+
+#### 15:34 · Claude
+
+I duplicated the set-id overrides in `lib/collection.ts`, so I'll move them into `lib/album.ts` and share them with the script.
+
+- *Bash*: Move set id overrides into lib/album.ts and reuse
+
+#### 15:35 · Claude
+
+`groupQuantities` is now dead code in the app, so `load()` will use it again. Then I'll update `next.config` and the tests.
+
+- *Bash*: Reuse groupQuantities in loader, add tcgdex image host
+
+#### 15:35 · Claude
+
+Now the tests:
+
+- *Bash*: Show test fixture header
+- *Bash*: Update tests and run full check
+
+#### 15:36 · Claude
+
+Ash doesn't own any `sv03.5` cards, so that set isn't in his album. I'll test with one of the renamed sets he does own instead:
+
+- *Bash*: Check sm3.5 ids and mapping
+- *Edit*: lib/collection.test.ts
+- *Bash*: Run check and verify a generated image URL
+- *Bash*: Show the lint warning
+- *Bash*: Show lines around the warning
+- *Edit*: lib/album.test.ts
+- *Bash*: Re-run full check
+
+#### 15:37 · Claude
+
+The check is clean: 19 tests pass and there are no lint warnings. Next, the docs and the commit.
+
+- *Bash*: Update docs and stage changes
+- *Bash*: Commit and render transcript
+
 ## claude.ai conversations
 
 To be added.

@@ -4,228 +4,177 @@
   "name": "Chimecho δ",
   "number": "1",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Metal"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/1.png",
-   "large": "https://images.pokemontcg.io/pop4/1_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/1"
  },
  {
   "id": "pop4-2",
   "name": "Deoxys δ",
   "number": "2",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/2.png",
-   "large": "https://images.pokemontcg.io/pop4/2_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/2"
  },
  {
   "id": "pop4-3",
   "name": "Flygon",
   "number": "3",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fighting"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/3.png",
-   "large": "https://images.pokemontcg.io/pop4/3_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/3"
  },
  {
   "id": "pop4-4",
   "name": "Mew",
   "number": "4",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/4.png",
-   "large": "https://images.pokemontcg.io/pop4/4_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/4"
  },
  {
   "id": "pop4-5",
   "name": "Sceptile",
   "number": "5",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/5.png",
-   "large": "https://images.pokemontcg.io/pop4/5_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/5"
  },
  {
   "id": "pop4-6",
   "name": "Combusken",
   "number": "6",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Fire"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/6.png",
-   "large": "https://images.pokemontcg.io/pop4/6_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/6"
  },
  {
   "id": "pop4-7",
   "name": "Grovyle",
   "number": "7",
   "rarity": "Uncommon",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Grass"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/7.png",
-   "large": "https://images.pokemontcg.io/pop4/7_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/7"
  },
  {
   "id": "pop4-8",
   "name": "Heal Energy",
   "number": "8",
   "rarity": "Uncommon",
-  "supertype": "Energy",
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/8.png",
-   "large": "https://images.pokemontcg.io/pop4/8_hires.png"
-  }
+  "category": "Energy",
+  "image": "https://assets.tcgdex.net/en/pop/pop4/8"
  },
  {
   "id": "pop4-9",
   "name": "Pokémon Fan Club",
   "number": "9",
   "rarity": "Uncommon",
-  "supertype": "Trainer",
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/9.png",
-   "large": "https://images.pokemontcg.io/pop4/9_hires.png"
-  }
+  "category": "Trainer",
+  "image": "https://assets.tcgdex.net/en/pop/pop4/9"
  },
  {
   "id": "pop4-10",
   "name": "Scramble Energy",
   "number": "10",
   "rarity": "Uncommon",
-  "supertype": "Energy",
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/10.png",
-   "large": "https://images.pokemontcg.io/pop4/10_hires.png"
-  }
+  "category": "Energy",
+  "image": "https://assets.tcgdex.net/en/pop/pop4/10"
  },
  {
   "id": "pop4-11",
   "name": "Mudkip",
   "number": "11",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/11.png",
-   "large": "https://images.pokemontcg.io/pop4/11_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/11"
  },
  {
   "id": "pop4-12",
   "name": "Pidgey",
   "number": "12",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Colorless"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/12.png",
-   "large": "https://images.pokemontcg.io/pop4/12_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/12"
  },
  {
   "id": "pop4-13",
   "name": "Pikachu",
   "number": "13",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Lightning"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/13.png",
-   "large": "https://images.pokemontcg.io/pop4/13_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/13"
  },
  {
   "id": "pop4-14",
   "name": "Squirtle",
   "number": "14",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Water"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/14.png",
-   "large": "https://images.pokemontcg.io/pop4/14_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/14"
  },
  {
   "id": "pop4-15",
   "name": "Treecko δ",
   "number": "15",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/15.png",
-   "large": "https://images.pokemontcg.io/pop4/15_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/15"
  },
  {
   "id": "pop4-16",
   "name": "Wobbuffet",
   "number": "16",
   "rarity": "Common",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/16.png",
-   "large": "https://images.pokemontcg.io/pop4/16_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/16"
  },
  {
   "id": "pop4-17",
   "name": "Deoxys ex",
   "number": "17",
   "rarity": "Rare",
-  "supertype": "Pokémon",
+  "category": "Pokemon",
   "types": [
    "Psychic"
   ],
-  "images": {
-   "small": "https://images.pokemontcg.io/pop4/17.png",
-   "large": "https://images.pokemontcg.io/pop4/17_hires.png"
-  }
+  "image": "https://assets.tcgdex.net/en/pop/pop4/17"
  }
 ]

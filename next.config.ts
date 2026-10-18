@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "images.pokemontcg.io" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "assets.tcgdex.net" },
+      { protocol: "https", hostname: "images.pokemontcg.io" },
+    ],
   },
   cacheComponents: true,
   partialPrefetching: true,
