@@ -17,6 +17,7 @@ Keyboard is an equal path to the mouse, and every view is shareable through its 
 
 - Next.js 16 App Router, React, TypeScript `strict`; no `any` (use `unknown` and narrow it)
 - shadcn/ui components (in the repo), Tailwind CSS
+- Text: every visible string renders through `<Typography>` (`components/ui/typography.tsx`), never raw text classes on bare tags (D-020)
 - Animation: React `<ViewTransition>` for zoom and page turns, Motion (`motion/react`) for micro-interactions
 - Tests: Vitest + Testing Library
 - Package manager: pnpm only (`pnpm install`, `pnpm dlx`)
