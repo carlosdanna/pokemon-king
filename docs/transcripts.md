@@ -1500,6 +1500,231 @@ The ring shows now. It's the grey `ring` token, so I'll switch it to `foreground
 - *Bash*: Get end time, tick M3 boxes, review changes
 - *Bash*: Fill worklog row and commit M3
 
+### 2026-10-18 · M4
+
+#### 16:58 · Carlos
+
+Milestone M4 from docs/implementation-plan.md and requirements F3 to F7. Follow CLAUDE.md: log the start time first.
+
+Plan:
+- Search box in the header: partial, case-insensitive name match, results as you type.
+- /search results laid out as album pages (same BinderPage), filters for set, kind (Pokémon, Trainer, Energy), type and rarity (fixed rarity order), plus an Owned / All toggle defaulting to Owned.
+- All state in the URL (q, set, kind, type, rarity, owned, page); choose nuqs or useSearchParams and log the choice.
+- Empty state showing the query and a clear-filters button.
+- Pure filter functions with unit tests.
+
+Finish: tick M4 boxes, log end time, commit "feat: search and filters (M4)".
+
+- *Bash*: Log start time and survey project layout and M4 plan
+- *Bash*: Read requirements F3-F7, recent decisions, and data libs
+- *Bash*: Read layout, set page, binder page, nav, worklog
+- *Bash*: Read pages/tiles and list rarity, category, type values in data
+- *Bash*: Check card sizing CSS, toggle group, tests style
+
+#### 16:59 · Claude
+
+Planning M4. Start time logged as 16:58 CEST; I've read the data layer and album components. One scope question before I write the plan:
+
+
+*Claude asked:*
+
+> **Your brief says F3–F7, but the M4 bullets leave out F6 (sort, a Should) and F7 (a /browse page with counts, a Should). Should M4 include them?**
+> M4 bullets only (Recommended) / Add F6 sort / Add F6 and F7
+
+
+*Carlos answered:* Add F6 and F7 and I would like you to add as well a filter for legal as well
+
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M4 · Search, filters, sort and browse
+
+## Context
+M4 from docs/implementation-plan.md plus requirements F3–F7: search Ash's cards by name, filter them, sort them, keep everything in the URL so a link can be shared, and add a /browse page. Carlos also asked for F6 (sort), F7 (/browse) and an extra **legal** filter, which the M4 bullets did not include. Start time **2026-10-18 16:58 CEST** (logged before planning; it goes into the worklog row first thing).
+
+## Decisions to log first (docs/decisions.md, `date` for each)
+- **D-035** URL state through `useSearchParams` + `router.replace` in two small client components; the server page reads `searchParams` and does the filtering. *Rejected:* nuqs (new dependency for about 20 lines; the server does the filtering, so typed client state isn't needed).
+- **D-036** Route `/search` (album-page results) and `/browse`, replacing the requirements plan's `/cards` grid (D-010/D-016). Params: `q, set, kind (pokemon|trainer|energy), type, rarity, legal (standard|expanded), owned (absent = owned, `all`), sort (set|name|number|rarity, default set), page`. Invalid values are ignored. One value per filter; filters combine with AND. Name match ignores case and accents (`Flabebe` finds `Flabébé`). Results run in set release order, then card number; the other sorts break ties by that same order.
+- **D-037** Fixed rarity order: Common, Uncommon, Rare, Rare Holo, Holo Rare, Rare Holo LV.X, Rare PRIME, LEGEND, Holo Rare V, Holo Rare VMAX, Holo Rare VSTAR, Ultra Rare, Amazing Rare, Radiant Rare, Shiny rare, Shiny rare V, Shiny rare VMAX, Secret Rare, Promo, None. These are the 20 values in the data; anything unknown sorts last.
+- **D-038** A site-wide header in `RootLayout` holds the home link and the search box. While the box has focus, typing changes the URL as you type. With no debounce, each change starts a transition that replaces the one before it.
+- **D-039** Legal filter: `legal=standard|expanded` matches `card.legal[format] === true`; cards without `legal` data never match.
+
+## Code
+
+**`lib/search.ts`** (pure, no `server-only`) + **`lib/search.test.ts`**
+- `RARITY_ORDER`, `KINDS` (`pokemon→"Pokemon"`, …), `SORTS`, `LEGAL_FORMATS`
+- `parseSearch(params: Record<string, string | string[] | undefined>)` → `SearchState` (drops invalid values; `page` defaults to 1)
+- `filterCards(cards, state)` and `sortCards(cards, sort)`; `fold(s)` = NFD, accents stripped, lower case
+- `searchHref(state, patch)` → `/search?…`, leaves out defaults, and resets `page` whenever anything other than the page changes
+- Tests cover: partial or case/accent-insensitive names, each filter, filters together, owned vs all, legal with missing data, the rarity sort order and its ties, invalid params ignored, href round trip (`parseSearch(searchHref(s))` gives `s` back)
+
+**`lib/collection.ts`**: add `getAllCards()`: every set's `getSetCards` in `releaseDate` order, cached in a module variable like `setCards`. Each card also gets its set's `setName` for display. Search needs this list, and so do /browse counts and filter options.
+
+**Generalise paging (shared with the set page)**
+- `components/album/page-nav.tsx`: `pageHref(base, page)` sets `page` on a base URL that may already carry a query. `PageNav`/`TurnLink` and `SwipeTurn` take `base` in place of `setId`. The set page passes `/album/${setId}`.
+- Move the spread rendering in `app/album/[set]/page.tsx` (turnTargets, two `BinderPage`s, ViewTransition, SwipeTurn, PageNav) into `components/album/album-binder.tsx` as `AlbumBinder({ cards, page, base, title, logo? })`. It returns `null` when the page is out of range; callers decide what happens then (`notFound()` on the set page). Both routes then share it.
+- `BinderPage`: replace the `set: SetInfo` prop with `title` + optional `logo` (search pages have no single set).
+
+**`components/site-header.tsx`** (server) + **`components/search-box.tsx`** (client)
+- The header: home link ("Ash's Card Album") and the search box, added to `app/layout.tsx` above `{children}`.
+- SearchBox: `InputGroup`/`Input` with a search icon, `type="search"`, `aria-label="Search cards"`. The value shown is `draft ?? q`: while you type, your own text (`draft`) wins; on blur `draft` resets to null, so Back and "clear" stay in sync without an effect. On change it navigates with `startTransition` to `searchHref(currentState, { q })`: `replace` when already on /search, `push` from any other page (filters are kept on /search).
+- Increase the `15.5rem` height allowance in the `--card-w` rules in `app/globals.css` by the header's height, and add a `.binder-spread` variant for /search that also allows for the filter bar. Check sizes in a browser.
+
+**`app/search/page.tsx`** (server)
+- `parseSearch(await searchParams)` → filter → sort, then `<AlbumBinder cards={results} base={searchHref(state, {})} title=…>`, plus a count line ("42 cards"). Wrapped in Suspense like the set page; metadata `Search · Ash's Card Album`.
+- Empty state: "No cards match "<q>"" (or "No cards match these filters") with a **Clear filters** link to `searchHref({ q })` (keeps the query, goes back to Owned). If no filters are on, it shows **Show all cards** (`owned=all`) instead.
+- Page out of range with results → `notFound()`, like the set page.
+
+**`components/search-filters.tsx`** (client)
+- Props come from the server: options (sets with owned counts, types in the data, rarities in `RARITY_ORDER` order) and the parsed state.
+- Native `<select>`s for set, type, rarity, legal and sort (accessible, keyboard-native; there is no house Select). `ToggleGroup` for kind (All/Pokémon/Trainer/Energy) and Owned/All. Each change calls `router.replace(searchHref(state, patch), { scroll: false })`.
+- A "Clear filters" button shows whenever any filter is on. Labels go through `<Typography>`.
+
+**`app/browse/page.tsx`** (server, F7)
+- Three sections, owned cards only, counted from `getAllCards().filter(owned)`: Sets (release order), Types, Rarities (fixed order). Each row links to `searchHref({ set | type | rarity })`, styled like the `/album` list.
+- Links to /browse from the header and the home page.
+
+## Finish
+- Tick the M4 boxes in docs/implementation-plan.md and add a line noting that F6, F7 and legal were added (D-036/D-039).
+- `pnpm check`. Browser check in Chromium at 375 and 1440 px:
+  - Type "char": results appear as you type.
+  - Combine filters, then paste the URL into a new tab and get the same results (the M4 "done when").
+  - Empty state and Clear filters work.
+  - Card zoom from /search: the intercepting route works from the root, and focus returns to the pocket.
+  - Keyboard-only use of the box, the filters and the toggles; focus rings stay visible.
+  - Page turns on the results.
+  - Links from /browse.
+- Worklog end time, duration, outcome, hash. Append the transcript (`python3 -I scripts/transcript.py`) to docs/transcripts.md. Commit `feat: search and filters (M4)` with the Co-Authored-By line, then `git commit --amend --no-edit` to include the log.
+
+Not doing: multi-select filters, search by anything but name, recent searches (F11 is M5).
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Check worklog format, input group, typography API
+- *Bash*: Find pageHref callers and worklog table layout
+
+#### 17:02 · Claude
+
+Logging the session start and decisions.
+
+- *Bash*: Add worklog start row and decisions D-035 to D-039
+
+#### 17:02 · Claude
+
+Now the pure search module and its tests.
+
+- *Write*: lib/search.ts
+- *Write*: lib/search.test.ts
+- *Bash*: Run search tests and check release date format
+
+#### 17:03 · Claude
+
+Tests pass. Now the data accessor and the shared binder refactor.
+
+- *Bash*: Add getAllCards and switch paging to a base URL
+- *Bash*: Find remaining pageHref callers
+
+#### 17:04 · Claude
+
+Now the AlbumBinder extraction, BinderPage props, and the set page.
+
+- *Bash*: Update card page link and BinderPage props
+- *Write*: components/album/album-binder.tsx
+- *Bash*: Switch set page to the shared AlbumBinder
+
+#### 17:04 · Claude
+
+A JSX element is always truthy, so that out-of-range check is wrong. I'll use `getAlbumPage` as the existence check instead.
+
+- *Bash*: Fix set page existence check and typecheck
+
+#### 17:05 · Claude
+
+Paging refactor typechecks. Now the header, search box, filters and pages. Checking a few APIs first:
+
+- *Bash*: Check Typography props, ToggleGroupItem, next config, input styles
+- *Bash*: Read input styles for a matching native select
+- *Write*: components/search-box.tsx
+- *Bash*: Call useSearchParams unconditionally
+
+#### 17:06 · Claude
+
+Now the header, filter bar, search page and browse page.
+
+- *Write*: components/site-header.tsx
+- *Write*: components/search-filters.tsx
+
+#### 17:06 · Claude
+
+Spreading `DEFAULT_SEARCH` won't clear `set` etc. (those keys are absent), so I'll add a tested `clearFiltersHref` helper and use it in both places.
+
+- *Bash*: Add clearFiltersHref with a test and use it
+- *Write*: app/search/page.tsx
+- *Write*: app/browse/page.tsx
+- *Bash*: Add header to layout, parameterise binder height, typecheck and lint
+
+#### 17:07 · Claude
+
+Typecheck and lint pass. Now the browser check, using the repo's render script if it fits:
+
+- *Bash*: Merge CSS comments and look at the render script
+- *Bash*: Find a browser and earlier screenshot scripts
+- *Bash*: Look for an existing Playwright install and scripts
+- *Bash*: Copy the earlier Playwright setup into this session's scratchpad
+- *Bash*: Start dev server and smoke-test routes
+
+#### 17:09 · Claude
+
+A dev server is already running on port 3000, so I'll use that one.
+
+- *Bash*: Smoke-test routes on the running dev server
+
+#### 17:09 · Claude
+
+Routes respond. Now a Playwright pass: typing, filters, a pasted URL, the empty state, zoom and keyboard.
+
+- *Bash*: Run Playwright check of search, filters, empty state, zoom, keyboard
+
+#### 17:09 · Claude
+
+Two `<main>`s because Next keeps the previous route mounted but hidden, which is expected. I'll scope to the visible one.
+
+- *Bash*: Rerun Playwright check scoped to visible elements
+
+#### 17:10 · Claude
+
+Everything works: as-you-type results, filters, pasted URL, page turns, empty state, clear filters, zoom with focus returning, and the browse links go to the right hrefs. Now the screenshots:
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7b3e292c-a2ec-4ca5-a207-5cb726303221/scratchpad/search-1440.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7b3e292c-a2ec-4ca5-a207-5cb726303221/scratchpad/search-375.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7b3e292c-a2ec-4ca5-a207-5cb726303221/scratchpad/set-1440.png
+- *Bash*: Measure whether binders fit the viewport after the CSS change
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7b3e292c-a2ec-4ca5-a207-5cb726303221/scratchpad/fit-1440-browse.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/7b3e292c-a2ec-4ca5-a207-5cb726303221/scratchpad/empty-1440.png
+
+#### 17:13 · Claude
+
+Everything fits and renders. Running the full check:
+
+- *Bash*: Format and run lint, typecheck, Prettier and tests
+- *Bash*: Check changed files, tick M4 boxes, get end time
+- *Bash*: Fill worklog row and commit M4
+
+#### 17:13 · Claude
+
+Committed. Now the transcript, appended and amended in:
+
+- *Bash*: Find where the transcripts section ends
+- *Bash*: Check the end of the Claude Code sessions section
+
 ## claude.ai conversations
 
 To be added.

@@ -14,6 +14,7 @@ import {
   type SetCard,
   type SetInfo,
 } from "./album";
+import type { SearchCard } from "./search";
 
 const DATA = join(process.cwd(), "data");
 
@@ -94,6 +95,18 @@ export function getSetCards(setId: string): AlbumCard[] | null {
     setCards.set(setId, cards);
   }
   return cards;
+}
+
+let allCards: SearchCard[] | undefined;
+
+/** Every card of every set, in set release order then card number (D-036). */
+export function getAllCards(): SearchCard[] {
+  allCards ??= load()
+    .sets.toSorted((a, b) => a.releaseDate.localeCompare(b.releaseDate))
+    .flatMap((set) =>
+      (getSetCards(set.id) ?? []).map((c) => ({ ...c, setId: set.id })),
+    );
+  return allCards;
 }
 
 export function getAlbumPage(setId: string, page: number) {

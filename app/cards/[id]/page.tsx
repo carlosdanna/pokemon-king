@@ -39,7 +39,7 @@ async function Card({ params }: PageProps<"/cards/[id]">) {
     <>
       <header className="flex w-full max-w-5xl">
         <Link
-          href={pageHref(set.id, page)}
+          href={pageHref(`/album/${set.id}`, page)}
           className="inline-flex items-center gap-1 rounded-md px-2 py-1 outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50"
         >
           <ChevronLeft aria-hidden className="size-4" />

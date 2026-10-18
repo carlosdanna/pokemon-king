@@ -140,18 +140,23 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* Card width: by viewport width on phones, then also by height so a page fits on screen. */
+/* Card width: by viewport width on phones, then also by height so a page fits on screen.
+   --binder-chrome is the height everything but the 3x3 grid takes (site header, page header, filters). */
 .binder-spread {
+  --binder-chrome: 19rem;
   --card-w: min(calc((100vw - 3.5rem) / 3), 130px);
   display: flex;
   width: fit-content;
   margin-inline: auto;
 }
+.search-desk .binder-spread {
+  --binder-chrome: 27rem;
+}
 @media (width >= 640px) {
   .binder-spread {
     --card-w: min(
       calc((100vw - 6rem) / 3),
-      calc((100dvh - 15.5rem) / 3 * 245 / 337),
+      calc((100dvh - var(--binder-chrome)) / 3 * 245 / 337),
       200px
     );
   }
@@ -160,7 +165,7 @@
   .binder-spread {
     --card-w: min(
       calc((50vw - 6rem) / 3),
-      calc((100dvh - 15.5rem) / 3 * 245 / 337),
+      calc((100dvh - var(--binder-chrome)) / 3 * 245 / 337),
       220px
     );
   }

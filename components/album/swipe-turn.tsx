@@ -7,11 +7,11 @@ import { pageHref, type Turns } from "./page-nav";
 const MIN_SWIPE = 50;
 
 export function SwipeTurn({
-  setId,
+  base,
   turns,
   children,
 }: {
-  setId: string;
+  base: string;
   turns: Turns;
   children: ReactNode;
 }) {
@@ -46,7 +46,7 @@ export function SwipeTurn({
             ? turns.spreadPrev
             : turns.prev;
         if (target !== null)
-          router.push(pageHref(setId, target), {
+          router.push(pageHref(base, target), {
             scroll: false,
             transitionTypes: [forward ? "page-forward" : "page-back"],
           });

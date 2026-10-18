@@ -132,9 +132,10 @@ Done when: clicking any card zooms it with a morph, the panel shows correct data
 
 ### M4 · Search and filters (45 min)
 
-- [ ] Search box in the header (partial, case-insensitive name match)
-- [ ] Results view as album pages, with filters for set, kind, type and rarity and an Owned / All toggle (default Owned)
-- [ ] All state in the URL; empty state with the query and a clear-filters button
+- [x] Search box in the header (partial, case-insensitive name match)
+- [x] Results view as album pages, with filters for set, kind, type and rarity and an Owned / All toggle (default Owned)
+- [x] All state in the URL; empty state with the query and a clear-filters button
+- [x] Added at Carlos's request: sort (F6), `/browse` with counts (F7) and a legal-format filter (D-036, D-039)
 
 Done when: a filtered URL, pasted into a new tab, shows the same results.
 

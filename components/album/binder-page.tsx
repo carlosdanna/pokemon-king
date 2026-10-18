@@ -1,15 +1,18 @@
 import { cn } from "cn";
 import Image from "next/image";
 import { Typography } from "@/components/ui/typography";
-import { PAGE_SIZE, type AlbumPage, type SetInfo } from "@/lib/album";
+import { PAGE_SIZE, type AlbumPage } from "@/lib/album";
 import { CardTile } from "./card-tile";
 
 export function BinderPage({
-  set,
+  title,
+  logo,
   album,
   className,
 }: {
-  set: SetInfo;
+  title: string;
+  /** TCGdex logo base URL, for a set's own pages. */
+  logo?: string;
   album: AlbumPage;
   className?: string;
 }) {
@@ -22,10 +25,10 @@ export function BinderPage({
       )}
     >
       <header className="flex h-8 items-center gap-3">
-        {set.logo && (
+        {logo && (
           <div className="relative h-full w-20 shrink-0">
             <Image
-              src={`${set.logo}.webp`}
+              src={`${logo}.webp`}
               alt=""
               fill
               unoptimized
@@ -35,7 +38,7 @@ export function BinderPage({
           </div>
         )}
         <Typography variant="small" color="muted" className="truncate">
-          {set.name}
+          {title}
         </Typography>
       </header>
       <ol className="grid grid-cols-[repeat(3,var(--card-w))] gap-2 sm:gap-3">
