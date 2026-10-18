@@ -243,6 +243,227 @@ Please append each one at the of its session
 - *Edit*: CLAUDE.md
 - *Bash*: Add D-017 and refresh this session's transcript
 
+### 2026-10-18 · M0 (part 1, paused)
+
+#### 10:37 · Carlos
+
+Milestone M0 from docs/implementation-plan.md. Follow the CLAUDE.md working rules: log the start time first.
+
+Plan:
+- Scaffold Next.js 16 (App Router, TypeScript strict, ESLint, Tailwind, pnpm) into the existing repo without overwriting docs/, data/, private/ or CLAUDE.md.
+- shadcn init; add Button, Badge, Tabs, Sheet, Drawer, Dialog, Command, Toggle Group, Skeleton, Sonner.
+- Install motion and react-parallax-tilt. Check the installed React version supports <ViewTransition> (React 19.3+); if not, log a decision with the workaround.
+- next.config: remote image pattern for images.pokemontcg.io.
+- Vitest + Testing Library with one passing smoke test; scripts for lint, typecheck, test.
+- GitHub Actions workflow running lint, typecheck and test on push.
+- .env.example listing APP_PASSWORD, SESSION_SECRET and the Upstash Redis variables (values empty).
+- A placeholder home page saying "Ash's Card Album".
+- Tell me the exact steps to create the public GitHub repo and link it to Vercel; wait for me to confirm the first deploy URL, then record it in the worklog.
+
+Finish: tick M0 boxes, log end time and duration, commit "chore: scaffold app (M0)".
+
+- *Bash*: Inspect repo, M0 plan, worklog, decisions
+- *Bash*: Check decision format, transcripts, versions
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M0 · Setup and deploy
+
+## Context
+Repo has only docs/, data/, private/, scripts/, CLAUDE.md, .gitignore (already Next.js-ready, keeps private/ and .env* out). M0 scaffolds the app, tooling and CI so the empty app can deploy to Vercel. Registry today: next 16.4.2, react 19.3.1 (stable, so `<ViewTransition>` should be available). Node 24, pnpm 11.
+
+## Steps
+1. `date '+%Y-%m-%d %H:%M %Z'` → add M0 row to docs/worklog.md (start time, rest blank).
+2. Scaffold in scratchpad, then copy in (create-next-app refuses non-empty dirs):
+   `pnpm create next-app@16.4.2 <scratch>/app --ts --eslint --tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm --yes`
+   then `rsync -a --exclude .git --exclude .gitignore --exclude CLAUDE.md --exclude AGENTS.md --exclude README.md --exclude node_modules <scratch>/app/ ./` and `pnpm install`. Keep our .gitignore (already covers Next). Confirm `tsconfig.json` has `"strict": true`.
+3. `pnpm dlx shadcn@latest init -d`; `pnpm dlx shadcn@latest add button badge tabs sheet drawer dialog command toggle-group skeleton sonner`.
+4. `pnpm add motion react-parallax-tilt`.
+5. ViewTransition check: `node -e "console.log(typeof require('react').ViewTransition)"` and check Next's vendored React (`next/dist/compiled/react`), and whether Next 16.4 still needs `experimental.viewTransition`. If unsupported → add D-018 with workaround before M3 code; if supported only behind the flag → enable it in next.config and log D-018 (adds config).
+6. `next.config.ts`: `images.remotePatterns: [{ protocol: 'https', hostname: 'images.pokemontcg.io' }]`.
+7. Tests: `pnpm add -D vitest @vitejs/plugin-react jsdom @testing-library/react @testing-library/jest-dom @testing-library/dom vite-tsconfig-paths`; `vitest.config.mts` (jsdom, react plugin, tsconfig paths, setup file importing jest-dom); `app/page.test.tsx` renders Home and asserts "Ash's Card Album". Scripts: `lint: eslint`, `typecheck: tsc --noEmit`, `test: vitest run`.
+8. `app/page.tsx`: replace starter with a `<main>` + `<h1>Ash's Card Album</h1>`; drop starter SVGs in public/; set metadata title in layout.
+9. `.github/workflows/ci.yml`: on push + pull_request; checkout, pnpm/action-setup, setup-node 24 with pnpm cache, `pnpm install --frozen-lockfile`, lint, typecheck, test.
+10. `.env.example`: `APP_PASSWORD=`, `SESSION_SECRET=`, `UPSTASH_REDIS_REST_URL=`, `UPSTASH_REDIS_REST_TOKEN=` (names Upstash/Vercel Marketplace inject; verify at M5).
+11. Verify locally: `pnpm lint && pnpm typecheck && pnpm test && pnpm build`.
+12. Commit `chore: scaffold app (M0)` (with Co-Authored-By line), then give the user GitHub + Vercel steps:
+    - `gh repo create pokemon-king --public --source=. --remote=origin --push`
+    - vercel.com/new → Import that repo → Framework Next.js (auto) → Deploy (no env vars needed yet).
+    - Check Actions tab shows CI green.
+    Wait for the user's deploy URL.
+13. After URL: record it in worklog row; tick M0 boxes in implementation-plan.md; `date` → end time, duration, outcome; append transcript (`python3 -I scripts/transcript.py`) as `### 2026-10-18 · M0` at end of "Claude Code sessions"; `git commit --amend --no-edit` to fold in docs (commit hash in worklog = pre-amend short hash is unavoidable; fill it with the hash after first commit, as the Bootstrap row did). Push with `git push --force-with-lease` since the amended commit was already pushed — will ask before force-pushing.
+
+## Critical files
+package.json, next.config.ts, tsconfig.json, vitest.config.mts, vitest.setup.ts, app/page.tsx, app/page.test.tsx, app/layout.tsx, components/ui/*, lib/utils.ts, components.json, .github/workflows/ci.yml, .env.example, docs/worklog.md, docs/implementation-plan.md, docs/transcripts.md, docs/decisions.md (only if step 5 needs it).
+
+## Verification
+Local: lint, typecheck, test, build all pass. Remote: GitHub Actions green; Vercel URL shows "Ash's Card Album".
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Get session start time
+- *Bash*: Log start row; scaffold Next app in scratchpad
+- *Bash*: Inspect scaffold output
+- *Bash*: Copy scaffold into repo and install
+- *Bash*: Initialise shadcn with defaults
+
+#### 10:47 · Claude
+
+Scaffold and shadcn init done; adding components and libraries now.
+
+- *Bash*: Add shadcn components and install deps
+- *Bash*: Check deps and ViewTransition support
+- *Bash*: Check VT flag, cn/shadcn usage, component base
+- *Bash*: Check VT flag, cn/shadcn usage, component base
+- *Bash*: Inspect the cn package and VT guide
+- *Bash*: Check component imports and starter files
+
+#### 10:47 · Claude
+
+Components installed; now writing page, config, tests, CI and env files.
+
+- *Bash*: Write page, configs, tests, CI, env example
+- *Bash*: Run lint, typecheck, test and build
+
+#### 10:48 · Claude
+
+`LayoutProps` comes from Next's generated route types, which a fresh CI checkout doesn't have yet, so I'll make typecheck run `next typegen` first.
+
+- *Bash*: Make typecheck generate route types first
+
+#### 10:48 · Claude
+
+All four checks pass. One deviation to log: shadcn now builds on Base UI, not the Radix setup that D-013 names.
+
+- *Bash*: Log D-018 for the Base UI component base
+- *Bash*: Commit the M0 scaffold
+
+#### 10:48 · Claude
+
+The scaffold is committed as `5b03a56` (`chore: scaffold app (M0)`). Lint, typecheck, the smoke test and `pnpm build` all pass locally.
+
+**What's in it**
+- **App:** Next.js 16.4.2 with React 19.3.0, TypeScript strict, ESLint and Tailwind 4. The home page is just the heading "Ash's Card Album".
+- **Components:** shadcn with Button, Badge, Tabs, Sheet, Drawer, Dialog, Command, Toggle Group, Skeleton and Sonner. shadcn also added the Input, Textarea, Toggle and Input Group components, because some of these depend on them.
+- **Libraries:** `motion` and `react-parallax-tilt` are installed.
+- **`<ViewTransition>`:** both the installed React and the React copy bundled inside Next export it. Next 16.4's guide doesn't mention a setting to turn it on, so I didn't log a decision for it.
+- **Images:** `next.config.ts` allows images from `images.pokemontcg.io`.
+- **Tests and scripts:** Vitest and Testing Library are set up, with one passing smoke test in `app/page.test.tsx`. The scripts are `lint`, `typecheck` and `test`. `typecheck` runs `next typegen` first, because the scaffolded layout uses route types that only exist after a build, so a fresh CI checkout would otherwise fail.
+- **CI:** `.github/workflows/ci.yml` runs lint, typecheck and test on every push and pull request.
+- **`.env.example`:** lists `APP_PASSWORD`, `SESSION_SECRET`, `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, all empty.
+
+**One change from the plan, logged as D-018:** shadcn now builds its components on Base UI (`@base-ui/react`) instead of Radix, which D-013 names. Base UI gives the same keyboard and focus handling, so I kept shadcn's default.
+
+**Your steps**
+1. Create the public repo and push: `! gh repo create pokemon-king --public --source=. --remote=origin --push`
+2. Check that the CI run in the repo's **Actions** tab goes green.
+3. Go to https://vercel.com/new and choose **Import** next to `pokemon-king`. Vercel detects Next.js, and no environment variables are needed yet. Click **Deploy**.
+4. Send me the production URL.
+
+Once you send the URL I'll record it in the worklog, tick the M0 boxes, log the end time and duration, append the transcript and amend the commit. The amended commit then needs a `git push --force-with-lease`, and I'll ask you before running it.
+
+I left Next's generated `AGENTS.md` in the commit, since `next dev` re-creates it anyway. I haven't checked whether `gh` is logged in on your machine.
+
+#### 10:50 · Carlos
+
+I would like to have a precommit command to check for lint errors, types, prettier and test, remove the github action because I will work directly in the main branch for this project unless I state it otherwise
+
+- *Bash*: Check remote, status and CI mentions in plans
+- *Bash*: Check push state; install Prettier
+
+#### 10:50 · Claude
+
+The M0 commit is already on `origin/main`, so this goes in a new commit rather than an amend.
+
+- *Bash*: Remove CI, add Prettier, pre-commit hook and scripts
+
+#### 10:50 · Claude
+
+Prettier reformatted the shadcn files to its defaults. Next: log the decision and update the plan wording.
+
+- *Bash*: Log D-019, update plans, run full check
+- *Bash*: Commit through the new pre-commit hook
+- *Bash*: Save memory about working on main
+
+#### 10:51 · Claude
+
+I removed the GitHub Actions workflow and added a pre-commit check instead. It's committed as `79671be`, and the hook ran and passed on that commit itself. It's not pushed yet.
+
+- **`pnpm check`** runs lint, typecheck, `prettier --check` and the tests, and stops at the first failure.
+- **Hook:** `.githooks/pre-commit` runs `pnpm check` before every commit. The `prepare` script points git at that folder (`core.hooksPath`), so `pnpm install` sets it up on any fresh clone. It's already set up here.
+- **Prettier:** installed with its default settings. `pnpm format` fixes formatting and `pnpm format:check` only checks it. I ran it once, which reformatted the shadcn components and the starter files. `.prettierignore` skips `data/`, `docs/`, `private/`, all Markdown files and the lockfile, so your hand-written docs stay as they are.
+- **Docs:** logged as D-019. I changed the M0 line and its "Done when" in the implementation plan, and N9 in the requirements, from "CI" to the pre-commit check.
+- **Memory:** I noted that this project works directly on `main` with no branches, PRs or CI unless you say otherwise.
+
+Components added later with `shadcn add` won't match Prettier's formatting, so the hook will block the commit until you run `pnpm format`. `git commit --no-verify` skips the check.
+
+M0 is still waiting on your Vercel deploy URL. When you send it, I'll push and close out the worklog, the M0 checkboxes and the transcript.
+
+#### 10:53 · Carlos
+
+Typography here will be very important I would like you to add a Typography command that will replace any string we are going to use and standarize it based on cva, the typography should be able to replace html tags through as, it should have a number of variants, colors, size and weight.
+
+- *Bash*: Check theme tokens and a cva component pattern
+- *Write*: components/ui/typography.tsx
+
+#### 10:54 · Claude
+
+Now a test, the home page switched to it, and the doc updates.
+
+- *Bash*: Add tests, use Typography on home, log D-020, run checks
+
+#### 10:54 · Claude
+
+The `as` prop's generic props don't type-check against JSX. I'll try narrowing the props inside the component.
+
+- *Bash*: Narrow tag and props inside Typography
+
+#### 10:54 · Claude
+
+Typecheck passes now. Next I'll check that callers still get prop types for the chosen tag.
+
+- *Bash*: Add a type-level test and run all checks
+- *Bash*: Commit the Typography component
+
+#### 10:55 · Claude
+
+I added a `<Typography>` component in `components/ui/typography.tsx`, built on cva like the other shadcn components. It's committed as `8bb017b`; the pre-commit check passed and all 5 tests pass. Nothing is pushed yet. The home page heading now uses it:
+
+```tsx
+<Typography variant="h1">Ash&apos;s Card Album</Typography>
+<Typography variant="h1" as="span" size="2xl" weight="medium" color="muted">…</Typography>
+```
+
+- **`variant`:** `h1`, `h2`, `h3`, `h4`, `lead`, `body` (the default), `small`, `caption` and `overline`. Each one also picks its own HTML tag (`h1` renders an `<h1>`, `body` a `<p>`, `caption` a `<span>`, and so on).
+- **`as`:** renders a different tag but keeps the variant's styles. Props are typed for the tag you pick, so `as="time"` accepts `dateTime` and `as="p"` rejects it. You can choose from 22 text-related tags, including `div`.
+- **`color`:** `default`, `muted`, `primary`, `destructive` or `inherit`, all from the theme colours.
+- **`size`:** `xs` up to `4xl`.
+- **`weight`:** `normal`, `medium`, `semibold` or `bold`.
+- **Overrides:** `size`, `weight` and `color` replace the variant's own values; a test checks that `h1` with `size="sm"` drops `text-4xl`. A `className` you pass still wins over everything.
+
+**Rule:** logged as D-020. I also added a line to CLAUDE.md saying every visible string goes through `<Typography>` rather than text classes on plain tags, so later sessions follow it.
+
+**Type cast:** inside the component, the chosen tag is cast to `span` so TypeScript accepts it. It has a one-line comment, and callers are still type-checked through the component's props.
+
+Headings use the `font-heading` token, which is still the same Geist font as body text. Choosing real fonts is a separate decision I haven't made.
+
+Vitest now prints a warning that the `vite-tsconfig-paths` plugin can be replaced by a built-in Vite setting. It's harmless and I left it.
+
+#### 10:55 · Carlos
+
+mark a pause on the logs here I will come back at a later time
+
+- *Bash*: Get time, hash and preview transcript output
+- *Bash*: Log pause, append transcript, commit
+
 ## claude.ai conversations
 
 To be added.

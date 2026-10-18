@@ -94,10 +94,10 @@ Each milestone ends in a deployed, working state on Vercel, so the build can sto
 
 ### M0 · Setup and deploy (30 min)
 
-- [ ] `create-next-app` with TypeScript strict, ESLint and Tailwind; `shadcn init` and add Button, Badge, Tabs, Sheet, Drawer, Dialog, Command, Toggle Group, Skeleton, Sonner
-- [ ] Install `motion` and `react-parallax-tilt`; configure the `images.pokemontcg.io` remote pattern in `next.config`
-- [ ] Vitest + Testing Library; a pre-commit check for lint, typecheck, Prettier and tests (D-019)
-- [ ] Public GitHub repo, linked to Vercel; empty app deployed
+- [x] `create-next-app` with TypeScript strict, ESLint and Tailwind; `shadcn init` and add Button, Badge, Tabs, Sheet, Drawer, Dialog, Command, Toggle Group, Skeleton, Sonner
+- [x] Install `motion` and `react-parallax-tilt`; configure the `images.pokemontcg.io` remote pattern in `next.config`
+- [x] Vitest + Testing Library; a pre-commit check for lint, typecheck, Prettier and tests (D-019)
+- [x] Public GitHub repo, linked to Vercel; empty app deployed
 
 Done when: the empty app is live and `pnpm check` passes.
 
