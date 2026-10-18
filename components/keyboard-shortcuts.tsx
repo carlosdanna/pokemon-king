@@ -29,6 +29,10 @@ const SHORTCUTS = [
 
 const GO: Record<string, string> = { h: "/", a: "/album" };
 
+const OPEN = "open-shortcuts";
+/** For the header's `?` button, outside the key listener. */
+export const openShortcuts = () => window.dispatchEvent(new Event(OPEN));
+
 /** Site-wide shortcuts (D-046), the help overlay and the command palette. */
 export function KeyboardShortcuts({
   sets,
@@ -105,6 +109,11 @@ export function KeyboardShortcuts({
     return () => document.removeEventListener("keydown", listener);
   }, []);
   useEffect(() => onOpenPalette(() => setPalette(true)), []);
+  useEffect(() => {
+    const open = () => setHelp(true);
+    window.addEventListener(OPEN, open);
+    return () => window.removeEventListener(OPEN, open);
+  }, []);
 
   return (
     <>

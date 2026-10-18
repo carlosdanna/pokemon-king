@@ -125,17 +125,17 @@ describe("filterCards", () => {
   });
 
   it("filters by set, kind, type, rarity and legality", () => {
-    expect(names(filterCards(cards, search({ set: "base1" })))).toEqual([
+    expect(names(filterCards(cards, search({ set: ["base1"] })))).toEqual([
       "Charizard",
     ]);
     expect(names(filterCards(cards, search({ kind: "trainer" })))).toEqual([
       "Potion",
     ]);
-    expect(names(filterCards(cards, search({ type: "Fire" })))).toEqual([
+    expect(names(filterCards(cards, search({ type: ["Fire"] })))).toEqual([
       "Charmander",
       "Charizard",
     ]);
-    expect(names(filterCards(cards, search({ rarity: "Common" })))).toEqual([
+    expect(names(filterCards(cards, search({ rarity: ["Common"] })))).toEqual([
       "Charmander",
     ]);
     // Cards without legality data never match.
@@ -145,11 +145,17 @@ describe("filterCards", () => {
     expect(filterCards(cards, search({ legal: "standard" }))).toEqual([]);
   });
 
+  it("matches any selected value within a filter", () => {
+    expect(
+      names(filterCards(cards, search({ rarity: ["Common", "Rare Holo"] }))),
+    ).toEqual(["Charmander", "Charizard"]);
+  });
+
   it("combines filters", () => {
     expect(
-      names(filterCards(cards, search({ q: "char", rarity: "Common" }))),
+      names(filterCards(cards, search({ q: "char", rarity: ["Common"] }))),
     ).toEqual(["Charmander"]);
-    expect(filterCards(cards, search({ q: "potion", type: "Fire" }))).toEqual(
+    expect(filterCards(cards, search({ q: "potion", type: ["Fire"] }))).toEqual(
       [],
     );
   });
@@ -220,22 +226,32 @@ describe("parseSearch and searchHref", () => {
   it("round-trips a full state through the URL", () => {
     const state = search({
       q: "char",
-      set: "base1",
+      set: ["base1", "base2"],
       kind: "pokemon",
-      type: "Fire",
-      rarity: "Rare Holo",
+      type: ["Fire", "Water"],
+      rarity: ["Rare Holo"],
       legal: "expanded",
       owned: false,
       sort: "rarity",
       page: 3,
     });
     const url = new URL(searchHref(state, { page: 3 }), "http://x");
-    expect(parseSearch(Object.fromEntries(url.searchParams))).toEqual(state);
+    const params = Object.fromEntries(
+      [...url.searchParams.keys()].map((k) => [k, url.searchParams.getAll(k)]),
+    );
+    expect(parseSearch(params)).toEqual(state);
+  });
+
+  it("keeps every value of set, type and rarity, once each", () => {
+    const state = parseSearch({ set: ["base1", " base2 ", "base1", ""] });
+    expect(state.set).toEqual(["base1", "base2"]);
+    expect(parseSearch({ type: "Fire" }).type).toEqual(["Fire"]);
+    expect(searchHref(state, {})).toBe("/search?set=base1&set=base2");
   });
 
   it("goes back to page 1 when anything but the page changes", () => {
     const state = search({ q: "char", page: 4 });
-    expect(searchHref(state, { type: "Fire" })).toBe(
+    expect(searchHref(state, { type: ["Fire"] })).toBe(
       "/search?q=char&type=Fire",
     );
     expect(searchHref(state, { page: 5 })).toBe("/search?q=char&page=5");
@@ -244,7 +260,7 @@ describe("parseSearch and searchHref", () => {
   it("clears filters but keeps the query and sort", () => {
     const state = search({
       q: "char",
-      type: "Fire",
+      type: ["Fire"],
       owned: false,
       sort: "name",
       page: 2,
@@ -255,6 +271,7 @@ describe("parseSearch and searchHref", () => {
   it("counts owned = all as a filter, the query and sort not", () => {
     expect(hasFilters(search({ q: "x", sort: "name" }))).toBe(false);
     expect(hasFilters(search({ owned: false }))).toBe(true);
-    expect(hasFilters(search({ rarity: "Rare" }))).toBe(true);
+    expect(hasFilters(search({ rarity: ["Rare"] }))).toBe(true);
+    expect(hasFilters(search({ rarity: [] }))).toBe(false);
   });
 });

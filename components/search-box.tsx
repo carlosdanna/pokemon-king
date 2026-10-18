@@ -8,6 +8,7 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import { Typography } from "@/components/ui/typography";
 import { saveSearch } from "@/lib/recent-searches";
 import { DEFAULT_SEARCH, parseSearch, searchHref } from "@/lib/search";
 
@@ -22,7 +23,12 @@ export function SearchBox() {
   const onSearch = usePathname() === "/search";
   const params = useSearchParams();
   const state = onSearch
-    ? parseSearch(Object.fromEntries(params))
+    ? // getAll: set, type and rarity repeat (D-049).
+      parseSearch(
+        Object.fromEntries(
+          [...params.keys()].map((k) => [k, params.getAll(k)]),
+        ),
+      )
     : DEFAULT_SEARCH;
   // While typing your own text wins; on blur the URL does again (Back, clear filters).
   const [draft, setDraft] = useState<string | null>(null);
@@ -42,21 +48,23 @@ export function SearchBox() {
   return (
     <form
       role="search"
-      className="w-full max-w-sm"
+      className="w-full"
       onSubmit={(e) => {
         e.preventDefault();
         saveSearch(draft ?? state.q);
         go(draft ?? state.q);
       }}
     >
+      {/* Styled like the header's SearchTrigger. */}
       <InputGroup className="h-9 bg-background">
         <InputGroupAddon>
-          <Search aria-hidden />
+          <Search aria-hidden className="size-4" />
         </InputGroupAddon>
         <InputGroupInput
           type="search"
           aria-label="Search by card name, set or number"
-          placeholder="Card, set or number"
+          placeholder="Search cards and sets"
+          className="text-sm"
           value={draft ?? state.q}
           onChange={(e) => {
             const q = e.target.value;
@@ -72,6 +80,16 @@ export function SearchBox() {
             setDraft(null);
           }}
         />
+        <InputGroupAddon align="inline-end" className="max-sm:hidden">
+          <Typography
+            as="span"
+            variant="caption"
+            aria-hidden
+            className="rounded border px-1.5 py-0.5 font-mono"
+          >
+            /
+          </Typography>
+        </InputGroupAddon>
       </InputGroup>
     </form>
   );

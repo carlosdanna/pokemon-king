@@ -92,13 +92,14 @@ export function CardOverlay({ card, set }: { card: AlbumCard; set: SetInfo }) {
       onClick={(e) => e.target === e.currentTarget && close()}
       className="m-0 h-dvh max-h-none w-full max-w-none overflow-y-auto bg-transparent p-4 backdrop:bg-black/40 backdrop:backdrop-blur-xs lg:p-8"
     >
-      <div className="relative mx-auto grid max-w-5xl items-start gap-8 lg:mt-[8dvh] lg:grid-cols-2 lg:rounded-xl lg:bg-popover lg:p-8 lg:ring-1 lg:ring-foreground/10">
+      <div className="relative mx-auto grid max-w-5xl items-start gap-8 max-lg:pt-10 lg:mt-[8dvh] lg:grid-cols-2 lg:rounded-xl lg:bg-popover lg:p-8 lg:ring-1 lg:ring-foreground/10">
         <ZoomedCard
           card={card}
           className={cn(
             "mx-auto",
             zoomedWidth,
-            "max-lg:max-w-[min(20rem,calc(50dvh*245/337))]",
+            // Room above for the close button and below for the badge, clear of the drawer.
+            "max-lg:max-w-[min(20rem,calc((50dvh-4.5rem)*245/337))]",
           )}
         />
         {desktop && <CardPanel card={card} set={set} />}
@@ -107,7 +108,7 @@ export function CardOverlay({ card, set }: { card: AlbumCard; set: SetInfo }) {
           size="icon"
           aria-label="Close"
           onClick={close}
-          className="absolute -top-2 right-0 rounded-full lg:top-3 lg:right-3"
+          className="absolute top-0 right-0 rounded-full lg:top-3 lg:right-3"
         >
           <XIcon aria-hidden />
         </Button>

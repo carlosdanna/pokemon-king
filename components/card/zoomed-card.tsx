@@ -22,7 +22,7 @@ export function ZoomedCard({
   const alt = `${card.name}, number ${card.number}`;
 
   return (
-    <div className={cn("relative", className)}>
+    <div className={cn("flex flex-col items-center gap-2", className)}>
       <ViewTransition name={`card-${card.id}`} share="morph" default="none">
         <Tilt
           tiltEnable={!reduceMotion}
@@ -57,10 +57,8 @@ export function ZoomedCard({
         </Tilt>
       </ViewTransition>
       {!card.owned && (
-        <Badge
-          variant="secondary"
-          className="absolute top-3 left-1/2 z-10 -translate-x-1/2 shadow-md"
-        >
+        // Under the card, not over its name line.
+        <Badge variant="secondary" className="shadow-md">
           <Typography as="span" variant="caption" color="inherit">
             Not in collection
           </Typography>

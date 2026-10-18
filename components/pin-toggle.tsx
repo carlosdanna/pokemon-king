@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "cn";
-import { Pin } from "lucide-react";
+import { Star, StarOff } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { toggleFavourite, useFavourites } from "@/lib/favourites";
 
@@ -36,7 +36,12 @@ export function PinToggle({
         className,
       )}
     >
-      <Pin aria-hidden className={cn("size-4", pinned && "fill-current")} />
+      {/* Two outline icons, not a fill: filling the outline distorted it (D-051). */}
+      {pinned ? (
+        <StarOff aria-hidden className="size-4" />
+      ) : (
+        <Star aria-hidden className="size-4" />
+      )}
     </motion.button>
   );
 }

@@ -11,7 +11,9 @@ export function SearchTrigger() {
       type="button"
       onClick={openPalette}
       aria-keyshortcuts="Control+K Meta+K"
-      className="flex h-9 w-full max-w-xs items-center gap-2 rounded-lg border border-input bg-background px-2.5 text-muted-foreground outline-none hover:bg-muted focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+      aria-label="Search cards and sets"
+      // Icon only on phones, where the text was squeezed to "Sear…".
+      className="flex h-9 items-center gap-2 max-sm:w-9 max-sm:justify-center sm:w-full sm:max-w-xs rounded-lg border border-input bg-background px-2.5 text-muted-foreground outline-none hover:bg-muted focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
     >
       <Search aria-hidden className="size-4 shrink-0" />
       <Typography
@@ -19,7 +21,7 @@ export function SearchTrigger() {
         variant="small"
         color="inherit"
         weight="normal"
-        className="truncate"
+        className="truncate max-sm:hidden"
       >
         Search cards and sets
       </Typography>

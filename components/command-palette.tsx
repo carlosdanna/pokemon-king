@@ -39,6 +39,7 @@ const PAGES = [
   { name: "Home", href: "/" },
   { name: "Album", href: "/album" },
   { name: "Browse", href: "/browse" },
+  { name: "Pinned", href: "/pinned" },
 ];
 
 /** Ctrl/Cmd + K: jump to a page, set or card by name (D-047). */

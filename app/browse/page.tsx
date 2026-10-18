@@ -52,15 +52,15 @@ export default function BrowsePage() {
 
   const sets: Row[] = getSetSummaries()
     .filter((s) => s.owned > 0)
-    .map((s) => ({ label: s.name, count: s.owned, filter: { set: s.id } }));
+    .map((s) => ({ label: s.name, count: s.owned, filter: { set: [s.id] } }));
   const typeRows: Row[] = [...types]
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([type, count]) => ({ label: type, count, filter: { type } }));
+    .map(([type, count]) => ({ label: type, count, filter: { type: [type] } }));
   const rarityRows: Row[] = RARITY_ORDER.filter((r) => rarities.has(r)).map(
     (rarity) => ({
       label: rarity,
       count: rarities.get(rarity) ?? 0,
-      filter: { rarity },
+      filter: { rarity: [rarity] },
     }),
   );
 

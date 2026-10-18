@@ -66,6 +66,12 @@ describe("CardPanel", () => {
     expect(screen.getByText("100")).toBeInTheDocument();
   });
 
+  it("links the set name to its album", () => {
+    render(<CardPanel card={charizard} set={set} />);
+    for (const link of screen.getAllByRole("link", { name: "Base Set" }))
+      expect(link).toHaveAttribute("href", `/album/${set.id}`);
+  });
+
   it("lists missing resistances as none listed", () => {
     search = new URLSearchParams("tab=weaknesses");
     render(<CardPanel card={charizard} set={set} />);

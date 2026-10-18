@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { ReactNode } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -38,6 +39,17 @@ const modifiers = (list?: TypeModifier[]) =>
 
 const legality = (legal: boolean) => (legal ? "Legal" : "Not legal");
 
+function SetLink({ set }: { set: SetInfo }) {
+  return (
+    <Link
+      href={`/album/${set.id}`}
+      className="rounded-sm underline underline-offset-2 outline-none hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50"
+    >
+      {set.name}
+    </Link>
+  );
+}
+
 export function CardPanel({ card, set }: { card: AlbumCard; set: SetInfo }) {
   const searchParams = useSearchParams();
   const raw = searchParams.get("tab");
@@ -52,20 +64,23 @@ export function CardPanel({ card, set }: { card: AlbumCard; set: SetInfo }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-start justify-between gap-3">
+      {/* Pin on the left, as on tiles; the overlay's close button owns the top right. */}
+      <div className="flex items-start gap-3">
+        <PinToggle id={card.id} name={card.name} className="mt-0.5 shrink-0" />
         <div>
           <Typography variant="h3" as="h2">
             {card.name}
           </Typography>
           <Typography variant="caption" as="p">
-            {set.name} · #{card.number}
+            <SetLink set={set} /> · #{card.number}
           </Typography>
         </div>
-        <PinToggle id={card.id} name={card.name} className="shrink-0" />
       </div>
 
       <dl>
-        <Fact label="Set">{set.name}</Fact>
+        <Fact label="Set">
+          <SetLink set={set} />
+        </Fact>
         <Fact label="Number">{card.number}</Fact>
         <Fact label="Rarity">{card.rarity}</Fact>
         <Fact label="Copies owned">{card.quantity}</Fact>

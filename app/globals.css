@@ -293,8 +293,14 @@
   animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
 }
 
+/* overscroll: Chromium's sideways swipe-to-go-back fired under an open card
+   or palette, closing and reopening the overlay (history back / forward). */
 html:has(dialog[open]) {
   overflow: hidden;
+  overscroll-behavior-x: none;
+}
+html:has([role="dialog"]) {
+  overscroll-behavior-x: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

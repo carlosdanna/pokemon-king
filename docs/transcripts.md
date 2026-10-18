@@ -2119,6 +2119,443 @@ Everything passes at both widths. Last visual check: the header trigger, and the
 - *Bash*: Tick M6 boxes and fill worklog row
 - *Bash*: Commit M6 and generate session transcript
 
+### 2026-10-18 · Polish
+
+#### 18:25 · Carlos
+
+Few things I would like you to fix in this project
+
+
+
+* Fix the inconsitencies between button sizes in the application ie. the logout button is smaller than album and browse.
+* The fill current property we are using for the favorite and is deforming the icon I would prefer to switch between icons and lets keep the positioning of this icon consistent to the left side.
+* I am noticing multiple objects overlapping I would like to avoid this it doesn't look good.
+* In the card component I where it shows the set I would like that to be a link as well to the set page
+* The animations don't seem to be working
+* Add a button with a question mark in it which will link to the hotkeys of the application
+* Reorganize the search page to make it make sense
+#####################################
+# Search                            #
+# 213 cards in Ash's collection     #
+#-----------------------------------#
+# |Search input field              |#
+# |Filters (multiline)             |#
+#-----------------------------------#
+#####################################
+    - Set should be multiselect
+    - Type should be multiselect
+    - Rartity should be multiselect
+* Search in the home page should look similar to the one in the navigation bar.
+* Let's keep pinned elements to maximun of 12 for lg screens, 8 for mobile and a link to another page for all pinned cards
+
+- *Bash*: List project files and sizes
+- *Bash*: Read key components
+- *Read*: /home/cduser/.claude/projects/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/tool-results/bklce0d9p.txt
+- *Bash*: Read search lib, config, overlay and docs
+- *Read*: /home/cduser/.claude/projects/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/tool-results/b3b73xlhc.txt
+
+#### 18:25 · Claude
+
+Still reading the codebase to plan the fixes. One likely cause for the broken animations: `next.config.ts` doesn't turn on View Transitions. I'm checking that against the installed Next docs now.
+
+- *Bash*: Check viewTransition config and CSS
+- *Bash*: Read Next view-transition guide
+- *Bash*: Check SetInfo, palette, button sizes, filter usages
+- *Bash*: Find usages of search filter fields
+
+*Claude asked:*
+
+> **Which icon pair should the pin/favourite button switch between (no fill)?**
+> Pin → PinOff / Star → StarOff / Bookmark → BookmarkCheck
+> **For the home page search, which approach?**
+> Restyle home SearchBox (Recommended) / Reuse nav SearchTrigger
+> **Which overlaps have you noticed? I'll also check every page at 375, 1024 and 1440 px in the browser.**
+> Zoomed card: pin vs close / Header on mobile / Card tiles / Not sure, audit all
+> **Which animations look broken to you?**
+> Card zoom morph / Page turns / All of them
+
+
+*Carlos answered:* Star → StarOff; Restyle home SearchBox (Recommended); Zoomed card: pin vs close, Header on mobile, Card tiles, ; All of them
+
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# UI polish pass (after M6)
+
+## Context
+Carlos listed ten UI issues after M6: header buttons of different sizes, a filled pin icon that looks distorted, overlapping elements, the set name not linking anywhere, animations that don't play, no visible way to reach the shortcuts, a messy search page with single-select filters, a home search that doesn't match the header one, and a pinned list with no limit.
+Answers to my questions: use Star / StarOff for the pin; restyle the home SearchBox (it stays a real input); audit all overlaps (zoomed pin vs close, mobile header, card tiles); every animation is broken.
+
+Session bookkeeping per CLAUDE.md: worklog row ("Polish"), one decisions.md entry per plan change before its code (D-049+), Conventional Commit messages, and pnpm check passes (pre-commit hook).
+
+## Changes
+
+1. **Header button sizes**: `components/site-header.tsx`
+   - Drop the ad-hoc `link` string. Album, Browse, Log out and the new `?` button all use `buttonVariants({ variant: "ghost", size: "lg" })` (h-9, the same height as the SearchTrigger). The logo link uses the same classes.
+   - On phones Log out shows only the icon, using `size: "icon-lg"`, so it is the same height as the other buttons.
+
+2. **Shortcuts `?` button**: `components/site-header.tsx`, `components/keyboard-shortcuts.tsx`
+   - Add `openShortcuts` and `onOpenShortcuts`, copying the `openPalette` and `onOpenPalette` event pattern in `components/command-palette.tsx`. KeyboardShortcuts subscribes to it and calls `setHelp(true)`.
+   - The header gets a client `ShortcutsButton`: `CircleHelp` icon, `aria-label="Keyboard shortcuts"`, `aria-keyshortcuts="?"`.
+
+3. **Pin icon, no fill, always on the left**: `components/pin-toggle.tsx`, `components/card/card-panel.tsx`
+   - The icon is `pinned ? StarOff : Star`, with the `fill-current` removed. The primary-coloured pressed style and `aria-pressed` stay.
+   - In CardPanel, the PinToggle moves to the left of the title block (`flex items-start gap-3`, pin first). This also clears the overlay's top-right close button. In tiles it is already top-left.
+   - Update the tests that query the icon or the "Pin" title, if any (`card-tile.test.tsx`, `card-panel.test.tsx`).
+
+4. **Set links to its album**: `components/card/card-panel.tsx`
+   - Both the caption `{set.name}` and the "Set" fact become `<Link href={`/album/${set.id}`}>` with an underline and a focus-visible ring. The link leaves the intercepted overlay, which is the intended behaviour.
+
+5. **Animations (all broken)**: no fix is decided up front; I'll follow superpowers:systematic-debugging.
+   - Next 16.4 needs no `viewTransition` config, so that is not the cause.
+   - Reproduce in Chromium (run skill) with reduced motion off.
+   - Check whether `document.startViewTransition` fires on a page turn or zoom: patch it in the console and log.
+   - Suspects:
+     - the global `prefers-reduced-motion` CSS block catching everything
+     - `partialPrefetching` / `cacheComponents` making navigations commit outside a transition
+     - `default="none"` on the tile ViewTransition
+     - the Link `transitionTypes` path in `components/album/page-nav.tsx` and `swipe-turn.tsx`
+     - Motion's `useReducedMotion`
+   - Fix the root cause once, then check that page turns, the zoom morph and the pin tap all play.
+
+6. **Search page layout + multiselect**: `lib/search.ts`, `components/search-filters.tsx`, `app/search/page.tsx`, `app/browse/page.tsx`, `lib/search.test.ts`
+   - Decision entry: `set`, `type` and `rarity` become `string[]`, written as repeated URL params (`?set=base1&set=base2`).
+   - `parseSearch` keeps every value.
+   - `searchHref` appends one param per value.
+   - `filterCards` uses `includes` (a type matches if any of the card's types is selected).
+   - `hasFilters` checks `.length`.
+   - Browse's `filter: { set: s.id }` becomes `{ set: [s.id] }`.
+   - Add tests for multi-value parse, href and filter.
+   - Add the shadcn Base UI combobox (`pnpm dlx shadcn add combobox`, multiple mode with chips, searchable, which suits 121 sets) and record it in decisions.md. It replaces the three `<select>`s. Legal and Sort stay single selects.
+   - Layout, matching the sketch: the header (h1 "Search" or "Results for …", plus the count) comes first. Below it, one `binder-paper` panel holds the SearchBox at full width, then the filters wrapping across lines underneath (`flex flex-wrap gap-3`). The binder or the empty state follows.
+   - The Results component renders the header, the panel and the results together, so the SearchBox moves inside the panel. It keeps its own `<Suspense>`, so it holds focus while results stream. If moving the box into Results would remount it on each navigation, keep the panel in SearchPage and pass the filters in via a Suspense slot instead.
+
+7. **Home search looks like the nav one**: `components/search-box.tsx`
+   - Use the SearchTrigger's look: `h-9 rounded-lg border-input`, Search icon, `text-sm` placeholder "Search cards and sets", and a `Ctrl K` hint chip on sm+ (as an `InputGroupAddon align="inline-end"`).
+   - It stays an input with the same behaviour on /search and on home.
+
+8. **Pinned cap + all-pinned page**: `components/pinned-cards.tsx`, new `app/pinned/page.tsx`
+   - Add a decision entry for the new `/pinned` route.
+   - Add a `limit?: number` prop. Home passes 12.
+   - The grid is `grid-cols-4 lg:grid-cols-6`: two rows, so 8 on phones and 12 on lg. Items 9 to 12 are hidden below lg (`max-lg:[&:nth-child(n+9)]:hidden`).
+   - When the count goes over what is shown, a "See all pinned (N) →" link goes to `/pinned`.
+   - `/pinned` renders `<PinnedCards />` with no limit, plus a metadata title. Add it to the PAGES list in the command palette.
+
+9. **Overlaps audit**: in Chromium at 375, 1024 and 1440 px, check:
+   - the header, where the phone width could overflow with the new `?` button (let the search trigger shrink: `min-w-0`)
+   - the tiles, which already put the pin top-left and ×N top-right. Check the error label and the skeleton.
+   - the zoomed overlay: pin and close, and the phone Drawer over the card
+   - the search panel at its wrap points
+   - home pinned and sets
+   Fix each one where it happens and list them in the worklog.
+
+## Verification
+- `pnpm check` (lint, typecheck, format, vitest). New search tests pass.
+- Run skill / Chromium at 375, 1024 and 1440 px:
+  - header items all h-9 and `?` opens the shortcuts dialog (also with `?` key)
+  - star toggles Star/StarOff on tile and panel, pin left of title, no clash with close
+  - set name links to `/album/<id>`
+  - page turn and zoom morph animate, and are instant with emulated reduced motion
+  - `/search?set=a&set=b&type=Fire&type=Water` round-trips through the comboboxes, with keyboard only
+  - home shows at most 8 pins at 375 px and 12 at 1440 px, plus a link to `/pinned`
+  - no overlaps
+- End of session: fill in the worklog, the transcript and the commit (`fix(ui): polish header, pins, search and animations`, or split per item).
+
+Skipped: no new tests for the purely visual changes (button sizes, layout). Risk: the animation root cause is unknown until I reproduce it, so item 5 may grow.
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Read swipe-turn and drawer config
+- *Edit*: /home/cduser/.claude/plans/few-things-i-would-breezy-crown.md
+- *Edit*: /home/cduser/.claude/plans/few-things-i-would-breezy-crown.md
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+#### 18:31 · Claude
+
+Starting the work: logging the session start in the worklog, then going through the plan item by item.
+
+- *Bash*: Get start time and worklog/decisions format
+- *Bash*: Add worklog start row
+- *Bash*: Append decisions D-049 to D-052
+
+#### 18:31 · Claude
+
+Items 1 and 2: the header and the shortcuts button.
+
+- *Bash*: Add shortcuts button and unify header sizes
+
+#### 18:31 · Claude
+
+Item 3: the pin icon and its position.
+
+- *Bash*: Swap pin icon to Star/StarOff
+
+#### 18:32 · Claude
+
+Item 4 is in the same file: CardPanel gets the pin on the left and set links.
+
+- *Bash*: Pin left and set links in CardPanel
+
+#### 18:32 · Claude
+
+Item 6, the data side: multi-value set, type and rarity in `lib/search.ts`.
+
+- *Bash*: Make set/type/rarity filters multi-value
+- *Bash*: Update browse and test fixtures to arrays
+- *Bash*: Read parse/href tests
+- *Bash*: Update search tests and run them
+
+#### 18:34 · Claude
+
+The SearchBox builds its state with `Object.fromEntries(params)`, which would drop repeated values. Checking for other places that do the same:
+
+- *Bash*: Find parseSearch call sites
+- *Bash*: Find parseSearch call sites
+- *Bash*: Check InputGroup API
+
+#### 18:35 · Claude
+
+Item 7: the home search takes the header trigger's look. The hint chip shows `/` rather than `Ctrl K`, because `/` is the key that focuses this box. `Ctrl K` opens the palette instead.
+
+- *Bash*: Restyle SearchBox to match trigger
+
+#### 18:35 · Claude
+
+Next, the shadcn combobox for the multiselect filters:
+
+- *Bash*: Add shadcn combobox component
+- *Bash*: Add combobox, keep existing files
+- *Bash*: Inspect combobox exports
+- *Bash*: Read combobox implementation
+- *Bash*: Format combobox, check Root props
+
+#### 18:36 · Claude
+
+Now rewriting the filters with three multi comboboxes:
+
+- *Bash*: Replace selects with multi comboboxes
+- *Bash*: Check allowed Typography tags
+- *Bash*: Fix tag, typecheck and lint
+
+#### 18:37 · Claude
+
+Now the search page layout: the heading, then one panel with the input and filters, then the results.
+
+- *Bash*: Reorganise search page layout
+
+#### 18:37 · Claude
+
+Item 8: limiting pinned cards on Home and adding the `/pinned` page.
+
+- *Bash*: Cap pinned cards and add /pinned page
+- *Bash*: Add Pinned to palette, verify, typecheck
+
+#### 18:39 · Claude
+
+The code changes are in. Next is the browser part: animations, overlaps, and mobile swipe with a drawer open. Loading the run skill to drive the app:
+
+- *Skill*: Skill
+
+#### 18:39 · Carlos
+
+Base directory for this skill: /tmp/claude-1000/bundled-skills/2.1.302/023ba71c6fb2ff56563d9ea4b359bcc0/run
+
+**Running means launching the actual app and interacting with it** -
+not the test suite, not an `import` of an internal function and a
+`console.log`. The app as a user (human or programmatic) would meet
+it: the CLI at its command, the server at its socket, the GUI at its
+window.
+
+## First: does a project skill already cover this?
+
+A project skill that launches this app is the repo's verified path -
+its author already cold-started from a Linux container and committed
+what worked: the exact `apt-get` line, the env vars, the patches, the
+driver. Use it instead of rediscovering.
+
+```bash
+d=$PWD; while :; do
+  grep -Hm1 '^description:' "$d"/.claude/skills/*/SKILL.md 2>/dev/null
+  [ -e "$d/.git" ] || [ "$d" = / ] && break
+  d=$(dirname "$d")
+done
+```
+
+- **One describes launching/driving this app** -> read that SKILL.md
+  and follow it verbatim. Don't paraphrase; don't skip the patches.
+- **Mega-repo, several plausible, no clear match** -> ask the user
+  which unit to run.
+- **Stale** (fails on mechanics unrelated to your task) -> tell the
+  user; offer to refresh it via `/run-skill-generator`.
+- **Nothing about running** -> fall back to the patterns below.
+
+## Otherwise: match the shape, use the pattern
+
+Pick the row closest to your project. Each example walks through
+launch + first interaction; ignore any trailing "write the skill"
+section - you're using the recipe, not authoring one.
+
+| Project type | Handle | Example |
+|---|---|---|
+| CLI tool | direct invocation, exit code, stdin/stdout | [examples/cli.md](examples/cli.md) |
+| Web server / API | background launch + `curl` smoke | [examples/server.md](examples/server.md) |
+| TUI / interactive terminal | tmux `send-keys` / `capture-pane` | [examples/tui.md](examples/tui.md) |
+| Electron / desktop GUI | Playwright `_electron` REPL under xvfb | [examples/electron.md](examples/electron.md) |
+| Browser-driven | dev server + `chromium-cli` script | [examples/playwright.md](examples/playwright.md) |
+| Library / SDK | import-and-call smoke script at the package boundary | [examples/library.md](examples/library.md) |
+
+If nothing fits, start from the closest match and adapt. For a web
+app, [examples/playwright.md](examples/playwright.md) - drive it with
+`chromium-cli`, no custom driver needed. For a desktop app,
+[examples/electron.md](examples/electron.md) - it has the `_electron`
+REPL driver skeleton and the tmux wrapping.
+
+## Drive it, don't just launch it
+
+Launching with no interaction proves the entrypoint resolves. That's
+not running the app - it's typechecking with extra steps. Drive it to
+a point where a user would see something:
+
+- CLI -> type a representative command, check the exit code and output.
+- Server -> hit the route the diff touches with `curl`, read the body.
+- TUI -> `send-keys` a navigation, `capture-pane` the result.
+- GUI -> click the button, screenshot the window. **Look at the
+  screenshot.** A blank frame is a failure to launch.
+
+If the fallback pattern didn't work out of the box - you had to
+install packages, set env vars, patch config, or write a driver -
+recommend `/run-skill-generator` in your report so that work gets
+captured as a project skill. If it just worked, don't.
+
+- *Bash*: Check project skills and browser recipe
+- *Bash*: Look for a browser driver
+- *Bash*: Install playwright-core in scratchpad
+- *Bash*: Start Next dev server
+- *Bash*: Log view transitions on page turn and zoom
+
+#### 18:42 · Claude
+
+Page turns do start a view transition, but the card zoom doesn't. The dev server I started has also exited, so I'm checking why.
+
+- *Bash*: Read dev server log
+
+#### 18:42 · Claude
+
+The user's own dev server is already running on :3000 and hot-reloads my edits, so I'll use that one. Next I'm reading how the binder wires up its view transitions.
+
+- *Bash*: Read ViewTransition usages
+- *Bash*: Inspect view transition animations
+- *Bash*: Production build
+- *Bash*: Start production server on 3005
+- *Bash*: Re-run transition probe against prod
+- *Bash*: Screenshot pages at three widths
+
+#### 18:46 · Claude
+
+Every header control is 36 px tall now, with no sideways overflow at any width. Looking at the screenshots:
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/375_.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/375_zoom.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/1440_search_set_base1_set_base2_type_Fire_owned_all.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/375_search_set_base1_set_base2_type_Fire_owned_all.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/1024_zoom.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/375_album_base1.png
+- *Bash*: Check toggle sizes
+- *Bash*: Fix overlaps found in audit
+- *Bash*: Locate small sizes in filters
+- *Bash*: Apply overlap fixes and typecheck
+
+#### 18:48 · Claude
+
+Now item 10: sideways swipes on a phone while the card drawer is open. I'm simulating real touch gestures through CDP.
+
+- *Bash*: Simulate touch swipes with drawer open
+- *Bash*: Re-run swipe probe with overscroll fix
+
+#### 18:49 · Claude
+
+That didn't change anything, so overscroll isn't the cause. I'm logging every history call with a stack trace to see what does the navigating.
+
+- *Bash*: Trace history calls during swipes
+- *Bash*: Test overscroll fix on html
+
+#### 18:51 · Claude
+
+My sed edits scrambled the test order. The swipes on the album still behaved correctly (left, then right, ended back on page 2 with two pushes). I'm rewriting the script cleanly.
+
+- *Bash*: Compare swipes with and without fix
+- *Bash*: Apply CSS fix and re-run swipe test
+
+#### 18:52 · Claude
+
+Still navigating with the real stylesheet. Checking whether the rule actually reaches `html`:
+
+- *Bash*: Check computed overscroll on html
+- *Bash*: Check whether CSS rule is served
+- *Bash*: Search served CSS for dialog rules
+- *Bash*: Compare served CSS and source
+- *Bash*: Touch CSS and recheck served file
+- *Bash*: Look for compile errors in dev log
+- *Bash*: Install Playwright Firefox
+- *Bash*: Reproduce turn and zoom in Firefox
+- *Bash*: Read full browser error from log
+- *Bash*: Try to reproduce Tilt error in Firefox
+- *Bash*: Simplify CSS rule and recheck
+- *Bash*: Show served overscroll rules
+
+#### 18:55 · Claude
+
+The served CSS was just one edit behind, so my earlier test ran against stale CSS. Waiting for the current version, then re-running the swipe test:
+
+- *Bash*: Wait for CSS then re-run swipe test
+- *Bash*: Verify fixes end to end in Chromium
+- *Bash*: Read modal slot files
+- *Bash*: Add modal catch-all and test set link
+
+#### 19:00 · Claude
+
+The set link now closes the overlay and opens the set, and Back reopens the card. Checking the phone screenshots after the overlap fixes:
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/f375_zoom.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/934224dd-f10d-4bbe-a93d-fd1169adcecd/scratchpad/pw/shots/f375_album.png
+- *Bash*: Shrink phone zoom card and measure
+
+#### 19:00 · Claude
+
+Now the badge ends above the drawer (418 < 447 px) and the close button sits above the card (48 < 56 px). Adding a test for the set link, then running the full check:
+
+- *Bash*: Read card panel test setup
+- *Bash*: Add set link test and run full check
+
+#### 19:00 · Claude
+
+Everything passes: 70 tests, lint, types and formatting. Last step is a production rebuild to confirm the final code: animations, swipes, and the overscroll rule surviving the CSS optimiser.
+
+- *Bash*: Rebuild production and check CSS
+- *Bash*: Start production server on 3005
+- *Bash*: Verify animations, swipes, set link on prod
+- *Bash*: Free port 3005
+- *Bash*: Start production server on 3005
+- *Bash*: Verify on fresh production server
+- *Bash*: Stop prod server, get end time, status
+
+#### 19:05 · Claude
+
+Exit 143 is just the server I stopped. Now the worklog and transcript:
+
+- *Bash*: Find transcript section layout
+- *Bash*: Fill worklog, commit, record hash
+
 ## claude.ai conversations
 
 To be added.

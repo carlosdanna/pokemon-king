@@ -44,10 +44,11 @@ export const RARITY_ORDER = [
 
 export type SearchState = {
   q: string;
-  set?: string;
+  /** Any of these sets, types and rarities (D-049); empty means any. */
+  set: string[];
   kind?: Kind;
-  type?: string;
-  rarity?: string;
+  type: string[];
+  rarity: string[];
   legal?: LegalFormat;
   /** Owned cards only (the default); false shows every printing. */
   owned: boolean;
@@ -57,6 +58,9 @@ export type SearchState = {
 
 export const DEFAULT_SEARCH: SearchState = {
   q: "",
+  set: [],
+  type: [],
+  rarity: [],
   owned: true,
   sort: "set",
   page: 1,
@@ -72,13 +76,21 @@ export function parseSearch(params: Params): SearchState {
     const value = params[key];
     return (Array.isArray(value) ? value[0] : value)?.trim() || undefined;
   };
+  const all = (key: string) => [
+    ...new Set(
+      [params[key] ?? []]
+        .flat()
+        .map((v) => v.trim())
+        .filter(Boolean),
+    ),
+  ];
   const page = Number(get("page") ?? 1);
   return {
     q: get("q") ?? "",
-    set: get("set"),
+    set: all("set"),
     kind: oneOf(Object.keys(KINDS) as Kind[], get("kind")),
-    type: get("type"),
-    rarity: get("rarity"),
+    type: all("type"),
+    rarity: all("rarity"),
     legal: oneOf(LEGAL_FORMATS, get("legal")),
     owned: get("owned") !== "all",
     sort: oneOf(SORTS, get("sort")) ?? "set",
@@ -87,17 +99,22 @@ export function parseSearch(params: Params): SearchState {
 }
 
 export const hasFilters = (s: SearchState) =>
-  Boolean(s.set || s.kind || s.type || s.rarity || s.legal || !s.owned);
+  Boolean(
+    s.set.length ||
+    s.kind ||
+    s.type.length ||
+    s.rarity.length ||
+    s.legal ||
+    !s.owned,
+  );
 
 /** `/search` URL for the state with `patch` applied; any change but `page` goes back to page 1. */
 export function searchHref(state: SearchState, patch: Partial<SearchState>) {
   const s = { ...state, page: 1, ...patch };
   const params = new URLSearchParams();
   if (s.q) params.set("q", s.q);
-  for (const key of ["set", "kind", "type", "rarity", "legal"] as const) {
-    const value = s[key];
-    if (value) params.set(key, value);
-  }
+  for (const key of ["set", "kind", "type", "rarity", "legal"] as const)
+    for (const value of [s[key] ?? []].flat()) params.append(key, value);
   if (!s.owned) params.set("owned", "all");
   if (s.sort !== "set") params.set("sort", s.sort);
   if (s.page > 1) params.set("page", String(s.page));
@@ -191,10 +208,10 @@ export function filterCards<T extends SearchCard>(
   const filtered = cards.filter(
     (c) =>
       (!s.owned || c.owned) &&
-      (!s.set || c.setId === s.set) &&
+      (!s.set.length || s.set.includes(c.setId)) &&
       (!s.kind || c.category === KINDS[s.kind]) &&
-      (!s.type || (c.types?.includes(s.type) ?? false)) &&
-      (!s.rarity || c.rarity === s.rarity) &&
+      (!s.type.length || s.type.some((t) => c.types?.includes(t))) &&
+      (!s.rarity.length || s.rarity.includes(c.rarity ?? "")) &&
       (!s.legal || c.legal?.[s.legal] === true),
   );
   const words = queryWords(s.q);

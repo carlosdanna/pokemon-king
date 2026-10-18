@@ -25,14 +25,10 @@ export const metadata: Metadata = { title: "Search · Ash's Card Album" };
 export default function SearchPage(props: PageProps<"/search">) {
   return (
     <main className="binder-desk search-desk flex flex-1 flex-col items-center gap-4 px-4 py-4 sm:py-6">
-      {/* Outside the results' boundary, so it keeps focus while results load. */}
-      <div className="w-full max-w-6xl">
-        <Suspense>
-          <SearchBox />
-        </Suspense>
-      </div>
       <Suspense
-        fallback={<Skeleton className="h-[70dvh] w-full max-w-md rounded-md" />}
+        fallback={
+          <Skeleton className="h-[70dvh] w-full max-w-6xl rounded-md" />
+        }
       >
         <Results {...props} />
       </Suspense>
@@ -69,7 +65,16 @@ async function Results({ searchParams }: PageProps<"/search">) {
           {state.owned ? " in Ash's collection" : ""}
         </Typography>
       </header>
-      <SearchFilters state={state} options={options} />
+      <section
+        aria-label="Search and filters"
+        className="binder-paper flex w-full max-w-6xl flex-col gap-4 rounded-md p-4 shadow-sm"
+      >
+        {/* Its own boundary: the box keeps focus and its draft while results load. */}
+        <Suspense>
+          <SearchBox />
+        </Suspense>
+        <SearchFilters state={state} options={options} />
+      </section>
       {results.length ? (
         <AlbumBinder
           cards={results}

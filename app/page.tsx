@@ -30,12 +30,14 @@ export default function Home() {
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-8">
         <Typography variant="h1">Ash&apos;s Card Album</Typography>
         <Section title="Pinned">
-          <PinnedCards />
+          <PinnedCards limit={12} />
         </Section>
         <Section title="Search">
-          <Suspense>
-            <SearchBox />
-          </Suspense>
+          <div className="w-full max-w-md">
+            <Suspense>
+              <SearchBox />
+            </Suspense>
+          </div>
           <RecentSearches />
         </Section>
         <Section title="Sets">
