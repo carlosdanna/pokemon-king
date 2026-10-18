@@ -11,6 +11,13 @@ import { PinToggle } from "@/components/pin-toggle";
 import { Typography } from "@/components/ui/typography";
 import { cardImage, type AlbumCard } from "@/lib/album";
 
+// A turn remounts both pages, pairing each card with its hidden twin; it must turn with its page.
+const noMorphOnTurn = {
+  "page-forward": "none",
+  "page-back": "none",
+  default: "morph",
+};
+
 export function CardTile({ card }: { card: AlbumCard }) {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">(
     "loading",
@@ -59,7 +66,11 @@ export function CardTile({ card }: { card: AlbumCard }) {
         {zoomed ? (
           image
         ) : (
-          <ViewTransition name={`card-${card.id}`} share="morph" default="none">
+          <ViewTransition
+            name={`card-${card.id}`}
+            share={noMorphOnTurn}
+            default="none"
+          >
             {image}
           </ViewTransition>
         )}

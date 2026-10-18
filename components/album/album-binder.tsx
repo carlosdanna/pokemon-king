@@ -45,11 +45,21 @@ export function AlbumBinder({
         page={page}
         pageCount={current.pageCount}
       >
-        <ViewTransition key={page} enter={turn} exit={turn} default="none">
-          <div className="binder-spread">
-            {spread.map((album) => (
+        <div className="binder-spread">
+          {spread.map((album) => (
+            // Named by role so one visible page keeps one group on phones while a
+            // spread turns its halves separately; keyed by `page` to remount on every turn.
+            // shortcut: the spread CSS assumes the current page is the left one, true after
+            // any turn; a deep link to an even page turns oddly once.
+            <ViewTransition
+              key={`${page}-${album.page}`}
+              name={album.page === page ? "page-current" : "page-facing"}
+              enter={turn}
+              exit={turn}
+              share={turn}
+              default="none"
+            >
               <BinderPage
-                key={album.page}
                 title={title}
                 logo={logo}
                 album={album}
@@ -60,9 +70,9 @@ export function AlbumBinder({
                     : "xl:rounded-l-none xl:spine-right",
                 )}
               />
-            ))}
-          </div>
-        </ViewTransition>
+            </ViewTransition>
+          ))}
+        </div>
       </SwipeTurn>
       <PageNav base={base} turns={turns} />
     </div>

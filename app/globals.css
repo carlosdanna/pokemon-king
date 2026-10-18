@@ -243,6 +243,15 @@
   }
 }
 
+/* The UA blends a pair with plus-lighter for its cross-fade; turns don't cross-fade,
+   so a page resting under a turning one would wash out. */
+::view-transition-old(.page-forward),
+::view-transition-new(.page-forward),
+::view-transition-old(.page-back),
+::view-transition-new(.page-back) {
+  mix-blend-mode: normal;
+}
+
 /* Forward: the old page lifts off the spine and turns over it, uncovering the new one.
    Back: the new page turns back over the spine on top of the old one. */
 @media (width >= 640px) {
@@ -261,22 +270,54 @@
     animation: 450ms cubic-bezier(0.45, 0, 0.55, 1) both page-flip-in;
   }
 }
-/* On a spread the spine is the centre and only the turning half moves. */
+/* On a spread (current page on the left, facing on the right) the turning leaf has two
+   sides: the front lifts off one page until it is edge-on (ease-in), then the back lands
+   on the other page (ease-out). */
 @media (width >= 1280px) {
-  ::view-transition-old(.page-forward) {
-    transform-origin: center;
-    clip-path: inset(0 0 0 50%);
-  }
+  ::view-transition-old(.page-forward),
+  ::view-transition-new(.page-forward),
+  ::view-transition-old(.page-back),
   ::view-transition-new(.page-back) {
+    z-index: auto;
+    animation: none;
+  }
+  ::view-transition-group(page-facing.page-forward),
+  ::view-transition-group(page-current.page-back) {
+    z-index: 1;
+  }
+  ::view-transition-group(page-current.page-forward),
+  ::view-transition-group(page-facing.page-back) {
+    z-index: 2;
+  }
+  ::view-transition-old(page-facing.page-forward) {
+    --flip-to: -90deg;
+    z-index: 1;
+    transform-origin: left center;
+    animation: 250ms ease-in both page-flip-out;
+  }
+  ::view-transition-new(page-current.page-forward) {
     --flip-from: 90deg;
-    transform-origin: center;
-    clip-path: inset(0 50% 0 0);
+    z-index: 1;
+    transform-origin: right center;
+    animation: 250ms ease-out 250ms both page-flip-in;
+  }
+  ::view-transition-old(page-current.page-back) {
+    --flip-to: 90deg;
+    z-index: 1;
+    transform-origin: right center;
+    animation: 250ms ease-in both page-flip-out;
+  }
+  ::view-transition-new(page-facing.page-back) {
+    --flip-from: -90deg;
+    z-index: 1;
+    transform-origin: left center;
+    animation: 250ms ease-out 250ms both page-flip-in;
   }
 }
 
 @keyframes page-flip-out {
   to {
-    transform: perspective(2000px) rotateY(-90deg);
+    transform: perspective(2000px) rotateY(var(--flip-to, -90deg));
     filter: brightness(0.85);
   }
 }

@@ -2556,6 +2556,180 @@ Exit 143 is just the server I stopped. Now the worklog and transcript:
 - *Bash*: Find transcript section layout
 - *Bash*: Fill worklog, commit, record hash
 
+### 2026-10-18 · Theme + page turn
+
+#### 19:10 · Carlos
+
+Apply the following shadcn preset theme --preset b1YobvhKq And look for possible improvements to the page change animation
+
+- *Bash*: Inspect shadcn config and view transition usage
+- *Bash*: Find view transition code and read album components
+- *Read*: app/globals.css
+- *Bash*: Check shadcn CLI help for preset options
+- *Bash*: Inspect the preset contents
+- *Bash*: Check decision log and versions
+- *Bash*: Find last decision ID and turnTargets
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# Theme preset b1YobvhKq + page-turn animation polish
+
+## Context
+Carlos wants the shadcn preset `b1YobvhKq` applied and the page-turn animation improved.
+`shadcn preset decode b1YobvhKq` → style nova, **baseColor mist, theme blue, chartColor blue**, lucide, geist, default radius, subtle menu accent. Style, font, icons and radius are the same as now (`base-nova`, neutral), so only the colours change.
+
+What's wrong with the page turn today (`app/globals.css:210-288`, `components/album/album-binder.tsx:48`):
+1. **Spread (≥1280 px) is half a flip.** The whole spread is one snapshot. Going forward, the old right half turns to -90° and disappears, but the new left page is already showing underneath from frame 1. The turning page never lands on the left. Going back has the same problem, mirrored.
+2. **Static pages may wash out.** The UA puts `mix-blend-mode: plus-lighter` on paired old/new images. Where one image is `animation: none` and fully opaque under the other, the overlap brightens.
+3. The `clip-path` halves of one snapshot are only there to work around (1).
+
+## Part 1: theme
+- Run `pnpm dlx shadcn@latest apply b1YobvhKq --only theme -y`. Use `--only theme` because a full apply could re-add `components/ui/*` and overwrite our local edits, and nothing else in the preset differs.
+- Review the `git diff` of `app/globals.css` (`:root` / `.dark` tokens) and `components.json`. If the CLI doesn't set `baseColor` to `mist` in `components.json`, set it by hand.
+- Leave the binder's own warm paper colours (`.binder-desk`, `.binder-paper`, `.binder-pocket`) alone. They're deliberate and separate from the theme. Check them visually next to the new blue/mist chrome.
+- Add decision **D-053** to `docs/decisions.md`: the preset, applied theme-only, and why.
+
+## Part 2: two-phase page turn
+**Markup** (`components/album/album-binder.tsx`): replace the single outer `<ViewTransition key={page}>` with one per page, named by position:
+```tsx
+<div className="binder-spread">
+  {spread.map((album) => (
+    <ViewTransition
+      key={`${page}-${album.page}`}            // remount on every turn, even when the spread is unchanged (single-page mode 1→2)
+      name={album.page % 2 ? "page-left" : "page-right"}
+      enter={turn} exit={turn} share={turn} default="none"
+    >
+      <BinderPage … />
+    </ViewTransition>
+  ))}
+</div>
+```
+Hidden pages (`hidden xl:flex`) aren't captured, so below 1280 px only the visible page takes part, as it does today.
+
+**CSS** (`app/globals.css`, page-turn block):
+- Phones (<640): keep the slide. The selectors stay class-only (`.page-forward` / `.page-back`), so they match both names.
+- 640–1279 (single page): keep the current class-based rules (the old page flips off its left edge, the new one sits still beneath). Add `mix-blend-mode: normal` to the page pseudos.
+- ≥1280 (spread): override by name + class. Drop the `clip-path` / `--flip-from` hacks.
+  - Forward:
+    - `old(page-right.page-forward)` turns 0→-90° around its left edge (the spine), 250 ms ease-in.
+    - Then `new(page-left.page-forward)` turns 90°→0 around its right edge, 250 ms ease-out with a 250 ms delay.
+    - `new(page-right)` and `old(page-left)` stay still (`animation: none`).
+  - Back: the mirror image. `old(page-left)` turns 0→90° off its right edge, then `new(page-right)` turns -90°→0 onto its left edge.
+  - Stacking: the turning image gets `z-index: 1` inside its image pair (as today). The turning page's `::view-transition-group` gets a z-index above the other page's group.
+  - Reuse the existing `page-flip-out` / `page-flip-in` keyframes with a CSS var for the angle, so we don't add new keyframes.
+- The reduced-motion block (`globals.css:306`) already zeroes every duration and delay. No change needed.
+- Add decision **D-054**: positional page names and a two-phase spread turn. It refines D-030 and rejects keeping a single snapshot with clip-path.
+
+## Housekeeping (CLAUDE.md)
+- At the start, add a worklog row via `date`. At the end, fill in the time, outcome and hash, and append the transcript (`python3 -I scripts/transcript.py`).
+- Two commits on main:
+  - `style(theme): apply shadcn preset b1YobvhKq`
+  - `feat(album): turn spread pages in two phases`
+  - Then `--amend` to include the log. The pre-commit hook runs `pnpm check`.
+
+## Verification
+- Run `pnpm check` (lint, types, Vitest). The album tests must still pass with per-page ViewTransitions.
+- `pnpm dev`, then use the browser (claude-in-chrome) on `/album/<set>?page=3`:
+  - At 375, 1024 and 1440 widths, turn forward and back with the buttons, PageDown/PageUp, and `.` / `,`.
+  - At 1440 the right page should lift and land on the left. Check there's no brightened overlap and no flash of the new left page.
+  - Check that the card zoom morph still works after a turn.
+  - Check that focus lands on the pending pocket after a keyboard turn.
+  - Check that the root doesn't cross-fade the header during a turn.
+- With reduced motion emulated in DevTools, a turn should be instant.
+- Check the new theme in light mode (and dark mode if the `.dark` class is used): buttons, header, search and filter controls are readable, and focus rings show.
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Get start time and worklog tail
+- *Bash*: Show worklog table rows
+- *Bash*: Add worklog row and apply preset theme
+- *Bash*: Review theme diff
+- *Bash*: Check background tokens survived
+
+#### 19:13 · Claude
+
+The theme is applied, and only the colour tokens and `components.json` changed. Next, the per-page view transitions.
+
+- *Bash*: Split view transition per binder page
+- *Bash*: Check AlbumBinder usages
+- *Bash*: Rewrite page-turn CSS with two-phase spread flip
+- *Bash*: Fix selector and stacking, show block
+- *Bash*: Switch to role-based page names
+- *Bash*: Run lint, types and tests
+
+#### 19:27 · Claude
+
+Checks pass (70 tests). Now I'm making a production build so I can watch the turns in the browser.
+
+- *Bash*: Build and start production server
+- *Skill*: Skill
+
+#### 19:27 · Carlos
+
+Browser tools are not available in this session: the Claude in Chrome extension is not set up. The user can install or connect it from https://claude.ai/chrome and manage browser tools with /chrome. Continue the task without browser tools (WebFetch and WebSearch cover read-only web content), or ask the user to perform browser steps manually. Do not attempt mcp__claude-in-chrome__* tool calls.
+
+- *Bash*: Look for a headless browser and check server
+- *Bash*: Install playwright-core in scratchpad
+- *Bash*: Drive a slowed forward spread turn and log animations
+
+#### 19:29 · Claude
+
+The forward turn on a spread runs in the planned order: the facing page lifts first, then the current page lands. Checking the frames:
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1440-PageDown-1500.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1440-PageDown-3500.png
+
+#### 19:29 · Claude
+
+Forward works: page 2 lifts off the spine with page 4 underneath, then page 3 lands on page 1, with no wash-out. Next I'm checking back turns and the narrower widths.
+
+- *Bash*: Run back and narrower-width turns
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1440-PageUp-1500.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1024-PageDown-1500.png
+- *Bash*: Fix spread z-index and capture early single-page frames
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1024-PageDown-300.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1024-PageDown-600.png
+- *Bash*: Dump pseudo styles during single-page turn
+- *Bash*: Dump pseudo styles during single-page turn
+- *Bash*: Read card tile view transition
+- *Bash*: Rebuild, restart, re-check turns
+- *Bash*: Check build and server state
+- *Bash*: Stop old server and rebuild
+- *Bash*: Run production server on port 3123
+- *Bash*: Recheck single and spread turns
+
+#### 19:33 · Claude
+
+No more card ghosts, and the old page now stacks on top. Looking at the frames:
+
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1440-PageUp-1500.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/b27586e2-0e46-4d28-a25c-112da9e75e9c/scratchpad/shot-1024-PageDown-600.png
+
+#### 19:34 · Claude
+
+Both directions look right now, and the single-page flip is clean. One last check: the zoom morph still has to pair the tile with the zoomed card.
+
+- *Bash*: Check card zoom morph after a turn
+
+#### 19:34 · Claude
+
+The morph still pairs after a turn. Now the decision log entries, then the commits.
+
+- *Bash*: Get time, diff hunks, last decision line
+- *Bash*: Add decisions D-053 and D-054
+- *Bash*: Stage only the theme part of globals.css
+- *Bash*: Commit theme change
+- *Bash*: Fill worklog and commit animation change
+- *Bash*: Fix end time and prepare transcript
+
 ## claude.ai conversations
 
 To be added.
