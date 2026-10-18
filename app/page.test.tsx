@@ -4,5 +4,7 @@ import Home from "./page";
 
 test("home page shows the album title", () => {
   render(<Home />);
-  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Ash's Card Album");
+  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+    "Ash's Card Album",
+  );
 });

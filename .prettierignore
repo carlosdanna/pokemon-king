@@ -1,0 +1,6 @@
+# hand-written docs and data are not reformatted
+data/
+docs/
+private/
+*.md
+pnpm-lock.yaml

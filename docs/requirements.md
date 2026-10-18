@@ -128,7 +128,7 @@ Mouse and touch equivalents: click a card to open it, a pin icon on every card, 
 | N6 | Persistence | Favourites in Upstash Redis, shared by every device, mirrored with recent searches in `localStorage`, versioned key, safe parse with fallback to empty; no hydration mismatch (render pins after mount) |
 | N7 | Shareability | Every view that matters is a URL: filtered grid, card detail, active tab. Reloading any URL restores the same view |
 | N8 | Performance | Search results update within 100 ms of a keystroke; detail pages statically generated |
-| N9 | Code quality | Typed card model, pure filter functions with unit tests, no `any`, lint and typecheck clean in CI |
+| N9 | Code quality | Typed card model, pure filter functions with unit tests, no `any`, lint and typecheck clean in the pre-commit check (D-019) |
 | N10 | Security | Password and cookie secret only in environment variables, never in the repo; constant-time password check; generic error on a wrong password; session cookie lasts 30 days so Ash logs in once per device; the favourites route checks the session itself, not only the proxy |
 
 ## Plan, time budget and scope
