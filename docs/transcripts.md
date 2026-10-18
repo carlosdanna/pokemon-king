@@ -464,6 +464,209 @@ mark a pause on the logs here I will come back at a later time
 - *Bash*: Get time, hash and preview transcript output
 - *Bash*: Log pause, append transcript, commit
 
+### 2026-10-18 · M1
+
+#### 14:55 · Carlos
+
+Milestone M1 from docs/implementation-plan.md (see its "Data changes" section). Follow CLAUDE.md: log the start time first.
+
+Plan:
+- scripts/fetch-sets.ts (run with tsx): read the set codes from the id prefixes in data/ash_collection.json (expect 121); call GET https://api.pokemontcg.io/v2/sets once to write data/sets.json; then for each set call /v2/cards?q=set.id:<code>&select=id,name,number,rarity,supertype,types,images&pageSize=250 (page 2 when needed) to write data/sets/<code>.json.
+- No API key exists: stay under 30 requests a minute (about 2 s between calls), retry with backoff on 429/5xx, skip sets already on disk so the script can resume, and print a summary.
+- lib/collection.ts (server-only): load the collection, group by id into quantity, merge with set lists into AlbumCard { id, name, number, rarity, supertype, types, image, owned, quantity }.
+- Natural sort on card number ("SV114", "RC2" exist); pages of 9; getAlbumPage(setCode, page) and getSetSummaries() with owned / total counts.
+- Unit tests: grouping (quantities up to 7), natural sort, paging edges, unowned cards.
+
+Before running the fetch script, show me the request count and the expected run time. If the API is unreachable, stop and log a decision on the fallback (owned cards only).
+
+Finish: tick M1 boxes, log end time, commit "feat: data pipeline and set lists (M1)".
+
+- *Bash*: Get time, list repo, read package.json and M1 plan
+- *Bash*: Read data changes section, decisions, worklog, configs
+- *Bash*: Inspect collection data and probe API reachability
+- *Bash*: Probe sets and cards endpoints once each
+- *Bash*: Show API response headers and check main site
+
+*Claude asked:*
+
+> **api.pokemontcg.io returns 500/502 (Cloudflare origin error) on every endpoint right now. How should M1 proceed?**
+> Fallback + script (Recommended) / Fallback only, stop / Retry later first
+
+
+*Carlos answered:* 
+
+#### 14:57 · Claude
+
+What do you want to clarify before we decide how M1 should go while the API is down?
+
+Here's where things stand. Every `api.pokemontcg.io` endpoint returns 500 or 502 from Cloudflare, and the main site `pokemontcg.io` loads fine. So this could be a short outage or the deprecated API going away. I see three options:
+
+1. **Build with a fallback (my pick):** log D-021, which uses only the owned cards when a set's list file is missing. Write `fetch-sets.ts` but don't run it. Build `lib/collection.ts` so it uses `data/sets/<code>.json` when the file exists. Then just re-run the script once the API is back.
+2. **Log and stop:** record the decision and end the session without writing any code.
+3. **Try again later:** probe the API again before starting, and use the fallback only if it's still down.
+
+#### 15:05 · Carlos
+
+Based on what I am observing pokemontcg.io is now part of scrydex and it doesn't support any free tier so lets use the set we have. There were mentions in the past of a v2 of this api from other developer can you check that as well please
+
+- *WebSearch*: WebSearch
+- *WebSearch*: WebSearch
+- *Bash*: Probe TCGdex API and pokemon-tcg-data GitHub repo
+- *Bash*: Check set coverage, README license, image host status
+
+#### 15:06 · Claude
+
+Every one of the 121 sets is in the repo, and `images.pokemontcg.io` still serves images. Next I'll check the file shapes and sizes.
+
+- *Bash*: Inspect sets index and per-set card file shapes
+
+#### 15:06 · Claude
+
+The static data repo answers the question. I'll ask which source you want, since this changes your earlier "use the set we have".
+
+
+*Claude asked:*
+
+> **PokemonTCG/pokemon-tcg-data on GitHub still serves the full API v2 data as static JSON: sets/en.json plus cards/en/<code>.json for all 121 of Ash's sets, with the same ids and fields as ash_collection.json, and images on images.pokemontcg.io still load. It needs no API or key, about 122 raw GitHub fetches, about 1 minute. TCGdex (api.tcgdex.net/v2) works too but uses different ids (sv03.5 vs sv3pt5, zero-padded numbers) and needs a mapping. Which source should M1 use?**
+> pokemon-tcg-data repo (Recommended) / Owned cards only / TCGdex v2
+
+
+*Carlos answered:* pokemon-tcg-data repo (Recommended)
+
+- *Bash*: Count cards in Ash's sets and get pinned commit
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M1 · Data pipeline and set lists
+
+## Context
+M1 needs the full card list of each of Ash's 121 sets, so the album can show unowned cards greyed out (D-012). The Pokémon TCG API is not usable any more: on 2026-10-18 at 14:56, `/v2/sets` and `/v2/cards` returned 500/502 from Cloudflare. It goes offline on 2027-03-01, and its successor, Scrydex, has no free tier. The legacy GitHub repo `PokemonTCG/pokemon-tcg-data` has the same v2 data as static JSON:
+- all 121 set codes are there (`cards/en/<code>.json`, plus `sets/en.json`);
+- the ids and fields match `ash_collection.json`;
+- `images.pokemontcg.io` still returns 200.
+
+Carlos chose this source over owned-only and over TCGdex (TCGdex uses different ids and would need a mapping table). The repo has 14,695 cards across Ash's 121 sets, and the largest set has 304.
+
+## Steps
+
+1. **Session start**: add a worklog row to `docs/worklog.md`: 2026-10-18, start 14:56, M1.
+2. **Decisions** in `docs/decisions.md`, each time-stamped with `date`:
+   - **D-021**: take set lists and set metadata from `PokemonTCG/pokemon-tcg-data`, pinned at commit `39a26a1`, through raw.githubusercontent.com. Do not use the API.
+     - Why: the API returns 5xx and is retired on 2027-03-01; Scrydex is paid; the repo data is frozen, which suits a one-off fetch.
+     - Rejected: Scrydex, TCGdex (needs an id mapping), owned cards only.
+     - Notes: the repo has no license file and is marked legacy.
+   - **D-022**: add the `server-only` dependency to guard `lib/collection.ts`. Run the script with `pnpm dlx tsx`, so tsx is not added to package.json.
+   - Update the "Data changes" section of `docs/implementation-plan.md` (steps 1–2 and the rate-limit paragraph) to name the repo source.
+3. **`scripts/fetch-sets.ts`** (run with `pnpm dlx tsx scripts/fetch-sets.ts`):
+   - Read the set codes from the id prefixes in `data/ash_collection.json` and assert there are 121.
+   - Fetch `sets/en.json` once. Keep only Ash's sets as `{ id, name, series, printedTotal, total, releaseDate, images }` and write them to `data/sets.json`.
+   - For each code, skip it if `data/sets/<code>.json` already exists (resume). Otherwise fetch `cards/en/<code>.json`, slim each card to `{ id, name, number, rarity?, supertype, types?, images }` and write the file.
+   - Retry 429 and 5xx with exponential backoff (1 s, 2 s, 4 s, 8 s, then fail). Wait 250 ms between calls to be polite; GitHub raw has no 30-a-minute limit.
+   - Print a summary: sets written, sets skipped, cards per set, and owned ids missing from any set list (expected 0).
+   - **Before running**: 122 requests (1 sets index + 121 card files), about 1 minute, about 3–4 MB of slim JSON to commit.
+4. **`lib/album.ts`** (pure functions, no `fs`, unit-tested):
+   - Types: `SetCard`, `SetInfo`, `AlbumCard { id, name, number, rarity?, supertype, types?, image, owned, quantity }` (`image` = `images.small`).
+   - `groupQuantities(cards) → Map<id, n>`
+   - `compareCardNumber(a, b)`: `Intl.Collator(undefined, { numeric: true })`, which handles "SV114", "RC2" and "116a".
+   - `mergeSet(setCards, quantities) → AlbumCard[]`: sorted. Owned cards missing from the set list are appended, so no owned card is ever dropped.
+   - `PAGE_SIZE = 9`; `paginate(cards, page)` returns `{ cards, page, pageCount }`, or `null` when the page is out of range (page < 1, page > pageCount, or not an integer).
+5. **`lib/collection.ts`** (`import "server-only"`):
+   - Reads `data/ash_collection.json`, `data/sets.json` and `data/sets/<code>.json` with `fs` from `process.cwd()`, memoised per module.
+   - `getAlbumPage(setCode, page)` and `getSetSummaries()` return `{ ...SetInfo, owned, total }`, where `owned` counts unique owned cards and `total` is the length of the set list.
+   - It validates `setCode` against the known set list before building a path (trust boundary for M2's URL param).
+6. **`lib/album.test.ts`** covers:
+   - grouping: a quantity of 7 with real ids from the collection;
+   - natural sort on a mixed list ("2", "10", "RC2", "RC15", "SV114", "116a");
+   - paging edges: 9 cards gives 1 page, 10 cards gives 2 pages with 1 card on the last, plus pages 0, pageCount + 1 and 1.5;
+   - an unowned card gets `owned: false` and `quantity: 0`;
+   - an owned card missing from the set list is still included.
+7. **Finish**:
+   - Run `pnpm check`.
+   - Tick the M1 boxes in the implementation plan.
+   - Fill in the end time, duration and outcome in the worklog.
+   - Commit `feat: data pipeline and set lists (M1)`.
+   - Append the transcript (`python3 -I scripts/transcript.py`) to `docs/transcripts.md` and add it with `git commit --amend --no-edit`, then add the short hash to the worklog in the same amend.
+
+## Verification
+- After the script: `ls data/sets | wc -l` gives 121, `jq length data/sets.json` gives 121, and the summary reports 0 missing owned ids.
+- `pnpm test` passes the new album tests.
+- A one-off `pnpm dlx tsx -e` call, or a test that reads the real data through `lib/album.ts` and the fs loader with `server-only` stubbed, checks that `getAlbumPage("base3", 1)` returns 9 cards with `owned` and `quantity`, and that `getSetSummaries()` has 121 entries.
+- `pnpm check` passes (it runs as the pre-commit hook).
+
+Skipped: full card details for unowned cards (attacks and so on); the repo has them if M3 wants them later. Risk: Vercel file tracing for the `fs` reads is only checked in M2, when the routes exist.
+~~~~
+
+</details>
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Time, data changes section, test layout, lint config
+
+#### 15:10 · Claude
+
+Now the docs: worklog row, decisions, and the data-changes section.
+
+- *Bash*: Add worklog row, D-021/D-022, update data changes section
+
+#### 15:10 · Claude
+
+Next, the pure album logic and its types:
+
+- *Write*: lib/album.ts
+
+#### 15:10 · Claude
+
+Owned cards that are missing from a set list would carry every field of the collection object into the result. I'll pick the fields explicitly instead.
+
+- *Edit*: lib/album.ts
+- *Write*: scripts/fetch-sets.ts
+
+#### 15:11 · Claude
+
+The plan was approved and the numbers were already shown (122 requests, about 1 minute), so I'm running the script now.
+
+- *Bash*: Run fetch script and verify outputs
+
+#### 15:12 · Claude
+
+The script made 122 requests in 59 s, wrote all 121 sets, and found 0 owned ids missing from the set lists. A rerun should skip every set:
+
+- *Bash*: Rerun script to confirm resume skips sets
+
+#### 15:12 · Claude
+
+Now `server-only`, the loader, and the tests.
+
+- *Bash*: Install server-only and find a 7-copy card id
+- *Write*: lib/collection.ts
+- *Edit*: lib/collection.ts
+- *Write*: lib/album.test.ts
+
+#### 15:12 · Claude
+
+Next, a test of the real data path, which covers M1's "done when" condition:
+
+- *Write*: lib/collection.test.ts
+- *Bash*: Format and run full check
+
+#### 15:12 · Claude
+
+`pnpm check` passes: 15 tests, including real data where all 1,644 unique owned cards are counted once. Now I'll finish the session.
+
+- *Bash*: Get end time and tick M1 boxes
+- *Bash*: Fill worklog and commit M1
+
+#### 15:13 · Claude
+
+The transcript goes in next. A commit can't hold its own hash, so after the amend the worklog cell names the commit by its subject line.
+
+- *Bash*: Render transcript and inspect transcripts.md structure
+
 ## claude.ai conversations
 
 To be added.

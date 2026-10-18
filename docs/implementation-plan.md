@@ -60,14 +60,14 @@ Visual direction: binder pages with a faint paper texture, sleeve pockets with a
 
 ## Data changes
 
-Showing cards Ash does not own needs the full card list of every set, which `ash_collection.json` does not contain. A one-off script fetches it from the Pokémon TCG API and commits the result, so the app still makes no API calls at runtime.
+Showing cards Ash does not own needs the full card list of every set, which `ash_collection.json` does not contain. A one-off script fetches it and commits the result, so the app still makes no API calls at runtime. The Pokémon TCG API itself is down and being retired, so the script reads the same v2 data from the legacy `PokemonTCG/pokemon-tcg-data` GitHub repo, pinned to one commit (D-021).
 
-1. `GET /v2/sets` once → `data/sets.json` (name, series, release date, total, logo) for the 121 set codes in the collection.
-2. For each set, `GET /v2/cards?q=set.id:<code>&select=id,name,number,rarity,supertype,types,images&pageSize=250` → one file per set in `data/sets/<code>.json`. About 121 requests (more for sets over 250 cards).
+1. `sets/en.json` once → `data/sets.json` (name, series, release date, total, logo) for the 121 set codes in the collection.
+2. For each set, `cards/en/<code>.json`, slimmed to `id, name, number, rarity, supertype, types, images` → one file per set in `data/sets/<code>.json`. 122 requests in all.
 3. Merge with the collection: each card gets `owned` (true or false) and `quantity` (0 to 7).
 4. Sort each set by natural card number, then cut it into pages of 9.
 
-Without an API key the limit is 30 requests a minute, so the script waits about 2 seconds between calls and takes roughly 5 minutes. It writes files only after all calls succeed and can resume from the last finished set.
+The script waits 250 ms between calls, retries 429 and 5xx with backoff, takes about a minute, and skips sets already on disk so it can resume.
 
 The album loads one set file at a time, so a phone never downloads every set. Full detail for owned cards still comes from `ash_collection.json` on the server; unowned cards show the slim fields, plus attacks and other details only if the script also fetched them (a stretch option, as it makes the files larger).
 
@@ -103,10 +103,10 @@ Done when: the empty app is live and `pnpm check` passes.
 
 ### M1 · Data pipeline (45 min)
 
-- [ ] `scripts/fetch-sets.ts`: sets and per-set card lists, rate-limited and resumable (see Data changes)
-- [ ] `lib/collection.ts`: load the collection, group by `id` into quantities, merge with set lists
-- [ ] `Card` and `AlbumCard` types; natural sort on `number`; page slicing in 9s
-- [ ] Unit tests for grouping, sorting and paging
+- [x] `scripts/fetch-sets.ts`: sets and per-set card lists, rate-limited and resumable (see Data changes)
+- [x] `lib/collection.ts`: load the collection, group by `id` into quantities, merge with set lists
+- [x] `Card` and `AlbumCard` types; natural sort on `number`; page slicing in 9s
+- [x] Unit tests for grouping, sorting and paging
 
 Done when: `getAlbumPage(setCode, page)` returns 9 typed cards with `owned` and `quantity`, covered by tests.
 
