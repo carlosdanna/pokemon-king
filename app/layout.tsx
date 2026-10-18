@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
+import { KeyboardShortcuts } from "@/components/keyboard-shortcuts";
 import { NotOnLogin } from "@/components/not-on-login";
 import { SiteHeader } from "@/components/site-header";
 import { Toaster } from "@/components/ui/sonner";
+import { getSetNames } from "@/lib/collection";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,6 +38,11 @@ export default function RootLayout({ children, modal }: LayoutProps<"/">) {
         </Suspense>
         {children}
         {modal}
+        <Suspense>
+          <NotOnLogin>
+            <KeyboardShortcuts sets={getSetNames()} />
+          </NotOnLogin>
+        </Suspense>
         <Toaster />
       </body>
     </html>

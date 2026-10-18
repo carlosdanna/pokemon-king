@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { AlbumBinder } from "@/components/album/album-binder";
+import { SearchBox } from "@/components/search-box";
 import { SearchFilters } from "@/components/search-filters";
 import { buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -24,6 +25,12 @@ export const metadata: Metadata = { title: "Search · Ash's Card Album" };
 export default function SearchPage(props: PageProps<"/search">) {
   return (
     <main className="binder-desk search-desk flex flex-1 flex-col items-center gap-4 px-4 py-4 sm:py-6">
+      {/* Outside the results' boundary, so it keeps focus while results load. */}
+      <div className="w-full max-w-6xl">
+        <Suspense>
+          <SearchBox />
+        </Suspense>
+      </div>
       <Suspense
         fallback={<Skeleton className="h-[70dvh] w-full max-w-md rounded-md" />}
       >

@@ -150,7 +150,7 @@
   margin-inline: auto;
 }
 .search-desk .binder-spread {
-  --binder-chrome: 27rem;
+  --binder-chrome: 30rem;
 }
 @media (width >= 640px) {
   .binder-spread {

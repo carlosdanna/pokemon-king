@@ -39,7 +39,12 @@ export function AlbumBinder({
 
   return (
     <div className="flex flex-col items-center gap-4 sm:flex-row">
-      <SwipeTurn base={base} turns={turns}>
+      <SwipeTurn
+        base={base}
+        turns={turns}
+        page={page}
+        pageCount={current.pageCount}
+      >
         <ViewTransition key={page} enter={turn} exit={turn} default="none">
           <div className="binder-spread">
             {spread.map((album) => (

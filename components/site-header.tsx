@@ -1,9 +1,8 @@
 import { LogOut } from "lucide-react";
 import Link from "next/link";
-import { Suspense } from "react";
 import { logout } from "@/app/login/actions";
 import { Typography } from "@/components/ui/typography";
-import { SearchBox } from "./search-box";
+import { SearchTrigger } from "./search-trigger";
 
 const link =
   "rounded-md px-2 py-1 outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50";
@@ -30,10 +29,7 @@ export function SiteHeader() {
         </Link>
       </nav>
       <div className="ml-auto flex flex-1 justify-end">
-        {/* useSearchParams needs a Suspense boundary under cacheComponents. */}
-        <Suspense>
-          <SearchBox />
-        </Suspense>
+        <SearchTrigger />
       </div>
       {/* A POST, so no prefetch can log Ash out (D-043). */}
       <form action={logout}>

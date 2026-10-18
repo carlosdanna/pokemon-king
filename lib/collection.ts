@@ -104,7 +104,11 @@ export function getAllCards(): SearchCard[] {
   allCards ??= load()
     .sets.toSorted((a, b) => a.releaseDate.localeCompare(b.releaseDate))
     .flatMap((set) =>
-      (getSetCards(set.id) ?? []).map((c) => ({ ...c, setId: set.id })),
+      (getSetCards(set.id) ?? []).map((c) => ({
+        ...c,
+        setId: set.id,
+        setName: set.name,
+      })),
     );
   return allCards;
 }
@@ -124,6 +128,10 @@ export function getSetSummaries() {
     };
   });
 }
+
+/** Set ids and names only, for the command palette (D-047). */
+export const getSetNames = () =>
+  load().sets.map(({ id, name }) => ({ id, name }));
 
 export const getSet = (setId: string) =>
   load().sets.find((s) => s.id === setId) ?? null;

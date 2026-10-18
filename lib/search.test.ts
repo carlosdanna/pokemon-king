@@ -5,6 +5,7 @@ import {
   filterCards,
   hasFilters,
   parseSearch,
+  rankCards,
   RARITY_ORDER,
   searchHref,
   sortCards,
@@ -15,6 +16,7 @@ import {
 const card = (name: string, extra: Partial<SearchCard> = {}): SearchCard => ({
   id: `s-${name}`,
   setId: "s",
+  setName: "Test Set",
   name,
   number: "1",
   category: "Pokemon",
@@ -51,6 +53,70 @@ describe("filterCards", () => {
     expect(
       names(filterCards(cards, search({ q: "flabebe", owned: false }))),
     ).toEqual(["Flabébé"]);
+  });
+
+  describe("matching words across name, set and number (D-048)", () => {
+    const sets = [
+      card("Charizard", {
+        id: "base1-4",
+        setId: "base1",
+        setName: "Base Set",
+        number: "4",
+      }),
+      card("Charmander", {
+        id: "base1-46",
+        setId: "base1",
+        setName: "Base Set",
+        number: "46",
+      }),
+      card("Charizard", {
+        id: "base4-4",
+        setId: "base4",
+        setName: "Base Set 2",
+        number: "4",
+      }),
+      card("Dark Charizard", {
+        id: "base5-4",
+        setId: "base5",
+        setName: "Team Rocket",
+        number: "4",
+      }),
+    ];
+    const ids = (q: string) =>
+      filterCards(sets, search({ q })).map((c) => c.id);
+
+    it("needs every word to hit the name, set name, set code or number", () => {
+      // Team Rocket's TCGdex code is base5, so "base" also hits it.
+      expect(ids("base char")).toEqual([
+        "base1-4",
+        "base1-46",
+        "base4-4",
+        "base5-4",
+      ]);
+      expect(ids("base set char")).toEqual(["base1-4", "base1-46", "base4-4"]);
+      expect(ids("charizard rocket")).toEqual(["base5-4"]);
+      expect(ids("base1 #4")).toEqual(["base1-4"]);
+      expect(ids("zard 46")).toEqual([]);
+    });
+
+    it("falls back to typo matches only when nothing matches as typed", () => {
+      expect(ids("charzard")).toEqual(["base1-4", "base4-4", "base5-4"]);
+      expect(ids("chraizard rocket")).toEqual(["base5-4"]);
+      expect(ids("chax")).toEqual([]);
+    });
+
+    it("ranks closer matches first", () => {
+      const ranked = rankCards(
+        filterCards(sets, search({ q: "charizard 4" })),
+        "charizard 4",
+      );
+      expect(ranked.map((c) => c.id)).toEqual([
+        "base1-4",
+        "base4-4",
+        "base5-4",
+      ]);
+      expect(rankCards(sets, "dark").map((c) => c.id)[0]).toBe("base5-4");
+    });
   });
 
   it("shows owned cards only unless owned is off", () => {

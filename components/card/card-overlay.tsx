@@ -84,6 +84,7 @@ export function CardOverlay({ card, set }: { card: AlbumCard; set: SetInfo }) {
     <dialog
       ref={attach}
       aria-label={card.name}
+      data-card-id={card.id}
       onCancel={(e) => {
         e.preventDefault();
         close();

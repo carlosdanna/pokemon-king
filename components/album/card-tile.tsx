@@ -87,6 +87,8 @@ export function CardTile({ card }: { card: AlbumCard }) {
       <PinToggle
         id={card.id}
         name={card.name}
+        // Keyboard pins with `f` (D-045); one tab stop per binder.
+        tabIndex={-1}
         className="absolute top-1 left-1 z-10 size-7 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 data-pinned:opacity-100 pointer-coarse:opacity-100"
       />
     </div>

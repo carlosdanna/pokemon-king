@@ -10,10 +10,12 @@ export function PinToggle({
   id,
   name,
   className,
+  tabIndex,
 }: {
   id: string;
   name: string;
   className?: string;
+  tabIndex?: number;
 }) {
   const pinned = useFavourites().has(id);
   const reduce = useReducedMotion();
@@ -21,6 +23,7 @@ export function PinToggle({
     <motion.button
       type="button"
       aria-pressed={pinned}
+      tabIndex={tabIndex}
       aria-label={`Pin ${name}`}
       title={pinned ? "Unpin" : "Pin"}
       onClick={() => void toggleFavourite(id)}

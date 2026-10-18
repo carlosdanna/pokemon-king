@@ -1889,6 +1889,236 @@ Committed. Now I'll add the transcript and amend the commit with the hash.
 
 - *Bash*: Inspect transcript layout and render this session
 
+### 2026-10-18 · M6
+
+#### 17:40 · Carlos
+
+Milestone M6 from docs/implementation-plan.md and the shortcut table in docs/requirements.md. Follow CLAUDE.md: log the start time first.
+
+Plan:
+- Roving tabindex across the 3x3 grid, continuing across both pages of a spread; arrow keys move, Home / End jump, Enter zooms.
+- Read the column count from the rendered layout, not a constant; unit test the index maths.
+- PageUp / PageDown and , / . turn pages; focus lands on the same pocket position.
+- Global: / focuses search, f pins the focused or zoomed card, [ and ] move between cards while zoomed, Esc closes, g h / g a for Home / Album, ? opens the shortcut overlay. Single-key shortcuts never fire inside inputs.
+- Ctrl/Cmd + K command palette (shadcn Command) to jump to a set or card by name. Stretch: skip and log the cut if over time.
+- Focus ring drawn outside greyscale and transformed elements; announce page changes in a live region.
+
+Verify by doing the whole demo walkthrough without a mouse and list anything that failed.
+
+Finish: tick M6 boxes, log end time, commit "feat: keyboard navigation (M6)".
+
+#### 17:40 · Carlos
+
+Milestone M6 from docs/implementation-plan.md and the shortcut table in docs/requirements.md. Follow CLAUDE.md: log the start time first.
+
+Plan:
+- Roving tabindex across the 3x3 grid, continuing across both pages of a spread; arrow keys move, Home / End jump, Enter zooms.
+- Read the column count from the rendered layout, not a constant; unit test the index maths.
+- PageUp / PageDown and , / . turn pages; focus lands on the same pocket position.
+- Global: / focuses search, f pins the focused or zoomed card, [ and ] move between cards while zoomed, Esc closes, g h / g a for Home / Album, ? opens the shortcut overlay. Single-key shortcuts never fire inside inputs.
+- Ctrl/Cmd + K command palette (shadcn Command) to jump to a set or card by name. Stretch: skip and log the cut if over time.
+- Focus ring drawn outside greyscale and transformed elements; announce page changes in a live region.
+
+Verify by doing the whole demo walkthrough without a mouse and list anything that failed.
+
+Finish: tick M6 boxes, log end time, commit "feat: keyboard navigation (M6)".
+
+- *Bash*: Read M6 plan, shortcut table, and file layout
+- *Bash*: Read album, card overlay, search, header components
+- *Bash*: Read remaining relevant files and exports
+- *Bash*: Check command/dialog exports and helpers
+
+*Claude wrote the plan:*
+
+<details><summary>Plan</summary>
+
+~~~~markdown
+# M6 · Keyboard layer
+
+## Context
+M0–M5 are done; the album works by mouse/touch but keyboard users get one tab stop per card (plus one per pin), no page-turn keys and no global shortcuts. M6 makes the demo walkthrough doable without a mouse (implementation plan M6, requirements shortcut table). Session start already read: **2026-10-18 17:40 CEST**.
+
+## Step 0 · Bookkeeping first
+- Add worklog row: `2026-10-18 | 17:40 | | | M6 | …` in `docs/worklog.md`.
+- Add decisions before code (`date` for the time):
+  - **D-045** Roving tabindex is DOM-driven in the binder's client wrapper (visible `[data-card-link]` elements, column count from `getComputedStyle(ol).gridTemplateColumns`); arrows cross both pages of a spread, no wrap at edges; Home/End = first/last visible card. Tile pin buttons leave the tab order (`tabIndex={-1}`): `f` pins from the grid, and the info panel's pin stays tabbable. Rejected: React context per tile; 9 extra tab stops.
+  - **D-046** Global shortcuts: `/`, `f`, `[`/`]`, `Esc`, `g h` / `g a` (Home / Album — replaces the requirements' `g h/g c/g b`, per Carlos's M6 brief), `?`, `PageUp/PageDown` and `,`/`.`. Single keys ignored in inputs/textareas/selects/contenteditable and with Ctrl/Alt/Meta. `[`/`]` step through the cards rendered on the album page(s) under the overlay; they stop at the page edge (shortcut, documented).
+  - **D-047** (stretch) `Ctrl/Cmd+K` palette (shadcn `CommandDialog`, already installed with cmdk): pages, the 121 sets (names passed from the layout), and up to 20 cards from `GET /api/cards?q=` (reuses `filterCards` with `owned: false`). Rejected: shipping card names to the browser (D-005).
+
+## Step 1 · Grid maths (pure, tested)
+New `lib/grid.ts`: `gridMove(key, index, cols, pageSizes: number[]) → number | null`.
+- Flattened index is page-major; position = (page, row, col); spread column X = page*cols + col.
+- Left/Right: X±1 on the same row (crossing into the other page); Up/Down: row±1; Home/End: 0 / last. Target past a short page's last card or outside the grid → `null` (no move).
+- `lib/grid.test.ts`: single page moves, edges return null, Right from left page's last column lands on right page col 0 same row, short last page, Home/End, cols=2 (proves it's not a constant).
+
+## Step 2 · Binder keyboard (`components/album/swipe-turn.tsx`)
+SwipeTurn already wraps the spread and knows `base`/`turns`; it becomes the binder's input controller (pointer + keys). Add props `page`, `pageCount` from `AlbumBinder`.
+- Extract the target pick already in `onPointerUp` into `turnTo(forward)` (matchMedia 1280px, `router.push(pageHref…, { scroll:false, transitionTypes })`) and reuse it for keys.
+- Container `ref`; `links()` = `[data-card-link]` inside it filtered by `checkVisibility()`; `pageSizes` from visible `ol`s' link counts; `cols` from the first visible `ol`'s computed `gridTemplateColumns`.
+- Roving: layout effect on `[page]` sets `tabIndex=-1` on all links, `0` on the active one (pending index, else 0); `onFocus` (focusin) moves the 0 to the focused link. `onKeyDown` on arrows/Home/End → `gridMove`, focus + preventDefault. Enter is native (link → zoom).
+- Page keys: document `keydown` listener (skip if typing target, modifier, or `dialog[open]` exists): PageDown / `.` forward, PageUp / `,` back. Store the pocket index of the focused link (or 0) in `pending`; after the page commit the effect focuses `links()[min(pending, len-1)]` in a `requestAnimationFrame`.
+- Live region: `<Typography as="p" aria-live="polite" className="sr-only">` set to `Page N of M` on page change (not on first mount).
+- `card-tile.tsx`: `PinToggle` gets `tabIndex={-1}` (add the prop pass-through in `pin-toggle.tsx`).
+
+## Step 3 · Global shortcuts (`components/keyboard-shortcuts.tsx`, client)
+Mounted in `app/layout.tsx` inside the existing `NotOnLogin` + Suspense, with `sets` (id, name) from a new tiny `getSetNames()` in `lib/collection.ts` (not `getSetSummaries`, which loads every set). One `document` keydown listener; shared `isTypingTarget(e)` helper exported from `lib/grid.ts` (tested).
+- `/` → focus `[role=search] input`; `?` → open help dialog (`Dialog` from `components/ui/dialog`) with the shortcut table (rendered via `Typography`); `g` then `h`/`a` within 1 s → `router.push("/" | "/album")`.
+- `f` → id from `dialog[open][data-card-id]`, else `activeElement.closest("[data-card-link]")`, else `[data-card-id]` (full card page) → `toggleFavourite(id)` from `lib/favourites.ts`.
+- `[` / `]` (only when `dialog[open][data-card-id]`): visible `[data-card-link]` list under it, neighbour of the current id → `router.replace(`/cards/${next}`, { scroll:false })`.
+- `Esc`: native for `<dialog>`/Base UI dialogs; nothing new.
+- `Ctrl/Cmd+K` (fires even in inputs) → palette open. Ignore other keys while help/palette is open.
+- Add `data-card-id={card.id}` to the overlay `<dialog>` in `components/card/card-overlay.tsx` and to the root of `components/card/card-view.tsx`.
+
+## Step 4 · Command palette (stretch; cut and log in D-047 + worklog if past ~18:25)
+- `components/command-palette.tsx` using `CommandDialog/CommandInput/CommandList/CommandGroup/CommandItem/CommandEmpty`. Groups: Go to (Home, Album, Browse), Sets (`/album/{id}`), Cards (fetched with AbortController when query ≥ 2 chars → `/cards/{id}`), plus "Search for “q”" → `searchHref`.
+- `app/api/cards/route.ts`: if `q` present return `filterCards(getAllCards(), { ...DEFAULT_SEARCH, q, owned: false }).slice(0, 20)` mapped to `{ id, name, number, set }`; `ids` behaviour unchanged.
+
+## Step 5 · Focus ring
+Tile ring is on the `<Link>` outline (outside the `grayscale` img) — keep. Verify in browser: greyed card, card during/after a turn, overlay close button, panel tabs, pin. Fix only what fails (e.g. `outline` on an element under `transform`).
+
+## Verification
+- `pnpm check` (lint, typecheck, prettier, tests incl. new `lib/grid.test.ts`).
+- `pnpm dev`, Chromium at 1440 px (spread) and 375 px, keyboard only, the demo walkthrough: log in (Enter) → `g a` → Tab to a set → Enter → Tab into grid (one stop) → arrows across the spread, Home/End → `.`/PageDown turns, focus same pocket, live region text → Enter zooms → `]`/`[` → `f` pins (pin shows) → Esc closes, focus back on tile → `/` types a search → Esc/Tab back → `?` overlay, Esc → `Ctrl+K` jump to set and card → `g h` home shows the pin. Check that `,` typed in search does not turn pages. List every failure in the final report.
+
+## Finish
+Tick M6 boxes in `docs/implementation-plan.md` (palette only if done), fill worklog end time/duration/outcome/hash, append transcript (`python3 -I scripts/transcript.py`) to `docs/transcripts.md`, commit `feat: keyboard navigation (M6)` (with Co-Authored-By line), then `git commit --amend --no-edit` with the log.
+~~~~
+
+</details>
+
+#### 17:42 · Claude
+
+I've written the M6 plan and am handing it to you for approval now.
+
+- *ExitPlanMode*: ExitPlanMode
+
+*Carlos approved the plan.*
+
+- *Bash*: Get time, check worklog format and Typography props
+- *Bash*: Read rest of Typography
+
+#### 17:43 · Claude
+
+Bookkeeping: worklog row and decisions.
+
+- *Bash*: Add worklog row and decisions D-045 to D-047
+- *Write*: lib/grid.ts
+- *Write*: lib/grid.test.ts
+- *Bash*: Run grid tests
+
+#### 17:43 · Claude
+
+Now the binder controller.
+
+- *Write*: components/album/swipe-turn.tsx
+- *Bash*: Check Typography passes props through
+- *Bash*: Wire props, pin tabIndex and data-card-id attributes
+- *Bash*: Add getSetNames and q search to cards API
+- *Write*: components/command-palette.tsx
+- *Write*: components/keyboard-shortcuts.tsx
+- *Bash*: Check DialogTitle renders through Typography
+- *Bash*: Mount shortcuts in layout, format, lint, typecheck
+
+#### 17:49 · Claude
+
+The code is in and lint and typecheck pass. Next I'll start the dev server and do the keyboard-only walkthrough in a browser.
+
+- *Bash*: Look for browser tooling used before
+- *Bash*: Find playwright and start dev server
+- *Bash*: Locate a usable playwright install
+- *Bash*: Run keyboard-only walkthrough at 1440px
+- *Bash*: See why dev server failed
+
+#### 17:52 · Claude
+
+A dev server for this repo is already running on port 3000 (probably yours), so I'll use it.
+
+- *Bash*: Run walkthrough against existing dev server
+- *Bash*: Prefer first card result over search item in palette
+- *Bash*: Rerun walkthrough at 1440 and 375px
+
+#### 17:54 · Carlos
+
+[Request interrupted by user for tool use]
+
+#### 17:59 · Carlos
+
+Lest rethink the search the cmdk behavior is fine but to search for a card I would like to have the some fuzzy search using the set name or code and the card name. If it is too hard i would like to go to the /search page. Also replace the search on the top navigation bar for the behaviour with the cmdk behavior. The search form should have an input field with fuzzy search similar to what I descibed above and make sure it has some debounce functionality to avoid spaming the server
+
+#### 18:00 · Claude
+
+Understood. Before I change anything I'll look at where the current search box is used (header, homepage, recent searches) and how `/search` reads `q`.
+
+- *Bash*: Find search box usages and homepage
+- *Bash*: Inspect search lib, tests and set fields
+- *Bash*: Read search page layout and test fixtures
+- *Bash*: Log decision D-048
+
+#### 18:01 · Claude
+
+Now the matcher in `lib/search.ts`.
+
+- *Read*: lib/search.ts
+- *Edit*: lib/search.ts
+- *Edit*: lib/search.ts
+- *Bash*: Add setName to getAllCards and test fixture
+
+#### 18:01 · Claude
+
+Now tests for the matcher.
+
+- *Bash*: Find where to add fuzzy tests
+- *Edit*: lib/search.test.ts
+- *Bash*: Run search tests
+- *Bash*: Tighten typo threshold, fix test, rerun
+
+#### 18:03 · Claude
+
+Matcher tests pass. Now wire it into the API, palette, header and search boxes.
+
+- *Bash*: Rank API results; view palette fetch effect
+- *Bash*: Debounce palette fetch and add open event
+- *Read*: components/keyboard-shortcuts.tsx
+- *Bash*: Header trigger button and slash shortcut
+
+#### 18:04 · Claude
+
+Now the debounced search box.
+
+- *Bash*: Rewrite SearchBox with debounce
+- *Bash*: Simplify href; view search page header
+- *Bash*: Add search box to search page
+- *Bash*: Read binder-chrome rules
+- *Bash*: Adjust chrome height; lint, typecheck, test
+
+#### 18:06 · Claude
+
+All checks pass (67 tests). Now updating the browser walkthrough for the new search flows and running it against your dev server on :3000.
+
+- *Bash*: Run updated keyboard walkthrough at 1440px
+- *Bash*: Fix query splitting, typo speed, palette reset
+- *Bash*: Ctrl+K opens only; test; rerun walkthrough
+- *Bash*: Custom cmdk filter keeping server order
+- *Bash*: Rerun walkthrough at 1440 and 375px
+
+#### 18:11 · Claude
+
+Everything passes at both widths. Last visual check: the header trigger, and the focus ring on a greyed card.
+
+- *Bash*: Screenshot focus ring on greyed card and palette
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/0bf8080f-fb88-43c8-a375-1c5dfb5dc178/scratchpad/focus-grey.png
+- *Read*: /tmp/claude-1000/-home-cduser-projects-pokemon-king/0bf8080f-fb88-43c8-a375-1c5dfb5dc178/scratchpad/palette.png
+- *Bash*: Right-align card meta in palette; run full check
+- *Bash*: Check status of settings file flagged by prettier
+- *Bash*: Ignore local settings in prettier; rerun check
+
+#### 18:13 · Claude
+
+`pnpm check` is clean. Wrapping up: ticking the M6 boxes, filling in the worklog, then commit and transcript.
+
+- *Bash*: Tick M6 boxes and fill worklog row
+- *Bash*: Commit M6 and generate session transcript
+
 ## claude.ai conversations
 
 To be added.

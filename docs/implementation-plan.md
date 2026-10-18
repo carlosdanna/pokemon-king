@@ -150,10 +150,10 @@ Done when: a pin made on the laptop shows on the phone after a refresh, and sign
 
 ### M6 · Keyboard layer (45 min)
 
-- [ ] Roving focus across the 3x3 grid (and across both pages of a spread); `PageUp` / `PageDown` or `,` / `.` to turn pages
-- [ ] `/` to search, `f` to pin, `Enter` to zoom, `[` / `]` while zoomed, `Esc` to close
-- [ ] `?` shortcut overlay; `Ctrl/Cmd + K` command palette (stretch)
-- [ ] Visible focus ring that survives the greyscale and zoom effects
+- [x] Roving focus across the 3x3 grid (and across both pages of a spread); `PageUp` / `PageDown` or `,` / `.` to turn pages
+- [x] `/` to search, `f` to pin, `Enter` to zoom, `[` / `]` while zoomed, `Esc` to close
+- [x] `?` shortcut overlay; `Ctrl/Cmd + K` command palette (stretch)
+- [x] Visible focus ring that survives the greyscale and zoom effects
 
 Done when: the demo video's walkthrough can be done without a mouse.
 

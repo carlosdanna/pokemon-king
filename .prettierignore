@@ -4,3 +4,5 @@ docs/
 private/
 *.md
 pnpm-lock.yaml
+# local Claude Code settings, not part of the app
+.claude/
